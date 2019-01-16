@@ -1,0 +1,106 @@
+\documentclass[titlepage, a4paper]{report}
+\usepackage[bindingoffset=0cm, left=2.5cm, right=2.5cm, top=2.5cm, bottom=2.5cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[backend=bibtex, style=numeric, sorting=none]{biblatex}
+\usepackage{amsmath}
+\usepackage{subfig}
+\usepackage{graphicx}
+\usepackage{makecell}
+\usepackage{multirow}
+\usepackage{longtable}
+\usepackage{setspace}
+\usepackage{listings}
+\usepackage{lscape}
+\usepackage{amssymb}
+\usepackage{threeparttable}
+\usepackage{enumerate}
+%\usepackage[T1]{fontenc}
+\renewcommand{\baselinestretch}{1.5}
+\setlength{\skip\footins}{1.25 cm}
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
+\title{Studies of colour flow in top quark pair decays at 13 TeV at the CMS experiment of the CERN LHC} 
+\author{Viesturs Veckalns\\Rīgas Tehniskā universitāte}
+
+\date{2018}
+
+
+\input{generalcommands.tex}
+
+\input{figureratiographs.tex}
+\input{figureChi.tex}
+\input{figunfolding.tex}
+\input{figures.tex}
+\usepackage{ptdr-definitions}
+\usepackage{siunitx}
+\usepackage{float}
+\addbibresource{disertacija.bib}
+\begin{document}
+\maketitle
+\begin{abstract}
+        \input{chapters/abstract}
+\end{abstract}
+
+\chapter*{Acknowledgements}
+\label{chap:acknowledgements}
+\input{chapters/acknowledgements}
+
+\tableofcontents
+\listoffigures
+\listoftables
+
+\chapter{Introduction}
+\label{chap:introduction}
+\input{chapters_summary/introduction}
+
+\chapter{Physical Background}
+\input{chapters_summary/physical_background}
+
+\chapter{Experimental Setup}
+\input{chapters_summary/experimental_setup}
+
+\chapter{Methodology}
+\label{chap:methodology}
+\input{chapters_summary/methodology}
+
+\chapter{Data and MC Samples}
+\input{chapters_summary/data_and_MC_samples}
+
+\chapter{Event Selection}
+\label{chap:event_selection}
+\input{chapters_summary/event_selection}
+
+\chapter{Systematic Uncertainties}
+\label{chap:systematic_uncertainties}
+\input{chapters_summary/systematic_uncertainties}
+
+
+\chapter{Results}
+\label{chap:results}
+\input{chapters_summary/results}
+
+%\clearpage
+\section{Unfolding}
+\input{chapters_summary/results/unfolding.tex}
+
+\clearpage
+\section{LEP method}
+\input{chapters_summary/results/chi.tex}
+
+\clearpage
+\section{Hypothesis testing}
+\input{chapters_summary/results/hypo_testing.tex}
+
+\chapter{Conclusions}
+\input{chapters_summary/conclusions.tex}
+
+\clearpage
+\printbibliography[heading=bibintoc]
+
+\end{document}
+
+
+
+
+
+

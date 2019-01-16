@@ -1,0 +1,12 @@
+\begin{table}[htp]
+	\begin{center}
+	\caption{Observed masses of objects for the $\mu$ channel at generation level for data for the colour octet $W$ model.}
+	\label{tab:mass_M_gen_data_flip}
+		\begin{tabular}{l|rr}
+		\hline
+		\makecell[c]{Object}&\makecell[c]{Mass}&\makecell[c]{FWHM}\\
+		\hline
+		\hline
+		\end{tabular}
+	\end{center}
+\end{table}

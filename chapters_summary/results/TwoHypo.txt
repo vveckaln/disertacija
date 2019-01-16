@@ -1,0 +1,32 @@
+imax 1
+jmax *
+kmax *
+---------------
+shapes * *               files/TwoHypo.root                      $CHANNEL/$PROCESS $CHANNEL/$PROCESS_$SYSTEMATIC
+---------------
+bin b1
+observation -1
+------------------------------
+bin                                                             b1            b1     b1          b1     b1    b1          b1       b1
+process                                                         ttbarcflip    ttbar  Single_top  W      DY    Multiboson  ttbar_V  QCD
+process                                                         -1            0      1           2      3     4           5        6
+rate                                                            -1           -1     -1          -1     -1    -1          -1       -1
+------------------------------
+MC13TeV_TTJets_jec_CorrelationGroupMPFInSitu          shape     1.0           1.0    -           -      -     -           -        -
+MC13TeV_TTJets_jec_RelativeFSR                        shape     1.0           1.0    -           -      -     -           -        -
+MC13TeV_TTJets_jec_CorrelationGroupUncorrelated       shape     1.0           1.0    -           -      -     -           -        -
+MC13TeV_TTJets_jec_FlavorPureGluon                    shape     1.0           1.0    -           -      -     -           -        -
+MC13TeV_TTJets_jec_FlavorPureQuark                    shape     1.0           1.0    -           -      -     -           -        -
+MC13TeV_TTJets_jec_FlavorPureCharm                    shape     1.0           1.0    -           -      -     -           -        -
+MC13TeV_TTJets_jec_FlavorPureBottom                   shape     1.0           1.0    -           -      -     -           -        -
+MC13TeV_TTJets_jer                                    shape     1.0           1.0    -           -      -     -           -        -
+MC13TeV_TTJets_btag_heavy                             shape     1.0           1.0    -           -      -     -           -        -
+MC13TeV_TTJets_btag_light                             shape     1.0           1.0    -           -      -     -           -        -
+MC13TeV_TTJets_csv_heavy                              shape     1.0           1.0    -           -      -     -           -        -
+MC13TeV_TTJets_csv_light                              shape     1.0           1.0    -           -      -     -           -        -
+MC13TeV_TTJets_tracking                               shape     1.0           1.0    -           -      -     -           -        -
+MC13TeV_TTJets_isr                                    shape     1.0           1.0    -           -      -     -           -        -
+MC13TeV_TTJets_fsr                                    shape     1.0           1.0    -           -      -     -           -        -
+MC13TeV_TTJets_hdamp                                  shape     1.0           1.0    -           -      -     -           -        -
+MC13TeV_TTJets_ue                                     shape     1.0           1.0    -           -      -     -           -        -
+theory group = MC13TeV_TTJets_isr MC13TeV_TTJets_fsr MC13TeV_TTJets_hdamp MC13TeV_TTJets_ue

@@ -1,0 +1,82 @@
+\documentclass{article}
+\begin{document}
+\textbf{Top quark}
+What is the natural abundance of the top quark in the stars, primaeval universe?
+
+\textbf{Source of W}
+Our colour flow study can be conducted using the W boson as a source in general. Why are we using the top quark as the source of the W boson. Is the top quark the most abundant source of W at the LHC?
+
+{\it The W production cross section is $>20\times$ larger than the \ttbar cross section. In the study we need to use  $W\rightarrow qq'$ events to as the leptonic decays do not have colour flow. It is hard to trigger on resolved $W\rightarrow qq'$ events with sufficiently low pT thresholds, so we use \ttbar events where one of the W bosons decays leptonically and it is used to trigger the event while the other one decays hadronically and it is used to study colour flow.}
+
+\textbf{High pT physics}
+Given that the highest luminosity is at the endcaps why are we selecting particles with a high pT?
+
+{\it What do you mean exactly with highest luminosity? Luminosity is a beam property. The endcaps receive higher particle flux, but the \ttbar process is a high \pt process so it's mostly produced in the central region.}
+
+\textbf{Pile-up}
+Is there an update of the following PileUp graphic for Run II:
+https://cms.cern/news/reconstructing-multitude-particle-tracks-within-cms
+
+{\it That is a specific event display. I'm not aware of other newer event displays.}
+
+What is currently the pileup? Vertex density?
+
+{\it You can get the pileup plots from https://twiki.cern.ch/twiki/bin/view/CMSPublic/LumiPublicResults#2016_proton_proton_13_TeV_collis.
+The number quoted for pileup depends on the assumed minimum bias cross section. Recently this was explained in  https://hypernews.cern.ch/HyperNews/CMS/get/physics-validation/3212.html. In the analysis we are using 69 mb to reweight the pileup.  In the end the actual number doesn't mean much, because the analysis is made in such a way that it robust against pileup: using charged particles which are associated to the primary vertex of the event.}
+
+\textbf{B-tagging}
+What pictures to use to illustrate b-tagging and its efficiency?
+
+{\it You can find several references in https://twiki.cern.ch/twiki/bin/view/CMSPublic/PhysicsResultsBTV#Physics_Analysis_Summary_and_AN2,
+in particular https://arxiv.org/abs/1712.07158 should be the reference to use for 2016.}
+
+\textbf{Nuisances}
+Please help demistify the following tags:
+\begin{itemize}
+\item MC13TeV\_TTJets\_evtgen
+
+{\it EVTGEN is used to decay heavy-flavoured hadrons. EVTGEN is described in https://evtgen.hepforge.org/.}
+
+\item MC13TeV\_TTJets\_m171v5
+
+{\it a \ttbar sample where mtop=171.5 GeV (normally it's set to 172.5 GeV)}
+
+\item MC13TeV\_TTJets\_isrup
+\item MC13TeV\_TTJets\_fsrup
+\item MC13TeV\_TTJets\_hdampup
+\item MC13TeV\_TTJets\_ueup
+\item MC13TeV\_TTJets\_erdON
+\item MC13TeV\_TTJets\_qcdBased
+\item MC13TeV\_TTJets\_gluonMove
+
+{\it In these samples the parameters of Pythia8 have been varied.
+The values are summarized in this table from TOP-17-015:
+http://cms-results.web.cern.ch/cms-results/public-results/publications/TOP-17-015/CMS-TOP-17-015_Table_005.png.}
+
+\item MC13TeV\_TTJets\_jec\_CorrelationGroupMPFInSitu\_up
+\item MC13TeV\_TTJets\_jec\_RelativeFSR\_up
+\item MC13TeV\_TTJets\_jec\_CorrelationGroupUncorrelated\_up
+\item MC13TeV\_TTJets\_jec\_FlavorPureGluon\_up
+\item MC13TeV\_TTJets\_jec\_FlavorPureQuark\_up
+\item MC13TeV\_TTJets\_jec\_FlavorPureCharm\_up
+\item MC13TeV\_TTJets\_jec\_FlavorPureBottom\_up7
+\item MC13TeV\_TTJets\_jer\_up
+
+{\item these correspond to specific jet energy scale uncertainties. The description can be found in detail in the following twiki page:
+https://twiki.cern.ch/twiki/bin/viewauth/CMS/JECUncertaintySources#Main_uncertainties_2016_80X
+}
+
+\item MC13TeV\_TTJets\_btag\_heavy\_up
+\item MC13TeV\_TTJets\_btag\_light\_up
+\item MC13TeV\_TTJets\_csv\_heavy\_up
+\item MC13TeV\_TTJets\_csv\_light\_up
+
+
+{\it these are variations of the b-tagging efficiency uncertainty for heavy (b or c) or light (udsg) jets.}
+
+\item MC13TeV\_TTJets\_tracking\_up
+
+{\it this results from varying the tracking efficiency in the simulation, according to its uncertainty. There is a description in http://cms.cern.ch/iCMS/jsp/openfile.jsp?tp=draft&files=AN2017_175_v13.pdf line 597}
+
+\end{itemize}
+\end{document}

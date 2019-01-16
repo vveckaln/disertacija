@@ -1,0 +1,72 @@
+\begin{table}[htp]
+	\begin{center}
+	\caption{Bin by bin weight of uncertainty (shapes) for \protect\observabletitle{pull_angle} including \protect\chargetitle{allconst} of the \protect\jettitle{scnd_leading_jet} at the \protect\recoleveltitle{gen} level. The results are for                        unfolded ouput for the Powheg+Pythia8 sample.}
+	\label{tab:unc_table_fullpull_angle_OPT_allconst_gen_out_MC13TeV_TTJets_nominal_ATLAS3}
+		\begin{tabular}{l|ccc}
+			\hline
+			\makecell[c]{\multirow{3}{*}{nuisance}} &\multicolumn{3}{c}{uncertainty in bins (\%)}\\
+			 & bin 1  & bin 2  & bin 3  \\
+			 & 0.00 - 1.04 & 1.04 - 2.07 & 2.07 - 3.14 \\
+			\hline
+			$t\overline{t}$ ERDon	&	1.346	&	0.327	&	1.192\\
+			$t\overline{t}$ Herwig++	&	6.494	&	1.982	&	9.328\\
+			$t\overline{t}$ Peterson Frag	&	0.600	&	0.772	&	0.097\\
+			$t\overline{t}$ QCD scale 1	&	0.488	&	0.699	&	0.151\\
+			$t\overline{t}$ QCD scale 2	&	0.473	&	0.754	&	0.223\\
+			$t\overline{t}$ QCD scale 3	&	0.300	&	0.620	&	0.284\\
+			$t\overline{t}$ QCD scale 4	&	0.580	&	0.851	&	0.199\\
+			$t\overline{t}$ QCD scale 5	&	0.299	&	0.394	&	0.058\\
+			$t\overline{t}$ QCD scale 6	&	0.693	&	0.666	&	0.114\\
+			$t\overline{t}$ QCDbased	&	2.283	&	2.568	&	5.159\\
+			$t\overline{t}$ UEdn	&	1.425	&	3.146	&	1.550\\
+			$t\overline{t}$ UEup	&	1.797	&	2.751	&	0.733\\
+			$t\overline{t}$ b fragmentation down	&	0.153	&	0.466	&	0.295\\
+			$t\overline{t}$ b fragmentation up	&	0.823	&	0.743	&	0.184\\
+			$t\overline{t}$ btag\_heavy down	&	0.046	&	0.155	&	0.207\\
+			$t\overline{t}$ btag\_heavy up	&	0.184	&	0.114	&	0.094\\
+			$t\overline{t}$ btag\_light down	&	0.537	&	0.662	&	0.058\\
+			$t\overline{t}$ btag\_light up	&	0.006	&	0.600	&	0.595\\
+			$t\overline{t}$ csv\_heavy down	&	0.137	&	0.538	&	0.695\\
+			$t\overline{t}$ csv\_heavy up	&	0.156	&	0.044	&	0.133\\
+			$t\overline{t}$ csv\_light down	&	0.416	&	0.195	&	0.275\\
+			$t\overline{t}$ csv\_light up	&	0.073	&	0.190	&	0.274\\
+			$t\overline{t}$ evtgen	&	6.064	&	11.955	&	5.158\\
+			$t\overline{t}$ fsr dn	&	0.867	&	3.046	&	2.080\\
+			$t\overline{t}$ fsr up	&	0.295	&	2.963	&	2.642\\
+			$t\overline{t}$ gluon move	&	0.209	&	0.552	&	0.791\\
+			$t\overline{t}$ hdamp dn	&	0.405	&	4.175	&	4.652\\
+			$t\overline{t}$ hdamp up	&	1.899	&	1.226	&	0.913\\
+			$t\overline{t}$ isr dn	&	0.100	&	2.673	&	2.798\\
+			$t\overline{t}$ isr up	&	0.528	&	0.572	&	0.022\\
+			$t\overline{t}$ jec\_CorrelationGroupMPFInSitu down	&	0.227	&	0.864	&	0.611\\
+			$t\overline{t}$ jec\_CorrelationGroupMPFInSitu up	&	0.252	&	0.402	&	0.120\\
+			$t\overline{t}$ jec\_CorrelationGroupUncorrelated down	&	0.095	&	0.353	&	0.461\\
+			$t\overline{t}$ jec\_CorrelationGroupUncorrelated up	&	0.443	&	0.263	&	0.236\\
+			$t\overline{t}$ jec\_FlavorPureBottom down	&	0.201	&	0.364	&	0.593\\
+			$t\overline{t}$ jec\_FlavorPureBottom up	&	0.076	&	0.322	&	0.237\\
+			$t\overline{t}$ jec\_FlavorPureCharm down	&	0.128	&	0.179	&	0.035\\
+			$t\overline{t}$ jec\_FlavorPureCharm up	&	0.428	&	0.088	&	0.395\\
+			$t\overline{t}$ jec\_FlavorPureGluon down	&	0.176	&	0.707	&	0.909\\
+			$t\overline{t}$ jec\_FlavorPureGluon up	&	0.482	&	0.206	&	0.337\\
+			$t\overline{t}$ jec\_FlavorPureQuark down	&	0.431	&	0.143	&	0.343\\
+			$t\overline{t}$ jec\_FlavorPureQuark up	&	0.660	&	0.901	&	0.159\\
+			$t\overline{t}$ jec\_RelativeFSR down	&	0.498	&	0.190	&	0.371\\
+			$t\overline{t}$ jec\_RelativeFSR up	&	0.412	&	0.475	&	0.012\\
+			$t\overline{t}$ jer down	&	0.256	&	0.202	&	0.492\\
+			$t\overline{t}$ jer up	&	0.169	&	0.040	&	0.151\\
+			$t\overline{t}$ m=171.5	&	0.925	&	0.259	&	1.305\\
+			$t\overline{t}$ m=173.5	&	3.764	&	2.892	&	1.348\\
+			$t\overline{t}$ pileup down	&	0.331	&	0.265	&	0.107\\
+			$t\overline{t}$ pileup up	&	0.365	&	0.329	&	0.082\\
+			$t\overline{t}$ sel efficiency correction down	&	0.444	&	0.624	&	0.126\\
+			$t\overline{t}$ sel efficiency correction up	&	0.360	&	0.583	&	0.179\\
+			$t\overline{t}$ semilep BR down	&	0.387	&	0.568	&	0.134\\
+			$t\overline{t}$ semilep BR up	&	0.369	&	0.603	&	0.190\\
+			$t\overline{t}$ tracking down	&	0.053	&	0.353	&	0.294\\
+			$t\overline{t}$ tracking up	&	0.770	&	1.074	&	0.209\\
+			$t\overline{t}$ trig efficiency correction down	&	0.380	&	0.563	&	0.137\\
+			$t\overline{t}$ trig efficiency correction up	&	0.423	&	0.644	&	0.168\\
+		\hline
+		\end{tabular}
+	\end{center}
+\end{table}

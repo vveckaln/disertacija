@@ -1,0 +1,31 @@
+\begin{table}[htp]
+	\begin{center}
+	\caption{Value of $R^{-1}$ for the common lepton channel at reconstruction level for MC, particle flow for the SM model.}
+	\label{tab:R_L_reco_N_MC_SM}
+		\begin{tabular}{|l|cc|}
+		\hline
+		\makecell[c]{Jet constituents} & $I$ & $R^{-1}$ \\
+		\hline
+		\multicolumn{3}{|c|}{$j_{1}^{b}$,$j_{2}^{b}$}\\
+		\hline
+		 all 	& 0.010 	$\pm$ 0.000 	$\pm$ 0.000 	& 0.151 	$\pm$ 0.000 	$\pm$ 0.002 \\
+		 charged 	& 0.007 	$\pm$ 0.000 	$\pm$ 0.000 	& 0.127 	$\pm$ 0.000 	$\pm$ 0.003 \\
+		\hline
+		\multicolumn{3}{|c|}{$j_{f}^{W}$,$j_{h}^{b}$}\\
+		\hline
+		 all 	& 0.012 	$\pm$ 0.000 	$\pm$ 0.000 	& 0.183 	$\pm$ 0.000 	$\pm$ 0.001 \\
+		 charged 	& 0.008 	$\pm$ 0.000 	$\pm$ 0.000 	& 0.152 	$\pm$ 0.000 	$\pm$ 0.003 \\
+		\hline
+		\multicolumn{3}{|c|}{$j_{h}^{b}$,$j_{c}^{W}$}\\
+		\hline
+		 all 	& 0.062 	$\pm$ 0.000 	$\pm$ 0.000 	& 0.923 	$\pm$ 0.000 	$\pm$ 0.002 \\
+		 charged 	& 0.040 	$\pm$ 0.000 	$\pm$ 0.000 	& 0.768 	$\pm$ 0.000 	$\pm$ 0.005 \\
+		\hline
+		\multicolumn{3}{|c|}{$j_{1}^{W}$,$j_{2}^{W}$}\\
+		\hline
+		 all 	& 0.067 	$\pm$ 0.000 	$\pm$ 0.001 	& 1.000 	$\pm$ 0.000 	$\pm$ 0.010 \\
+		 charged 	& 0.052 	$\pm$ 0.000 	$\pm$ 0.001 	& 1.000 	$\pm$ 0.000 	$\pm$ 0.016 \\
+		\hline
+		\end{tabular}
+	\end{center}
+\end{table}

@@ -1,0 +1,303 @@
+Uncertainties are divided into experimental and theoretical uncertainties. When including an uncertainty from the first group we vary some parameter in the event selection, such as a data-to-MC scale factor. Theoretical uncertainties reflect our lack of knowledge about the real world, e.g. the true top quark mass or details of the hadronisation process.
+
+\section{Experimental uncertainties}
+\begin{description}
+\item[Jet energy resolution] We use the recommended jet energy resolution measurements \cite{twiki:JER}. Each jet is further smeared up or down depending on its \pt and $\eta$ with respect to the central value measured in data. The main effect of this systematic is related to the exclusion/inclusion of events with jets near the offline thresholds. The distribution of the pull angle incorporating the jet energy resolution uncertaintes are plotted in Fig. \ref{fig:MC13TeV_TTJets_jer} together with the nominal distribution.
+
+\item[Jet energy corrections] A \pt,$\eta$-dependent parameterization of the jet energy scale is used to vary the calibration of the jets in the simulation. The parameterization is provided by the JetMET Physics Objet Group \cite{twiki:JES} for the Spring16 V3 corrections. The main effect of this systematic is related to the exclusion/inclusion of events with jets near the offline thresholds.
+
+The following simulations are used:
+\begin{description}
+        \item[CorrelationGroup]  These are uncertainties matching the common ATLAS/CMS correlation categories grouped together \cite{twiki:JESUS}. 
+        \begin{description}                     
+              \item[CorrelationGroupMPFInSitu] Groups partially correlated systematic uncertainties from \cPZ+jet/\cPgg+jet absolute scale determination (e.g. radiation suppression and out-of-cone effects).
+              \item[CorrelationGroupUncorrelated] Remaining sources which are estimated as being uncorrelated between ATLAS and CMS.
+        \end{description}
+        \item[RelativeFSR] $\eta$-dependent uncertainty due to correction for initial and final state radiation, estimated from difference between MPF log-linear L2Res from \PYTHIA8 and \HERWIGpp, after each has been corrected for their own ISR+FSR correction \cite{Khachatryan:2016kdb}.
+        \item[Flavour]  The flavour uncertainties are based on \PYTHIA6 Z2/\HERWIGpp2.3 differences in \cPqu\cPqd\cPqs/\cPqc/\cPqb-quark and gluon responses \cite{Khachatryan:2016kdb}. Uncertainties for the following jet flavours are used:
+        \begin{enumerate}
+                \item FlavorPureGluon
+                \item FlavorPureQuark
+                \item FlavorPureCharm
+                \item FlavorPureBottom
+        \end{enumerate}
+\end{description}
+
+\item[\cPqb-tagging] The nominal efficiency expected in the simulation is corrected by \pt-dependent scale factors provided by the BTV Physics Object Group \cite{twiki:BTV}. Depending on the flavour of each jet, the \cPqb-tagging decision is updated according to the scale factor measured. The scale factor is also varied according to its uncertainty. The main effect of this systematic is the demotion/promotion of candidate \cPqb-jets and thus a migration of events used for analysis.
+
+\item[Tracking efficiency]
+The TRK and MUO Physics Object Groups have derived tracking efficiency scale factors as function of the track $\eta$ or the reconstructed vertex multiplicity. The later is solely available for muons and shown in Fig.~\ref{fig:mutksf}, while Table~\ref{tab:dstartsf} summarises the scaling factors obtained from $D^*$ decays. All these scale factors are run-dependent (BCDEF and GH data-taking periods are separated).
+
+\begin{figure}[htp]
+\centering
+\subfloat[][]{\includegraphics[width=0.5\textwidth]{fig/tkeff}}
+\caption{Muon tracking efficiency scale factors from the MUO POG~\cite{twiki:MUO}.}
+\label{fig:mutksf}
+\end{figure}
+
+\begin{table}[htb]
+\begin{center}
+\caption{Tracking efficiency for tracks with $\pt>1\GeV$ based on~\cite{CMS-AN-2015-048,twiki:trkpogeff,CMS-DP-2016-012}.
+Courtesy of V. Mariani.}
+\label{tab:dstartsf}
+\begin{tabular}{llll}
+\hline
+Pseudo-rapidity & $|\eta|<0.8$ & $0.8<|\eta|<1.5$ & $|\eta|>1.5$ \\
+\hline
+BCDEF & 1.01 $\pm$ 0.03 & 1.08 $\pm$ 0.04 & 0.93 $\pm$ 0.04 \\
+GH & 1.04 $\pm$ 0.03 & 1.07 $\pm$ 0.06 & 1.12 $\pm$ 0.05 \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+The strategy followed to assign a systematic uncertainty based on these scale factors is to either:
+
+\begin{itemize}
+\item remove randomly reconstructed tracks in an event if the scale factor is $<1$
+\item promote an un-matched generator-level charged particle with status 1 (stable) to a track with the same
+three momentum as the generated and assigned with a charged pion mass if the scale factor is $>$1
+\end{itemize}
+
+To decide if a track (generator particle) should be removed (promoted) a uniform PDF in the [0,1] range is sampled randomly. If the probability exceeds the scale factor (2-scale factor), the track (generator particle) is removed (promoted). In order to reflect the possible different performance in the BCDEF and GH eras for each event a random number generator is used to assign the era (according to the relative proportion of integrated luminosity in each era) so that different scale factors are applied to evaluate the uncertainty.
+
+In the process described above we consider the effect of applying twice the possible correction from the scale factor in order to cover the uncertainty on the scale factor itself. Thus in the evaluation above we change $SF\rightarrow SF^2$. In each bin we take then the maximum variation induced as the estimate of the uncertainty 
+
+Figure~\ref{fig:tkeffsysts} shows the expected effect on the charged multiplicity which is the distribution which is more severely affected by this systematic. The relative change induced in the charge multiplicity distribution is expected to be of the same order of that observed in the data.
+
+\begin{figure}[!htp]
+\centering
+\subfloat[][]{\includegraphics[width=0.49\textwidth]{fig/chmult_eras}}
+\subfloat[][]{\includegraphics[width=0.49\textwidth]{fig/chmult_tkeffsyst}}
+\caption{
+Left: comparison of the track multiplicity distribution in eras BCDEF and GH in data.
+Right: comparison of the nominal track multiplicity expected in simulation with the one expected after considering the uncertainty on the tracking efficiency scale factors discussed in the text.
+}
+\label{fig:tkeffsysts}
+\end{figure}
+
+The distributions of \pullangle from the leading jet \leadingjet to the 2nd leading jet \scndleadingjet under each upside and downside experimental systematic together with the nominal distribution are plotted in Fig. \ref{fig:MC13TeV_TTJets_jec} - \ref{fig:MC13TeV_TTJets_tracking}.
+
+\begin{figure}[hbtp]
+\centering
+\def\twidth{0.45}
+\includegraphics[width=\twidth\textwidth]{fig/nuisanceplots_SM/MC13TeV_TTJets_jer}
+\caption{The nominal distribution of the pull angle from \leadingjet to \scndleadingjet with all jet constituents and at all \DeltaR and the distributions with jet energy resolution uncertainties $\ttbar\ jer\ down$ and $\ttbar\ jer\ up$.}
+\label{fig:MC13TeV_TTJets_jer}
+\end{figure}
+
+  \begin{figure}[hbtp]
+  \centering
+  \def\twidth{0.45}
+  \subfloat[$\ttbar\ jec\_CorrelationGroupUncorrelated\ down$ and $\ttbar\ jec\_CorrelationGroupUncorrelated\ up$.]{
+    \includegraphics[width=\twidth\textwidth]{fig/nuisanceplots_SM/MC13TeV_TTJets_jec_CorrelationGroupUncorrelated}
+    \label{fig:MC13TeV_TTJets_jec_CorrelationGroupUncorrelated}
+  }%
+  \subfloat[$\ttbar jec\_CorrelationGroupMPFInSitu\ down$ and $\ttbar\ jec\_CorrelationGroupMPFInSitu\ up$.]{
+    \includegraphics[width=\twidth\textwidth]{fig/nuisanceplots_SM/MC13TeV_TTJets_jec_CorrelationGroupMPFInSitu}
+    \label{fig:MC13TeV_TTJets_jec_CorrelationGroupMPFInSitu}
+  }\\
+ \subfloat[$\ttbar\ jec\_RelativeFSR\ down$ and $\ttbar\ jec\_RelativeFSR\ up$.]{
+    \includegraphics[width=\twidth\textwidth]{fig/nuisanceplots_SM/MC13TeV_TTJets_jec_RelativeFSR}
+    \label{fig:MC13TeV_TTJets_jec_RelativeFSR}
+  }%
+ \subfloat[$\ttbar\ jec\_FlavorPureGluon\ down$ and $\ttbar\ jec\_RelativeFSR\ up$.]{
+    \includegraphics[width=\twidth\textwidth]{fig/nuisanceplots_SM/MC13TeV_TTJets_jec_FlavorPureGluon}
+    \label{fig:MC13TeV_TTJets_jec_FlavorPureGluon}
+  }\\
+ \subfloat[$\ttbar\ jec\_FlavorPureQuark\ down$ and $\ttbar\ jec\_FlavorPureQuark\ up$.]{
+    \includegraphics[width=\twidth\textwidth]{fig/nuisanceplots_SM/MC13TeV_TTJets_jec_FlavorPureQuark}
+    \label{fig:MC13TeV_TTJets_jec_FlavorPureQuark}
+  }%
+ \subfloat[$\ttbar\ jec\_FlavorPureCharm\ down$ and $\ttbar\ jec\_FlavorPureCharm\ up$.]{
+    \includegraphics[width=\twidth\textwidth]{fig/nuisanceplots_SM/MC13TeV_TTJets_jec_FlavorPureCharm}
+    \label{fig:MC13TeV_TTJets_jec_FlavorPureCharm}
+  }
+  \caption{The nominal distribution of the pull angle from \leadingjet to \scndleadingjet with all jet constituents and at all \DeltaR and the distributions with jet energy correction uncertainties.}
+  \label{fig:MC13TeV_TTJets_jec}
+
+\end{figure}
+
+  \begin{figure}[hbtp]
+  \centering
+  \def\twidth{0.45}
+  \ContinuedFloat
+  \subfloat[$\ttbar\ jec\_FlavorPureBottom\ down$ and $\ttbar\ jec\_FlavorPureBottom\ up$.]{
+    \includegraphics[width=\twidth\textwidth]{fig/nuisanceplots_SM/MC13TeV_TTJets_jec_FlavorPureBottom}
+    \label{fig:MC13TeV_TTJets_jec_FlavorPureBottom}
+  }
+  \caption{The nominal distribution of the pull angle from \leadingjet to \scndleadingjet with all jet constituents and at all \DeltaR and the distribution with jet energy correction uncertainties.}
+\end{figure}
+
+  \begin{figure}[hbtp]
+  \def\twidth{0.45}
+  \centering
+  \subfloat[$\ttbar\ btag\_heavy\ down$ and $\ttbar\ btag\_heavy\ up$.]{
+    \includegraphics[width=\twidth\textwidth]{fig/nuisanceplots_SM/MC13TeV_TTJets_btag_heavy}
+    \label{fig:MC13TeV_TTJets_btag_heavy}
+  }%
+  \subfloat[$\ttbar\ btag\_light\ down$ and $\ttbar\ btag\_light\ up$.]{
+    \includegraphics[width=\twidth\textwidth]{fig/nuisanceplots_SM/MC13TeV_TTJets_btag_light}
+    \label{fig:MC13TeV_TTJets_btag_light}
+  }\\
+ \subfloat[$\ttbar\ csv\_heavy\ down$ and $\ttbar\ csv\_heavy\ up$.]{
+    \includegraphics[width=\twidth\textwidth]{fig/nuisanceplots_SM/MC13TeV_TTJets_csv_heavy}
+    \label{fig:MC13TeV_TTJets_csv_heavy}
+  }%
+ \subfloat[$\ttbar\ csv\_light\ down$ and $\ttbar\ csv\_light\ up$.]{
+    \includegraphics[width=\twidth\textwidth]{fig/nuisanceplots_SM/MC13TeV_TTJets_csv_light}
+    \label{fig:MC13TeV_TTJets_csv_light}
+  }
+  \caption{The nominal distribution of the pull angle from \leadingjet to \scndleadingjet with all jet constituents and at all \DeltaR and the distribution with \cPqb-tagging uncertainties.}
+  \label{fig:MC13TeV_TTJets_btag_csv}
+
+\end{figure}
+
+\begin{figure}[hbtp]
+\centering
+\def\twidth{0.45}
+\includegraphics[width=\twidth\textwidth]{fig/nuisanceplots_SM/MC13TeV_TTJets_tracking}
+\caption{The nominal distribution of the pull angle from \leadingjet to \scndleadingjet with all jet constituents and at all \DeltaR and the distribution with tracking efficiency uncertainties $\ttbar\ tracking\ down$ and $\ttbar\ tracking\ up$.}
+\label{fig:MC13TeV_TTJets_tracking}
+\end{figure}
+
+\end{description}
+\clearpage
+\section{Theoretical uncertainties}
+\begin{description}
+\item[\EVTGEN] \EVTGEN is a Monte Carlo event generator that simulates the decays of heavy flavour particles, primarily $B$ and $D$ mesons. It uses amplitudes instead of probabilities. References are available in \cite{evtgen}, \cite{Lange:2001uf}.
+
+\item[Hadroniser choice] We check the effect of using HERWIG ++\cite{Bahr:2008pv}, tune EE5C\cite{Seymour:2013qka}, instead of \PYTHIA 8 CUET2P8M4. The key difference arises from the hadronisation model - \PYTHIA uses the string model, while \HERWIGpp uses the cluster model \cite{Sjostrand:hadronisation}. 
+
+  Privately produced samples based on \SHERPA \cite{Gleisberg:2008ta}, \DIRE \cite{Hoche:2015sya}, \HERWIG 7 \cite{Bellm:2015jjp} will be added in a later stage.
+
+\item[Top quark mass] The most precise measurement of the top quark mass by CMS yields a total uncertainty of $\pm 0.49 \text{GeV}$ \cite{Khachatryan:2015hba}. We consider however a conservative $\pm 1 \text{GeV}$. In the possibility that some of these results are used in the future we would like to avoid that they bias too much to a specific top mass.
+
+\item[\PYTHIA tunes] The following \PYTHIA tunes are used:
+  
+  \begin{description}
+    
+  \item[Matrix Element + Parton Shower matching scheme] The default simulation is based on \POWHEG. The so-called hdamp parameter is varied according to the range determined in \cite{CMS-PAS-TOP-13-007}.
+
+  \item[Parton shower scale] Alternative \POWHEG + \PYTHIA 8 samples where the parton shower scale choice is varied by a factor of 0.5 and 2 for ISR and FSR separately, are used in the analysis. This affects the fragmentation and hadronization of the jets initiated by the matrix element calculation as well as the emmission of extra jets by the hadroniser.
+
+  \item[Colour reconnection model] We vary the colour reconnection model with respect to the default using alternatives including the resonant decay products in possible reconnections to the UE. The default simulation (MPI-based colour reconnection) has this effect excluded. We examine three alternative models for CR: the so-called gluon move \cite{Argyropoulos:2014zoa}, the QCD-based models\cite{Christiansen:2015yqa}, and ERDOn. 
+
+  \item[Unerlying Event (UE) variations] The default parameters in the CUETP8M2T4 tune are varied according to their uncertainty and the effect on the unfolding is taken as an estimate of the systematic uncertainty.
+  \end{description}
+  The setups of the \PYTHIA tunes described herein are summarised in Table \ref{tab:mcsetups_detailed}
+\end{description}
+
+Table \ref{tab:mcsystdatasets} summarises the simulation samples used for the theoretical systematics.
+
+The distributions of \pullangle from the leading jet \leadingjet to the 2nd leading jet \scndleadingjet under each theoretical uncertainty or upside or downside \PYTHIA tune together with the nominal distribution are plotted in Fig. \ref{fig:MC13TeV_TTJets_evtgen} - \ref{fig:MC13TeV_TTJets_CR}.
+
+\input{tables/mc_variations.tex}
+
+\begin{table}[!htp]
+\begin{center}
+\caption{Simulation samples used for systematics, from RunIISummer16MiniAODv2-PUMoriond17\_80X\_mcRun2\_asymptotic\_2016\_TrancheIV\_v6.}
+\label{tab:mcsystdatasets}
+\hspace*{-1cm}
+\begin{tabular}{ llr }
+\hline
+Signal variation & Dataset & $\sigma[pb]$\\
+\hline
+\multirow{4}{*}{Parton shower scale}
+& {\small TT\_TuneCUETP8M2T4\_13TeV-powheg-isrup-pythia8}     & 832\\
+& {\small TT\_TuneCUETP8M2T4\_13TeV-powheg-isrdown-pythia8}   & 832\\
+& {\small TT\_TuneCUETP8M2T4\_13TeV-powheg-fsrup-pythia8}     & 832\\
+& {\small TT\_TuneCUETP8M2T4\_13TeV-powheg-fsrup-pythia8}     & 832\\\hline
+\multirow{2}{*}{Underlying event}
+& {\small TT\_TuneCUETP8M2T4up\_13TeV-powheg-pythia8 }        & 832\\
+& {\small TT\_TuneCUETP8M2T4down\_13TeV-powheg-pythia8}       & 832\\\hline
+\multirow{2}{*}{ME-PS matching scale (hdamp)}
+& {\small TT\_hdampUP\_TuneCUETP8M2T4\_13TeV-powheg-pythia8}  & 832\\
+& {\small TT\_hdampDOWN\_TuneCUETP8M2T4\_13TeV-powheg-pythia8}& 832 \\\hline
+\multirow{3}{*}{Color reconnection}
+& {\small TT\_TuneCUETP8M2T4\_erdON\_13TeV-powheg-pythia8 }   & 832\\
+& {\small TT\_TuneCUETP8M2T4\_QCDbasedCRTune\_erdON\_13TeV-powheg-pythia8} & 832\\
+& {\small TT\_TuneCUETP8M2T4\_GluonMoveCRTune\_13TeV-powheg-pythia8} & 832\\\hline
+\multirow{2}{*}{Top mass}
+& {\small TT\_TuneCUETP8M2T4\_mtop1715\_13TeV-powheg-pythia8 }& 832\\
+& {\small TT\_TuneCUETP8M2T4\_mtop1735\_13TeV-powheg-pythia8} & 832\\\hline
+\HERWIGpp & {\small TT\_TuneEE5C\_13TeV-powheg-herwigpp}      & 832\\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+\begin{figure}[hbtp]
+  \centering
+  \def\twidth{0.45}
+  \includegraphics[width=\twidth\textwidth]{fig/nuisanceplots_SM/MC13TeV_TTJets_evtgen}
+  \caption{The nominal distribution of the pull angle from \leadingjet to \scndleadingjet with all jet constituents and at all \DeltaR and the distributions with uncertainty arising from assuming the decay model of heavy flavour particles used in \EVTGEN.}
+  \label{fig:MC13TeV_TTJets_evtgen}
+\end{figure}
+
+\begin{figure}[hbtp]
+  \centering
+  \def\twidth{0.45}
+  \includegraphics[width=\twidth\textwidth]{fig/nuisanceplots_SM/MC13TeV_TTJets_herwig}
+  \caption{The nominal distribution of the pull angle from \leadingjet to \scndleadingjet with all jet constituents and at all \DeltaR and the distribution with uncertainty arising from assuming the hadronisation model used in \HERWIGpp.}
+  \label{fig:MC13TeV_TTJets_herwig}
+\end{figure}
+
+\begin{figure}[hbtp]
+  \centering
+  \def\twidth{0.45}
+  \includegraphics[width=\twidth\textwidth]{fig/nuisanceplots_SM/MC13TeV_TTJets_topmass}
+  \caption{The nominal distribution of the pull angle from \leadingjet to \scndleadingjet with all jet constituents and at all \DeltaR and the distribution with uncertainties arising from $\pm$ 1 Gev variations in the mass of the \cPqt quark.}
+  \label{fig:MC13TeV_TTJets_topmass}
+\end{figure}
+
+\begin{figure}[hbtp]
+  \centering
+  \def\twidth{0.45}
+  \includegraphics[width=\twidth\textwidth]{fig/nuisanceplots_SM/MC13TeV_TTJets_hdamp}
+  \caption{The nominal distribution of the pull angle from \leadingjet to \scndleadingjet with all jet constituents and at all \DeltaR and the distribution with uncertainty from varying the hdamp parameter in the Parton Shower + Matrix Element matching scheme.}
+  \label{fig:MC13TeV_TTJets_hdamp}
+\end{figure}
+
+\begin{figure}[hbtp]
+  \def\twidth{0.45}
+  \centering
+  \includegraphics[width=\twidth\textwidth]{fig/nuisanceplots_SM/MC13TeV_TTJets_ue}
+  \caption{The nominal distribution of the pull angle from \leadingjet to \scndleadingjet with all jet constituents and at all \DeltaR and the distribution with uncertainties in the Underlying Event.}
+  \label{fig:MC13TeV_TTJets_ue}
+\end{figure}
+
+\begin{figure}[hbtp]
+  \def\twidth{0.45}
+  \centering
+
+  \subfloat[$\ttbar\ ISRdown$ and $\ttbar\ ISRup$.]{
+    \includegraphics[width=\twidth\textwidth]{fig/nuisanceplots_SM/MC13TeV_TTJets_isr}
+    \label{fig:MC13TeV_TTJets_ISR}
+  }%
+  \subfloat[$\ttbar\ FSRdn$ and $\ttbar\ FSRup$.]{
+    \includegraphics[width=\twidth\textwidth]{fig/nuisanceplots_SM/MC13TeV_TTJets_fsr}
+    \label{fig:MC13TeV_TTJets_FSR}
+  }%
+  \caption{The nominal distribution of the pull angle from \leadingjet to \scndleadingjet with all jet constituents and at all \DeltaR and the distributions with parton shower scale uncertainties.}
+  \label{fig:MC13TeV_TTJets_PS}
+\end{figure}
+
+\begin{figure}[hbtp]
+  \def\twidth{0.45}
+  \centering
+  \subfloat[$\ttbar\ ERDOn$.]{
+    \includegraphics[width=\twidth\textwidth]{fig/nuisanceplots_SM/MC13TeV_TTJets_erdON}
+    \label{fig:MC13TeV_TTJets_ERDOn}
+  }%
+  \subfloat[$\ttbar\ QCDbased$.]{
+    \includegraphics[width=\twidth\textwidth]{fig/nuisanceplots_SM/MC13TeV_TTJets_qcdBased}
+    \label{fig:MC13TeV_TTJets_QCDbased}
+  }\\
+  \subfloat[$\ttbar\ gluonmove$.]{
+    \includegraphics[width=\twidth\textwidth]{fig/nuisanceplots_SM/MC13TeV_TTJets_gluonMove}
+    \label{fig:MC13TeV_TTJets_gluonmove}
+  }
+  \caption{The nominal distribution of the pull angle from \leadingjet to \scndleadingjet with all jet constituents and at all \DeltaR and the distribution with uncertainties from colour reconnection.}
+  \label{fig:MC13TeV_TTJets_CR}
+
+\end{figure}

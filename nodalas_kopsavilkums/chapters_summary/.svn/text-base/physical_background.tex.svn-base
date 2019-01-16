@@ -1,0 +1,84 @@
+
+The cross section of top quark pair production in proton-proton collisions at $\sqrt{s}=$13\TeV is measured to be 746 pb \cite{Khachatryan:2015uqb}. Using the relationship
+
+\begin{equation}
+N=\sigma\int L(t)dt
+\end{equation}
+
+at 36.5\fbinv\ integrated luminosity $27.2\times10^{6}$ of such pairs are expected to be created. 
+
+The top quark - antiquark pair is created at the LHC predominantly by gluon fusion. The top quark decays by emitting a weak \PW\ boson and a bottom (\cPqb) quark. Colour connected jets are emitted in the hadronic decay of the \PW\ boson (Fig. \ref{fig:ttbar_cf}). The quarks originating these jets have opposite momenta in their CM of mass frame. As the quarks try to separate, their kinetic energy is transfered to the colour field. The extra energy in the colour field equal to about $m_{\PW}$ (80.4\GeV) is expended to create new particles. A simplified portrayal of the birth of a new meson and a new baryon is given in Fig. \ref{fig:colour_field}. The following species of particles are created:
+
+  \begin{table}[h!]
+
+    \centering
+    \begin{tabular}{ l l l l }
+      \textbf{particle}  & \textbf{mass}[GeV]  & \textbf{lifetime}[s] & \textbf{observable signal}\\
+      \Pgpz              & 135.0               & $8.5\times10^{-27}$  & 2\cPgg absorbed at ECAL\\
+      \Pgppm             & 139.6               & $2.6\times10^{-8}$   & tracker, ECAL, HCAL showers\\
+      \PKzS              & 497.6               & $8.95\times10^{-11}$ & ECAL, HCAL showers\\
+      \PKzL              & 497.6               & $5.1\times10^{-8}$   & ECAL, HCAL showers\\
+      \PKpm              & 493.7               & $1.2\times10^{-8}$   & tracker, ECAL, HCAL showers\\
+      \Pn                & 939.6               & $881.5$              & ECAL, HCAL showers\\
+      \Pp                & 938.3               & $\infty$             & tracker, ECAL, HCAL showers\\
+    \end{tabular}
+    \caption{New particles created in the colour field between energetic colour connected quarks originating from a hadronic decay of the \PW\ boson}
+    \label{tab:particles}
+
+  \end{table}
+
+  \begin{figure}[hbtp]
+
+    \centering
+    \includegraphics[width=0.4\textwidth]{fig/ttbar_cf_cropped.pdf}
+    \caption{Colour flow in the decay of a top quark pair.}
+    \label{fig:ttbar_cf}
+    
+  \end{figure}
+
+  \begin{figure}[hbtp]
+    \centering
+    \includegraphics[width=1.0\textwidth]{fig/colour_field_full.pdf}
+    \caption{Creation of hadrons in the colour field of two quarks.}
+    \label{fig:colour_field}
+
+  \end{figure}
+
+  The respective resonances are clearly discernible at the generation level (Figure \ref{fig:mass_resonances}). Only the neutral pion decays before being directly observed in the detector.
+
+  \begin{figure}[hbtp]
+    \centering
+    \includegraphics[width=0.4\linewidth]{fig/individual_plots/JetConst_M_allconst_gen_leading_jet.png}
+    \caption{Resonances corresponding to particles listed in Table \ref{tab:particles}.}
+    \label{fig:mass_resonances}
+  \end{figure}
+
+  The number of these particles created constituting the leading jet is is given in Fig. \ref{fig:number}, while the ratio of electrically charged to the total number of particles is given in Fig. \ref{fig:charged_content}.
+
+  \begin{figure}[hbtp]
+    \centering
+    \includegraphics[width=0.4\linewidth]{fig/individual_plots/JetConst_N_allconst_reco_leading_jet.png}
+    \caption{Total number of particles constituting the leading jet.}
+    \label{fig:number}
+
+\end{figure}
+% \begin{linenomath}
+     \begin{figure}[hbtp]
+     \centering
+     \includegraphics[width=0.4\linewidth]{fig/individual_plots/JetConst_EventChargedContentE_reco_leading_jet.png}
+     \caption{Ratio of the number of charged particles to the total number of particles constituting the leading jet.}
+  \label{fig:charged_content}
+   \end{figure}
+ % \end{linenomath}
+  \subsection{Colour octet W boson}
+
+  A colour-octet \PW\ boson of mass equal to $m_{\PW}$ is assumed. This boson would couple in colour field the light quarks to the hadronic \cPqb\ and the hadronic \cPqt, while the light quarks would become uncoupled from each other (Fig. \ref{fig:ttbar_cf_octet}).
+Although the existence of such a particle has not been confirmed, massive coulor-octet vector bosons (colourons) are predicted in a variety of models, including axigluon models, topcolour models, technicolour models with coloured technifermions, flavour-universal and chiral colouron models, and extra-dimensional models with $KK$ gluons \cite{Chivukula:2013xla}.  These states have also recently been suspected as a potential source (\cite{Ferrario:2009bz}, \cite{Frampton:2009rk}) of the top-quark forward-backward asymmetry observed by the CDF collaboration (\cite{Aaltonen:2008hc}, \cite{Aaltonen:2011kc}). Searches for resonances in the dijet mass spectrum at the LHC at $\sqrt{s}$=7-8\TeV imply that the lower bound on such a boson is now 2-3 \TeV (\cite{Han:2010rf}, \cite{Haisch:2011up}, \cite{Chatrchyan:2011ns}, \cite{Aad:2011fq}), while more recent LHC searches at $\sqrt{s}$=13\TeV with integrated luminosity 27 \fbinv\ place an even higher lower bound of 6.1\TeV (\cite{CMS:2017xrr}).
+  
+  \begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.4\textwidth]{fig/ttbar_cf_flip_cropped.pdf}
+  \caption{Colour flow in the decay of a top quark pair involving a hypothetical colour octet \PW boson}
+  \label{fig:ttbar_cf_octet}
+\end{figure}
+

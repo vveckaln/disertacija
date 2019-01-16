@@ -1,0 +1,179 @@
+The goal of event selection is to separate signal from background. Separate selection is applied to detector level MC events and generator level MC events. Simulated events are tagged as passing only the reconstruction-based, only the particle-based or both selections. The selection for data is that of the detector level MC events.
+
+\section{Detector level}
+\label{sec:detector_level}
+
+The event selection is based on the \ttbar$\to$lepton+jets decay topology where one of the \PW bosons decays to a charged lepton ($\ell=e, \mu$) and a corresponding neutrino, while the other \PW boson decays to quarks yielding jets.
+
+The particle flow PF algorithm is used for reconstruction of final state objects~\cite{Sirunyan:2017ulk}. This algorithm combines signals from all sub-detectors to enhance the reconstruction performance and it allows to identify muons, electrons, photons, charged hadrons
+and neutral hadrons produced after a \Pp\Pp collision.
+
+Data samples are collected using the single lepton trigger paths of the High Level Trigger summarised in Table~\ref{tab:triggers}.
+
+\begin{table}[htp]
+\centering
+\caption{Trigger paths used for online selection in the analysis.}
+\label{tab:triggers}
+\begin{threeparttable}
+\begin{tabular}{lllm{4cm}l}\hline
+Final state                 & Path                                & Run range & Function & L1 seed\\\hline
+e+jets                      & HLT\_Ele32\_eta2p1\_WPTight\_Gsf\_v & all       & \small Select $e$ with $\left|\eta\right|<2.1$ and $\pt>32$ with the tight working point and using the GSF\tnote{a} to reconstruct tracks
+                                                                                         & \small\makecell{ L1\_SingleEG40\\OR\\L1\_SingleIsoEG22er\\OR\\L1\_SingleIsoEG24er\\OR\\L1\_SingleIsoEG24\\OR\\L1\_SingleIsoEG26}\\\hline
+\multirow{2}{*}{$\mu$+jets}
+                            & HLT\_IsoMu24\_v                     & all       & \small Select isolated $\mu$ with $\pt>20$ GeV using L3 tracker algorithm\tnote{b}         & \multirow{2}{*}{\small L1\_SingleMu18}\\
+                            & HLT\_IsoTkMu24\_v                   & all       & \small Select isolated $\mu$ with $\pt>20$ GeV using HLT tracker muon algorithm\tnote{c}
+                            & \\\hline
+\end{tabular}
+\footnotesize
+\begin{tablenotes}
+\item[a] The bremsstrahlung energy loss distribution of electrons propagating in matter is highly non Gaussian. In such conditions the Kalman Filter which relies solely on Gaussian distributions fails. Therefore the Gaussian Sum Filter (GSF) \cite{Adam:2003kg} has been developed. In GSF the bremsstrahlun energy less is modelled as a Gaussian mixture rather than single Gaussian.
+\item[b] Combines muons reconstructed in HLT (Level 2) with information from the inner tracker.
+\item[c] Employs an alogorithm similar to the tracker muon algorithm but optimised for processing speed.
+\end{tablenotes}
+\end{threeparttable}
+
+\end{table}
+
+Offline, we require exactly one tight electron/muon with $\pt > 34/26\GeV$ and $|\eta| < 2.1/2.4$. The tight working point allows to identify an electron/muon when it is really an electron/muon, important in a high background environment.
+The event is vetoed in the presence of a second loose lepton with $\pt > 15\GeV$ and $|\eta| < 2.4$.
+
+The events are required to have in addition four jets clustered with the anti-$k_{t}$ algorithm with jet separation $R=0.4$ and charged hadron subtraction\footnote{The method of charged hadron subtraction can be extended further by the pileup per particle identification (PUPPI) where each particle is assigned a weight to describe the degree to which it is pileup-like \cite{Bertolini:2014bba}.} (we use shorthand AK4PFchs) with $\pt>30\GeV$  and $|\eta|<2.4$. The motivation for selecting high \pt physics objects is that the detector efficiency drops at low \pt.
+
+At least two jets are required to be \cPqb-tagged by the Combined Secondary Vertex algorithm (CSVv2) medium working point. Heavy-quarks such as the \cPqb quark are identified by formation of secondary vertices. The $B$ mesons have a lifetime of about 1.5 ps. It means they travel away fro the primary vertex at the point of collision $\sim$ 1 cm before decaying. From the charged decay products of the $B$ mesons the secondary vertex is identified. This process is illustrated in Fig. \ref{fig:CMS-BTV-16-002_Figure_001}.
+
+\begin{figure}[hbtp]
+\centering
+\includegraphics[width=0.8\textwidth]{fig/CMS-BTV-16-002_Figure_001.pdf}
+\caption{When a prompt \cPqb is created in a collision at the primary vertex (PV), it hadronises and the unstable $B$ meson usually travels some discernible distance away before it decays, the charged decay products creating tracks that originate from the secondary vertex. We measure the impact parameter (IP), e.g. along the direction of the beam. \cite{Sirunyan:2017ezt}.}
+\label{fig:CMS-BTV-16-002_Figure_001}
+\end{figure}
+
+The CSVv2 is a retrained and optimised version of the Combined Secondary Vertex algorithm used in Run I \cite{Chatrchyan:2012jua}, which provides discrimination also in cases when no secondary vertices are found. A higher discriminator value is associated with a higher efficiency (a higher probability that a \cPqb jet will be identified as a \cPqb jet). This is illustrated in Fig. \ref{fig:CMS-BTV-16-002_Figure_028-b}.
+
+\begin{figure}[hbtp]
+\centering
+\includegraphics[width=0.5\textwidth]{fig/CMS-BTV-16-002_Figure_028-b.pdf}
+\caption{\cPqb tagging efficiency at the HLT as a function of the offline CSVv2 discriminator value. \cite{Sirunyan:2017ezt}}
+\label{fig:CMS-BTV-16-002_Figure_028-b}
+\end{figure}
+
+However an increased efficiency comes at a cost of identifying non-\cPqb objects, such \cPqc, \cPqs, \cPqu, \cPqd and \Pg jets as a \cPqb jet. The misidentification probability as a function of efficiency is identified in Fig. \ref{fig:CMS-BTV-16-002_Figure_029}. A medium working point is chosen as a compromise between efficiency and misidentification probability.
+
+\begin{figure}[hbtp]
+\centering
+  \def\twidth{0.45}
+  \centering
+  \subfloat[Comparison of the misidentification probability for light-flavour jets versus the \cPqb tagging efficiency.]{
+    \includegraphics[width=\twidth\textwidth]{fig/CMS-BTV-16-002_Figure_029-a.pdf}
+    \label{fig:CMS-BTV-16-002_Figure_029-a}
+  }%
+  \subfloat[Comparison of the misidentification probability for $c$ jets versus the \cPqb tagging efficiency.]{
+    \includegraphics[width=\twidth\textwidth]{fig/CMS-BTV-16-002_Figure_029-b.pdf}
+    \label{fig:CMS-BTV-16-002_Figure_029-b}
+  }
+\caption{Comparison of the misidentification probability for light-flavour jets (left) and $c$ jets (right) versus the \cPqb tagging efficiency at the HLT and offline for the CSVv2 algorithm applied on simulated \ttbar events for which the scalar sum of the jet \pt for all jets in the event exceeds 250 GeV. \cite{Sirunyan:2017ezt}}
+\label{fig:CMS-BTV-16-002_Figure_029}
+\end{figure}
+
+
+At least two untagged (light) jets are required to yield a \PW boson candidate with an invariant mass $\left|m_{jj}-80.4\right|<15\GeV$.
+
+The event yields at different selection stages are shown in Fig. \ref{fig:_reco_selection} and Table \ref{tab:yields}.  Table \ref{tab:yields_cflip} shows the event yields for the colour octet \PW sample. The estimated signal fraction of the signal increases from 0.1 \%in the initial selection stage to 94.2 \% at the final selection stage - this is a measure of efficiency of our selection.
+
+
+
+\figureEML{/reco/}{_reco_selection}{Event yields at different stages of selection: $1 \ell$, $1 \ell + \geq 4 j$, $1 \ell + \geq 4 j (2 b)$, $1 \ell + \geq 4 j (2 b, 2 lj)$.}
+
+\input{chapters/event_yields_table.txt}
+
+\input{chapters/event_yields_table_cflip.txt}
+
+\clearpage
+\section{Control plots}
+\label{sec:control_plots}
+
+This section shows selected control plots at various stages of event selection - Fig. \ref{fig:1_1l_l0pt} to Fig. \ref{fig:L4_1l4j2b2w_twcandm}.
+
+\figureEML{control}{1_1l_l0pt}
+{Distribution of the lepton \pt after selecting exatcly one lepton.}
+
+\figureEML{control}{1_1l_l0eta}
+{Distribution of the lepton $\eta$ after selecting exactly one lepton.}
+
+\figureEML{control}{1_1l_njets}
+{Distribution of the number of jets after selecting exactly one lepton.}
+
+\figureEML{control}{2_1l4j_njets}
+{Distribution of the number of jets after selecting exactly one lepton and 4 jets.}
+
+\figureEML{control}{2_1l4j_nbjets}
+{Distribution of the number of jets after selecting exactly one lepton and 4 jets.}
+
+\figureEML{control}{4_1l4j2b2w_l0pt}
+{Distribution of the lepton \pt after selecting exatcly one lepton, at least 4 jets, 2 \cPqb-tagged jets and 2 light jets.}
+
+\figureEML{control}{4_1l4j2b2w_l0eta}
+{Distribution of the lepton $\eta$ after selecting exactly one lepton, at least 4 jets, 2 \cPqb-tagged jets and 2 light jets.}
+
+\figureEML{control}{4_1l4j2b2w_njets}
+{Distribution of the number of jets after selecting exactly one lepton, at least 4 jets, 2 \cPqb-tagged jets and 2 light jets.}
+
+\figureEML{control}{4_1l4j2b2w_met}
+{Distribution of the missing transverse momentum after selecting exactly one lepton, at least 4 jets, 2 \cPqb-tagged jets and 2 light jets.}
+
+\begin{figure}[hbtp]
+\centering
+  \def\twidth{0.33}
+  \centering
+  \subfloat[jet 0]{
+    \includegraphics[width=\twidth\textwidth]{fig/histos/L/control/L4_1l4j2b2w_j0pt.png}
+    \label{fig:L4_1l4j2b2w_j0pt}
+  }%
+  \subfloat[jet 1]{
+    \includegraphics[width=\twidth\textwidth]{fig/histos/L/control/L4_1l4j2b2w_j1pt.png}
+    \label{fig:L4_1l4j2b2w_j1pt}
+  }%
+  \subfloat[jet 2]{
+    \includegraphics[width=\twidth\textwidth]{fig/histos/L/control/L4_1l4j2b2w_j2pt.png}
+    \label{fig:L4_1l4j2b2w_j2pt}
+  }\\
+    \subfloat[jet 3]{
+    \includegraphics[width=\twidth\textwidth]{fig/histos/L/control/L4_1l4j2b2w_j3pt.png}
+    \label{fig:L4_1l4j2b2w_j3pt}
+  }%
+  \subfloat[jet 4]{
+    \includegraphics[width=\twidth\textwidth]{fig/histos/L/control/L4_1l4j2b2w_j4pt.png}
+    \label{fig:L4_1l4j2b2w_j4pt}
+  }%
+  \subfloat[jet 5]{
+    \includegraphics[width=\twidth\textwidth]{fig/histos/L/control/L4_1l4j2b2w_j5pt.png}
+    \label{fig:L4_1l4j2b2w_j4pt}
+  }%
+
+\caption{Distribution of the jet \pt in the combined lepton + jets channel after selecting exactly one lepton, at least 4 jets 2 \cPqb-tagged jets and 2 light jets. Jets are ordered according to their \pt, with jet 0 having the highest \pt and jet 5 having the lowest \pt.}
+\label{fig:L4_1l4j2b2w_j4pt}
+\end{figure}
+
+\begin{figure}[hbtp]
+\centering
+  \def\twidth{0.33}
+  \centering
+  \subfloat[Mass of the \PW boson candidate.]{
+    \includegraphics[width=\twidth\textwidth]{fig/histos/L/control/L4_1l4j2b2w_wcandm.png}
+    \label{fig:L4_1l4j2b2w_wcandm}
+  }%
+  \subfloat[Mass of the top quark candidate.]{
+    \includegraphics[width=\twidth\textwidth]{fig/histos/L/control/L4_1l4j2b2w_tcandwcutm.png}
+    \label{fig:L4_1l4j2b2w_tcandwcutm}
+  }%
+\caption{Distribution of the mass of the \PW boson candidate and top quark candidate (after cuts in the the \PW mass) after selecting exactly one lepton, at least 4 jets 2 \cPqb-tagged jets and 2 light jets. }
+\label{fig:L4_1l4j2b2w_twcandm}
+\end{figure}
+
+
+\section{Generator level}
+\label{sec:generator_level}
+
+In the simulation, the offline selection is mimicked at particle level using the \PSEUDOTOPPRODUCER tool~\cite{code:pseudotop}, using a common lepton selection for both electrons and muons of $\pt>26\GeV$ and $|\eta| < 2.4$, and otherwise jet $\pt/\eta$ ($\pt>30\GeV$, $|\eta| < 2.4$) and W mass requirements ($\left|m_{jj}-80.4\right|<15\GeV$) identical to the offline selection.
+
+Charged leptons stemming from the hard process are dressed with nearby photons in a $R=0.1$ cone, and jets are clustered with the anti-$k_T$ algorithm with  $R=0.4$ cone after removing the dressed leptons as well as all neutrinos. In order to identify the flavour of the jet at particle level, ``ghost'' B-hadrons are included in the clustering after scaling their momentum by $10^{-20}$ so they don't change significantly the jet energy scale at particle level.

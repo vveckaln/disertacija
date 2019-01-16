@@ -1,0 +1,56 @@
+\begin{table}[htp]
+	\begin{center}
+	\caption{Bin by bin weight of uncertainty (shapes) for \protect\observabletitle{pull_angle} including \protect\chargetitle{allconst} of the \protect\jettitle{leading_jet} at the \protect\recoleveltitle{gen} level. The results are for                        unfolded ouput for the Powheg+Pythia8 cf sample.}
+	\label{tab:unc_table_fullpull_angle_OPT_allconst_gen_out_MC13TeV_TTJets_cflip_cflip_ATLAS3}
+		\begin{tabular}{l|ccc}
+			\hline
+			\makecell[c]{\multirow{3}{*}{nuisance}} &\multicolumn{3}{c}{uncertainty in bins (\%)}\\
+			 & bin 1  & bin 2  & bin 3  \\
+			 & 0.00 - 1.04 & 1.04 - 2.07 & 2.07 - 3.14 \\
+			\hline
+			$t\overline{t}$	&	17.300	&	10.909	&	13.239\\
+			$t\overline{t}$ ERDon	&	2.964	&	1.366	&	2.785\\
+			$t\overline{t}$ Herwig++	&	7.933	&	5.048	&	6.023\\
+			$t\overline{t}$ QCDbased	&	6.001	&	6.185	&	2.125\\
+			$t\overline{t}$ UEdn	&	1.410	&	2.187	&	0.255\\
+			$t\overline{t}$ UEup	&	1.004	&	0.621	&	0.781\\
+			$t\overline{t}$ btag\_heavy down	&	0.359	&	0.198	&	0.303\\
+			$t\overline{t}$ btag\_heavy up	&	0.184	&	0.315	&	0.584\\
+			$t\overline{t}$ btag\_light down	&	1.135	&	2.639	&	1.108\\
+			$t\overline{t}$ btag\_light up	&	0.593	&	1.093	&	0.286\\
+			$t\overline{t}$ csv\_heavy down	&	0.147	&	0.414	&	0.634\\
+			$t\overline{t}$ csv\_heavy up	&	1.015	&	1.758	&	0.372\\
+			$t\overline{t}$ csv\_light down	&	1.669	&	2.192	&	0.105\\
+			$t\overline{t}$ csv\_light up	&	0.127	&	0.250	&	0.077\\
+			$t\overline{t}$ evtgen	&	1.378	&	3.670	&	1.825\\
+			$t\overline{t}$ fsr dn	&	1.226	&	4.120	&	2.502\\
+			$t\overline{t}$ fsr up	&	0.381	&	3.944	&	3.516\\
+			$t\overline{t}$ gluon move	&	0.210	&	0.603	&	0.324\\
+			$t\overline{t}$ hdamp dn	&	0.763	&	1.308	&	0.265\\
+			$t\overline{t}$ hdamp up	&	1.258	&	1.054	&	0.695\\
+			$t\overline{t}$ isr dn	&	0.646	&	3.070	&	2.243\\
+			$t\overline{t}$ isr up	&	0.227	&	0.743	&	0.443\\
+			$t\overline{t}$ jec\_CorrelationGroupMPFInSitu down	&	0.006	&	0.560	&	0.567\\
+			$t\overline{t}$ jec\_CorrelationGroupMPFInSitu up	&	0.562	&	0.280	&	1.082\\
+			$t\overline{t}$ jec\_CorrelationGroupUncorrelated down	&	0.017	&	1.095	&	1.102\\
+			$t\overline{t}$ jec\_CorrelationGroupUncorrelated up	&	0.331	&	0.273	&	0.187\\
+			$t\overline{t}$ jec\_FlavorPureBottom down	&	0.372	&	0.289	&	0.824\\
+			$t\overline{t}$ jec\_FlavorPureBottom up	&	0.865	&	1.316	&	0.130\\
+			$t\overline{t}$ jec\_FlavorPureCharm down	&	0.303	&	0.095	&	0.527\\
+			$t\overline{t}$ jec\_FlavorPureCharm up	&	1.196	&	0.233	&	1.452\\
+			$t\overline{t}$ jec\_FlavorPureGluon down	&	0.711	&	0.965	&	0.014\\
+			$t\overline{t}$ jec\_FlavorPureGluon up	&	0.400	&	0.205	&	0.355\\
+			$t\overline{t}$ jec\_FlavorPureQuark down	&	0.365	&	0.767	&	1.304\\
+			$t\overline{t}$ jec\_FlavorPureQuark up	&	1.158	&	2.878	&	1.322\\
+			$t\overline{t}$ jec\_RelativeFSR down	&	0.614	&	1.463	&	0.636\\
+			$t\overline{t}$ jec\_RelativeFSR up	&	0.881	&	0.767	&	2.034\\
+			$t\overline{t}$ jer down	&	0.568	&	0.691	&	0.093\\
+			$t\overline{t}$ jer up	&	0.275	&	0.656	&	1.063\\
+			$t\overline{t}$ m=171.5	&	0.560	&	0.026	&	0.819\\
+			$t\overline{t}$ m=173.5	&	2.023	&	1.887	&	0.920\\
+			$t\overline{t}$ tracking down	&	0.556	&	1.300	&	0.551\\
+			$t\overline{t}$ tracking up	&	1.100	&	0.958	&	0.571\\
+		\hline
+		\end{tabular}
+	\end{center}
+\end{table}

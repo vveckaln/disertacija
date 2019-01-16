@@ -1,0 +1,55 @@
+\begin{table}[htp]
+	\begin{center}
+	\caption{Bin by bin weight of uncertainty (shapes) for \protect\observabletitle{pull_angle} including \protect\chargetitle{chconst} of the \protect\jettitle{scnd_leading_jet} at the \protect\recoleveltitle{reco} level. The results are for                        folded back output for the Powheg+Pythia8 sample.}
+	\label{tab:unc_table_fullpull_angle_OPT_chconst_reco_out_MC13TeV_TTJets_nominal_ATLAS3}
+		\begin{tabular}{l|cccccc}
+			\hline
+			\makecell[c]{\multirow{3}{*}{nuisance}} &\multicolumn{6}{c}{uncertainty in bins (\%)}\\
+			 & bin 0 & bin 1  & bin 2 & bin 3  & bin 4 & bin 5  \\
+			 & 0.00 - 0.52 & 0.52 - 1.04 & 1.04 - 1.55 & 1.55 - 2.07 & 2.07 - 2.61 & 2.61 - 3.14 \\
+			\hline
+			$t\overline{t}$ ERDon	&	0.101	&	1.279	&	0.871	&	0.683	&	0.347	&	1.401\\
+			$t\overline{t}$ Herwig++	&	0.485	&	0.876	&	1.389	&	1.580	&	0.948	&	1.240\\
+			$t\overline{t}$ QCDbased	&	0.707	&	1.337	&	0.495	&	0.895	&	0.177	&	0.462\\
+			$t\overline{t}$ UEdn	&	0.053	&	0.154	&	0.934	&	0.830	&	0.741	&	0.788\\
+			$t\overline{t}$ UEup	&	0.536	&	0.813	&	0.282	&	0.593	&	0.137	&	0.155\\
+			$t\overline{t}$ btag\_heavy down	&	0.094	&	0.166	&	0.031	&	0.077	&	0.021	&	0.008\\
+			$t\overline{t}$ btag\_heavy up	&	0.129	&	0.321	&	0.087	&	0.006	&	0.039	&	0.069\\
+			$t\overline{t}$ btag\_light down	&	0.164	&	0.367	&	0.130	&	0.020	&	0.093	&	0.004\\
+			$t\overline{t}$ btag\_light up	&	0.016	&	0.129	&	0.275	&	0.249	&	0.056	&	0.062\\
+			$t\overline{t}$ csv\_heavy down	&	0.101	&	0.093	&	0.231	&	0.286	&	0.054	&	0.001\\
+			$t\overline{t}$ csv\_heavy up	&	0.249	&	0.327	&	0.156	&	0.011	&	0.337	&	0.418\\
+			$t\overline{t}$ csv\_light down	&	0.095	&	0.297	&	0.080	&	0.001	&	0.024	&	0.156\\
+			$t\overline{t}$ csv\_light up	&	0.072	&	0.276	&	0.346	&	0.285	&	0.164	&	0.024\\
+			$t\overline{t}$ evtgen	&	0.029	&	0.471	&	0.450	&	0.335	&	0.895	&	1.584\\
+			$t\overline{t}$ fsr dn	&	0.851	&	1.147	&	0.025	&	0.479	&	0.730	&	0.955\\
+			$t\overline{t}$ fsr up	&	0.021	&	0.526	&	0.485	&	0.426	&	0.186	&	0.702\\
+			$t\overline{t}$ gluon move	&	0.294	&	0.121	&	1.332	&	1.406	&	0.321	&	0.150\\
+			$t\overline{t}$ hdamp dn	&	0.026	&	0.143	&	0.300	&	0.326	&	0.408	&	0.588\\
+			$t\overline{t}$ hdamp up	&	0.177	&	0.462	&	0.255	&	0.381	&	0.278	&	0.471\\
+			$t\overline{t}$ isr dn	&	0.356	&	0.870	&	0.140	&	0.380	&	0.185	&	0.501\\
+			$t\overline{t}$ isr up	&	0.251	&	0.480	&	0.138	&	0.027	&	0.163	&	0.097\\
+			$t\overline{t}$ jec\_CorrelationGroupMPFInSitu down	&	0.165	&	0.477	&	0.184	&	0.054	&	0.026	&	0.169\\
+			$t\overline{t}$ jec\_CorrelationGroupMPFInSitu up	&	0.111	&	0.413	&	0.246	&	0.149	&	0.029	&	0.188\\
+			$t\overline{t}$ jec\_CorrelationGroupUncorrelated down	&	0.114	&	0.290	&	0.140	&	0.048	&	0.064	&	0.024\\
+			$t\overline{t}$ jec\_CorrelationGroupUncorrelated up	&	0.033	&	0.159	&	0.245	&	0.239	&	0.021	&	0.214\\
+			$t\overline{t}$ jec\_FlavorPureBottom down	&	0.068	&	0.116	&	0.116	&	0.071	&	0.127	&	0.130\\
+			$t\overline{t}$ jec\_FlavorPureBottom up	&	0.029	&	0.040	&	0.013	&	0.005	&	0.111	&	0.197\\
+			$t\overline{t}$ jec\_FlavorPureCharm down	&	0.016	&	0.199	&	0.222	&	0.196	&	0.048	&	0.247\\
+			$t\overline{t}$ jec\_FlavorPureCharm up	&	0.080	&	0.191	&	0.168	&	0.105	&	0.121	&	0.076\\
+			$t\overline{t}$ jec\_FlavorPureGluon down	&	0.137	&	0.158	&	0.022	&	0.055	&	0.155	&	0.217\\
+			$t\overline{t}$ jec\_FlavorPureGluon up	&	0.080	&	0.057	&	0.002	&	0.023	&	0.224	&	0.404\\
+			$t\overline{t}$ jec\_FlavorPureQuark down	&	0.106	&	0.481	&	0.183	&	0.080	&	0.100	&	0.394\\
+			$t\overline{t}$ jec\_FlavorPureQuark up	&	0.050	&	0.201	&	0.208	&	0.160	&	0.070	&	0.034\\
+			$t\overline{t}$ jec\_RelativeFSR down	&	0.129	&	0.424	&	0.247	&	0.140	&	0.054	&	0.142\\
+			$t\overline{t}$ jec\_RelativeFSR up	&	0.175	&	0.278	&	0.055	&	0.052	&	0.155	&	0.162\\
+			$t\overline{t}$ jer down	&	0.155	&	0.403	&	0.170	&	0.058	&	0.081	&	0.063\\
+			$t\overline{t}$ jer up	&	0.094	&	0.067	&	0.191	&	0.226	&	0.018	&	0.042\\
+			$t\overline{t}$ m=171.5	&	1.306	&	1.424	&	1.938	&	2.474	&	0.123	&	0.245\\
+			$t\overline{t}$ m=173.5	&	0.498	&	0.878	&	2.029	&	2.031	&	0.320	&	1.751\\
+			$t\overline{t}$ tracking down	&	0.011	&	0.049	&	0.150	&	0.150	&	0.054	&	0.004\\
+			$t\overline{t}$ tracking up	&	0.054	&	0.046	&	0.207	&	0.226	&	0.098	&	0.078\\
+		\hline
+		\end{tabular}
+	\end{center}
+\end{table}

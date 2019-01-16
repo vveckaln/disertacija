@@ -1,0 +1,16 @@
+\begin{table}[htp]
+	\begin{center}
+	\caption{$\chi^{2}$ and p-values of the \protect\observabletitle{pull_angle} including \protect\chargetitle{allconst}. The results are for the \protect\modeltitle{cflip} model.}
+	\label{tab:chi_table_pull_angle_OPT_allconst_cflip_ATLAS3}
+	\resizebox{\customwidth}{!}{		\begin{tabular}{|l|rrr|rrr|rrr|rrr|}
+		\hline
+\multirow{2}{*}{Sample}&\multicolumn{3}{|c|}{$\theta_{p}(j_{1}^{W}, j_{2}^{W})$}&\multicolumn{3}{|c|}{$\theta_{p}(j_{2}^{W}, j_{1}^{W})$}&\multicolumn{3}{|c|}{$\theta_{p}(j_{1}^{b}, j_{2}^{b})$}&\multicolumn{3}{|c|}{$\theta_{p}(j_{2}^{b}, j_{2}^{b})$}\\
+		\cline{2-13}		&$\chi^{2}$&\textbackslash Ndf&p-value&$\chi^{2}$&\textbackslash Ndf&p-value&$\chi^{2}$&\textbackslash Ndf&p-value&$\chi^{2}$&\textbackslash Ndf&p-value\\
+		\hline
+		Powheg+Pythia8 * & 1.05 & 2 & 0.591 & 8.85 & 2 & 0.012 & 2.89 & 2 & 0.235 & 19.75 & 2 & 0.000\\
+		Powheg+Pythia8 cf & 3.24 & 2 & 0.198 & 1.12 & 2 & 0.570 & 0.99 & 2 & 0.611 & 1.36 & 2 & 0.506\\
+		\hline
+		\end{tabular}
+	}
+	\end{center}
+\end{table}

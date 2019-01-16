@@ -1,0 +1,28 @@
+
+\label{sec:systematic_uncertainties}
+
+\subsection{Experimental uncertainties}
+
+Jet energy resolution: We use the recommended jet energy resolution measurements \cite{twiki:JER}. Each jet is further smeared up or down depending on its $p_{T}$ and $\eta$ with respect to the
+central value measured in data. The main effect of this systematic is related to the exclusion/inclusion of events with jets near the offline thresholds.
+
+Jet energy corrections: The jet energy corrections provided for the MC are derived for the standard Pythia8 simulation. These corrections are independent from the data and specific for a certain parton shower model/setup. Hence, for the consistent usage of an alternative parton shower models or setting separate correction factors should be derived. The following simulations are used: CorrelationGroupUncorrelated, FlavorPureGluon, FlavorPureCharm, FlavorPureQuark, FlavorPureBottom.
+
+b-tagging: The nominal efficiency expected in the simulation is corrected by the \pt -dependent scale factors provided by the BTV POG \cite{twiki:BTV}. Depending on the flavour of each jet, the b-tagging decision is updated according to the scale factor measured. The scale factor is also varied according to its uncertainty. The main effect of this systematic is the demotion/promotion of candidate b-jets and thus a migration of events used for analysis. 
+
+Tracking efficiency: A tracking efficiency data/MC scale factor was determined as a function of $\eta$ for charged pions. An uncertainty of $\pm 3 - 6\%$ is associated to the scale factor, assumed to be correlated across run periods and detector regions, resulting in a global up or down variation, respectively.
+
+\subsection{Theoretical uncertainties}
+
+Hadronizer choice : We check the effect of using HERWIG ++ EE5C interfaced with ??, instead of PYTHIA 8 CUET2P8M4. In this version of the note, the difference is assigned as a systematic uncertainty but this will be dropped in the next version, reason being that the PS variations in PYTHIA 8 are expected to provide already a good coverage of the differences between data and the nominal prediction.
+
+Top mass: The most precise measurement of the top quark mass by CMS yields a total uncertainty of $\pm 0.49 \text{GeV}$ \cite{Khachatryan:2015hba}. We consider however a conservative $\pm 1 \text{GeV}$. In the possibility that some of these results are used in the future we would like to avoid that they bias too much to a specific top mass.
+
+ME-PS matching scheme: The default simulation is based on POWHEG. The so-called hdamp parameter is varied.
+
+Parton shower scale: Alternative POWHEG + PYTHIA 8 samples where the parton shower scale choice is varied by a factor of 0.5 and 2 for ISR and FSR separately, are used in the analysis. This affects the fragmentation and hadronization of the jets initiated by the matrix element calculation as well as the emmission of extra jets by the hadroniser.
+
+Colour reconnection model: we vary the colour reconnection model with respect to the default using alternatives including the resonant decay products in possible reconnections to the UE. The default simulation (MPI-based colour reconnection) has this effect excluded. We examine two alternative models for CR: the so-called gluon move and the QCD-inspired models. The envelope of the differences is considered as a systematic uncertainty.
+
+UE variations: the default parameters in the CUETP8M2T4 are varied according to their uncertainty and the effect on the unfolding is taken as an estimate of the systematic uncertainty.
+

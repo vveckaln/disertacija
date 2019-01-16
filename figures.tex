@@ -1,0 +1,60 @@
+\newcommand{\figureEML}[4][]{
+  \def\twidth{0.33}
+  \begin{figure}[hbtp]
+  \subfloat[$e$ + jets channel.]{
+    \includegraphics[width=\twidth\textwidth]{fig/histos#1/E/#2/E#3.png}
+    \label{fig:#3_a}
+  }%
+  \subfloat[$\mu$ + jets channel.]{
+    \includegraphics[width=\twidth\textwidth]{fig/histos#1/M/#2/M#3.png}
+    \label{fig:#3_b}
+  }%
+ \subfloat[Combined lepton + jets channel.]{
+    \includegraphics[width=\twidth\textwidth]{fig/histos#1/L/#2/L#3.png}
+    \label{fig:#3_c}
+  }
+   \caption{#4}
+  \label{fig:#3}
+\end{figure}
+}
+
+%% \newcommand{\figureEML}[4][]{
+%%   \def\twidth{0.33}
+%%   \begin{figure}[hbtp]
+%%   \subfloat[$e$ + jets channel.]{
+%%     \includegraphics[width=\twidth\textwidth]{fig/histos#1/E/#2/E#3.png}
+%%     \label{fig:#3_a}
+%%   }%
+%%   \subfloat[$\mu$ + jets channel.]{
+%%     \includegraphics[width=\twidth\textwidth]{fig/histos#1/M/#2/M#3.png}
+%%     \label{fig:#3_b}
+%%   }%
+%%  \subfloat[Combined lepton + jets channel.]{
+%%     \includegraphics[width=\twidth\textwidth]{fig/histos#1/L/#2/L#3.png}
+%%     \label{fig:#3_c}
+%%   }
+%%    \caption{#4}
+%%   \label{fig:#3}
+%% \end{figure}
+%% }
+
+
+\newcommand{\figureEMLcontrol}[4]{
+  \def\twidth{0.33}
+  \begin{figure}[hbtp]
+  \subfloat[$e$ + jets channel.]{
+    \includegraphics[width=\twidth\textwidth]{fig/histos/E/#2/#3.png}
+    \label{fig:#2_a}
+  }%
+  \subfloat[$\mu$ + jets channel.]{
+    \includegraphics[width=\twidth\textwidth]{#1/M/#2/#3.png}
+    \label{fig:#2_b}
+  }%
+ \subfloat[Combined lepton + jets channel.]{
+    \includegraphics[width=\twidth\textwidth]{#1/L/#2/#3.png}
+    \label{fig:#2_c}
+  }
+   \caption{#3}
+  \label{fig:#2_#3}
+\end{figure}
+}

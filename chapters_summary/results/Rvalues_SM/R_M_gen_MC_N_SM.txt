@@ -1,0 +1,31 @@
+\begin{table}[htp]
+	\begin{center}
+	\caption{Value of $R^{-1}$ for the $\mu$ channel at generation level for MC, particle flow for the SM model.}
+	\label{tab:R_M_gen_N_MC_SM}
+		\begin{tabular}{|l|cc|}
+		\hline
+		\makecell[c]{Jet constituents} & $I$ & $R^{-1}$ \\
+		\hline
+		\multicolumn{3}{|c|}{$j_{1}^{b}$,$j_{2}^{b}$}\\
+		\hline
+		 all 	& 0.008 	$\pm$ 0.000 	$\pm$ 0.000 	& 0.131 	$\pm$ 0.000 	$\pm$ 0.001 \\
+		 charged 	& 0.009 	$\pm$ 0.000 	$\pm$ 0.000 	& 0.134 	$\pm$ 0.000 	$\pm$ 0.001 \\
+		\hline
+		\multicolumn{3}{|c|}{$j_{h}^{b}$,$j_{f}^{W}$}\\
+		\hline
+		 all 	& 0.010 	$\pm$ 0.000 	$\pm$ 0.000 	& 0.164 	$\pm$ 0.000 	$\pm$ 0.001 \\
+		 charged 	& 0.011 	$\pm$ 0.000 	$\pm$ 0.000 	& 0.167 	$\pm$ 0.000 	$\pm$ 0.001 \\
+		\hline
+		\multicolumn{3}{|c|}{$j_{h}^{b}$,$j_{c}^{W}$}\\
+		\hline
+		 all 	& 0.043 	$\pm$ 0.000 	$\pm$ 0.000 	& 0.705 	$\pm$ 0.000 	$\pm$ 0.000 \\
+		 charged 	& 0.047 	$\pm$ 0.000 	$\pm$ 0.000 	& 0.734 	$\pm$ 0.000 	$\pm$ 0.001 \\
+		\hline
+		\multicolumn{3}{|c|}{$j_{1}^{W}$,$j_{2}^{W}$}\\
+		\hline
+		 all 	& 0.061 	$\pm$ 0.000 	$\pm$ 0.001 	& 1.000 	$\pm$ 0.000 	$\pm$ 0.008 \\
+		 charged 	& 0.064 	$\pm$ 0.000 	$\pm$ 0.001 	& 1.000 	$\pm$ 0.000 	$\pm$ 0.008 \\
+		\hline
+		\end{tabular}
+	\end{center}
+\end{table}

@@ -1,0 +1,16 @@
+\begin{table}[htp]
+	\begin{center}
+	\caption{Observed masses of objects for the common lepton channel at generation level for MC.}
+	\label{tab:mass_L_gen_MC}
+		\begin{tabular}{l|rr}
+		\hline
+		\makecell[c]{Object}&\makecell[c]{Mass}&\makecell[c]{FWHM}\\
+		\hline
+		hadronic $W$ 	& 7.861e+01 	$\pm$ 3.703e-07 	$\pm$ 7.568e-02 	& 1.536e+01 	$\pm$ 1.059e-04 	$\pm$ 1.800e-01 \\
+		hadronic $t$ 	& 1.692e+02 	$\pm$ 6.492e-07 	$\pm$ 4.972e-01 	& 2.045e+01 	$\pm$ 1.445e-04 	$\pm$ 3.701e-01 \\
+		leptonic $W$ 	& 8.011e+01 	$\pm$ 3.978e-06 	$\pm$ 1.129e-01 	& 1.600e+00 	$\pm$ 3.694e+00 	$\pm$ 3.674e+00 \\
+		leptonic $t$ 	& 1.709e+02 	$\pm$ 1.550e-07 	$\pm$ 8.502e-02 	& 2.572e+01 	$\pm$ 2.897e-04 	$\pm$ 3.360e-01 \\
+		\hline
+		\end{tabular}
+	\end{center}
+\end{table}

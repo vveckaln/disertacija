@@ -1,0 +1,84 @@
+Uncertainties are divided into experimental and theoretical uncertainties. When including an uncertainty from the first group we vary some parameter in the event selection, such as a data-to-MC scale factor. Theoretical uncertainties reflect our lack of knowledge about the real world, e.g. the true top quark mass or details of the hadronisation process.
+
+\section{Experimental uncertainties}
+\begin{description}
+\item[Jet energy resolution] 
+
+\item[Jet energy corrections] The following simulations are used:
+\begin{description}
+        \item[CorrelationGroup]  These are uncertainties matching the common ATLAS/CMS correlation categories grouped together \cite{twiki:JESUS}. 
+        \begin{description}                     
+              \item[CorrelationGroupMPFInSitu] Groups partially correlated systematic uncertainties from \cPZ+jet/\cPgg+jet absolute scale determination (e.g. radiation suppression and out-of-cone effects).
+              \item[CorrelationGroupUncorrelated] Remaining sources which are estimated as being uncorrelated between ATLAS and CMS.
+        \end{description}
+        \item[RelativeFSR] $\eta$-dependent uncertainty due to correction for initial and final state radiation, estimated from difference between MPF log-linear L2Res from \PYTHIA8 and \HERWIGpp, after each has been corrected for their own ISR+FSR correction \cite{Khachatryan:2016kdb}.
+        \item[Flavour]  The flavour uncertainties are based on \PYTHIA6 Z2/\HERWIGpp2.3 differences in \cPqu\cPqd\cPqs/\cPqc/\cPqb-quark and gluon responses \cite{Khachatryan:2016kdb}. Uncertainties for the following jet flavours are used:
+        \begin{enumerate}
+                \item FlavorPureGluon
+                \item FlavorPureQuark
+                \item FlavorPureCharm
+                \item FlavorPureBottom
+        \end{enumerate}
+\end{description}
+
+\item[\cPqb-tagging] The nominal efficiency expected in the simulation is corrected by \pt-dependent scale factors provided by the BTV Physics Object Group \cite{twiki:BTV}. Depending on the flavour of each jet, the \cPqb-tagging decision is updated according to the scale factor measured. The scale factor is also varied according to its uncertainty. The main effect of this systematic is the demotion/promotion of candidate \cPqb-jets and thus a migration of events used for analysis.
+
+\item[Tracking efficiency]
+The TRK and MUO Physics Object Groups have derived tracking efficiency scale factors as function of the track $\eta$ or the reconstructed vertex multiplicity. The later is solely available for muons and shown in Fig.~\ref{fig:mutksf}, while Table~\ref{tab:dstartsf} summarises the scaling factors obtained from $D^*$ decays. All these scale factors are run-dependent (BCDEF and GH data-taking periods are separated).
+\end{description}
+\clearpage
+\section{Theoretical uncertainties}
+\begin{description}
+\item[using \EVTGEN in simulation of the decay of heavy flavour particles]
+  
+\item[Hadroniser choice] 
+
+\item[Top quark mass] 
+
+\item[\PYTHIA tunes] The following \PYTHIA tunes are used:
+  
+  \begin{description}
+    
+  \item[Matrix Element + Parton Shower matching scheme] 
+  \item[Parton shower scale] 
+  \item[Colour reconnection model] 
+  \item[Unerlying Event (UE) variations] 
+  \end{description}
+\end{description}
+
+Table \ref{tab:mcsystdatasets} summarises the simulation samples used for the theoretical systematics.
+
+
+\begin{table}[!htp]
+\begin{center}
+\caption{Simulation samples used for systematics, from RunIISummer16MiniAODv2-PUMoriond17\_80X\_mcRun2\_asymptotic\_2016\_TrancheIV\_v6.}
+\label{tab:mcsystdatasets}
+\hspace*{-1cm}
+\begin{tabular}{ llr }
+\hline
+Signal variation & Dataset & $\sigma[pb]$\\
+\hline
+\multirow{4}{*}{Parton shower scale}
+& {\small TT\_TuneCUETP8M2T4\_13TeV-powheg-isrup-pythia8}     & 832\\
+& {\small TT\_TuneCUETP8M2T4\_13TeV-powheg-isrdown-pythia8}   & 832\\
+& {\small TT\_TuneCUETP8M2T4\_13TeV-powheg-fsrup-pythia8}     & 832\\
+& {\small TT\_TuneCUETP8M2T4\_13TeV-powheg-fsrup-pythia8}     & 832\\\hline
+\multirow{2}{*}{Underlying event}
+& {\small TT\_TuneCUETP8M2T4up\_13TeV-powheg-pythia8 }        & 832\\
+& {\small TT\_TuneCUETP8M2T4down\_13TeV-powheg-pythia8}       & 832\\\hline
+\multirow{2}{*}{ME-PS matching scale (hdamp)}
+& {\small TT\_hdampUP\_TuneCUETP8M2T4\_13TeV-powheg-pythia8}  & 832\\
+& {\small TT\_hdampDOWN\_TuneCUETP8M2T4\_13TeV-powheg-pythia8}& 832 \\\hline
+\multirow{3}{*}{Color reconnection}
+& {\small TT\_TuneCUETP8M2T4\_erdON\_13TeV-powheg-pythia8 }   & 832\\
+& {\small TT\_TuneCUETP8M2T4\_QCDbasedCRTune\_erdON\_13TeV-powheg-pythia8} & 832\\
+& {\small TT\_TuneCUETP8M2T4\_GluonMoveCRTune\_13TeV-powheg-pythia8} & 832\\\hline
+\multirow{2}{*}{Top mass}
+& {\small TT\_TuneCUETP8M2T4\_mtop1715\_13TeV-powheg-pythia8 }& 832\\
+& {\small TT\_TuneCUETP8M2T4\_mtop1735\_13TeV-powheg-pythia8} & 832\\\hline
+\HERWIGpp & {\small TT\_TuneEE5C\_13TeV-powheg-herwigpp}      & 832\\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+

@@ -1,0 +1,117 @@
+\documentclass[titlepage, a4paper, LV]{mythesis}
+\usepackage[bindingoffset=0cm, left=2.5cm, right=2.5cm, top=2.5cm, bottom=2.5cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[backend=bibtex, style=numeric, sorting=none]{biblatex}
+\usepackage{amsmath}
+\usepackage{subfig}
+\usepackage{graphicx}
+\usepackage{makecell}
+\usepackage{multirow}
+\usepackage{longtable}
+%\usepackage{setspace}
+\usepackage{listings}
+\usepackage{lscape}
+\usepackage{amssymb}
+\usepackage{threeparttable}
+\usepackage{enumerate}
+\usepackage[T1]{fontenc}
+\renewcommand{\baselinestretch}{1.5}
+\linespread{1.2}
+\setlength{\skip\footins}{1.25 cm}
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
+\title{Virsotnes kvarka sabrukšanas ceļā radušos krāsu plūsmu pētījumi ar 13 TeV CERN LHP KMS eksperimentā} 
+\author{Viesturs Veckalns}
+\institution{Rīgas Tehniskā universitāte}
+\supervisor{Leonīds Ribickis}
+\date{2018}
+
+
+\input{generalcommands.tex}
+
+\input{figureratiographslv.tex}
+\input{figureChilv.tex}
+\input{figunfolding.tex}
+\input{figures.tex}
+\usepackage{ptdr-definitions}
+\usepackage{siunitx}
+\usepackage{float}
+\usepackage[latvian]{babel}
+\addto\captionslatvian{\renewcommand{\figurename}{att.}}
+\addbibresource{disertacija.bib}
+\renewcommand{\contentsname}{Satura rādītājs}
+\usepackage[toc]{glossaries}
+\renewcommand{\glossarypreamble}{Nepieciešams ieviest augstas enerģijas fizikā lietoto terminu tulkojumus latviešu valodā. Zemāk sniegti šajā darbā lietotie nozares termini latviešu valodā, norādoto atbilstošo terminu angļu valodā. Saīsinājumiem papildus ir sniegts to atšifrējums latviešu valodā.}
+\input{glossarylv.tex}
+\makeglossaries
+
+\begin{document}
+\maketitle
+\begin{abstract}
+        \input{nodalas_kopsavilkums/abstract}
+\end{abstract}
+
+\chapter*{Pateicības}
+\label{chap:acknowledgements}
+\input{nodalas_kopsavilkums/acknowledgements}
+
+\tableofcontents
+\printglossary[toctitle=Terminu tulkojumi, title=Latviešu-angļu terminu tulkojumi]
+\listoffigures
+\listoftables
+
+\chapter{Ievads}
+\label{chap:introduction}
+\input{nodalas_kopsavilkums/introduction}
+
+\chapter{Fizikālie pamati}
+\input{nodalas_kopsavilkums/physical_background}
+
+\chapter{Eksperimentālais aprīkojums}
+\input{nodalas_kopsavilkums/experimental_setup}
+
+\chapter{Metodoloģija}
+\label{chap:methodology}
+\input{nodalas_kopsavilkums/methodology}
+
+\chapter{Datu un MK paraugi}
+\input{nodalas_kopsavilkums/data_and_MC_samples}
+
+\chapter{Notikumu atlase}
+\label{chap:event_selection}
+\input{nodalas_kopsavilkums/event_selection}
+
+\chapter{Sistemātiskās nenoteiktības}
+\label{chap:systematic_uncertainties}
+\input{nodalas_kopsavilkums/systematic_uncertainties}
+
+
+\chapter{Rezultāti}
+\label{chap:results}
+\input{nodalas_kopsavilkums/results}
+
+%\clearpage
+\section{Atlocīšana}
+\input{nodalas_kopsavilkums/results/unfolding.tex}
+
+\clearpage
+\section{LEP metode}
+\input{nodalas_kopsavilkums/results/chi.tex}
+
+\clearpage
+\section{Hipotēžu pārbaude}
+\input{nodalas_kopsavilkums/results/hypo_testing.tex}
+
+\chapter{Noslēgums}
+\input{nodalas_kopsavilkums/conclusions.tex}
+
+\clearpage
+\printbibliography[heading=bibintoc]
+
+\end{document}
+
+
+
+
+
+

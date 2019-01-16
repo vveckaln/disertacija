@@ -1,0 +1,222 @@
+\label{sec:results}
+\subsection{Event display}
+A selected event is displayed in Fig. \ref{fig:event_display}, showing the light jets and the pull vector in the $\eta - \phi$ plane in a manner analogous to Fig. \ref{fig:pull_angle}.
+
+\begin{figure}[hbtp]
+  \centering
+  \includegraphics[width=1.0\textwidth]{fig/individual_plots/reco_allconst_total_663_DeltaR_1p943826_pull_angle_-2p065759.png}
+  \caption{Pull vector (dash-dotted) of the leading jet forming a pull angle of 2.07 rad with the difference between the second leading jet and the leading jet (dashed). Constituents of the leading jet are marked in blue while the constituents of the second leading jet ar marked in red. The leading jet is marked with a solid line while the second leading jet is marked with a dotted line. The pull vector is enhanced 200 times, while the radius of the circles representing jets is equal to $\frac{p_{T}}{75.0}$ and the radius of the circles representing constituents is equal to $\frac{p^{\text{constituent}}_{T}}{p^{\text{jet}}_{T}}$.}
+  \label{fig:event_display}
+\end{figure}
+
+\subsection{Pull vector}
+The dimensions of the pull vector are given in Fig. \ref{fig:_eta_PV_allconst_reco_leading_jet} - \ref{fig:_mag_PV_chconst_reco_leading_jet}. The magnitude of the pull vector is usually contained below 0.02 [a.u.].
+
+\figureEML{/reco/PV/charge/allconst/}
+          {_eta_PV_allconst_reco_leading_jet}
+          {$\eta$ dimension of the pull vector of the leading jet with all jet components.}
+
+\figureEML{/reco/PV/charge/chconst/}
+          {_eta_PV_chconst_reco_leading_jet}
+          {$\eta$ dimension of the pull vector of the leading jet with charged jet components.}
+
+\figureEML{/reco/PV/charge/allconst/}
+          {_phi_PV_allconst_reco_leading_jet}
+          {$\phi$ dimension of the pull vector of the leading jet with all jet components.}
+
+\figureEML{/reco/PV/charge/chconst/}
+          {_phi_PV_chconst_reco_leading_jet}
+          {$\phi$ dimension of the pull vector of the leading jet with charged jet components.}
+
+\figureEML{/reco/PV/charge/allconst/}
+          {_mag_PV_allconst_reco_leading_jet}
+          {The magnitude of the pull vector of the leading jet with all jet components.}
+
+\figureEML{/reco/PV/charge/chconst/}
+          {_mag_PV_chconst_reco_leading_jet}
+          {The magnitude of the pull vector of the leading jet with charged jet components.}
+
+\subsection{Pull angle}
+We differentiate between the leading light jet (highest \pt) and the second leading light jet (lowest \pt). The pull angle plots are given of the
+
+1. leading jet to 2nd leading jet with all jet constituents
+
+2. leading jet to lepton with all jet constituents
+
+1. leading jet to 2nd leading jet with charged constituents
+
+2. leading jet to lepton with charged constituents
+
+The lepton is chosen as a clean and independent object not colour connected to the light quarks. The main results are shown in Fig. \ref{fig:_pull_angle_allconst_reco_leading_jet_2nd_leading_jet_DeltaRTotal} - \ref{fig:_pull_angle_chconst_reco_leading_jet_lepton_DeltaRTotal}.
+
+\figureEML{/reco/pull_angle/DeltaRTotal/charge/allconst/}
+          {_pull_angle_allconst_reco_leading_jet_2nd_leading_jet_DeltaRTotal}
+          {Pull angle distribution for all \DeltaR and all particles between the leading jet and the second leading jet at reconstruction level.}
+
+\figureEML{/reco/pull_angle/DeltaRTotal/charge/allconst/}
+          {_pull_angle_allconst_reco_leading_jet_lepton_DeltaRTotal}
+          {Pull angle distribution for all \DeltaR and all particles between the leading jet and electron at reconstruction level.}
+
+\figureEML{/reco/pull_angle/DeltaRTotal/charge/chconst/}
+          {_pull_angle_chconst_reco_leading_jet_2nd_leading_jet_DeltaRTotal}
+          {Pull angle distribution for all \DeltaR and all particles between the leading jet and the second leading jet at reconstruction level.}
+
+\figureEML{/reco/pull_angle/DeltaRTotal/charge/chconst/}
+          {_pull_angle_chconst_reco_leading_jet_lepton_DeltaRTotal}
+          {Pull angle distribution for all \DeltaR and all particles between the leading jet and the lepton at reconstruction level.}
+          
+The peak at zero rad in the pull angle distribution between colour-connected jets (Fig. \ref{fig:_pull_angle_allconst_reco_leading_jet_2nd_leading_jet_DeltaRTotal} and Fig. \ref{fig:_pull_angle_chconst_reco_leading_jet_2nd_leading_jet_DeltaRTotal}) and a flat distribution (Fig. \ref{fig:_pull_angle_allconst_reco_leading_jet_lepton_DeltaRTotal} and \ref{fig:_pull_angle_chconst_reco_leading_jet_lepton_DeltaRTotal}) conforms to expectations.
+
+\subsection{\DeltaR bias}
+
+When two jets are close to each other in $\eta-\phi$ space, the jet clustering algorithm is inclined to associate particles of one jet (lowest \pt jet) to another (highest \pt jet).
+This effect creates a bias in the pull angle analysis as the pull vector is more likely to point to the jet from which the particles were weaned. Fig. \ref{fig:_pull_angle_allconst_reco_leading_jet_lepton_DeltaRle1p0} - \ref{fig:_pull_angle_allconst_reco_leading_jet_lepton_DeltaRle1p0} illustrates the distribution of pull angle for two cases - closely spaced jets with \DeltaR$\leq1.0$ and well separated jets with \DeltaR$>1.0$.
+
+\figureEML{/reco/pull_angle/DeltaRle1p0/charge/allconst/}
+          {_pull_angle_allconst_reco_leading_jet_lepton_DeltaRle1p0}
+          {Pull angle distribution for with \DeltaR$\leq1.0$ and all particles between the leading jet and the 2nd leading jet at reconstruction level.}
+
+\figureEML{/reco/pull_angle/DeltaRgt1p0/charge/allconst/}
+          {_pull_angle_allconst_reco_leading_jet_lepton_DeltaRgt1p0}
+          {Pull angle distribution for with \DeltaR$>1.0$ and all particles between the leading jet and the 2nd leading jet at reconstruction level.}
+
+\figureEML{/reco/pull_angle/DeltaRle1p0/charge/chconst/}
+          {_pull_angle_chconst_reco_leading_jet_lepton_DeltaRle1p0}
+          {Pull angle distribution for with \DeltaR$\leq1.0$ and all particles between the leading jet and the 2nd leading jet at reconstruction level.}
+
+\figureEML{/reco/pull_angle/DeltaRgt1p0/charge/chconst/}
+          {_pull_angle_chconst_reco_leading_jet_lepton_DeltaRgt1p0}
+          {Pull angle distribution for with \DeltaR$>1.0$ and all particles between the leading jet and the 2nd leading jet at reconstruction level.}
+
+
+\subsection{Sensitivity analysis}
+
+Sensitivity of the pull angle methodology was studied by applying cuts to the following parameters:
+
+1. \pt of the hadronic \PW\ boson. A cut was chosen at 50\GeV and the distribution of the pull angle was obtained at a \pt of the hadronic \PW\ boson greater than and less than ar equal to this value. The results are shown in Fig. \ref{fig:_pull_angle_hadWPtgt50p0GeV_reco_leading_jet_2nd_leading_jet_DeltaRTotal} - \ref{fig:_pull_angle_hadWPtle50p0GeV_reco_leading_jet_2nd_leading_jet_DeltaRTotal}.
+
+2. Number of jet constituents. A cut was chosen at the number of jet constitutents $N$ being 20 and the distribution of the pull angle was obtained at $N$ greater than and less than or equal to this value. The results are shown in Fig. \ref{fig:_pull_angle_PFNgt20_reco_leading_jet_2nd_leading_jet_DeltaRTotal} - \ref{fig:_pull_angle_PFNle20_reco_leading_jet_2nd_leading_jet_DeltaRTotal}.
+                                        
+3. \pt of jet constituents. A cut was chosen at \pt of the jet constituents being 0.5\GeV and the distribution of the pull angle was at obtained at \pt of the jet constituents being greater than and less than or equal to this value. The results are shown in Fig. \ref{fig:_pull_angle_PFPtgt0p5GeV_reco_leading_jet_2nd_leading_jet_DeltaRTotal} - \ref{fig:_pull_angle_PFPtle0p5GeV_reco_leading_jet_2nd_leading_jet_DeltaRTotal}.
+
+4. magnitude of the pull vector.  A cut was chosen at magnitude of the pull vector being 0.005[a.u.] and the distribution of the pull angle was obtained at the magnitude the pull vector being greater than and less than or equal tothis value. The results are shown in Fig. \ref{fig:_pull_angle_PVMaggt0p005_reco_leading_jet_2nd_leading_jet_DeltaRTotal} - \ref{fig:_pull_angle_PVMagle0p005_reco_leading_jet_2nd_leading_jet_DeltaRTotal}.
+
+
+\figureEML{/reco/pull_angle/DeltaRTotal/hadronic_W_Pt/hadWPtgt50p0GeV/}
+          {_pull_angle_hadWPtgt50p0GeV_reco_leading_jet_2nd_leading_jet_DeltaRTotal}
+          {Pull angle distribution for all \DeltaR and all particles between the leading jet and the 2nd leading jet at reconstruction level with \pt of \PW\ $>$ 50\GeV.}
+
+\figureEML{/reco/pull_angle/DeltaRTotal/hadronic_W_Pt/hadWPtle50p0GeV/}
+          {_pull_angle_hadWPtle50p0GeV_reco_leading_jet_2nd_leading_jet_DeltaRTotal}
+          {Pull angle distribution for all \DeltaR and all particles between the leading jet and the 2nd leading jet at reconstruction level with \pt of \PW\ $\leq$ 50\GeV.}
+          
+
+\figureEML{/reco/pull_angle/DeltaRTotal/PF_number/PFNgt20/}
+          {_pull_angle_PFNgt20_reco_leading_jet_2nd_leading_jet_DeltaRTotal}
+          {Pull angle distribution for all \DeltaR and all particles between the leading jet and the 2nd leading jet at reconstruction level with the number of jet constituents $N>20$.}
+
+\figureEML{/reco/pull_angle/DeltaRTotal/PF_number/PFNle20/}
+          {_pull_angle_PFNle20_reco_leading_jet_2nd_leading_jet_DeltaRTotal}
+          {Pull angle distribution for all \DeltaR and all particles between the leading jet and the 2nd leading jet at reconstruction level with the number of jet constituents $N\leq20$.}
+
+\figureEML{/reco/pull_angle/DeltaRTotal/PF_Pt/PFPtgt0p5GeV/}
+          {_pull_angle_PFPtgt0p5GeV_reco_leading_jet_2nd_leading_jet_DeltaRTotal}
+          {Pull angle distribution for all \DeltaR and all particles between the leading jet and the 2nd leading jet at reconstruction level with the \pt of jet constituents $>$ 0.5\GeV.}
+
+\figureEML{/reco/pull_angle/DeltaRTotal/PF_Pt/PFPtle0p5GeV/}
+          {_pull_angle_PFPtle0p5GeV_reco_leading_jet_2nd_leading_jet_DeltaRTotal}
+          {Pull angle distribution for all \DeltaR and all particles between the leading jet and the 2nd leading jet at reconstruction level with the \pt of jet constituents $\leq$ 0.5\GeV.}
+
+\figureEML{/reco/pull_angle/DeltaRTotal/PV_magnitude/PVMaggt0p005}
+          {_pull_angle_PVMaggt0p005_reco_leading_jet_2nd_leading_jet_DeltaRTotal}
+          {Pull angle distribution for all \DeltaR and all particles between the leading jet and the 2nd leading jet at reconstruction level with the magnitude of the pull vector $> $0.005[a.u.].}
+
+\figureEML{/reco/pull_angle/DeltaRTotal/PV_magnitude/PVMagle0p005}
+          {_pull_angle_PVMagle0p005_reco_leading_jet_2nd_leading_jet_DeltaRTotal}
+          {Pull angle distribution for all \DeltaR and all particles between the leading jet and the 2nd leading jet at reconstruction level with the magnitude of the pull vector $\leq $0.005[a.u.].}
+
+The pull angle methodology is sensitive to \pt of hadronic \PW\ boson, number of jet constituents, modulus of the pull vector, but not sensitive to \pt of jet constituents.
+
+\subsection{Unfolding}
+\label{sec:unfolding}
+
+In order to optimize the binning of the migration matrices for the unfolding, the following algorithm is used:
+
+\begin{itemize}
+	\item In each bin of the reconstructed observable, the particle-level distribution is fitted with a Gaus distribution.
+	\item Starting from the central bin $c$of the reconstructed distribution, a bin $i$ is searched that fulfills fitted $\text{mean}_{i}-\text{sigma}_{i} > \text{mean}_{c} + \text{sigma}_{c}$ for the right direction - see Fig. \ref{fig:gaussiancurves}. The conditition for the left direction is $\text{mean}_{i}+\text{sigma}_{i} < \text{mean}_{c} - \text{sigma}_{c}$. In practice $\sigma$ is suprressed by a factor 0.1.
+	\item The new optimized bin is then defined to start from a point between $\text{mean}_{c}+\text{sigma}_{c}$ and $\text{mean}_{i}-\text{sigma}_{i}$.
+	\item The algorithm is iterated until the edge of the histogram is reached.
+	\item The obtained binning is used to present the result on particle level. To obtain the final migration matrix used in the unfolding each bin at particle level is split by two to obtain a suitable reconstruction level binning.
+\end{itemize}
+
+This algorithm is depicted in see also Fig. \ref{fig:gaussiancurves}. The parameter $b$ is given by $\frac{\sigma_{n}}{\sigma_{n} + \sigma_{n+1}}$.
+\begin{figure}[hbtp]
+  \centering
+  \includegraphics[width=0.8\textwidth]{fig/gaussiancurves.pdf}
+  \caption{Depiction of the algorithm for the optimisation of binning.}
+  \label{fig:gaussiancurves}
+\end{figure}
+The optimized binning yields reasonable values of purity ($\frac{N_{\text{gen},i}\&\&N_{\text{reco},i}}{N_{\text{reco},i}}$) and stability ($\frac{N_{\text{gen},i}\&\&N_{\text{reco},i}}{N_{\text{gen},i}}$) for each bin $i$. The original and optimised migration matrices are shown in Fig. \ref{fig:migration_matrix}.
+
+\begin{figure}[hbtp]
+\centering
+\def\twidth{0.5}
+\subfloat[The original migration matrix.]{
+\includegraphics[width=\twidth\textwidth]{fig/individual_plots/original_matrix.png}
+}
+\subfloat[The optimised migration matrix.]{
+\includegraphics[width=\twidth\textwidth]{fig/individual_plots/optimised_matrix.png}
+}
+\caption{The original and optimised migration matrices of the pull angle of the leading jet. The $x$ ($y$) axis corresponds to pull angle values in rad at the reconstruction (generator) level.}
+\label{fig:migration_matrix}
+\end{figure}
+
+
+TUnfold~\cite{Schmitt:2012kp} is then used to correct the reconstructed distributions to particle level.
+
+\begin{itemize}
+	\item Before unfolding the expected background yields from non-\ttbar processes are subtracted from the data.
+	\item In each bin the fractional contribution of \ttbar events/jets that pass selection cuts at detector but not at particle level is subtracted (\ttbar fake signal correction).
+	\item The unfolding corrects for migration and for the contribution of events/jets that pass selection cuts at particle but not at detector level (acceptance correction).
+	\item Finally, the output distribution is normalized.
+\end{itemize}
+
+The unfolded pull angle distribution with the original and optimised binning are shown in Fig. \ref{fig:unfolding_results}.
+
+
+\begin{figure}
+  \centering
+  \def\twidth{0.4}
+  \subfloat[Unfolded pull angle distribution at GEN level with the original binning.]{
+    \includegraphics[width=\twidth\textwidth]{fig/individual_plots/unfolded_original_gen.png}
+}
+  \subfloat[Unfolded pull angle distribution at GEN level with the optimised binning.]{
+    \includegraphics[width=\twidth\textwidth]{fig/individual_plots/unfolded_optimised_gen.png}
+}  
+  \caption{Unfolding analysis.}
+  \label{fig:unfolding_results}
+  \end{figure}
+
+\subsection{Colour octet \PW boson}
+
+Fig. \ref{fig:_pull_angle_allconst_reco_leading_jet_2nd_leading_jet_DeltaRTotal} - \ref{fig:_pull_angle_chconst_reco_leading_jet_lepton_DeltaRTotal} shows the results of the colour octet \PW\ boson (in blue) compared to the standard model (in red). The pull angle distribution between the light jets has become flat in the colour octet \PW\ boson model.
+
+\figureEML[_merged]{/reco/pull_angle/DeltaRTotal/charge/allconst/}
+          {_pull_angle_allconst_reco_leading_jet_2nd_leading_jet_DeltaRTotal}
+          {Pull angle distribution the \ttbar sample for all \DeltaR and all particles between the leading jet and the second leading jet at reconstruction level. SM - red, colour octet \PW\ model - blue.}
+
+\figureEML[_merged]{/reco/pull_angle/DeltaRTotal/charge/allconst/}
+          {_pull_angle_allconst_reco_leading_jet_lepton_DeltaRTotal}
+          {Pull angle distribution for the \ttbar sample for all \DeltaR and all particles between the leading jet and electron at reconstruction level. SM - red, colour octet \PW\ model - blue.}
+
+\figureEML[_merged]{/reco/pull_angle/DeltaRTotal/charge/chconst/}
+          {_pull_angle_chconst_reco_leading_jet_2nd_leading_jet_DeltaRTotal}
+          {Pull angle distribution for the \ttbar sample for all \DeltaR and all particles between the leading jet and the second leading jet at reconstruction level. SM - red, colour octet \PW\ model - blue.}
+
+\figureEML[_merged]{/reco/pull_angle/DeltaRTotal/charge/chconst/}
+          {_pull_angle_chconst_reco_leading_jet_lepton_DeltaRTotal}
+          {Pull angle distribution for the \ttbar sample for all \DeltaR and all particles between the leading jet and the lepton at reconstruction level. SM - red, colour octet \PW\ model - blue.}
+
+\subsection{Results of the LEP methodology}
+\input{chapters/results/chi.tex}

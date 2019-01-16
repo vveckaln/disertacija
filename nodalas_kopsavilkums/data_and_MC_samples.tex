@@ -1,0 +1,120 @@
+
+The data analysed for present study consists of the 2016{B-H} data taking periods for a total certified luminosity of 35.9\fbinv for all the channels analysed. The luminosity has been computed with the \textsc{brilcalc} tool \cite{site:brilcalc} using the following command:
+
+\begin{lstlisting}[language=sh, breaklines=true]
+brilcalc lumi  -b "STABLE BEAMS" --normtag /afs/cern.ch/user/l/lumipro/public/Normtags/normtag_DATACERT.json -i lumiSummary.json
+\end{lstlisting}
+
+All data used for this study are listed in Table \ref{tab:datasets}.  
+
+\begin{table}[htb]
+\begin{center}
+\caption{Primary datasets used in this analysis. PD is an abbreviation for SingleMuon or SingleElectron.}
+\label{tab:datasets}
+\begin{tabular}{ lc }
+\hline
+Primary dataset                    & Integrated luminosity\\
+\hline
+/PD/Run2016B-23Sep2016-v3/MINIAOD  & \multirow{8}{*}{35.9 \fbinv}\\
+/PD/Run2016C-23Sep2016-v1/MINIAOD  & \\
+/PD/Run2016D-23Sep2016-v1/MINIAOD  & \\
+/PD/Run2016E-23Sep2016-v1/MINIAOD  & \\
+/PD/Run2016F-23Sep2016-v1/MINIAOD  & \\
+/PD/Run2016G-23Sep2016-v1/MINIAOD  & \\
+/PD/Run2016H-PromptReco-v2/MINIAOD & \\
+/PD/Run2016H-PromptReco-v3/MINIAOD & \\\cline{1-2}
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+The list of simulated samples can be found in Table \ref{tab:mcdatasets}. The cross sections are theoretical predictions. Practically, they are obtained from from~\cite{twiki:SingleTopRefXsec} and ~\cite{twiki:SM13} except for \ttbar for which the generator cross section is quoted according to~\cite{site:MCM}. At NNLO the expected \ttbar cross section is $832^{ +20}_{-29}~(\text{scale})~\pm 35~(\text{PDF}+\alpha_S)$~\cite{twiki:TTbarNLO}. We use the NNLO reference to normalise all \ttbar samples.
+
+\begin{table}
+\caption{Simulation samples are from RunIISummer16MiniAODv2-PUMoriond17\_80X\_mcRun2\_asymptotic\_2016\_TrancheIV\_v6 production. We quote the cross section used to normalise the sample in the analysis.}
+\label{tab:mcdatasets}
+\begin{longtable}{ p{0.16\textwidth}ll }
+\hline
+Process                      & Dataset                                                                     & $\sigma[pb]$\\
+\hline
+\multicolumn{3}{l}{\bf Signal} \\
+\hline
+\ttbar                       & \small  TT\_TuneCUETP8M2T4\_13TeV-powheg-pythia8                            & 832\\
+\hline
+\multicolumn{3}{l}{\bf Background} \\
+\hline
+\multirow{2}{*}{\ttbar+\PW}  & \small TTWJetsToLNu\_TuneCUETP8M1\_13TeV-amcatnloFXFX-madspin-pythia8       & 0.20 \\
+                             & \small TTWJetsToQQ\_TuneCUETP8M1\_13TeV-amcatnloFXFX-madspin-pythia8        & 0.41 \\\hline
+\multirow{2}{*}{\ttbar+\cPZ} & \small TTZToQQ\_TuneCUETP8M1\_13TeV-amcatnlo-pythia                        & 0.53 \\
+                             & \small TTZToLLNuNu\_M-10\_TuneCUETP8M1\_13TeV-amcatnlo-pythia8              & 0.25 \\\hline
+\PW\cPZ                      & \small WZTo3LNu\_TuneCUETP8M1\_13TeV-amcatnloFXFX-pythia8                   & 5.26 \\\hline
+\multirow{2}{*}{\PW\PW}      & \small WWToLNuQQ\_13TeV-powheg                                              & 50.0 \\
+                             & \small WWTo2L2Nu\_13TeV-powheg                                              & 12.2 \\\hline
+\multirow{2}{*}{\cPZ\cPZ}    & \small ZZTo2L2Nu\_13TeV\_powheg\_pythia8                                    & 0.564 \\
+                             & \small ZZTo2L2Q\_13TeV\_amcatnloFXFX\_madspin\_pythia8                      & 3.22 \\\hline
+\multirow{3}{*}{\PW+jets}    & \small WToLNu\_0J\_13TeV-amcatnloFXFX-pythia8                               & 49540 \\
+                             & \small WToLNu\_1J\_13TeV-amcatnloFXFX-pythia8                               & 8041 \\
+                             & \small WToLNu\_2J\_13TeV-amcatnloFXFX-pythia8                               & 3052 \\\hline
+\multirow{2}{*}{Drell-Yan}   & \small DYJetsToLL\_M-10to50\_TuneCUETP8M1\_13TeV-madgraphMLM-pythia8        & 18610 \\
+                             & \small DYJetsToLL\_M-50\_TuneCUETP8M1\_13TeV-madgraphMLM-pythia8            & 6025 \\\hline
+\multirow{10}{=}{QCD $\mu$ enriched}
+                             & \small QCD\_Pt-30to50\_MuEnrichedPt5\_TuneCUETP8M1\_13TeV\_pythia8          & 1652471.46\\ 
+                             & \small QCD\_Pt-50to80\_MuEnrichedPt5\_TuneCUETP8M1\_13TeV\_pythia8          & 437504.1\\
+                             & \small QCD\_Pt-80to120\_MuEnrichedPt5\_TuneCUETP8M1\_13TeV\_pythia8         & 106033.66\\
+                             & \small QCD\_Pt-120to170\_MuEnrichedPt5\_TuneCUETP8M1\_13TeV\_pythia8        & 25190.52\\
+                             & \small QCD\_Pt-170to300\_MuEnrichedPt5\_TuneCUETP8M1\_13TeV\_pythia8        & 8654.49\\
+                             & \small QCD\_Pt-300to470\_MuEnrichedPt5\_TuneCUETP8M1\_13TeV\_pythia8        & 797.35\\
+                             & \small QCD\_Pt-470to600\_MuEnrichedPt5\_TuneCUETP8M1\_13TeV\_pythia8        & 45.83\\
+                             & \small QCD\_Pt-600to800\_MuEnrichedPt5\_TuneCUETP8M1\_13TeV\_pythia8        & 25.1\\
+                             & \small QCD\_Pt-800to1000\_MuEnrichedPt5\_TuneCUETP8M1\_13TeV\_pythia8       & 4.71\\
+                             & \small QCD\_Pt-1000toInf\_MuEnrichedPt5\_TuneCUETP8M1\_13TeV\_pythia8       & 1.62\\\hline
+\multirow{6}{=}{QCD $e$ enriched}
+                             & \small QCD\_Pt-30to50\_EMEnriched\_TuneCUETP8M1\_13TeV\_pythia8             & 6493800.0\\
+                             & \small QCD\_Pt-50to80\_EMEnriched\_TuneCUETP8M1\_13TeV\_pythia8             & 2025400.0\\
+                             & \small QCD\_Pt-80to120\_EMEnriched\_TuneCUETP8M1\_13TeV\_pythia8            & 478520.0\\
+                             & \small QCD\_Pt-120to170\_EMEnriched\_TuneCUETP8M1\_13TeV\_pythia8           & 68592.0\\
+                             & \small QCD\_Pt-170to300\_EMEnriched\_TuneCUETP8M1\_13TeV\_pythia8           & 18810.0\\
+                             & \small QCD\_Pt-300toInf\_EMEnriched\_TuneCUETP8M1\_13TeV\_pythia8           & 1350.0\\
+
+\hline
+\end{longtable}
+\end{table}
+
+The colour octet sample is listed in \ref{tab:mcdatasets_flip}. 
+
+\begin{table}[htb]
+\begin{center}
+\caption{Simulation samples for the colour octet \PW boson. We quote the cross section used to normalise the sample in the analysis.}
+\label{tab:mcdatasets_flip}
+\hspace*{-0.5cm}
+\begin{tabular}{ llc }
+\hline
+Process & Dataset & $\sigma[pb]$\\
+\multicolumn{3}{l}{\bf Background} \\
+\hline
+Colour octet $W$ boson &  {\small TT\_TuneCUETP8M2T4\_13TeV-powheg-colourFlip-pythia8} & 832 \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+\section{Corrections applied to the simulation}
+\label{sec:mccorrections}
+
+Based on differences between data and simulated events different sets of corrections are applied to the latter.
+
+\begin{description}
+
+\item[Pileup re-weighting]
+
+\item[Lepton identification and isolation efficiency]
+\item[Trigger efficiency]
+
+\item[Generator level weights]
+
+\item[Jet energy scale and resolution]
+\item[\cPqb tagging efficiency]
+
+
+\end{description}
+

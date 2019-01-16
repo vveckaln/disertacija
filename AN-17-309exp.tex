@@ -1,0 +1,84 @@
+\documentclass[a4paper]{article}
+\date{}
+\usepackage[margin=0.5in]{geometry}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{longtable}
+\usepackage{xspace}
+\usepackage{makecell}
+\usepackage[backend=bibtex,style=alphabetic,sorting=ynt]{biblatex}
+\addbibresource{lib.bib}
+\usepackage{mhchem}
+\usepackage{siunitx}
+\usepackage[utf8]{inputenc}
+\usepackage{subcaption}
+\usepackage{color}
+\newcommand{\TODO}[1]{\colorbox{red}{\textcolor{white}{TODO}} #1}
+\newcommand{\ttbar}{\ensuremath{t\overline{t}}\xspace}
+\newcommand{\PW}{\ensuremath{W}\xspace}
+\newcommand{\cPZ}{\ensuremath{Z}\xspace}
+\newcommand{\fbinv}{\ensuremath{\text{fb}^{-1}}\xspace}
+\newcommand{\pt}{\ensuremath{p_{T}^{}}\xspace}
+\newcommand{\HERWIGpp}{\textsc{HERWIG}++}
+\newcommand{\GEANT}{\textsc{GEANT}}
+\newcommand{\DeltaR}{\ensuremath{\Delta R^{}}\xspace}
+\usepackage{calc}
+\newcommand{\figureEML}[4][]{
+  \def\twidth{0.33}
+  \begin{figure}[htp]
+  \begin{subfigure}[t]{\twidth\textwidth}
+    \includegraphics[width=\textwidth]{fig/histos#1/E/#2/E#3#1.png}
+    \caption{$e$ channel.}
+    \label{fig:#3_b}
+  \end{subfigure}%
+  \begin{subfigure}[t]{\twidth\textwidth}
+    \includegraphics[width=\textwidth]{fig/histos#1/M/#2/M#3#1.png}
+    \caption{$\mu$ channel.}
+    \label{fig:#3_c}
+  \end{subfigure}%
+ \begin{subfigure}[t]{\twidth\textwidth}
+    \includegraphics[width=\textwidth]{fig/histos#1/L/#2/L#3#1.png}
+    \caption{Combined lepton channel.}
+    \label{fig:#3_a}
+  \end{subfigure}
+   \caption{#4}
+  \label{fig:#3}
+\end{figure}
+}
+
+\begin{document}
+\title{Studies of colour flow in top quark pair decays at \SI{13}{TeV}}
+\author{Viesturs Veckalns, Martijn Mulders, Pedro Silva, Markus Seidel}
+\maketitle
+
+\abstract{\input{chapters/abstract}}
+
+\tableofcontents
+\section{Introduction}
+\input{chapters/introduction}
+
+\section{Physical Background}
+\input{chapters/physical_background}
+\
+\section{Methodology}
+
+\input{chapters/methodology}
+\section{Data and MC Samples}
+\input{chapters/data_and_MC_samples}
+\section{Event Selection}
+\input{chapters/event_selection}
+\section{Systematic Uncertainties}
+\input{chapters/systematic_uncertainties}
+
+\section{Experimental Setup}
+\input{chapters/experimental_setup}
+
+\section{Results}
+\input{chapters/results}
+
+\clearpage
+\printbibliography
+
+\end{document}

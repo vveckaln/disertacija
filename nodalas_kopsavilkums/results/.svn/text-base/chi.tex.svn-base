@@ -1,0 +1,69 @@
+\label{subsec:LEP_methodology}
+In order to correctly apply the LEP methodology one needs to separate the \cPqb quarks on the hadronic and the leptonic branch. The methodology to achieve this goal was described in \ref{sec:methodology}. As a test of the validity of the methodology, one can use the invariant mass of the \cPqt quark, formed by the sum of the \cPqb quark and the \PW\ boson. Fig. \ref{fig:L_jet_mass_reco} shows the resonance of the \cPqt quark. Tables \ref{tab:mass_L_reco_MC} - \ref{tab:mass_L_reco_MC_flip} provide additional details.
+
+  \begin{figure}[hbtp]
+    \def\twidth{0.5}
+    \subfloat[Observed mass of \PW\ on the hadronic branch.]{
+    \includegraphics[width=\twidth\textwidth]{fig/histos/L/reco/L_jet_mass_reco_had_w.png}
+    \label{fig:L_jet_mass_reco_had_w}
+}
+  \subfloat[Observed mass of \cPqt on the hadronic branch.]{
+    \includegraphics[width=\twidth\textwidth]{fig/histos/L/reco/L_jet_mass_reco_had_t.png}
+    \label{fig:L_jet_mass_reco_had_t}
+}
+
+ \subfloat[Observed mass of \PW\ on the leptonic branch.]{
+    \includegraphics[width=\twidth\textwidth]{fig/histos/L/reco/L_jet_mass_reco_lept_w.png}
+    \label{fig:L_jet_mass_reco_lept_w}
+  }
+ \subfloat[Observed mass of \cPqt on the leptonic branch.]{
+    \includegraphics[width=\twidth\textwidth]{fig/histos/L/reco/L_jet_mass_reco_lept_t.png}
+    \label{fig:L_jet_mass_reco_lept_t}
+}
+ \caption{Observed masses of objects.}
+  \label{fig:L_jet_mass_reco}
+\end{figure}
+
+
+\input{chapters/results/masses_tables/mass_L_reco_MC.txt}
+
+\input{chapters/results/masses_tables/mass_L_reco_data.txt}
+
+\input{chapters/results/masses_tables/mass_L_reco_MC_flip.txt}
+
+
+The results of the LEP methodology are shown in Fig. \ref{fig:_chi_allconst_reco_jetprt} - \ref{fig:_chi_chconst_reco_jetprt}.
+
+\figureEML{/reco/chi/charge/allconst/}
+          {_chi_allconst_reco_jetprt}
+          {Distribution of $\chi$ with all jet constituents. The distribution is shown in 3 planes: 1. between hadronic \cPqb jet (1st peak) and the light jet with least angle with hadronic \cPqb (2nd peak), 2. between 2 light jets, 3. between light jet with the largest angle with hadronic \cPqb (3rd peak) and the hadronic \cPqb (4th peak).}
+
+\figureEML{/reco/chi/charge/chconst/}
+          {_chi_chconst_reco_jetprt}
+          {Distribution of $\chi$ with charged jet constituents. The distribution is shown in 3 planes: 1. between hadronic \cPqb jet (1st peak) and the light jet with least angle with hadronic \cPqb (2nd peak), 2. between 2 light jets, 3. between light jet with the largest angle with hadronic \cPqb (3rd peak) and the hadronic \cPqb (4th peak).}
+
+As a test of the LEP methodology one can use the $R$ value defined as the ratio of the integral between 0.2 and 0.8 of $\chi_{R}$ in the inter-$W$ region II to the intra-$W$ regions I and II.
+
+\begin{equation}
+R\equiv\frac{2\int_{0.2}^{0.8}nd\chi_{R}^{II}}{\int_{0.2}^{0.8}nd\chi_{R}^{I,\ III}},
+\end{equation}
+where $n(\chi_R)$ is the histogram height. The values for the SM model are given in Tables \ref{tab:R_L_reco_MC} and \ref{tab:R_L_reco_data}.
+
+\input{chapters/results/R_tables/R_L_reco_MC.txt}
+
+\input{chapters/results/R_tables/R_L_reco_data.txt}
+
+At LEP an $R$ value of $1.243\pm0.025(stat.)\pm0.023(syst.)$ was reported corresponding to 625\pbinv of data in the range 189-209\GeV (\cite{Abbiendi:2005es}). Thus the performance of the CMS detector demonstrates a significant improvement in resolving the jet structure. 
+
+Fig. \ref{fig:_chi_allconst_reco_jetprt} - \ref{fig:_chi_chconst_reco_jetprt} give a comparison of the ``LEP method'' in the Standard Model (in red) with the model of the colour-octet \PW\ boson (in blue).
+
+\figureEML[_merged]{/reco/chi/charge/allconst/}
+          {_chi_allconst_reco_jetprt}
+          {Distribution of $\chi$ for the \ttbar sample with all jet constituents. SM - red, colour octet \PW\ model - blue. The distribution is shown in 3 planes: 1. between hadronic \cPqb jet (1st peak) and the light jet with least angle with hadronic \cPqb (2nd peak), 2. between 2 light jets, 3. between light jet with the largest angle with hadronic \cPqb (3d peak) and the hadronic \cPqb (4th peak).}
+
+\figureEML[_merged]{/reco/chi/charge/chconst/}
+          {_chi_chconst_reco_jetprt}
+          {Distribution of $\chi$ for the \ttbar sample with charged jet constituents. SM - red, colour octet \PW\ model - blue. The distribution is shown in 3 planes: 1. between hadronic \cPqb jet (1st peak) and the light jet with least angle with hadronic \cPqb (2nd peak), 2. between 2 light jets, 3. between light jet with the largest angle with hadronic \cPqb (3d peak) and the hadronic \cPqb (4th peak).}
+
+The $R$ values for the colour octet model are given in Table \ref{tab:R_L_reco_MC_flip}.
+\input{chapters/results/R_tables/R_L_reco_MC_flip.txt}

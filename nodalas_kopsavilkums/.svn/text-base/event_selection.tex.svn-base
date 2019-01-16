@@ -1,0 +1,49 @@
+\label{sec:event_selection}
+
+An event is selected if it contains 1 lepton ($e^{\pm}$ or $\mu^{\pm}$), 2 light jets and 2 \cPqb-tagged jets.
+
+The electron must conform to the tight cut-based ID working point. Kinematically it must satisfy\pt $>$ 34\GeV and $\left|\eta\right| < $2.1. The electron high level trigger HLT\_Ele32\_eta2p1\_WPTight\_Gsf\_v must have fired.
+
+The muon must conform to the tight cut-based ID working point. Kinematically it must satisfy \pt$>$ 26\GeV and $\left|\eta\right| < $2.4. Its relative isolation must be less than $0.15$. The muon high level triggers HLT\_IsoMu24\_v and HLT\_IsoTkMu24\_v must have fired.  
+
+The jets must satisfy the kinematic requirements \pt$>$30\GeV and $\left|\eta\right|<2.4$. Additionally there should be no overlap ($\Delta R>0.4$) with the selected lepton. The \cPqb-tagged jets are required to match the 0.8484 working point criterion of the CSV \cPqb-tagging.
+
+The \PW\ pole mass region is vetoed on the hadronic branch ($\left|M_{qq} - 80.4\right| > $15\GeV).
+
+The event yields at different selection stages are shown in Fig. \ref{fig:_reco_selection} and given in Table \ref{tab:yields}.
+
+\figureEML{/reco/}{_reco_selection}{Event yields at different stages of selection: $1 \ell$, $1 \ell + \geq 4 j$, $1 \ell + \geq 4 j (2 b)$, $1 \ell + \geq 4 j (2 b, 2 lj)$.}
+
+\input{chapters/event_yields_table.txt}
+
+\subsection{Control plots}
+
+Fig. \ref{fig:control_plots_leading_jet} and Fig. \ref{fig:control_plots_lepton} shows control plots - \pt and $\eta$ of the leading jet and the lepton.
+
+\begin{figure}[hbtp]
+  \subfloat[\pt of the leading jet.]{
+    \includegraphics[width=0.5\textwidth]{fig/histos/L/control/L4_1l4j2b2w_j0pt.png}
+    \label{fig:L4_1l4j2b2w_j0pt}
+}
+  \subfloat[$\eta$ of the leading jet.]{
+    \includegraphics[width=0.5\textwidth]{fig/histos//L/control/L4_1l4j2b2w_j0eta.png}
+    \label{fig:L4_1l4j2b2w_j0eta}
+}
+   \caption{Control plots - \pt and $\eta$ of the leading jet.}
+  \label{fig:control_plots_leading_jet}
+\end{figure}
+
+\begin{figure}[hbtp]
+  \subfloat[\pt of the lepton.]{
+    \includegraphics[width=0.5\textwidth]{fig/histos/L/control/L4_1l4j2b2w_l0pt.png}
+    \label{fig:L4_1l4j2b2w_l0pt}
+    }
+  \subfloat[$\eta$ of the lepton.]{
+    \includegraphics[width=0.5\textwidth]{fig/histos//L/control/L4_1l4j2b2w_l0eta.png}
+    \label{fig:L4_1l4j2b2w_l0eta}    
+}
+   \caption{Control plots - \pt and $\eta$ of the lepton.}
+  \label{fig:control_plots_lepton}
+\end{figure}
+
+

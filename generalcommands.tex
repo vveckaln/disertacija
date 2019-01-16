@@ -1,0 +1,70 @@
+\newcommand{\DeltaR}{\ensuremath{\Delta R^{}}\xspace}
+\newcommand{\leadingjet}{\ensuremath{j_{1}^{W}}\xspace}%
+\newcommand{\scndleadingjet}{\ensuremath{j_{2}^{W}}\xspace}%
+\newcommand{\leadingb}{\ensuremath{j_{1}^{b}}\xspace}%
+\newcommand{\scndleadingb}{\ensuremath{j_{2}^{b}}\xspace}%
+\newcommand{\hadronicb}{\ensuremath{j_{h}^{b}}\xspace}%
+\newcommand{\pullangle}{\ensuremath{\theta_{p}}\xspace}%
+\newcommand{\pullvector}{\ensuremath{\vec{P}}\xspace}%
+\newcommand{\pvmag}{\ensuremath{\left|\vec{P}\right|}\xspace}%
+
+\newcommand{\jettitle}[1]{%
+\ifthenelse{\equal{#1}{leading_jet}}{\leadingjet}{}%
+\ifthenelse{\equal{#1}{scnd_leading_jet}}{\scndleadingjet}{}%
+\ifthenelse{\equal{#1}{leading_b}}{\leadingb}{}%
+\ifthenelse{\equal{#1}{scnd_leading_b}}{\scndleadingb}{}%
+}%
+
+\newcommand{\countertitle}[1]{%
+\ifthenelse{\equal{#1}{leading_jet}}{\scndleadingjet}{}%
+\ifthenelse{\equal{#1}{scnd_leading_jet}}{\leadingjet}{}%
+\ifthenelse{\equal{#1}{leading_b}}{\scndleadingb}{}%
+\ifthenelse{\equal{#1}{scnd_leading_b}}{\leadingb}{}%
+}%
+
+
+\newcommand{\observabletitle}[1]{%
+\ifthenelse{\equal{#1}{pull_angle}}{pull angle \pullangle}{}%
+\ifthenelse{\equal{#1}{pvmag}}{magnitude of the pull vector \pvmag}{}%
+}%
+
+\newcommand{\chargetitle}[1]{%
+\ifthenelse{\equal{#1}{allconst}}{all jet constituents}{}%
+\ifthenelse{\equal{#1}{chconst}}{only charged jet constituents}{}%
+}%
+
+\newcommand{\methodtitle}[1]{%
+\ifthenelse{\equal{#1}{nominal}}{\ensuremath{t\overline{t}}\xspace}{}%
+\ifthenelse{\equal{#1}{cflip}}{\ensuremath{t\overline{t} \text{cflip}}\xspace}{}%
+}%
+
+\newcommand{\binningtitle}[1]{% 
+  \ifthenelse{\equal{#1}{ORIG}}
+             {the original binnning}
+             {}%    
+  \ifthenelse{\equal{#1}{ATLAS3}}{3 regularly sized bins}{}%
+  \ifthenelse{\equal{#1}{SIGMA_0p1}}{the optimised binning with a $\sigma$ factor of 0.1}{}%
+  \ifthenelse{\equal{#1}{SIGMA_0p6}}{the optimised binning with a $\sigma$ factor of 0.6}{}%
+}%           
+
+\newcommand{\flowtitle}[1]{%
+\ifthenelse{\equal{#1}{N}}{particle}{}%
+\ifthenelse{\equal{#1}{E}}{energy}{}%
+\ifthenelse{\equal{#1}{Pt}}{\ensuremath{p_{T}}\xspace}{}%
+}%
+
+\newcommand{\recoleveltitle}[1]{%
+\ifthenelse{\equal{#1}{gen}}{generator}{}%
+\ifthenelse{\equal{#1}{reco}}{reconstruction}{}%
+}%
+
+\newcommand{\modeltitle}[1]{%
+\ifthenelse{\equal{#1}{nominal}}{SM}{}%
+\ifthenelse{\equal{#1}{cflip}}{colour octet $W$}{}%
+}%
+
+\def\customwidth{\textwidth}
+
+%% \ExplSyntaxOn
+%% \NewExpandableDocumentCommand{\capitalise}{m}{\tl_mixed_case:n{#1}}
+%% \ExplSyntaxOff

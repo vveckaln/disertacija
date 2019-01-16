@@ -1,0 +1,48 @@
+
+\newcommand{\figunfolding}[6]{%
+  \def\method{#1}%
+  \def\jet{#2}%
+  \def\chargetag{#3}%
+  \def\observable{#4}%
+  \def\binningscheme{#5}%
+%  \newcommand{\optlevel}{}%
+  \ifthenelse{\equal{\binningscheme}{ORIG}}{\def\optlevel{ORIG}}{\def\optlevel{OPT}}%
+  %\newcommand{\bintag}{}
+  \ifthenelse{\equal{\binningscheme}{ORIG}}{\def\bintag{}}{\def\bintag{_\binningscheme}}
+  \def\sampletag{#6}
+  \def\commonplottag{\jet_\chargetag_\observable_\optlevel}%
+  \def\directory{\jet_\chargetag_\sampletag_\observable_\optlevel_\method\bintag}%
+  \def\subdir{\observable/\binningscheme}
+  \def\taglabel{unfolding_\method_\jet_\chargetag_\observable_\optlevel_\sampletag_\binningscheme}%
+  \begin{figure}
+  \centering
+    \subfloat[Migration matrix with the reconstruction level as the $x$ axis and the generation level as the $y$ axis.]{%
+      \includegraphics[width=0.45\textwidth]{fig/unfolding_\method/\subdir/\directory/migrationmatrix.png}%
+      \label{fig:\taglabel_a}
+    }%
+    \subfloat[The data and Monte Carlo used as input.]{%
+      \includegraphics[width=0.45\textwidth]{fig/common_plots_\method/\subdir/\commonplottag_reco_in.png}%
+      \label{fig:\taglabel_b}
+    }\\
+    \subfloat[The unfolded result.]{%
+      \includegraphics[width=0.45\textwidth]{fig/common_plots_\method/\subdir/\commonplottag_gen_out.png}%
+      \label{fig:\taglabel_c}
+    }%
+    \subfloat[The folded back result.]{%
+      \includegraphics[width=0.45\textwidth]{fig/common_plots_\method/\subdir/\commonplottag_reco_out.png}%
+      \label{fig:\taglabel_d}
+    }\\  
+    \subfloat[Stability and purity in each bin.]{%
+      \includegraphics[width=0.45\textwidth]{fig/unfolding_\method/\subdir/\directory/stabpur.png}%
+      \label{fig:\taglabel_e}
+    }%
+    \subfloat[The pull.]{%
+      \includegraphics[width=0.45\textwidth]{fig/unfolding_\method/\subdir/\directory/pull.png}%
+      \label{fig:\taglabel_f}
+    }%
+    \caption{
+      Unfolding plots for the \protect\methodtitle{\method} method of the \protect\observabletitle{\observable} of \protect\jettitle{\jet} to 
+      \protect\countertitle{\jet} including \protect\chargetitle{\chargetag} using \protect\binningtitle{\binningscheme}.}
+    \label{fig:\taglabel}
+  \end{figure}
+}%

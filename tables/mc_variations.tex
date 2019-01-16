@@ -1,0 +1,50 @@
+\begin{table}[!htp]
+\begin{center}
+\caption{
+Variations of the Powheg + Pythia8 setup used for the comparison with the measurements.
+The values changed with respect to the CUETP8M2T4 tune are given in the columns corresponding to each model.
+}
+\label{tab:mcsetups_detailed}
+\resizebox{\textwidth}{!}{
+\begin{tabular}{ l|c|c|c|c|c|c|c}
+\hline
+\multirow{5}{*}{Parameter} & \multicolumn{7}{c}{Powheg + Pythia8 simulation setups}\\\cline{2-8}
+                           & \multirow{4}{*}{CUETP8M2T4}
+                                   & \multicolumn{6}{c}{Fine grain variations}\\\cline{2-8}
+                           &       & MPI/CR           &  \multicolumn{2}{c|}{Parton shower scale}
+                                                                                        & \multicolumn{3}{c}{CR including \ttbar} \\\cline{4-8}
+                           &        & UE              & ISR            & FSR            & ERD & QCD          & Gluon\\
+                           &        & \small up/down  & \small up/down & \small up/down & on  & based        & move\\
+\hline\hline
+PartonLevel                &        &                 &                &                &        &           &      \\
+~~~~~MPI                   & on     &                 &                &                &        &           &      \\\hline
+SpaceShower                &        &                 &                &                &        &           &      \\
+~~~~~renormMultFac         & 1.0    &                 & 4/0.25         &                &        &           &      \\
+~~~~~alphaSvalue           & 0.1108 &                 &                &                &        & 0.2521    &      \\\hline
+TimeShower                 &        &                 &                &                &        &           &      \\
+~~~~~renormMultFac         & 1.0    &                 &                & 4/0.25         &        &           &      \\
+~~~~~alphaSvalue           & 0.1365 &                 &                &                &        & 0.2521    &      \\\hline
+MultipartonInteractions    &        &                 &                &                &        &           &      \\
+~~~~~pT0Ref                & 2.2    & 2.20/2.128      &                &                &        & 2.174     & 2.3  \\
+~~~~~ecmPow                & 0.2521 &                 &                &                &        & 0.2521    &      \\
+~~~~~expPow                & 1.6    & 1.711/1.562     &                &                &        & 1.312     & 1.35 \\\hline
+ColorReconnection          &        &                 &                &                &        &           &      \\
+~~~~~reconnect             & on     &                 &                &                &        &           &      \\
+~~~~~range                 & 6.59   & 6.5/8.7         &                &                &        &           &      \\
+~~~~~mode                  & 0      &                 &                &                &        & 1         & 2    \\
+~~~~~junctionCorrection    &        &                 &                &                &        & 0.1222    &      \\
+~~~~~timeDilationPar       &        &                 &                &                &        & 15.86     &      \\
+~~~~~m0                    &        &                 &                &                &        & 1.204     &      \\
+~~~~~flipMode              &        &                 &                &                &        &           & 0    \\
+~~~~~m2Lambda              &        &                 &                &                &        &           & 1.89 \\
+~~~~~fracGluon             &        &                 &                &                &        &           & 1    \\
+~~~~~dLambdaCut            &        &                 &                &                &        &           & 0    \\\hline
+PartonVertex               &        &                 &                &                &        &           &      \\
+~~~~~setVertex             &        &                 &                &                &        &           &      \\\hline
+PartonLevel                &        &                 &                &                &        &           &      \\
+~~~~~earlyResDec           & off    &                 &                &                & on     & on        & on   \\
+\hline
+\end{tabular}
+}
+\end{center}
+\end{table}

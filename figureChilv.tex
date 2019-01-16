@@ -1,0 +1,29 @@
+
+\newcommand{\figureChilv}[3]{
+  \def\twidth{0.45}
+  \def\chargetag{#1}
+  \def\flowtag{#2}
+  \def\tagl{chi_\chargetag_\flowtag}
+  \begin{figure}[hbtp]
+  \centering
+  \subfloat[\leadingb, \scndleadingb]{
+    \includegraphics[width=\twidth\textwidth]{fig/histos/L/reco/chi/charge/\chargetag/L_chiblb2l_\flowtag_\chargetag_reco_jetprt.png}
+    \label{fig:\tagl_a}
+  }%
+  \subfloat[\hadronicb, $j_{f}^{W}$]{
+    \includegraphics[width=\twidth\textwidth]{fig/histos/L/reco/chi/charge/\chargetag/L_chihbqf_\flowtag_\chargetag_reco_jetprt.png}
+    \label{fig:\tagl_b}
+  }\\
+ \subfloat[$j_{c}^{W}$, \hadronicb]{
+    \includegraphics[width=\twidth\textwidth]{fig/histos/L/reco/chi/charge/\chargetag/L_chiqcqf_\flowtag_\chargetag_reco_jetprt.png}
+    \label{fig:\tagl_c}
+  }%
+ \subfloat[\leadingjet, \scndleadingjet]{
+    \includegraphics[width=\twidth\textwidth]{fig/histos/L/reco/chi/charge/\chargetag/L_chihbqc_\flowtag_\chargetag_reco_jetprt.png}
+    \label{fig:\tagl_d}
+  }
+  \caption{#3}
+  \label{fig:\tagl}
+
+\end{figure}
+}
