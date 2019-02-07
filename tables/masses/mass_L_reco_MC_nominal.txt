@@ -1,0 +1,16 @@
+\begin{table}[htp]
+	\begin{center}
+	\caption{Observed masses of objects for the common lepton channel at reconstruction level for MC for the SM model.}
+	\label{tab:mass_L_reco_MC_nominal}
+		\begin{tabular}{l|rr}
+		\hline
+		\makecell[c]{Object}&\makecell[c]{Mass$\pm$(stat)$\pm$(syst) [GeV]}&\makecell[c]{FWHM$\pm$(stat)$\pm$(syst) [GeV]}\\
+		\hline
+		hadronic $W$ 	& 8.162e+01 	$\pm$ 3.235e-06 	$\pm$ 2.067e-01 	& 2.914e+01 	$\pm$ 4.089e-04 	$\pm$ 7.004e-02 \\
+		hadronic $t$ 	& 1.726e+02 	$\pm$ 1.953e-09 	$\pm$ 3.756e-01 	& 3.512e+01 	$\pm$ 6.212e-04 	$\pm$ 2.978e-01 \\
+		leptonic $W$ 	& 8.704e+01 	$\pm$ 1.695e-04 	$\pm$ 1.542e-02 	& 5.000e-01 	$\pm$ 0.000e+00 	$\pm$ 0.000e+00 \\
+		leptonic $t$ 	& 1.730e+02 	$\pm$ 4.574e-07 	$\pm$ 9.835e-02 	& 4.611e+01 	$\pm$ 1.168e-03 	$\pm$ 1.039e-01 \\
+		\hline
+		\end{tabular}
+	\end{center}
+\end{table}

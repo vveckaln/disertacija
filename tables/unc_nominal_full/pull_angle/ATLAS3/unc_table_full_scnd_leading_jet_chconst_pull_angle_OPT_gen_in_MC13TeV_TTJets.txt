@@ -1,27 +1,25 @@
-\begin{table}[htp]
-	\begin{center}
-	\caption{Bin by bin weight of uncertainty (shapes) for \protect\observabletitle{pull_angle} including \protect\chargetitle{chconst} of the \protect\jettitle{scnd_leading_jet} at the \protect\recoleveltitle{gen} level. The results are for                        input at the generator level for the Powheg+Pythia8 sample.}
-	\label{tab:unc_table_fullpull_angle_OPT_chconst_gen_in_MC13TeV_TTJets_nominal_ATLAS3}
-		\begin{tabular}{l|ccc}
+		\begin{longtable}{p{0.6\linewidth}|ccc}
+	\caption{Bin by bin weight of uncertainty (shapes) for \protect\observabletitle{pull_angle} including \protect\chargetitle{chconst} from the \protect\jettitle{scnd_leading_jet} to the \protect\jettitle{leading_jet} at the \protect\recoleveltitle{gen} level. The results are for input at the generator level for the \POWHEG+\PYTHIA 8 sample. The binning method of \protect\binningtitle{ATLAS3} is used.}
+	\label{tab:unc_table_fullpull_angle_OPT_chconst_gen_in_MC13TeV_TTJets_nominal_ATLAS3}\\
 			\hline
-			\makecell[c]{\multirow{3}{*}{nuisance}} &\multicolumn{3}{c}{uncertainty in bins (\%)}\\
+			\makecell[c]{\multirow{3}{*}{Nuisance}} &\multicolumn{3}{c}{Uncertainty in bins [\%]}\\
 			 & bin 1  & bin 2  & bin 3  \\
 			 & 0.00 - 1.04 & 1.04 - 2.07 & 2.07 - 3.14 \\
 			\hline
 			$t\overline{t}$ ERDon	&	1.473	&	0.397	&	1.315\\
 			$t\overline{t}$ Herwig++	&	4.626	&	1.577	&	3.796\\
-			$t\overline{t}$ Peterson Frag	&	0.097	&	0.047	&	0.065\\
-			$t\overline{t}$ QCD scale 1	&	0.009	&	0.005	&	0.005\\
-			$t\overline{t}$ QCD scale 2	&	0.056	&	0.017	&	0.048\\
-			$t\overline{t}$ QCD scale 3	&	0.013	&	0.013	&	0.028\\
-			$t\overline{t}$ QCD scale 4	&	0.081	&	0.038	&	0.056\\
-			$t\overline{t}$ QCD scale 5	&	0.048	&	0.033	&	0.022\\
-			$t\overline{t}$ QCD scale 6	&	0.151	&	0.069	&	0.106\\
+			$t\overline{t}$ Peterson Frag	&	0.095	&	0.033	&	0.077\\
+			$t\overline{t}$ QCD scale 1	&	0.001	&	0.007	&	0.008\\
+			$t\overline{t}$ QCD scale 2	&	0.046	&	0.019	&	0.035\\
+			$t\overline{t}$ QCD scale 3	&	0.042	&	0.006	&	0.044\\
+			$t\overline{t}$ QCD scale 4	&	0.051	&	0.030	&	0.030\\
+			$t\overline{t}$ QCD scale 5	&	0.042	&	0.031	&	0.018\\
+			$t\overline{t}$ QCD scale 6	&	0.002	&	0.003	&	0.006\\
 			$t\overline{t}$ QCDbased	&	3.565	&	1.233	&	2.908\\
 			$t\overline{t}$ UEdn	&	0.006	&	0.152	&	0.161\\
 			$t\overline{t}$ UEup	&	0.479	&	0.221	&	0.335\\
-			$t\overline{t}$ b fragmentation down	&	0.049	&	0.003	&	0.060\\
-			$t\overline{t}$ b fragmentation up	&	0.137	&	0.037	&	0.122\\
+			$t\overline{t}$ b fragmentation down	&	0.056	&	0.008	&	0.057\\
+			$t\overline{t}$ b fragmentation up	&	0.124	&	0.027	&	0.118\\
 			$t\overline{t}$ btag\_heavy down	&	0.047	&	0.053	&	0.002\\
 			$t\overline{t}$ btag\_heavy up	&	0.033	&	0.018	&	0.021\\
 			$t\overline{t}$ btag\_light down	&	0.047	&	0.065	&	0.011\\
@@ -56,17 +54,15 @@
 			$t\overline{t}$ jer up	&	0.022	&	0.005	&	0.031\\
 			$t\overline{t}$ m=171.5	&	0.194	&	0.031	&	0.257\\
 			$t\overline{t}$ m=173.5	&	0.311	&	0.358	&	0.000\\
-			$t\overline{t}$ pileup down	&	0.029	&	0.023	&	0.010\\
-			$t\overline{t}$ pileup up	&	0.003	&	0.009	&	0.005\\
-			$t\overline{t}$ sel efficiency correction down	&	0.008	&	0.000	&	0.010\\
-			$t\overline{t}$ sel efficiency correction up	&	0.030	&	0.020	&	0.015\\
-			$t\overline{t}$ semilep BR down	&	0.002	&	0.006	&	0.004\\
-			$t\overline{t}$ semilep BR up	&	0.023	&	0.016	&	0.010\\
+			$t\overline{t}$ pileup down	&	0.014	&	0.015	&	0.002\\
+			$t\overline{t}$ pileup up	&	0.021	&	0.001	&	0.023\\
+			$t\overline{t}$ sel efficiency correction down	&	0.003	&	0.001	&	0.003\\
+			$t\overline{t}$ sel efficiency correction up	&	0.001	&	0.000	&	0.001\\
+			$t\overline{t}$ semilep BR down	&	0.006	&	0.003	&	0.004\\
+			$t\overline{t}$ semilep BR up	&	0.006	&	0.004	&	0.004\\
 			$t\overline{t}$ tracking down	&	0.020	&	0.023	&	0.001\\
 			$t\overline{t}$ tracking up	&	0.023	&	0.025	&	0.001\\
-			$t\overline{t}$ trig efficiency correction down	&	0.003	&	0.006	&	0.002\\
-			$t\overline{t}$ trig efficiency correction up	&	0.018	&	0.015	&	0.007\\
+			$t\overline{t}$ trig efficiency correction down	&	0.002	&	0.000	&	0.002\\
+			$t\overline{t}$ trig efficiency correction up	&	0.000	&	0.000	&	0.001\\
 		\hline
-		\end{tabular}
-	\end{center}
-\end{table}
+		\end{longtable}

@@ -1,0 +1,31 @@
+\begin{table}[htp]
+	\begin{center}
+	\caption{Integrālis no 0,2 līdz 0,8 un $R^{-1}$ vērtība kopīgajam leptona kanālam rekonstrukcijas līmenī daļiņu plūsmai Monte Karlo simulācijā atbilstoši krāsu okteta \PW bozona modelim.}
+	\label{tab:R_L_reco_N_MC_SM}
+		\begin{tabular}{|l|cc|}
+		\hline
+		\makecell[c]{Strūklas sastāvdaļas} & $I$$\pm$(stat)$\pm$(sist) [rad] & $R^{-1}$$\pm$(stat)$\pm$(sist) \\
+		\hline
+		\multicolumn{3}{|c|}{$j_{1}^{b}$,$j_{2}^{b}$}\\
+		\hline
+		 visas 	& 0,010 	$\pm$ 0,000 	$\pm$ 0,000 	& 0,151 	$\pm$ 0,000 	$\pm$ 0,002 \\
+		 lādētas 	& 0,007 	$\pm$ 0,000 	$\pm$ 0,000 	& 0,127 	$\pm$ 0,000 	$\pm$ 0,003 \\
+		\hline
+		\multicolumn{3}{|c|}{$j_{f}^{W}$,$j_{h}^{b}$}\\
+		\hline
+		 visas 	& 0,012 	$\pm$ 0,000 	$\pm$ 0,000 	& 0,183 	$\pm$ 0,000 	$\pm$ 0,001 \\
+		 lādētas 	& 0,008 	$\pm$ 0,000 	$\pm$ 0,000 	& 0,152 	$\pm$ 0,000 	$\pm$ 0,003 \\
+		\hline
+		\multicolumn{3}{|c|}{$j_{h}^{b}$,$j_{c}^{W}$}\\
+		\hline
+		 visas 	& 0,062 	$\pm$ 0,000 	$\pm$ 0,000 	& 0,923 	$\pm$ 0,000 	$\pm$ 0,002 \\
+		 lādētas 	& 0,040 	$\pm$ 0,000 	$\pm$ 0,000 	& 0,768 	$\pm$ 0,000 	$\pm$ 0,005 \\
+		\hline
+		\multicolumn{3}{|c|}{$j_{1}^{W}$,$j_{2}^{W}$}\\
+		\hline
+		 visas 	& 0,067 	$\pm$ 0,000 	$\pm$ 0,001 	& 1,000 	$\pm$ 0,000 	$\pm$ 0,010 \\
+		 lādētas 	& 0,052 	$\pm$ 0,000 	$\pm$ 0,001 	& 1,000 	$\pm$ 0,000 	$\pm$ 0,016 \\
+		\hline
+		\end{tabular}
+	\end{center}
+\end{table}

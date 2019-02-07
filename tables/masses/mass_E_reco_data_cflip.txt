@@ -1,0 +1,12 @@
+\begin{table}[htp]
+	\begin{center}
+	\caption{Observed masses of objects for the $e$ channel at reconstruction level for data for the colour octet $W$ model.}
+	\label{tab:mass_E_reco_data_cflip}
+		\begin{tabular}{l|rr}
+		\hline
+		\makecell[c]{Object}&\makecell[c]{Mass$\pm$(stat) [GeV]}&\makecell[c]{FWHM$\pm$(stat) [GeV]}\\
+		\hline
+		\hline
+		\end{tabular}
+	\end{center}
+\end{table}

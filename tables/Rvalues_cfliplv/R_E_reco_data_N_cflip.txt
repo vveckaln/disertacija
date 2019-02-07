@@ -1,0 +1,11 @@
+\begin{table}[htp]
+	\begin{center}
+	\caption{Value of $R^{-1}$ for the $e$ channel at reconstruction level for data, particle flow for the  colour octet $W$ model.}
+	\label{tab:R_E_reco_N_data_cflip}
+		\begin{tabular}{|l|cc|}
+		\hline
+		\makecell[c]{Jet constituents} & $I$$\pm$(stat) [rad] & $R^{-1}$$\pm$(stat) \\
+		\hline
+		\end{tabular}
+	\end{center}
+\end{table}

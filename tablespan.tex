@@ -1,0 +1,14 @@
+\documentclass{report}
+\usepackage{makecell}
+\usepackage{lipsum}
+\usepackage{tabularx}
+\newcommand{\nl}{\newline}
+
+\begin{document}
+
+\begin{tabularx}{\linewidth}{XX}
+  \lipsum[1][1] & \lipsum[1][2-4]\\
+  \lipsum[1][5] & A\nl B\nl C\nl D\nl E
+\end{tabularx}
+
+\end{document}

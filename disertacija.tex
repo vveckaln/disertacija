@@ -1,4 +1,4 @@
-\documentclass[titlepage, a4paper]{report}
+\documentclass[titlepage, a4paper, EN]{mythesis}
 \usepackage[bindingoffset=0cm, left=2.5cm, right=2.5cm, top=2.5cm, bottom=2.5cm]{geometry}
 \usepackage[utf8]{inputenc}
 \usepackage[backend=bibtex, style=numeric, sorting=none]{biblatex}
@@ -13,21 +13,31 @@
 \usepackage{lscape}
 \usepackage{amssymb}
 \usepackage{threeparttable}
+\usepackage{tabularx}
 \usepackage{enumerate}
 %\usepackage[T1]{fontenc}
 %\renewcommand{\baselinestretch}{1.2}
 \setlength{\skip\footins}{1.25 cm}
 \usepackage{fontspec}
-\setmainfont{Times New Roman}
+\setmainfont{TeX Gyre Termes}
 \renewcommand{\normalsize}{\fontsize{12pt}{13.4pt}\selectfont}
 \linespread{1.2}
 \setlength\parindent{0.63cm}
 \setlength{\abovecaptionskip}{6pt}
 \setlength{\belowcaptionskip}{12pt}
+\usepackage{caption}
+\DeclareCaptionFormat{hfillstart}{\hfill#1#2#3\par}
+\captionsetup[table]{
+  format=hfillstart,
+  labelsep=newline,
+  justification=centering
+}
 \title{Studies of colour flow in top quark pair decays at 13 TeV at the CMS experiment of the CERN LHC} 
-\author{Viesturs Veckalns\\Rīgas Tehniskā universitāte}
+\author{Viesturs Veckalns}
+\institution{Rīgas Tehniskā universitāte}
+\supervisor{Leonīds Ribickis}
+\date{2019}
 
-\date{2018}
 
 
 \input{generalcommands.tex}
@@ -69,6 +79,7 @@
 \input{chapters/methodology}
 
 \chapter{Data and MC Samples}
+\label{chap:data_and_mc_samples}
 \input{chapters/data_and_MC_samples}
 
 \chapter{Event Selection}
@@ -79,12 +90,11 @@
 \label{chap:systematic_uncertainties}
 \input{chapters/systematic_uncertainties}
 
-
 \chapter{Results}
 \label{chap:results}
 \input{chapters/results}
 
-%\clearpage
+\clearpage
 \section{Unfolding}
 \input{chapters/results/unfolding.tex}
 

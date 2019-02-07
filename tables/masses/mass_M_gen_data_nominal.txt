@@ -1,0 +1,16 @@
+\begin{table}[htp]
+	\begin{center}
+	\caption{Observed masses of objects for the $\mu$ channel at generation level for data for the SM model.}
+	\label{tab:mass_M_gen_data_nominal}
+		\begin{tabular}{l|rr}
+		\hline
+		\makecell[c]{Object}&\makecell[c]{Mass$\pm$(stat) [GeV]}&\makecell[c]{FWHM$\pm$(stat) [GeV]}\\
+		\hline
+		hadronic $W$ 	& x\\
+		hadronic $t$ 	& x\\
+		leptonic $W$ 	& x\\
+		leptonic $t$ 	& x\\
+		\hline
+		\end{tabular}
+	\end{center}
+\end{table}

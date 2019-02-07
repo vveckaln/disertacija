@@ -1,0 +1,16 @@
+\begin{table}[htp]
+	\begin{center}
+	\caption{Observed masses of objects for the $e$ channel at reconstruction level for MC for the colour octet $W$ model.}
+	\label{tab:mass_E_reco_MC_cflip}
+		\begin{tabular}{l|rr}
+		\hline
+		\makecell[c]{Object}&\makecell[c]{Mass$\pm$(stat)$\pm$(syst) [GeV]}&\makecell[c]{FWHM$\pm$(stat)$\pm$(syst) [GeV]}\\
+		\hline
+		hadronic $W$ 	& 8.383e+01 	$\pm$ 2.270e-06 	$\pm$ 1.256e-02 	& 2.806e+01 	$\pm$ 5.592e-04 	$\pm$ 9.613e-03 \\
+		hadronic $t$ 	& 1.734e+02 	$\pm$ 1.841e+01 	& 3.722e+01 	$\pm$ 6.284e+00 \\
+		leptonic $W$ 	& 8.687e+01 	$\pm$ 1.379e-05 	$\pm$ 3.516e-02 	& 5.000e-01 	$\pm$ 0.000e+00 	$\pm$ 0.000e+00 \\
+		leptonic $t$ 	& 1.736e+02 	$\pm$ 1.140e-05 	$\pm$ 2.290e-02 	& 4.830e+01 	$\pm$ 2.985e-03 	$\pm$ 1.003e-01 \\
+		\hline
+		\end{tabular}
+	\end{center}
+\end{table}

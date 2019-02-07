@@ -1,0 +1,31 @@
+\begin{table}[htp]
+	\begin{center}
+	\caption{Integrālis no 0,2 līdz 0,8 un $R^{-1}$ vērtība kopīgajam leptona kanālam rekonstrukcijas līmenī daļiņu plūsmai datos atbilstoši krāsu okteta \PW bozona modelim.}
+	\label{tab:R_L_reco_N_MC_cflip}
+		\begin{tabular}{|l|cc|}
+		\hline
+		\makecell[c]{Strūklas sastāvdaļas} & $I$$\pm$(stat)$\pm$(sist) [rad] & $R^{-1}$$\pm$(stat)$\pm$(sist) \\
+		\hline
+		\multicolumn{3}{|c|}{$j_{1}^{b}$,$j_{2}^{b}$}\\
+		\hline
+		 visas 	& 0,010 	$\pm$ 0,000 	$\pm$ 0,000 	& 0,189 	$\pm$ 0,000 	$\pm$ 0,002 \\
+		 lādētas 	& 0,006 	$\pm$ 0,000 	$\pm$ 0,000 	& 0,175 	$\pm$ 0,000 	$\pm$ 0,004 \\
+		\hline
+		\multicolumn{3}{|c|}{$j_{f}^{W}$,$j_{h}^{b}$}\\
+		\hline
+		 visas 	& 0,013 	$\pm$ 0,000 	$\pm$ 0,000 	& 0,250 	$\pm$ 0,000 	$\pm$ 0,001 \\
+		 lādētas 	& 0,008 	$\pm$ 0,000 	$\pm$ 0,000 	& 0,243 	$\pm$ 0,000 	$\pm$ 0,003 \\
+		\hline
+		\multicolumn{3}{|c|}{$j_{h}^{b}$,$j_{c}^{W}$}\\
+		\hline
+		 visas 	& 0,071 	$\pm$ 0,000 	$\pm$ 0,000 	& 1,375 	$\pm$ 0,000 	$\pm$ 0,003 \\
+		 lādētas 	& 0,049 	$\pm$ 0,000 	$\pm$ 0,000 	& 1,433 	$\pm$ 0,000 	$\pm$ 0,008 \\
+		\hline
+		\multicolumn{3}{|c|}{$j_{1}^{W}$,$j_{2}^{W}$}\\
+		\hline
+		 visas 	& 0,052 	$\pm$ 0,000 	$\pm$ 0,000 	& 1,000 	$\pm$ 0,000 	$\pm$ 0,003 \\
+		 lādētas 	& 0,034 	$\pm$ 0,000 	$\pm$ 0,000 	& 1,000 	$\pm$ 0,000 	$\pm$ 0,008 \\
+		\hline
+		\end{tabular}
+	\end{center}
+\end{table}

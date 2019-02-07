@@ -1,0 +1,31 @@
+\begin{table}[htp]
+	\begin{center}
+	\caption{Value of $R^{-1}$ for the common lepton channel at reconstruction level for MC, energy flow for the  colour octet $W$ model.}
+	\label{tab:R_L_reco_E_MC_cflip}
+		\begin{tabular}{|l|cc|}
+		\hline
+		\makecell[c]{Jet constituents} & $I$$\pm$(stat)$\pm$(syst) [rad] & $R^{-1}$$\pm$(stat)$\pm$(syst) \\
+		\hline
+		\multicolumn{3}{|c|}{$j_{1}^{b}$,$j_{2}^{b}$}\\
+		\hline
+		 all 	& 0.003 	$\pm$ 0.000 	$\pm$ 0.000 	& 0.233 	$\pm$ 0.002 	$\pm$ 0.003 \\
+		 charged 	& 0.002 	$\pm$ 0.000 	$\pm$ 0.000 	& 0.224 	$\pm$ 0.004 	$\pm$ 0.007 \\
+		\hline
+		\multicolumn{3}{|c|}{$j_{f}^{W}$,$j_{h}^{b}$}\\
+		\hline
+		 all 	& 0.003 	$\pm$ 0.000 	$\pm$ 0.000 	& 0.218 	$\pm$ 0.002 	$\pm$ 0.002 \\
+		 charged 	& 0.002 	$\pm$ 0.000 	$\pm$ 0.000 	& 0.221 	$\pm$ 0.004 	$\pm$ 0.004 \\
+		\hline
+		\multicolumn{3}{|c|}{$j_{h}^{b}$,$j_{c}^{W}$}\\
+		\hline
+		 all 	& 0.022 	$\pm$ 0.000 	$\pm$ 0.000 	& 1.575 	$\pm$ 0.007 	$\pm$ 0.009 \\
+		 charged 	& 0.016 	$\pm$ 0.000 	$\pm$ 0.000 	& 1.669 	$\pm$ 0.014 	$\pm$ 0.015 \\
+		\hline
+		\multicolumn{3}{|c|}{$j_{1}^{W}$,$j_{2}^{W}$}\\
+		\hline
+		 all 	& 0.014 	$\pm$ 0.000 	$\pm$ 0.000 	& 1.000 	$\pm$ 0.006 	$\pm$ 0.007 \\
+		 charged 	& 0.010 	$\pm$ 0.000 	$\pm$ 0.000 	& 1.000 	$\pm$ 0.012 	$\pm$ 0.011 \\
+		\hline
+		\end{tabular}
+	\end{center}
+\end{table}

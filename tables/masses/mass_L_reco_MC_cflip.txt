@@ -1,0 +1,16 @@
+\begin{table}[htp]
+	\begin{center}
+	\caption{Observed masses of objects for the common lepton channel at reconstruction level for MC for the colour octet $W$ model.}
+	\label{tab:mass_L_reco_MC_cflip}
+		\begin{tabular}{l|rr}
+		\hline
+		\makecell[c]{Object}&\makecell[c]{Mass$\pm$(stat)$\pm$(syst) [GeV]}&\makecell[c]{FWHM$\pm$(stat)$\pm$(syst) [GeV]}\\
+		\hline
+		hadronic $W$ 	& 8.347e+01 	$\pm$ 1.629e-06 	$\pm$ 1.825e-02 	& 2.783e+01 	$\pm$ 1.977e-04 	$\pm$ 8.414e-02 \\
+		hadronic $t$ 	& 1.724e+02 	$\pm$ 1.469e-04 	$\pm$ 4.000e-02 	& 3.711e+01 	$\pm$ 6.257e-04 	$\pm$ 3.821e-01 \\
+		leptonic $W$ 	& 8.581e+01 	$\pm$ 1.862e-05 	$\pm$ 8.210e-03 	& 5.000e-01 	$\pm$ 0.000e+00 	$\pm$ 0.000e+00 \\
+		leptonic $t$ 	& 1.730e+02 	$\pm$ 1.094e-06 	$\pm$ 3.321e-03 	& 4.685e+01 	$\pm$ 1.247e-03 	$\pm$ 4.481e-02 \\
+		\hline
+		\end{tabular}
+	\end{center}
+\end{table}

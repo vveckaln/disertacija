@@ -1,4 +1,4 @@
-\documentclass[titlepage, a4paper]{report}
+\documentclass[titlepage, a4paper, EN]{mythesis}
 \usepackage[bindingoffset=0cm, left=2.5cm, right=2.5cm, top=2.5cm, bottom=2.5cm]{geometry}
 \usepackage[utf8]{inputenc}
 \usepackage[backend=bibtex, style=numeric, sorting=none]{biblatex}
@@ -18,13 +18,18 @@
 \renewcommand{\baselinestretch}{1.5}
 \setlength{\skip\footins}{1.25 cm}
 \usepackage{fontspec}
-\setmainfont{Times New Roman}
+\setmainfont{TeX Gyre Termes}
+\renewcommand{\normalsize}{\fontsize{12pt}{13.4pt}\selectfont}
+\linespread{1.2}
+\setlength\parindent{0.63cm}
+\setlength{\abovecaptionskip}{6pt}
+\setlength{\belowcaptionskip}{12pt}
+
 \title{Studies of colour flow in top quark pair decays at 13 TeV at the CMS experiment of the CERN LHC} 
-\author{Viesturs Veckalns\\Rīgas Tehniskā universitāte}
-
-\date{2018}
-
-
+\author{Viesturs Veckalns}
+\institution{Rīgas Tehniskā universitāte}
+\supervisor{Leonīds Ribickis}
+\date{2019}
 \input{generalcommands.tex}
 
 \input{figureratiographs.tex}
@@ -46,17 +51,18 @@
 \input{chapters/acknowledgements}
 
 \tableofcontents
-\listoffigures
-\listoftables
+%% \listoffigures
+%% \listoftables
 
 \chapter{Introduction}
 \label{chap:introduction}
-\input{chapters_summary/introduction}
+\input{chapters/introduction}
 
 \chapter{Physical Background}
 \input{chapters_summary/physical_background}
 
 \chapter{Experimental Setup}
+\label{sec:experimental_setup}
 \input{chapters_summary/experimental_setup}
 
 \chapter{Methodology}
@@ -92,7 +98,7 @@
 \input{chapters_summary/results/hypo_testing.tex}
 
 \chapter{Conclusions}
-\input{chapters_summary/conclusions.tex}
+\input{chapters/conclusions.tex}
 
 \clearpage
 \printbibliography[heading=bibintoc]

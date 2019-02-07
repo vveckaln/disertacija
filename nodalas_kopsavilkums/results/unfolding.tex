@@ -1,12 +1,12 @@
-Kad eksperimentētājs veic novērojumu ar detektoru, jāsamierinās ar paša detektora ietekmi uz rezultātu - kropļojumiem. \gls{Atlocīšana} ir metode ar kuras palīdzību detektora novērojami tiek koriģēti, ievērojot detektora radīto ietekmi. Tādējādi mēs iegūstam patieso novērojamā lieluma distribūciju. Tomēr jārēķinās ka novērojamā lieluma fāzes-telpa kļūst ievērojami graudaināka. 
+Kad eksperimentētājs veic novērojumu ar detektoru, jāsamierinās ar paša detektora ietekmi uz rezultātu - kropļojumiem. \gls{Atlocīšana} ir metode ar kuras palīdzību detektora novērojami tiek koriģēti, ievērojot detektora radīto ietekmi. Tādējādi mēs iegūstam patieso novērojamā lieluma sadalījumu. Tomēr jārēķinās, ka novērojamā lieluma fāzes-telpa kļūst ievērojami graudaināka. 
 
-Detektora ietekmi mēs varam novērtēt tādēļ, ka, strādājot ar Monte Karlo paraugiem, katrs ģenerētais notikums tiek rekonstruēts, izmantojot detektora simulāciju. Rekonstrukcijas procesā novērojamis lielums vērtību intervālā $i$ ģenerācijas līmenī migrē uz vertību intervālu $k$ rekonstrukcijas līmenī. Apskatot lielu skaitu notikumu, iegūstam migrācijas statistiku. Atlocīšanas ceļā veicam procesu migrācijai - ja dots novērojamais lielums vērtību intervālā $k$ mēs piešķīram varbūtības dažādām novērojamā lieluma patiesajām vērtībām.
+Detektora ietekmi mēs varam novērtēt tādēļ, ka, strādājot ar Monte Karlo paraugiem, katrs ģenerētais notikums tiek rekonstruēts, izmantojot detektora simulāciju. Rekonstrukcijas procesā novērojamis lielums vērtību intervālā $i$ ģenerācijas līmenī migrē uz vertību intervālu $k$ rekonstrukcijas līmenī. Apskatot lielu skaitu notikumu, iegūstam migrācijas statistiku. Atlocīšanas ceļā veicam šai migrācijai pretēju procesu - ja dots novērojamais lielums vērtību intervālā $k$ mēs piešķiram varbūtības dažādām novērojamā lieluma patiesajām vērtībām.
 
-Tās \pullangle vērtības ģenerēšans līmenī, kurām nav atbilstošas vērtības rekonstrukcijas līmenī, tiek ievietotas pirmsintervālā rekonstrukcijas līmenī. Tās \pullangle vērtības rekonstrukcijas līmenī, kurām nav atbilstošas vērtības ģenerācijas līmenī, tiek ievietās pirmsintervālā ģenerācijas līmenī. Pirmsintervāls ģenerācijas līmenī tiek uzskatīts par fonu un tie tiek iztukšoti. Distribūcijas, kas netiek pildītas ģenerācijas līmenī - dati un MK fons, tiek samazinātas ar atbilstoši proporcijas koeficientu.  Pirmsintervāls rekonstrukcijas līmenī tiek izmantots atlocītā rezultāta pirmsintervālu. 
+Tās \pullangle vērtības ģenerēšanas līmenī, kurām nav atbilstošas vērtības rekonstrukcijas līmenī, tiek ievietotas pirmsintervālā rekonstrukcijas līmenī. Tās \pullangle vērtības rekonstrukcijas līmenī, kurām nav atbilstošas vērtības ģenerācijas līmenī, tiek ievietās pirmsintervālā ģenerācijas līmenī. Pirmsintervāls ģenerācijas līmenī tiek uzskatīts par fonu un tas tiek iztukšots. Sadalījumi, kas netiek pildīti ģenerācijas līmenī - dati un MK fons, tiek samazināti ar atbilstošu proporcijas koeficientu. Pirmsintervāls rekonstrukcijas līmenī tiek izmantots. lai ierobežotu atlocītā rezultāta pirmsintervālu. 
 
 Atlocīšana tiek veikta ar datiem, no kuriem ir atņemts MK fons. Atlocīšana tika veikta arī atpakaļa, iegūstot atpakaļatlocīto rezultātu. 
 
-Esam ieinteresēti, lai migrācijas matrica būtu pēc iespējas diagonāla, lai samazinātu atlocītā rezultāta satistisko nenoteiktību. Lai raksturotu notikumu skaitu, kas sakopoti uz migrācijas matricas diagonāles, tiek lietoti divi lielumi - stabilitāte un tīrība. Stabilitāte ir attiecība starp diagonāles saturu pret kopējo notikumu skaitu rekonstrukciju līmenī vērtību intervālā:
+lai samazinātu atlocītā rezultāta satistisko nenoteiktību, esam ieinteresēti, lai migrācijas matrica būtu pēc iespējas diagonāla. Lai raksturotu notikumu skaitu, kas sakopoti uz migrācijas matricas diagonāles, tiek lietoti divi lielumi - stabilitāte un tīrība. Stabilitāte ir attiecība starp diagonāles saturu pret kopējo notikumu skaitu rekonstrukcijas līmenī vērtību intervālā:
 
 \begin{equation}
   \text{stability}\equiv\frac{\theta^{\text{diag}}_{\text{input}}}{\Sigma_{x=1}^{x=N_{x}}\theta^{x}_{\text{input}}},
@@ -18,23 +18,23 @@ kur $x$ ir vērtību intervāla indekss rekonstrukcijas līmenī, numerāciju s�
   \text{purity}\equiv\frac{\theta^{\text{diag}}_{\text{input}}}{\Sigma_{y=1}^{y=N_{y}}\theta^{y}_{\text{input}}},
 \end{equation}
 
-kur $y$ vertību intervāla indekss ģenerācijas līmenī. Ir ieteicams, lai tīrības un stabilitātes vertības pārsniegtu 50 \% katrā vērtību intervālu.
+kur $y$ vertību intervāla indekss ģenerācijas līmenī. Ir ieteicams, lai tīrības un stabilitātes vertības pārsniegtu 50 \% katrā vērtību intervālā.
 
-Apskatāma arī interesantu rādītāju, kas raksturo par cik atlocītais rezultāts ir atšķirīgs no ģenerētā MK rezultāta (ideāls rādītajs būtu 0), normalizētu pret atlocīta rezultāta statistisko nenoteiktību. Šo rādītāju sauc par vilkmi:
+Apskatām arī interesantu rādītāju, kas raksturo, par cik atlocītais rezultāts ir atšķirīgs no ģenerētā MK rezultāta (ideāls rādītajs būtu 0), normalizētu pret atlocīta rezultāta statistisko nenoteiktību. Šo rādītāju sauc par vilkmi:
 
 \begin{equation}
-  \text{pull}\equiv\frac{\theta^{\text{gen}}_{\text{unf}}-\theta^{\text{gen}}_{\text{in}}}{\sigma^{\text{gen}}_{\text{unf}}},
+  \text{pull}\equiv\frac{\theta^{\text{gen}}_{\text{unf}}-\theta^{\text{gen}}_{\text{in}}}{\sigma^{\text{gen}}_{\text{unf}}}.
 \end{equation}
 
-Lai iegūtu vilkmes distribūciju, ģenerējam novērojamā lieluma gadījuma spēļu distribūcijas ģenerācijas līmenī.
+Lai iegūtu vilkmes sadalījumu, ģenerējam novērojamā lieluma gadījuma spēļu sadalījumus ģenerācijas līmenī.
 
 Vērtību intervālu skaits ģenerāciju līmenī tiek samazinās divas reizes, salīdzinot ar intervālu skaitu rekonstrukcijas līmenī, lai atlocīšana būtu skaitliski iespējama.
 
-Atlocīšanas procesa īstenošanai tiek izmantota \ROOT klase \lstinline[language=sh]|TUnfoldDensity|\cite{Schmitt:2012kp}. Intervālu shēma tiek pārvaldīta ar klasi \lstinline[language=sh]|TUnfoldBinning|. Netiek pielietota regularizācija. \pullangle no \leadingjet uz \scndleadingjet iekļaujot visas strūklas sastāvdaļas ir attēloti \ref{fig:unfolding_nominal_leading_jet_allconst_pull_angle_ORIG_MC13TeV_TTJets_ORIG}. att. Lai radītu šos attēlos, tika izveidota jauna klase \lstinline[language=sh]|CompoundHistoUnfolding| \cite{url:compoundhistounfolding}, kas tika pievienota \ROOT, t.sk. ar ievades un izvades strīmeriem.
+Atlocīšanas procesa īstenošanai tiek izmantota \ROOT klase \lstinline[language=sh]|TUnfoldDensity|\cite{Schmitt:2012kp}. Intervālu shēma tiek pārvaldīta ar klasi \lstinline[language=sh]|TUnfoldBinning|. Netiek pielietota regularizācija. \pullangle no \leadingjet uz \scndleadingjet atlocīšanas rezultāti, iekļaujot visas strūklas sastāvdaļas, ir attēloti \ref{fig:unfolding_nominal_leading_jet_allconst_pull_angle_ORIG_MC13TeV_TTJets_ORIG} att. Lai radītu šos attēlos, tika izveidota jauna klase \lstinline[language=sh]|CompoundHistoUnfolding| \cite{url:compoundhistounfolding}, kas tika pievienota \ROOT, t.sk. ar ievades un izvades strīmeriem.
 
-Atlocīšanas rezultāti ir uzklātas distribūcijas, kas atbilst atlocīšas rezultātiem, kas iegūti ar migrācijas matricām, kas savukārt iegūtas no \ttbar Herwig++ un \ttbar cflip paraugiem, kā arī sistemātiskas \ttbar fsr dn un \ttbar fsr up (skat. \ref{chap:systematic_uncertainties}. nod.).
+Atlocīšanas rezultātiem ir uzklāti sadalījumi, kas atbilst atlocīšas rezultātiem, kas iegūti ar migrācijas matricām, kas savukārt iegūtas no \ttbar \HERWIGpp un \ttbar cflip paraugiem, kā arī sistemātikas \ttbar fsr dn un \ttbar fsr up (skat. \ref{chap:systematic_uncertainties} nod.).
 
-Statistisko \gls{traucējumu} nozīmība katrā vērtību itervalā kopējā atlocītā rezultāta sistemātiskajā kļūdā  (\%) ir norādīta \ref{tab:unc_table_fullpull_angle_OPT_allconst_gen_out_MC13TeV_TTJets_nominal_ATLAS3}. tab. Traucējumi, kas tieši ietekmē hadronizāiju - \ttbar Herwig++, \ttbar QCDbased un \ttbar ERDon ir visnozīmīgākie.
+Statistisko \gls{traucējumu} nozīmība katrā vērtību itervalā kopējā atlocītā rezultāta sistemātiskajā kļūdā  (\%) ir norādīta \ref{tab:unc_table_fullpull_angle_OPT_allconst_gen_out_MC13TeV_TTJets_nominal_ATLAS3} tab. Traucējumi, kas tieši ietekmē hadronizāiju - \ttbar Herwig++, \ttbar QCDbased un \ttbar ERDon ir visnozīmīgākie.
 
 Tiek novērtēta arī sakritība starp atlocīto rezultātu un MK paredzējumu ģeneratora līmenī. Ja dots atlocīts novērojamais lielums $D$, normalizētais MK paredzējums $M$, pilnā eksperimentālo nenoteiktību kovariances matrica $\Sigma$, $\chi^{2}$ tiek aprēķināts sekojoši:
 
@@ -43,22 +43,19 @@ Tiek novērtēta arī sakritība starp atlocīto rezultātu un MK paredzējumu �
   \label{eq:chi2}
 \end{equation}
 
-No $\chi^{2}$ vērtības iespējams aprēķināt p-vērtību, zinot, ka brīvību skaits ir vienāds ar atlocītās distribūcijas vertības intervālu skaitu, no kura atņemts 1, ņemot vēro brīvības zaudējumu, veicot distribūciju normalizāciju. No kovariances matricas tiek atmesta viena rinda un viena kolonna $\Sigma$. Atmetamo elementu izvēle neietekmē $\chi^{2}$ vērtību.
+No $\chi^{2}$ vērtības iespējams aprēķināt p-vērtību, zinot, ka brīvību skaits ir vienāds ar atlocītās distribūcijas vertības intervālu skaitu, no kura atņemts 1, ņemot vēro brīvības zaudējumu, veicot sadalījuma normalizāciju. No kovariances matricas tiek atmesta viena rinda un viena kolonna $\Sigma$. Atmetamo elementu izvēle neietekmē $\chi^{2}$ vērtību.
 
-\ref{tab:chi_table_pull_angle_OPT_allconst_nominal_ATLAS3}. tab. sniegtas \pullangle  $\chi^{2}$ vērtības un p-vērtības, ja ietvertas visas strūklas sastāvdaļas. No rezultātiem redzams, ka MK ģeneratori diezgan neprecīzi modelē vilkmes leņķa distribūciju. Simulācijas, vispārīgi skatot, paredz stāvāku vilkmes leņķa distribūciju, t.i. izteiktāku krāsu plūsmas efektu. \HERWIGpp vilkmes leņķa distribūciju modelē labāk nekā \PYTHIA 8.2. \PYTHIA 8.2 precizitāte ir jo īpaši vāja, paredzot vilkmes leņķa distribūciju no \scndleadingjet uz \leadingjet.
+\ref{tab:chi_table_pull_angle_OPT_allconst_nominal_ATLAS3} tab. sniegtas \pullangle  $\chi^{2}$ vērtības un p-vērtības, ja ietvertas visas strūklas sastāvdaļas. No rezultātiem redzams, ka MK ģeneratori diezgan neprecīzi modelē vilkmes leņķa sadalījumu. Simulācijas, vispārīgi skatot, paredz stāvāku vilkmes leņķa sadalījumu, t.i. izteiktāku krāsu plūsmas efektu. \HERWIGpp vilkmes leņķa sadalījumu modelē labāk nekā \PYTHIA 8.2. \PYTHIA 8.2 precizitāte ir jo īpaši vāja, paredzot vilkmes leņķa sadalījumu no \scndleadingjet uz \leadingjet.
 
 $\chi^{2}$ vērtības un p-vērtības krāsu okteta \PW bozona modelim ir sniegtas \ref{tab:chi_table_pull_angle_OPT_allconst_cflip_ATLAS3}. tab. \POWHEG+\PYTHIA 8 * ailē \ttbar cflip ir ticis pievienots kā \ttbar sistemātika. Krāsu apmaiņas modelī \pullangle no \leadingjet uz \scndleadingjet distribūcija ir modelēta mazāk precizī nekā SM paredzējums. 
   
-\ref{tab:chi_table_pull_angle_OPT_allconst_MC13TeV_TTJets_nominal_ATLAS3_full}. tab. sniegtas $\chi^{2}$ vērtības, ja signāls $M$ \ref{eq:chi2}. izteiksmē tiek aizvietots ar attiecīgo sistemātiku, bet saglabājot kovariances matricu $\Sigma$ nemainīgu. Sakritība ir labāka nekā \ttbar, ja krāsu plūsma tiek modelēta ar \ttbar ERDOn, \ttbar Herwig++ vai \ttbar QCD based.
+%% \ref{tab:chi_table_pull_angle_OPT_allconst_MC13TeV_TTJets_nominal_ATLAS3_full} tab. sniegtas $\chi^{2}$ vērtības, ja signāls $M$ \ref{eq:chi2} izteiksmē tiek aizvietots ar attiecīgo sistemātiku, bet saglabājot kovariances matricu $\Sigma$ nemainīgu. Sakritība ir labāka nekā \ttbar, ja krāsu plūsma tiek modelēta ar \ttbar ERDOn, \ttbar Herwig++ vai \ttbar QCD based.
 
-\figunfoldinglv{nominal}{leading_jet}{allconst}{pull_angle}{ATLAS3}{MC13TeV_TTJets}
+\figunfoldinglv{nominal}{leading_jet}{allconst}{pull_angle}{ATLAS3}{MC13TeV_TTJets}{Vilkmes leņķa no \leadingjet uz \scndleadingjet atlocīšanas rezultāti \ttbar metodei iekļaujot visas strūklas sastāvdaļas un izmantojot 3 vienāda izmēra vērtību intervālus.}
 
-\input{tables/unc_nominal_full/pull_angle/ATLAS3/unc_table_full_leading_jet_allconst_pull_angle_OPT_gen_out_MC13TeV_TTJets.txt}
+\input{tables/unc_nominal_fulllv/pull_angle/ATLAS3/unc_table_full_leading_jet_allconst_pull_angle_OPT_gen_out_MC13TeV_TTJets.txt}
+\input{tables/unc_cflip_fulllv/pull_angle/ATLAS3/unc_table_full_leading_jet_allconst_pull_angle_OPT_gen_out_MC13TeV_TTJets.txt}
+\input{tables/chi_nominallv/pull_angle/ATLAS3/chi_table_pull_angle_OPT_allconst.txt}
+\input{tables/chi_cfliplv/pull_angle/ATLAS3/chi_table_pull_angle_OPT_allconst.txt}
 
-\input{tables/unc_cflip_full/pull_angle/ATLAS3/unc_table_full_leading_jet_allconst_pull_angle_OPT_gen_out_MC13TeV_TTJets.txt}
-
-\input{tables/chi_nominal/pull_angle/ATLAS3/chi_table_pull_angle_OPT_allconst.txt}
-
-\input{tables/chi_cflip/pull_angle/ATLAS3/chi_table_pull_angle_OPT_allconst.txt}
-
-\input{tables/chi_nominal/pvmag/ATLAS3/chi_table_pvmag_OPT_allconst.txt}
+%\input{tables/chi_nominallv/pvmag/ATLAS3/chi_table_pvmag_OPT_allconst.txt}

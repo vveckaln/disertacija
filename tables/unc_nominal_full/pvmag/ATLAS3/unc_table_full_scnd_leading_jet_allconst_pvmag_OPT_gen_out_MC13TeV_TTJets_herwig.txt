@@ -1,0 +1,62 @@
+		\begin{longtable}{p{0.6\linewidth}|ccc}
+	\caption{Bin by bin weight of uncertainty (shapes) for \protect\observabletitle{pvmag} including \protect\chargetitle{allconst} of the \protect\jettitle{scnd_leading_jet} at the \protect\recoleveltitle{gen} level. The results are for unfolded ouput for the \POWHEG+\HERWIG sample. The binning method of \protect\binningtitle{ATLAS3} is used.}
+	\label{tab:unc_table_fullpvmag_OPT_allconst_gen_out_MC13TeV_TTJets_herwig_nominal_ATLAS3}\\
+			\hline
+			\makecell[c]{\multirow{3}{*}{Nuisance}} &\multicolumn{3}{c}{Uncertainty in bins [\%]}\\
+			 & bin 1  & bin 2  & bin 3  \\
+			 & 0.00 - 0.00 & 0.00 - 0.01 & 0.01 - 0.01 \\
+			\hline
+			$t\overline{t}$	&	1.037	&	27.093	&	96.120\\
+			$t\overline{t}$ ERDon	&	0.268	&	2.081	&	9.364\\
+			$t\overline{t}$ Peterson Frag	&	0.494	&	1.531	&	0.375\\
+			$t\overline{t}$ QCDbased	&	1.153	&	5.916	&	30.734\\
+			$t\overline{t}$ UEdn	&	0.592	&	8.402	&	32.648\\
+			$t\overline{t}$ UEup	&	1.081	&	2.801	&	20.185\\
+			$t\overline{t}$ b fragmentation down	&	0.650	&	0.228	&	7.554\\
+			$t\overline{t}$ b fragmentation up	&	0.986	&	0.482	&	8.858\\
+			$t\overline{t}$ btag\_heavy down	&	0.378	&	5.437	&	13.125\\
+			$t\overline{t}$ btag\_heavy up	&	2.029	&	3.733	&	9.605\\
+			$t\overline{t}$ btag\_light down	&	1.148	&	3.315	&	1.652\\
+			$t\overline{t}$ btag\_light up	&	0.089	&	0.760	&	3.328\\
+			$t\overline{t}$ csv\_heavy down	&	0.742	&	2.641	&	16.117\\
+			$t\overline{t}$ csv\_heavy up	&	0.847	&	5.555	&	8.562\\
+			$t\overline{t}$ csv\_light down	&	1.461	&	2.793	&	6.581\\
+			$t\overline{t}$ csv\_light up	&	0.911	&	1.246	&	5.666\\
+			$t\overline{t}$ evtgen	&	0.931	&	15.183	&	57.549\\
+			$t\overline{t}$ fsr dn	&	6.437	&	35.793	&	44.874\\
+			$t\overline{t}$ fsr up	&	9.964	&	37.060	&	11.770\\
+			$t\overline{t}$ gluon move	&	2.004	&	1.291	&	25.134\\
+			$t\overline{t}$ hdamp dn	&	1.678	&	4.619	&	32.176\\
+			$t\overline{t}$ hdamp up	&	0.007	&	8.319	&	26.241\\
+			$t\overline{t}$ isr dn	&	0.027	&	5.408	&	17.294\\
+			$t\overline{t}$ isr up	&	1.749	&	4.458	&	32.413\\
+			$t\overline{t}$ jec\_CorrelationGroupMPFInSitu down	&	0.239	&	3.582	&	8.748\\
+			$t\overline{t}$ jec\_CorrelationGroupMPFInSitu up	&	1.619	&	4.223	&	3.745\\
+			$t\overline{t}$ jec\_CorrelationGroupUncorrelated down	&	2.655	&	6.549	&	48.524\\
+			$t\overline{t}$ jec\_CorrelationGroupUncorrelated up	&	1.080	&	1.543	&	6.502\\
+			$t\overline{t}$ jec\_FlavorPureBottom down	&	0.873	&	0.921	&	6.285\\
+			$t\overline{t}$ jec\_FlavorPureBottom up	&	1.094	&	3.964	&	0.964\\
+			$t\overline{t}$ jec\_FlavorPureCharm down	&	0.840	&	3.267	&	1.446\\
+			$t\overline{t}$ jec\_FlavorPureCharm up	&	0.145	&	4.694	&	13.237\\
+			$t\overline{t}$ jec\_FlavorPureGluon down	&	1.126	&	8.300	&	14.262\\
+			$t\overline{t}$ jec\_FlavorPureGluon up	&	0.853	&	3.427	&	1.806\\
+			$t\overline{t}$ jec\_FlavorPureQuark down	&	0.558	&	0.939	&	8.822\\
+			$t\overline{t}$ jec\_FlavorPureQuark up	&	0.240	&	4.733	&	12.357\\
+			$t\overline{t}$ jec\_RelativeFSR down	&	1.724	&	5.274	&	1.543\\
+			$t\overline{t}$ jec\_RelativeFSR up	&	1.132	&	3.400	&	22.594\\
+			$t\overline{t}$ jer down	&	3.003	&	2.725	&	40.152\\
+			$t\overline{t}$ jer up	&	1.087	&	2.515	&	3.522\\
+			$t\overline{t}$ m=171.5	&	2.363	&	9.418	&	54.478\\
+			$t\overline{t}$ m=173.5	&	1.438	&	6.010	&	3.776\\
+			$t\overline{t}$ pileup down	&	1.593	&	2.221	&	9.768\\
+			$t\overline{t}$ pileup up	&	0.697	&	6.614	&	28.134\\
+			$t\overline{t}$ sel efficiency correction down	&	0.017	&	0.044	&	0.320\\
+			$t\overline{t}$ sel efficiency correction up	&	0.018	&	0.042	&	0.317\\
+			$t\overline{t}$ semilep BR down	&	0.002	&	0.001	&	0.021\\
+			$t\overline{t}$ semilep BR up	&	0.022	&	0.022	&	0.162\\
+			$t\overline{t}$ tracking down	&	0.273	&	4.479	&	11.215\\
+			$t\overline{t}$ tracking up	&	2.156	&	1.012	&	19.494\\
+			$t\overline{t}$ trig efficiency correction down	&	0.020	&	0.051	&	0.369\\
+			$t\overline{t}$ trig efficiency correction up	&	0.019	&	0.055	&	0.370\\
+		\hline
+		\end{longtable}

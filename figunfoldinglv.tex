@@ -1,0 +1,46 @@
+
+\newcommand{\figunfoldinglv}[7]{%
+  \def\method{#1}%
+  \def\jet{#2}%
+  \def\chargetag{#3}%
+  \def\observable{#4}%
+  \def\binningscheme{#5}%
+%  \newcommand{\optlevel}{}%
+  \ifthenelse{\equal{\binningscheme}{ORIG}}{\def\optlevel{ORIG}}{\def\optlevel{OPT}}%
+  %\newcommand{\bintag}{}
+  \ifthenelse{\equal{\binningscheme}{ORIG}}{\def\bintag{}}{\def\bintag{_\binningscheme}}
+  \def\sampletag{#6}
+  \def\commonplottag{\jet_\chargetag_\observable_\optlevel}%
+  \def\directory{\jet_\chargetag_\sampletag_\observable_\optlevel_\method\bintag}%
+  \def\subdir{\observable/\binningscheme}
+  \def\taglabel{unfolding_\method_\jet_\chargetag_\observable_\optlevel_\sampletag_\binningscheme}%
+  \begin{figure}
+  \centering
+    \subfloat[Migrācijas matrica, kuras $x$ ass atbilst rekonstrukcijas līmenim, bet $y$ ass - ģenerācijas līmenim.]{%
+      \includegraphics[width=0.45\textwidth]{fig/unfolding_\method/\subdir/\directory/migrationmatrix.png}%
+      \label{fig:\taglabel_a}
+    }\hfil
+    \subfloat[Dati un Monte Karlo, kuri tiek izmantoti kā ievade.]{%
+      \includegraphics[width=0.45\textwidth]{fig/common_plots_\method/\subdir/\commonplottag_reco_in.png}%
+      \label{fig:\taglabel_b}
+    }\\
+    \subfloat[Atlocītais rezultāts.]{%
+      \includegraphics[width=0.45\textwidth]{fig/common_plots_\method/\subdir/\commonplottag_gen_out.png}%
+      \label{fig:\taglabel_c}
+    }\hfil
+    \subfloat[Atpakaļ locītais rezultāts.]{%
+      \includegraphics[width=0.45\textwidth]{fig/common_plots_\method/\subdir/\commonplottag_reco_out.png}%
+      \label{fig:\taglabel_d}
+    }\\  
+    \subfloat[Stabilitāte un tīrība katrā vērtību intervālā.]{%
+      \includegraphics[width=0.45\textwidth]{fig/unfolding_\method/\subdir/\directory/stabpur.png}%
+      \label{fig:\taglabel_e}
+    }\hfil
+    \subfloat[Vilkme.]{%
+      \includegraphics[width=0.45\textwidth]{fig/unfolding_\method/\subdir/\directory/pull.png}%
+      \label{fig:\taglabel_f}
+    }
+    \caption{#7}
+    \label{fig:\taglabel}
+  \end{figure}
+}

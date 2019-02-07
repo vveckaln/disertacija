@@ -5,58 +5,60 @@
 \begin{figure}[hbtp]
   \centering
   \includegraphics[width=1.0\textwidth]{fig/individual_plots/reco_allconst_total_1111_DeltaR_2p846131_pull_angle_1p964620.png}
-  \caption{Vadošās strūklas vilmes vektors (pārtraukta līnija ar punktiem), kas veido 1.96 rad vilkmes leņķi ar vektoriālo starpību (pārtraukta līnija) starp otro vadošo vieglo strūklu un vadošo vieglo strūklu. Vadošās strūklas sastāvdaļas ir attēlotas ziā, krāsā, bet otrās vadošās strūklas sastāvdaļas ir attēlotas sarkanā krāsā. Vadošā strūkla ir attēlota ar nepārtrauktau līniju, bet otrā vadošā strūkla ir attēlota ar pārtrauktu līniju. Hadroniskā \cPqb kvarka strūkla un tās sastāvdaļas attēlotas zaļā krāsā, bet leptoniskā \cPqb kvarka strūkla un tās sastāvdaļas attēlotas violetā krāsā. Vilkmes vektors ir palielināts 200 reizes, bet apļiem, kas attēlo strūklas, radiuss ir vienās ar $\frac{p_{T}}{75.0}$, savukārta apļiem, kas attēlo strūklu sastāvdaļas, radiuss ir vienās ar $\frac{p^{\text{constituent}}_{T}}{p^{\text{jet}}_{T}}$.}
+  \caption{Vadošās strūklas vilmes vektors (pārtraukta līnija ar punktiem), kas veido 1,96 rad vilkmes leņķi ar vektoriālo starpību (pārtraukta līnija) starp otro vadošo vieglo strūklu un vadošo vieglo strūklu. Vadošās strūklas sastāvdaļas ir attēlotas ziā, krāsā, bet otrās vadošās strūklas sastāvdaļas ir attēlotas sarkanā krāsā. Vadošā strūkla ir attēlota ar nepārtrauktau līniju, bet otrā vadošā strūkla ir attēlota ar pārtrauktu līniju. Hadroniskā \cPqb kvarka strūkla un tās sastāvdaļas attēlotas zaļā krāsā, bet leptoniskā \cPqb kvarka strūkla un tās sastāvdaļas attēlotas violetā krāsā. Ar ``X'' atzīmēts lādētais leptons. Vilkmes vektors ir palielināts 200 reizes, bet apļiem, kas attēlo strūklas, radiuss ir vienās ar $\frac{p_{T}}{75.0}$, savukārta apļiem, kas attēlo strūklu sastāvdaļas, radiuss ir vienās ar $\frac{p^{\text{constituent}}_{T}}{p^{\text{jet}}_{T}}$.}
   \label{fig:event_display}
 \end{figure}
 
 \section{Vilkmes vektors}
 
-Pētījuma veikšanai tika izstrādāts rīku kopums \textsc{CFAT} \cite{url:cfat}. Galvenā pētījumu daļā tika veikta, izmantojot \CMSSW versiju \lstinline[language=sh]|CMSSW_8_0_26_patch1|. Grafiki ir veidoti, izmantojot \ROOT \cite{Brun}. Vilkmes vektori tiek noteikti visāmm novērojamajām strūklā - vadošajai vieglajai strūklai \leadingjet (ar vislielāko \pt), otrajai vadošajai vieglajai strūklai \scndleadingjet, vadošajai hadroniskā \cPqb strūklai \leadingb un otrajai vadošajai hadroniskā \cPqb strūklai \scndleadingb. Visos gadījumos, tiek izdalīti apakšgadījumus, iekļaujot vilkmes vektora aprēķinā visas strūklaas sastāvdaļās vai tikai elektriski lādētās sastāvdaļas. Rezultāti ir izdalīti pa $e$ + strūklas0, $\mu$ + strūklas un kopējo leptons + strūklas kanāliem.
+Pētījuma veikšanai tika izstrādāts rīku kopums \textsc{CFAT} \cite{url:cfat}. Galvenā pētījuma daļa tika veikta, izmantojot \CMSSW versiju \lstinline[language=sh]|CMSSW_8_0_26_patch1|. Grafiki ir veidoti, izmantojot \ROOT \cite{Brun}. Vilkmes vektori tiek noteikti visām novērojamajām strūklām - vadošajai vieglajai strūklai \leadingjet (ar vislielāko \pt), otrajai vadošajai vieglajai strūklai \scndleadingjet, vadošajai hadroniskā \cPqb strūklai \leadingb un otrajai vadošajai hadroniskā \cPqb strūklai \scndleadingb. Visos gadījumos, tiek izdalīti apakšgadījumi atkarībā no tā, vai vilkmes vektora aprēķinā iekļautas visas strūklas sastāvdaļas vai tikai elektriski lādētās sastāvdaļas. Rezultāti ir sadalīti kanālos - $e$ + strūklas, $\mu$ + strūklas un kopīgajā $\ell$ + strūklas kanālā.
 
-$\eta$ dimensija vilkmes vektoram ar visām strūklas sastāvdaļām ir attēlots \ref{fig:_eta_PV_allconst_reco_leading_jet}. - \ref{fig:_eta_PV_allconst_reco_leading_jet}. att.
+$\eta$ dimensijas sadalījums vilkmes vektoram ar visām strūklas sastāvdaļām ir attēlots \ref{fig:_eta_PV_allconst_reco_leading_jet} - \ref{fig:_eta_PV_allconst_reco_leading_jet} att.
 
-Vietā ir paskaidrojums par KMS grafiku formātu. Augšējais grafiks \ref{fig:_eta_PV_allconst_reco_leading_jet}. att. attēlo datus un Monte Karlo simulācijas. Ja nav norādīts citādi, Monte Karlo simulācijas ir attēlotas rekonstrukcijas līmenī. Zilā josla attēlo sistemātiskās nenoteiktības. Ja dota sistemātskā nenoteiktība ar indeksu $k$ mēs to identificējam kā pozitīvu sistemātiku $U^{k}_{i}$, ja vērtības intervālā $i$ sistemātika $S^{k}_i$ pārsniedz nominālo vērtību $N_{i}$. Pretējā gadījuma sistemātiskā nenoteiktība tiek noteikta kā negatīva sistemātikā nenoteiktība $D^{k}_{i}$. Kopējā pozitīvā un negatīvā sistemātiskā nenoteiktība tiek noteikta kā kvadrātu summa:
+Vietā ir paskaidrojums par KMS grafiku formātu. Augšējais grafiks \ref{fig:_eta_PV_allconst_reco_leading_jet} att. attēlo datus un Monte Karlo simulācijas. Ja nav norādīts citādi, Monte Karlo simulācijas ir attēlotas rekonstrukcijas līmenī.
+
+Ja dota sistemātskā nenoteiktība ar indeksu $k$ mēs to identificējam kā pozitīvu sistemātiku $U^{k}_{i}$, ja vērtības intervālā $i$ sistemātika $S^{k}_i$ pārsniedz nominālo vērtību $N_{i}$. Pretējā gadījuma sistemātiskā nenoteiktība tiek noteikta kā negatīva sistemātikā nenoteiktība $D^{k}_{i}$. Kopējā pozitīvā un negatīvā sistemātiskā nenoteiktība tiek noteikta kā kvadrātu summa:
 
 \begin{align}
-U_{i}=\sqrt{\sum_{k}\left(U^{k}_{i}-N_{i}\right)^{2}} && D_{i}=\sqrt{\left(\sum_{k}D^{k}_{i}-N_{i}\right)^{2}}.
+U_{i}=\sqrt{\sum_{k}\left(U^{k}_{i}-N_{i}\right)^{2}} && D_{i}=\sqrt{\sum_{k}\left(D^{k}_{i}-N_{i}\right)^{2}}.
 \end{align}
 
 Zilās joslas platums atbilst sistemātiskajai kļūdai, kas noteikta kā $\frac{U_{i}+D_{i}}{2}$. Joslas centrs atbilst $N_{i} + \frac{U_{i}-D_{i}}{2}$. Teiktais attiecas arī uz rozā joslu ar atšķirību, ka sistemātikas ir tikušas normalizētas ar signāla integrāli (šādas normalizētas histogramas tiek sauktas par \gls{veidoliem}). Apakšejā ielikumā attēlota datu attiecība pret Monte Karlo, kā arī sistemātikas, kas normalizētas pret Monte Karlo.
 
-\figureEML{/reco/PV/charge/allconst/}
+\figureEMLlv{/reco/PV/charge/allconst/}
           {_eta_PV_allconst_reco_leading_jet}
-          {\leadingjet vilkmes vektora $\eta$ dimensija, iekļaujot visas strūklas sastāvdaļas.}
+          {\leadingjet vilkmes vektora $\eta$ dimensijas sadalījums, iekļaujot visas strūklas sastāvdaļas.}
 
-\leadingjet vilkmes vektora  $\phi$ dimensija, ieļaujot visas strūklas sastāvdaļas ir attēlota \ref{fig:_phi_PV_allconst_reco_leading_jet}. - \ref{fig:_phi_PV_allconst_reco_leading_jet}. att. 
+\leadingjet vilkmes vektora  $\phi$ dimensijas sadalījums, iekļaujot visas strūklas sastāvdaļas ir attēlota \ref{fig:_phi_PV_allconst_reco_leading_jet} - \ref{fig:_phi_PV_allconst_reco_leading_jet} att. 
 
-\figureEML{/reco/PV/charge/allconst/}
+\figureEMLlv{/reco/PV/charge/allconst/}
           {_phi_PV_allconst_reco_leading_jet}
-          {\leadingjet vilkmes vektora $\phi$ dimensija, iekļaujot visas strūklas sastāvdaļas.}
+          {\leadingjet vilkmes vektora $\phi$ dimensijas sadalījums, iekļaujot visas strūklas sastāvdaļas.}
 
-Vilkmes vektora lielums ar visām strūklu komponentēm ir attēlots \ref{fig:_mag_PV_allconst_reco_leading_jet} - \ref{fig:_mag_PV_allconst_reco_leading_jet}. att. Vilkmes vektora lielums parasti nepārsniedz 0.02 [bez mērvienības].
+Vilkmes vektora lieluma sadalījums, iekļaujot visas strūklu komponentes, ir attēlots \ref{fig:_mag_PV_allconst_reco_leading_jet} - \ref{fig:_mag_PV_allconst_reco_leading_jet} att. Vilkmes vektora lielums parasti nepārsniedz 0.02 [bez mērvienības].
 
-\figureEML{/reco/PV/charge/allconst/}
+\figureEMLlv{/reco/PV/charge/allconst/}
           {_mag_PV_allconst_reco_leading_jet}
-          {\leadingjet vilkmes vektora lielums, iekļaujot visas strūklas sastāvdaļas.}
+          {\leadingjet vilkmes vektora lieluma sadalījums, iekļaujot visas strūklas sastāvdaļas.}
 
 \section{Vilkmes leņķis}
 
-Vilkmes leņķa distribūcija starp ar krāsām saistītām strūklām - no \leadingjet uz \scndleadingjet ar visām strūklu komponentēm un ar jebkuru \DeltaR ir attēlota \ref{fig:_pull_angle_allconst_reco_leading_jet_scnd_leading_jet_DeltaRTotal}. att.
+Vilkmes leņķa distribūcija starp ar krāsām saistītām strūklām - no \leadingjet uz \scndleadingjet ar visām strūklu komponentēm un ar jebkuru \DeltaR ir attēlota \ref{fig:_pull_angle_allconst_reco_leading_jet_scnd_leading_jet_DeltaRTotal} att.
 
-\figureEML{/reco/pull_angle/DeltaRTotal/charge/allconst/}
+\figureEMLlv{/reco/pull_angle/DeltaRTotal/charge/allconst/}
           {_pull_angle_allconst_reco_leading_jet_scnd_leading_jet_DeltaRTotal}
-          {Vilkmes leņķā distribūčija no \leadingjet uz \scndleadingjet ar jebkuru \DeltaR un iekļaujot visas strūklu komponentes.}
+          {Vilkmes leņķā distribūcija no \leadingjet uz \scndleadingjet ar jebkuru \DeltaR un iekļaujot visas strūklu sastāvdaļas.}
 
 
-\ref{fig:_pull_angle_allconst_reco_leading_b_scnd_leading_b_DeltaRTotal}. att. attēlotas vilkmes leņķa distribūcijas, gadījumos, kas nav sagaidāma krāsu saistība starp strūklām - no \leadingb uz \scndleadingb un no \scndleadingb uz \leadingb iekļaujot visas strūklu sastāvdaļās un pie visām \DeltaR vērtībām.
+\ref{fig:_pull_angle_allconst_reco_leading_b_scnd_leading_b_DeltaRTotal} att. attēlotas vilkmes leņķa distribūcijas, gadījumos, kad nav sagaidāma krāsu saistība starp strūklām - no \leadingb uz \scndleadingb un no \scndleadingb uz \leadingb iekļaujot visas strūklu sastāvdaļās un pie visām \DeltaR vērtībām.
 
-\figureEML{/reco/pull_angle/DeltaRTotal/charge/allconst/}
+\figureEMLlv{/reco/pull_angle/DeltaRTotal/charge/allconst/}
           {_pull_angle_allconst_reco_leading_b_scnd_leading_b_DeltaRTotal}
           {Vilkmes leņķa no \leadingb uz \scndleadingb distribūcija pie visām \DeltaR vērtībām un iekļaujot visas strūklu sastāvdaļas.}
 
-Papildu iespēja novērto vilkmes leņķa distribūciju starp objektiem, starp kuriem nav krāsu saistība, ir izvēlēties strūklu un leptonu. \ref{fig:_pull_angle_allconst_reco_leading_jet_lepton_DeltaRTotal}. att. attēlota vilkmes leņķā distribūcija starp \leadingjet un lādēto leptonu. 
+Papildu iespēja novērot vilkmes leņķa distribūciju starp objektiem, starp kuriem nav krāsu saistība, ir izvēlēties strūklu un leptonu. \ref{fig:_pull_angle_allconst_reco_leading_jet_lepton_DeltaRTotal} att. attēlota vilkmes leņķā distribūcija starp \leadingjet un lādēto leptonu. 
 
-\figureEML{/reco/pull_angle/DeltaRTotal/charge/allconst/}
+\figureEMLlv{/reco/pull_angle/DeltaRTotal/charge/allconst/}
           {_pull_angle_allconst_reco_leading_jet_lepton_DeltaRTotal}
           {Vilkmes leņķa distribūcija no \leadingjet uz lādēto leptonu pie visām \DeltaR vērtībām un iekļaujot visas strūklu sastāvdaļas.}
 
@@ -64,74 +66,74 @@ Attēlos redzams, ka centrālais paugurs vilkmes leņķa distribūcijā ir acīm
 
 Centrālais paugurs var būt redzams gadījumos, ja starp fizikālo objektu vekotriem pastāv kolinearitāte, kaut arī paši fizikas objekti nav saistīti ar krāsām. Šāds gadījums redzams, apskatot vilkmes leņķa distribūciju no \leadingjet uz hadronisko \PW - \ref{fig:_pull_angle_allconst_reco_leading_jet_had_w_DeltaRTotal}. att. 
 
-\figureEML{/reco/pull_angle/DeltaRTotal/charge/allconst/}
+\figureEMLlv{/reco/pull_angle/DeltaRTotal/charge/allconst/}
           {_pull_angle_allconst_reco_leading_jet_had_w_DeltaRTotal}
           {Vilkmes leņķa distribūcija no \leadingjet uz hadronisko \PW pie visām \DeltaR vērtībām un iekļaujot visas strūklu sastāvdaļas.}
 
-Interesants gadījums ir kūlis. \ref{fig:_pull_angle_allconst_reco_leading_jet_beam_DeltaRTotal}. att. attēlota vilkmes leņķa distribūcija no \leadingjet uz kūļa pozitīvo virzienu. Redzam pauguru taisnā leņķī.
+Interesants gadījums ir kūlis. \ref{fig:_pull_angle_allconst_reco_leading_jet_beam_DeltaRTotal} att. attēlota vilkmes leņķa distribūcija no \leadingjet uz kūļa pozitīvo virzienu. Redzams neliels paugurs taisnā leņķī.
 
-\figureEML{/reco/pull_angle/DeltaRTotal/charge/allconst/}
+\figureEMLlv{/reco/pull_angle/DeltaRTotal/charge/allconst/}
           {_pull_angle_allconst_reco_leading_jet_beam_DeltaRTotal}
           {Vilkmes leņķa distribūcija no \leadingjet uz kūļa pozitīvo virzienu, iekļaujot visas strūklas sastāvdaļas.}
 
 \section{\DeltaR ietekme}
 
-Gadījumos, kad divas strūklas atrodas cieši viena pie otras $\eta-\phi$ telpā, strūklu sakopošanas algoritms mēdz pievienot vienas strūklas (ar mazāko \pt) otrai strūklai (ar lielāko \pt). Tas atstāj iespaidu uz analīzi ar vilkmes leņķi, jo vilkmes vektoram būs nosliece rādīt uz strūklu, no kuras tika atņemtas sastāvdaļas. \ref{fig:_pull_angle_allconst_reco_leading_jet_scnd_leading_jet_DeltaRle1p0}. att. un \ref{fig:_pull_angle_chconst_reco_leading_jet_scnd_leading_jet_DeltaRgt1p0}. att. attēloti divi gadījumi - cieši klātesošas strūklas ar $\DeltaR\leq1.0$ un attālas strūklas ar $\DeltaR>1.0$.
+Gadījumos, kad divas strūklas atrodas cieši viena pie otras $\eta-\phi$ telpā, strūklu sakopošanas algoritms mēdz pievienot vienas strūklas (ar mazāko \pt) sastāvdaļas otrai strūklai (ar lielāko \pt). Šis process ietekmē analīzi ar vilkmes leņķi, jo vilkmes vektoram šādi rodas nosliece rādīt uz strūklu, no kuras tika atņemtas sastāvdaļas. \ref{fig:_pull_angle_allconst_reco_leading_jet_scnd_leading_jet_DeltaRle1p0} att. un \ref{fig:_pull_angle_chconst_reco_leading_jet_scnd_leading_jet_DeltaRgt1p0} att. attēloti divi gadījumi - cieši klātesošas strūklas ar $\DeltaR\leq1,0$ un attālas strūklas ar $\DeltaR>1,0$.
 
-\figureEML{/reco/pull_angle/DeltaRle1p0/charge/allconst/}
+\figureEMLlv{/reco/pull_angle/DeltaRle1p0/charge/allconst/}
           {_pull_angle_allconst_reco_leading_jet_scnd_leading_jet_DeltaRle1p0}
-          {Vilkmes leņķa distribūcija pie \DeltaR$\leq1.0$ un iekļaujot visas strūklu sastāvdaļās no \leadingjet uz \scndleadingjet.}
+          {Vilkmes leņķa distribūcija pie \DeltaR$\leq1,0$, iekļaujot visas strūklu sastāvdaļās no \leadingjet uz \scndleadingjet.}
 
-\figureEML{/reco/pull_angle/DeltaRgt1p0/charge/allconst/}
+\figureEMLlv{/reco/pull_angle/DeltaRgt1p0/charge/allconst/}
           {_pull_angle_allconst_reco_leading_jet_scnd_leading_jet_DeltaRgt1p0}
-          {Vilkmes leņķa distribūcija pie \DeltaR$>1.0$ un iekļaujot visas strūklu sastāvdaļās no \leadingjet uz \scndleadingjet.}
+          {Vilkmes leņķa distribūcija pie \DeltaR$>1,0$, iekļaujot visas strūklu sastāvdaļās no \leadingjet uz \scndleadingjet.}
 
 
 \section{Jutīguma analīze}
 
-Vilkmes leņķa metodoloģijas jutīguma tika pētīta, pielietojot sekojošus \gls{sliekšņus}:
+Vilkmes leņķa metodoloģijas jutīgums tika pētīts, pielietojot sekojošus \gls{sliekšņus}:
+\begin{description}
+\item[Hadroniskā \PW bozona \pt] Tika izvēlēts 50 \GeV slieksnis un tika iegūtas vilkmes leņķas distribūcijas, hadroniskā \PW bozona \pt esot zemākam vai pārsniedzot šo slieksni. Rezultāti ir atainoti \ref{fig:_pull_angle_hadWPtgt50p0GeV_reco_leading_jet_scnd_leading_jet_DeltaRTotal} att. - \ref{fig:_pull_angle_hadWPtle50p0GeV_reco_leading_jet_scnd_leading_jet_DeltaRTotal} att.
 
-1. Hadroniskā \PW bozona \pt. Tika izvēlēts 50 \GeV slieksnies un tika iegūtas vilkmes leņķas distribūcijas hadroniskā \PW bozona \pt esot zemākai vai pārsniedzot šo slieksni. Rezultāti ir attainoti \ref{fig:_pull_angle_hadWPtgt50p0GeV_reco_leading_jet_scnd_leading_jet_DeltaRTotal}. att. - \ref{fig:_pull_angle_hadWPtle50p0GeV_reco_leading_jet_scnd_leading_jet_DeltaRTotal}. att.
-
-2. Strūklas sastāvdaļu skaits. Tika izvēlēts strūklas sastāvdaļu skaita $N$ slieksnies vienāds ar 20 un tika iegūtas vilkmes leņķa distribūcijas $N$ pārsniedzot vai esot zemākai par šo slieksni. Rezultāti ir atainoti \ref{fig:_pull_angle_PFNgt20_reco_leading_jet_scnd_leading_jet_DeltaRTotal}. att. - \ref{fig:_pull_angle_PFNle20_reco_leading_jet_scnd_leading_jet_DeltaRTotal}. att.
+\item[Strūklas sastāvdaļu skaits] Tika izvēlēts strūklas sastāvdaļu skaita $N$ slieksnies vienāds ar 20 un tika iegūtas vilkmes leņķa distribūcijas $N$, strūklu sastāvdaļu skaitam pārsniedzot vai esot zemākai par šo slieksni. Rezultāti ir atainoti \ref{fig:_pull_angle_PFNgt20_reco_leading_jet_scnd_leading_jet_DeltaRTotal} att. - \ref{fig:_pull_angle_PFNle20_reco_leading_jet_scnd_leading_jet_DeltaRTotal} att.
                                         
-3. Strūklas sastāvdaļu \pt. Tika izvēlēts strūklas sastāvdaļu \pt slieksnis vienāds ar 0.5\GeV un tika iegūtas vilkmes leņķā distribūcijas strūklu sastāvdaļu \pt esot lielākam vai mazākam par šo slieksni. Rezultāti ir attēloti \ref{fig:_pull_angle_PFPtgt0p5GeV_reco_leading_jet_scnd_leading_jet_DeltaRTotal}. att. - \ref{fig:_pull_angle_PFPtle0p5GeV_reco_leading_jet_scnd_leading_jet_DeltaRTotal}. att.
+\item[Strūklas sastāvdaļu \pt] Tika izvēlēts strūklas sastāvdaļu \pt slieksnis vienāds ar 0,5 \GeV un tika iegūtas vilkmes leņķā distribūcijas, strūklu sastāvdaļu \pt esot lielākam vai mazākam par šo slieksni. Rezultāti ir attēloti \ref{fig:_pull_angle_PFPtgt0p5GeV_reco_leading_jet_scnd_leading_jet_DeltaRTotal} att. - \ref{fig:_pull_angle_PFPtle0p5GeV_reco_leading_jet_scnd_leading_jet_DeltaRTotal} att.
 
-4. Vilkmes vektora lielums.  Tika izvēlēts vilkmes vektora lieluma slieksnis vienāds ar 0.005 [bez mērvienībām] un tika iegūtas vilkmes leņķa distribūcijas vilmes vektora lieluma pārsniedzot vai esot mazākam par šo slieksni. Rezultāti ir attēloti \ref{fig:_pull_angle_PVMaggt0p005_reco_leading_jet_scnd_leading_jet_DeltaRTotal}. att. - \ref{fig:_pull_angle_PVMagle0p005_reco_leading_jet_scnd_leading_jet_DeltaRTotal}. att.
+\item[Vilkmes vektora lielums]  Tika izvēlēts vilkmes vektora lieluma slieksnis vienāds ar 0,005 [bez mērvienībām] un tika iegūtas vilkmes leņķa distribūcijas, vilkmes vektora lielumam pārsniedzot vai esot zemākam par šo slieksni. Rezultāti ir attēloti \ref{fig:_pull_angle_PVMaggt0p005_reco_leading_jet_scnd_leading_jet_DeltaRTotal} att. - \ref{fig:_pull_angle_PVMagle0p005_reco_leading_jet_scnd_leading_jet_DeltaRTotal} att.
+\end{description}
 
-
-\figureEML{/reco/pull_angle/DeltaRTotal/hadronic_W_Pt/hadWPtgt50p0GeV/}
+\figureEMLlv{/reco/pull_angle/DeltaRTotal/hadronic_W_Pt/hadWPtgt50p0GeV/}
           {_pull_angle_hadWPtgt50p0GeV_reco_leading_jet_scnd_leading_jet_DeltaRTotal}
           {Vilkmes leņķa distribūcija pie visiem \DeltaR un iekļaujot visas strūklu sastāvdaļas no \leadingjet uz \scndleadingjet ar \PW bozona \pt $>$ 50 \GeV.}
 
-\figureEML{/reco/pull_angle/DeltaRTotal/hadronic_W_Pt/hadWPtle50p0GeV/}
+\figureEMLlv{/reco/pull_angle/DeltaRTotal/hadronic_W_Pt/hadWPtle50p0GeV/}
           {_pull_angle_hadWPtle50p0GeV_reco_leading_jet_scnd_leading_jet_DeltaRTotal}
           {Vilkmes leņķa distribūcija pie visiem \DeltaR un iekļaujot visas strūklu sastāvdaļas no \leadingjet uz \scndleadingjet ar \PW bozona \pt $\leq$ 50 \GeV.}
           
 
-\figureEML{/reco/pull_angle/DeltaRTotal/PF_number/PFNgt20/}
+\figureEMLlv{/reco/pull_angle/DeltaRTotal/PF_number/PFNgt20/}
           {_pull_angle_PFNgt20_reco_leading_jet_scnd_leading_jet_DeltaRTotal}
           {Vilkmes leņķa distribūcija pie visiem \DeltaR un iekļaujot visas strūklu sastāvdaļas no \leadingjet uz \scndleadingjet ar strūklas sastāvdaļu skaitu $N>20$.}
 
-\figureEML{/reco/pull_angle/DeltaRTotal/PF_number/PFNle20/}
+\figureEMLlv{/reco/pull_angle/DeltaRTotal/PF_number/PFNle20/}
           {_pull_angle_PFNle20_reco_leading_jet_scnd_leading_jet_DeltaRTotal}
           {Vilkmes leņķa distribūcija pie visiem \DeltaR un iekļaujot visas strūklu sastāvdaļas no \leadingjet uz \scndleadingjet ar strūklas sastāvdaļu skaitu $N\leq20$.}
 
-\figureEML{/reco/pull_angle/DeltaRTotal/PF_Pt/PFPtgt0p5GeV/}
+\figureEMLlv{/reco/pull_angle/DeltaRTotal/PF_Pt/PFPtgt0p5GeV/}
           {_pull_angle_PFPtgt0p5GeV_reco_leading_jet_scnd_leading_jet_DeltaRTotal}
           {Vilkmes leņķa distribūcija pie visiem \DeltaR un iekļaujot visas strūklu sastāvdaļas no \leadingjet uz \scndleadingjet, ja strūklas sastāvdaļu \pt$>$0.5 \GeV.}
 
-\figureEML{/reco/pull_angle/DeltaRTotal/PF_Pt/PFPtle0p5GeV/}
+\figureEMLlv{/reco/pull_angle/DeltaRTotal/PF_Pt/PFPtle0p5GeV/}
           {_pull_angle_PFPtle0p5GeV_reco_leading_jet_scnd_leading_jet_DeltaRTotal}
-          {Vilkmes leņķa distribūcija pie visiem \DeltaR un iekļaujot visas strūklu sastāvdaļas no \leadingjet uz \scndleadingjet, ja strūklas sastāvdaļu \pt $\leq$ 0.5 \GeV.}
+          {Vilkmes leņķa distribūcija pie visiem \DeltaR un iekļaujot visas strūklu sastāvdaļas no \leadingjet uz \scndleadingjet, ja strūklas sastāvdaļu \pt $\leq$ 0,5 \GeV.}
 
-\figureEML{/reco/pull_angle/DeltaRTotal/PV_magnitude/PVMaggt0p005}
+\figureEMLlv{/reco/pull_angle/DeltaRTotal/PV_magnitude/PVMaggt0p005}
           {_pull_angle_PVMaggt0p005_reco_leading_jet_scnd_leading_jet_DeltaRTotal}
-          {Vilkmes leņķa distribūcija pie visiem \DeltaR un iekļaujot visas strūklu sastāvdaļas no \leadingjet uz \scndleadingjet ja vilkmes vektora lielums $> $0.005 [bez mērvienībām].}
+          {Vilkmes leņķa distribūcija pie visiem \DeltaR un iekļaujot visas strūklu sastāvdaļas no \leadingjet uz \scndleadingjet ja vilkmes vektora lielums $> $0,005 [bez mērvienībām].}
 
-\figureEML{/reco/pull_angle/DeltaRTotal/PV_magnitude/PVMagle0p005}
+\figureEMLlv{/reco/pull_angle/DeltaRTotal/PV_magnitude/PVMagle0p005}
           {_pull_angle_PVMagle0p005_reco_leading_jet_scnd_leading_jet_DeltaRTotal}
-          {Vilkmes leņķa distribūcija pie visiem \DeltaR un iekļaujot visas strūklu sastāvdaļas no \leadingjet uz \scndleadingjet, ja vilkmes vektora lielums $\leq$0.005 [bez mērvienībām].}
+          {Vilkmes leņķa distribūcija pie visiem \DeltaR un iekļaujot visas strūklu sastāvdaļas no \leadingjet uz \scndleadingjet, ja vilkmes vektora lielums $\leq$0,005 [bez mērvienībām].}
 
 Vilkmes leņķa metodoloģija ir jutīga pret hadroniskā \PW bozona \pt, strūklas sastāvdaļu skaitu, strūklas sastāvdaļu \pt, bet ne īpaši jutīga pret vilkmes vektora lieluma. 
 

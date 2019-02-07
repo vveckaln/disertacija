@@ -14,13 +14,13 @@ where $n$ is the expected number of events, $\mu$ - the signal strength, $x$ a p
 As the test statistic we chose the Tevatron test statistic. It is also known as the Neyman-Pearson test statistic. The Tevatron test statistic is defined as:
 
 \begin{equation}
-  q^{TEV}=-2\ln{\frac{L(\Hnull)}{L(\Halt)}}=-2\ln{\frac{L\left(\text{data}|p=0,\hat{\theta}_{0}\right)}{L\left(\text{data}|p=P,\hat{\theta}_{P}\right)}}
-\end{equation},
+  q^{TEV}=-2\ln{\frac{L(\Hnull)}{L(\Halt)}}=-2\ln{\frac{L\left(\text{data}|p=0,\hat{\theta}_{0}\right)}{L\left(\text{data}|p=P,\hat{\theta}_{P}\right)}},
+\end{equation}
 
 where $p$ is the parameter of interest. $\theta$ is the nuisance factor and $\hat{\theta}$ is the nuisance factor that maximises the profile likelihood. The likelihood $L$ is defined the probility of the hypothesis given the data. Assuming a hypothesis with signal strength $\mu$ the likelihood is evaluated as:
 
 \begin{equation}
-  L(\mu, \theta_{s}, \theta_{b}) = \prod_{i=1}^{N}\frac{(\mu s_{i}(\theta_{s}) + b_{i}(\theta_{b}))^{n_{i}}}{n_{i}!}e^{\mu s_{i}(\theta_{s}) + b_{i}(\theta_{b})},
+  L(\mu, \theta_{s}, \theta_{b}) = \prod_{i=1}^{N}\frac{(\mu s_{i}(\theta_{s}) + b_{i}(\theta_{b}))^{n_{i}}}{n_{i}!}e^{-\mu s_{i}(\theta_{s}) + b_{i}(\theta_{b})},
 \end{equation}
 
 where $i$ is the phase-space parameter (bin index), $n_{i}$ is the observation (data) in the relevant phase (bin).
@@ -59,10 +59,11 @@ where  \lstinline[language=sh]|TwoHypo.root| is the ROOT file containing the wor
 
 The p-values of \Halt and \Hnull are infinitessimal. Thus we cannot make a conclusion - we fail to reject \Hnull in favour of \Halt and fail to rejet \Halt in favour of \Hnull.
 
-The \lstinline[language=sh]|combine| tool has a method \lstinline[language=sh]|MultiDimFit| to determine the curve of the profile likelihood ratio PLR
+The \lstinline[language=sh]|combine| tool has a method \lstinline[language=sh]|MultiDimFit| to determine the curve of the profile likelihood ratio PLR, defined in Eq. \ref{eq:PLR}.
 
 \begin{equation}
-  \text{PLR}(x, \theta)=-2ln\frac{L(x=0, \theta)}{\hat{x}, \hat{\theta}}
+  \text{PLR}(x, \theta)\equiv-2\ln\frac{L(x=0, \theta)}{\hat{x}, \hat{\theta}}.
+  \label{eq:PLR}              
 \end{equation}
 
 At $\hat{x}$ and $\hat{\theta}$ the PLR has minimum. At this point the MC best fits the data. The PLR curve can be obtained by invoking
@@ -83,7 +84,7 @@ The PLR curve is plotted in Fig. \ref{fig:likelihood} and has a minimum at $x=0.
 When calculating the likelihood the \lstinline[language=sh]|combine| tool combines the nominal signal with the nuisances and looks for the combination that maximises the profile likelihood. Different nuisances have a different impact. The impact of a nuisance parameter $\theta$ is defined as the shift $\Delta x$ in the parameter of interest when the nuisance is included at its $\pm\sigma$ values
 
 \begin{equation}
-  \Delta x = x\bigg\rvert_{\theta \text{at} \pm\sigma}-x_{0}
+  \Delta x = x\bigg\rvert_{\theta\ \text{at}\ \pm\sigma}-x_{0}.
 \end{equation} 
 
 In order to achieve the maximum profile likelihood different nuisances have to be stretched to a different amount. The pull of a nuisance parameter $\theta$ that quantifies this stretch is defined as:

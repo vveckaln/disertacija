@@ -1,10 +1,10 @@
 \begin{table}[htp]
 	\begin{center}
-	\caption{Value of $R^{-1}$ for the common lepton channel at generation level for data, particle flow for the SM model.}
+	\caption{Integral from 0.2 to 0.8 and the value of $R^{-1}$ for the common lepton channel at generation level for particle flow in data for the SM model.}
 	\label{tab:R_L_gen_N_data_SM}
 		\begin{tabular}{|l|cc|}
 		\hline
-		\makecell[c]{Jet constituents} & $I$ & $R^{-1}$ \\
+		\makecell[c]{Jet constituents} & $I$$\pm$(stat) [rad] & $R^{-1}$$\pm$(stat) \\
 		\hline
 		\multicolumn{3}{|c|}{$j_{1}^{b}$,$j_{2}^{b}$}\\
 		\hline

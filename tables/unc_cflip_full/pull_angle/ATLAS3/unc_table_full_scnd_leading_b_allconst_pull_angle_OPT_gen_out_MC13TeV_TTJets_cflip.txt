@@ -1,22 +1,20 @@
-\begin{table}[htp]
-	\begin{center}
-	\caption{Bin by bin weight of uncertainty (shapes) for \protect\observabletitle{pull_angle} including \protect\chargetitle{allconst} of the \protect\jettitle{scnd_leading_b} at the \protect\recoleveltitle{gen} level. The results are for                        unfolded ouput for the Powheg+Pythia8 cf sample.}
-	\label{tab:unc_table_fullpull_angle_OPT_allconst_gen_out_MC13TeV_TTJets_cflip_cflip_ATLAS3}
-		\begin{tabular}{l|ccc}
+		\begin{longtable}{p{0.6\linewidth}|ccc}
+	\caption{Bin by bin weight of uncertainty (shapes) for \protect\observabletitle{pull_angle} including \protect\chargetitle{allconst} from the \protect\jettitle{scnd_leading_b} to the \protect\jettitle{leading_b} at the \protect\recoleveltitle{gen} level. The results are for unfolded ouput for the \POWHEG+\PYTHIA 8 cf sample. The binning method of \protect\binningtitle{ATLAS3} is used.}
+	\label{tab:unc_table_fullpull_angle_OPT_allconst_gen_out_MC13TeV_TTJets_cflip_cflip_ATLAS3}\\
 			\hline
-			\makecell[c]{\multirow{3}{*}{nuisance}} &\multicolumn{3}{c}{uncertainty in bins (\%)}\\
+			\makecell[c]{\multirow{3}{*}{Nuisance}} &\multicolumn{3}{c}{Uncertainty in bins [\%]}\\
 			 & bin 1  & bin 2  & bin 3  \\
 			 & 0.00 - 1.04 & 1.04 - 2.07 & 2.07 - 3.14 \\
 			\hline
 			$t\overline{t}$	&	5.381	&	2.204	&	3.243\\
 			$t\overline{t}$ ERDon	&	3.820	&	5.142	&	0.657\\
 			$t\overline{t}$ Herwig++	&	1.245	&	0.407	&	0.836\\
-			$t\overline{t}$ Peterson Frag	&	0.657	&	1.078	&	0.274\\
+			$t\overline{t}$ Peterson Frag	&	0.075	&	0.575	&	0.546\\
 			$t\overline{t}$ QCDbased	&	0.933	&	0.043	&	0.915\\
 			$t\overline{t}$ UEdn	&	0.859	&	2.461	&	2.845\\
 			$t\overline{t}$ UEup	&	1.927	&	2.438	&	0.203\\
-			$t\overline{t}$ b fragmentation down	&	0.773	&	1.310	&	0.356\\
-			$t\overline{t}$ b fragmentation up	&	0.774	&	1.609	&	0.603\\
+			$t\overline{t}$ b fragmentation down	&	0.143	&	0.073	&	0.074\\
+			$t\overline{t}$ b fragmentation up	&	0.168	&	0.230	&	0.032\\
 			$t\overline{t}$ btag\_heavy down	&	0.958	&	0.741	&	1.515\\
 			$t\overline{t}$ btag\_heavy up	&	1.672	&	2.742	&	0.694\\
 			$t\overline{t}$ btag\_light down	&	1.423	&	0.234	&	1.146\\
@@ -51,17 +49,15 @@
 			$t\overline{t}$ jer up	&	2.547	&	2.334	&	0.467\\
 			$t\overline{t}$ m=171.5	&	0.510	&	3.325	&	3.231\\
 			$t\overline{t}$ m=173.5	&	1.096	&	1.487	&	0.198\\
-			$t\overline{t}$ pileup down	&	0.470	&	0.715	&	0.148\\
-			$t\overline{t}$ pileup up	&	0.853	&	1.420	&	0.371\\
-			$t\overline{t}$ sel efficiency correction down	&	0.768	&	1.452	&	0.478\\
-			$t\overline{t}$ sel efficiency correction up	&	0.800	&	1.486	&	0.477\\
-			$t\overline{t}$ semilep BR down	&	0.772	&	1.461	&	0.482\\
-			$t\overline{t}$ semilep BR up	&	0.764	&	1.376	&	0.419\\
+			$t\overline{t}$ pileup down	&	1.410	&	2.384	&	0.645\\
+			$t\overline{t}$ pileup up	&	0.159	&	0.444	&	0.217\\
+			$t\overline{t}$ sel efficiency correction down	&	0.014	&	0.015	&	0.001\\
+			$t\overline{t}$ sel efficiency correction up	&	0.014	&	0.014	&	0.002\\
+			$t\overline{t}$ semilep BR down	&	0.016	&	0.007	&	0.009\\
+			$t\overline{t}$ semilep BR up	&	0.027	&	0.121	&	0.074\\
 			$t\overline{t}$ tracking down	&	2.220	&	3.891	&	1.129\\
 			$t\overline{t}$ tracking up	&	1.323	&	0.814	&	0.572\\
-			$t\overline{t}$ trig efficiency correction down	&	0.751	&	1.442	&	0.486\\
-			$t\overline{t}$ trig efficiency correction up	&	0.816	&	1.497	&	0.470\\
+			$t\overline{t}$ trig efficiency correction down	&	0.026	&	0.025	&	0.004\\
+			$t\overline{t}$ trig efficiency correction up	&	0.026	&	0.025	&	0.004\\
 		\hline
-		\end{tabular}
-	\end{center}
-\end{table}
+		\end{longtable}

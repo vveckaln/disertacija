@@ -1,79 +1,60 @@
-Uncertainties are divided into experimental and theoretical uncertainties. When including an uncertainty from the first group we vary some parameter in the event selection, such as a data-to-MC scale factor. Theoretical uncertainties reflect our lack of knowledge about the real world, e.g. the true top quark mass or details of the hadronisation process.
+Nenoteiktības tiek iedalītas eksperimentālajās un teorētiskajās nenoteiktībās. Iekļaujot kādu nenoteiktību no pirmās grupas, tiek variēts kāds parametrs notikumu atlasē, piemēram, datu/MK koeficients. Teorētiskās nenoteiktības atspoguļo mūsu zināšanu trūkumu par reālo pasauli, piemēram, hadronizācijas procesa norises niansēm. 
 
-\section{Experimental uncertainties}
+\section{Eksperimentālās nenoteiktības}
 \begin{description}
-\item[Jet energy resolution] 
-
-\item[Jet energy corrections] The following simulations are used:
-\begin{description}
-        \item[CorrelationGroup]  These are uncertainties matching the common ATLAS/CMS correlation categories grouped together \cite{twiki:JESUS}. 
-        \begin{description}                     
-              \item[CorrelationGroupMPFInSitu] Groups partially correlated systematic uncertainties from \cPZ+jet/\cPgg+jet absolute scale determination (e.g. radiation suppression and out-of-cone effects).
-              \item[CorrelationGroupUncorrelated] Remaining sources which are estimated as being uncorrelated between ATLAS and CMS.
-        \end{description}
-        \item[RelativeFSR] $\eta$-dependent uncertainty due to correction for initial and final state radiation, estimated from difference between MPF log-linear L2Res from \PYTHIA8 and \HERWIGpp, after each has been corrected for their own ISR+FSR correction \cite{Khachatryan:2016kdb}.
-        \item[Flavour]  The flavour uncertainties are based on \PYTHIA6 Z2/\HERWIGpp2.3 differences in \cPqu\cPqd\cPqs/\cPqc/\cPqb-quark and gluon responses \cite{Khachatryan:2016kdb}. Uncertainties for the following jet flavours are used:
-        \begin{enumerate}
-                \item FlavorPureGluon
-                \item FlavorPureQuark
-                \item FlavorPureCharm
-                \item FlavorPureBottom
-        \end{enumerate}
+\item[Sagrūdums] Kaut gan sagrūdums ir iekļauts simulācijā, pastāv nenoteiktībā tā modelēšanā. Lai novērtētu modelēšanas kļūdu, tiek varēts minimālās noslieces šķērsgriezuma parametrs par 5 \% attiecībā pret tā sākotnējo novērtējumu. 
+\item[Trigera un atlases efektivitāte] Trigera efektivitātes nenoteiktība un leptona identifikācijas un izolācijas koeficienta nenoteiktība tiek iestrādāta, mainot nominālos parametrus augšup un lejup. Mionu trekera efektivitātes nenoteiktība arī ir iekļauta šajā kategorijā un ir pievienota otrajā pakāpē, kaut gan tās sagaidāmā ietekme ir nenozīmīga. Koeficientu noteikšana ir aprakstīta \ref{chap:data_and_mc_samples} nod.
+\item[Strūklu enerģijas izšķirtspēja] Izmantojam ieteiktos strūklas enerģijas mērījumus \cite{twiki:JER}. Katra strūkla tiek tālāk izsmērēta augšup un lejup atkarībā no tās \pt un $\eta$ attiecībā pret centrālo vērtību, kas izmērīta datos. Galvenā šīs nenoteiktības ietekme ir notikumu izslēgšana/iekļaušana, ja to strūklu parametri ir tuvu atlases slieksnim. 
+\item[Strūklu enerģijas mērogs] Lai kalibrētu strūklas simulācijā, izmantojam strūklas enerģijas mēroga parametrizāciju, kas atkarīga no \pt - $\eta$. Šī parametrizācija ir atkarīga no Spring16 V3 korekcijām, kuras sizstrādājusi JetMET Fizikas objektu grupa \cite{twiki:JER}.  Variējot strūklu enerģijas skalu, tiek pārrēķināts arī iztrūkstošās šķērsenerģijas $E^{\text{miss}}_{T}$ novērtējums. Galvenā šīs nenoteiktības ietekme ir notikumu izslēgšana/iekļaušana, ja to strūklu parametri ir tuvu bezsaistes atlases slieksnim. 
+\item[\cPqb-atzīmēšana] \cPqb - atzīmēšanas nominālā efektivitāte tiek koriģēta ar no \pt-atkarīgiem koeficientiem, kurus piedāvā BTV Fizikas objektu gruba \cite{twiki:BTV}. Atkarībā no strūklas garšas, \cPqb-atzīmēšanas lēmums tiek atjaunināts saskaņā ar koeficientu. Arī koeficients tiek variēts saskaņā ar tā nenoteiktību. Galvenā šīs nenoteiktības ietekme ir uz lēmumiem par strūklu \cPqb-atzīmēšanu apstiprināšanu/noraidīšanu.
+\item[Trekēšanas efektivitāte] TRK un MUO Fizikas objektu grupas ir izstrādājušas trekēšanas efektivitātes koeficientus kā funkciju no treka $\eta$ va rekonustruēto virsotņu daudzumu. Visi šie koeficienti ir atkarīgi no datu gūšanas periodiem.
 \end{description}
 
-\item[\cPqb-tagging] The nominal efficiency expected in the simulation is corrected by \pt-dependent scale factors provided by the BTV Physics Object Group \cite{twiki:BTV}. Depending on the flavour of each jet, the \cPqb-tagging decision is updated according to the scale factor measured. The scale factor is also varied according to its uncertainty. The main effect of this systematic is the demotion/promotion of candidate \cPqb-jets and thus a migration of events used for analysis.
-
-\item[Tracking efficiency]
-The TRK and MUO Physics Object Groups have derived tracking efficiency scale factors as function of the track $\eta$ or the reconstructed vertex multiplicity. The later is solely available for muons and shown in Fig.~\ref{fig:mutksf}, while Table~\ref{tab:dstartsf} summarises the scaling factors obtained from $D^*$ decays. All these scale factors are run-dependent (BCDEF and GH data-taking periods are separated).
-\end{description}
-\clearpage
-\section{Theoretical uncertainties}
+\section{Teorētiskās nenoteiktības}
 \begin{description}
-\item[using \EVTGEN in simulation of the decay of heavy flavour particles]
-  
-\item[Hadroniser choice] 
-
-\item[Top quark mass] 
-
-\item[\PYTHIA tunes] The following \PYTHIA tunes are used:
-  
-  \begin{description}
-    
-  \item[Matrix Element + Parton Shower matching scheme] 
-  \item[Parton shower scale] 
-  \item[Colour reconnection model] 
-  \item[Unerlying Event (UE) variations] 
-  \end{description}
+\item[KHD koeficientu izvēle] Apskatām antikorelētas faktorizācijas un renormalizācijas koeficientu variācijas ar kārtu 0,5 un 2 ($\mu_R/\mu_F$) \ttbar paraugos. Šīs variācijas tiek noglabātas simulētajos notikumus kā alternatīva svaru kopa, kas tiek izmantota šīs nenoteiktības novērtēšanā. Tiek izmantota 7 variāciju kopums (izņemot op. variāciju $\mu_R/\mu_F$).
+\item[\EVTGEN] Sistemātiskā nenoteiktība rodas, ja smago garšu daļiņu, pamatā $B$ un $D$ mezonu sabrukums tiek simulēts ar Monte Karlo notikumu ģeneratoru \EVTGEN.
+\item[Hadronizatora izvēle] Sistemātiskā nenoteiktība rodas, ja hadronizācijas procesu modelē ar \HERWIGpp. 
+\item[Virsotnes kvarka masa] Visprecīzākie virsotnes kvarka masas mērījumi norāda uz nenoteiktību $\pm 0,49 \text{GeV}$ \cite{Khachatryan:2015hba}. Tomēr mēs piesardzīgi pieņemam nenoteiktību vienādu ar $\pm 1 \text{GeV}$. 
+\item[\PYTHIA uzskaņojumi] Tiek izmantoti šādi \PYTHIA uzskaņojumi:
+  \begin{enumerate}
+  \item Matricas elementu + partonu lietus savietošanas shēma 
+  \item Partonu lietus mērogs 
+  \item Krāsu otrreizējās savienošanas modelis 
+  \item Pamata notikuma variācijas 
+  \end{enumerate}
 \end{description}
 
-Table \ref{tab:mcsystdatasets} summarises the simulation samples used for the theoretical systematics.
+\ref{tab:mcsystdatasets} tabulā ir apkopotas teorētisko nenoteiktību simulāciju paraugi un to šķērsgriezums. Tie ir iegūti no
 
+RunIISummer16MiniAODv2-PUMoriond17\_80X\_mcRun2\_asymptotic\_2016\_TrancheIV\_v6
+
+izstrādes.
 
 \begin{table}[!htp]
 \begin{center}
-\caption{Simulation samples used for systematics, from RunIISummer16MiniAODv2-PUMoriond17\_80X\_mcRun2\_asymptotic\_2016\_TrancheIV\_v6.}
+\caption{Teorētisko nenoteiktību simulāciju paraugi.}
 \label{tab:mcsystdatasets}
-\hspace*{-1cm}
-\begin{tabular}{ llr }
+\begin{tabular}{llr}
 \hline
-Signal variation & Dataset & $\sigma[pb]$\\
+Signāla variācija & Datu kopa & $\sigma[pb]$\\
 \hline
-\multirow{4}{*}{Parton shower scale}
+\multirow{4}{*}{Partonu lietus mērogs}
 & {\small TT\_TuneCUETP8M2T4\_13TeV-powheg-isrup-pythia8}     & 832\\
 & {\small TT\_TuneCUETP8M2T4\_13TeV-powheg-isrdown-pythia8}   & 832\\
 & {\small TT\_TuneCUETP8M2T4\_13TeV-powheg-fsrup-pythia8}     & 832\\
 & {\small TT\_TuneCUETP8M2T4\_13TeV-powheg-fsrup-pythia8}     & 832\\\hline
-\multirow{2}{*}{Underlying event}
+\multirow{2}{*}{Pamata notikums}
 & {\small TT\_TuneCUETP8M2T4up\_13TeV-powheg-pythia8 }        & 832\\
 & {\small TT\_TuneCUETP8M2T4down\_13TeV-powheg-pythia8}       & 832\\\hline
-\multirow{2}{*}{ME-PS matching scale (hdamp)}
+\multirow{2}{*}{ME-PS savietošanas skala (hdamp)}
 & {\small TT\_hdampUP\_TuneCUETP8M2T4\_13TeV-powheg-pythia8}  & 832\\
 & {\small TT\_hdampDOWN\_TuneCUETP8M2T4\_13TeV-powheg-pythia8}& 832 \\\hline
-\multirow{3}{*}{Color reconnection}
+\multirow{3}{*}{Krāsu otrreizējā savienošanās}
 & {\small TT\_TuneCUETP8M2T4\_erdON\_13TeV-powheg-pythia8 }   & 832\\
 & {\small TT\_TuneCUETP8M2T4\_QCDbasedCRTune\_erdON\_13TeV-powheg-pythia8} & 832\\
 & {\small TT\_TuneCUETP8M2T4\_GluonMoveCRTune\_13TeV-powheg-pythia8} & 832\\\hline
-\multirow{2}{*}{Top mass}
+\multirow{2}{*}{Virsotnes masa}
 & {\small TT\_TuneCUETP8M2T4\_mtop1715\_13TeV-powheg-pythia8 }& 832\\
 & {\small TT\_TuneCUETP8M2T4\_mtop1735\_13TeV-powheg-pythia8} & 832\\\hline
 \HERWIGpp & {\small TT\_TuneEE5C\_13TeV-powheg-herwigpp}      & 832\\

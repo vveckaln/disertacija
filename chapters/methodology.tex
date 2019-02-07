@@ -76,7 +76,7 @@ Tracking efficiency of the detector is not perfect. It depends on the quality of
 
 \section{LEP method}
 
-Another methodology of studying colour-connected jets in the process $e^{+}e^{-}\rightarrow q\overline{q}q\overline{q}$ at \sqrts=189-207\GeV was used in various experiments of LEP (\cite{Abdallah:2006uq}, \cite{Abbiendi:2005es}, \cite{Achard:2003pe}). Two inter-\PW planes formed by colour-connected quarks and two intra-\PW planes formed by quarks that are not colour connected are introduced as shown in Fig. \ref{fig:LEP_method}. Particles are projected onto these planes and the angle with the leftmost quark $\chi_{1}$ is taken. If this angle is less than the angle $\chi_{0}$ between the quarks forming the plane (which means the particle is projected between the respective quarks) then the normalised angle $\chi_{R}=\frac{\chi_{1}}{\chi_{0}}$ is plotted in the region corresponding to the plane after a linear transformation
+Another methodology of studying colour-connected jets in the process $e^{+}e^{-}\rightarrow q\overline{q}q\overline{q}$ at \sqrts=189-207 \GeV was used in various experiments of LEP (\cite{Abdallah:2006uq}, \cite{Abbiendi:2005es}, \cite{Achard:2003pe}). Two inter-\PW planes formed by colour-connected quarks and two intra-\PW planes formed by quarks that are not colour connected are introduced as shown in Fig. \ref{fig:LEP_method}. Particles are projected onto these planes and the angle with the leftmost quark $\chi_{1}$ is taken. If this angle is less than the angle $\chi_{0}$ between the quarks forming the plane (which means the particle is projected between the respective quarks) then the normalised angle $\chi_{R}=\frac{\chi_{1}}{\chi_{0}}$ is plotted in the region corresponding to the plane after a linear transformation
 
 \begin{equation}
   \chi=\chi_{R} + n_{\text{plane}} - 1
@@ -91,13 +91,29 @@ has been performed on the normalised angle.
   \label{fig:LEP_method}
 \end{figure}
 
-In the \ttbar semileptonic decay an arrangament as shown in Fig. \ref{fig:LEP_method} is not possible. Therefore a modification as shown in Fig. \ref{fig:LEP_method_adaptation} is proposed. There is one plane formed by colour connected jets 1 and 2 from the hadronic decay of the \PW boson. Additionally there are 2 colour-free regions formed by the \cPqb quark from the hadronic decay of the \PW boson and jets 1 and 2. Jets 1 and 2 are arranged so that jet 1 forms the least angle with the hadronic \cPqb quark. 
+In the \ttbar semileptonic decay an arrangament as shown in Fig. \ref{fig:LEP_method} is not possible. Therefore a modification as shown in Fig. \ref{fig:LEP_method_adaptation} is proposed. There is one plane formed by colour connected jets - the leading light jet \leadingjet and the second leading light jet \scndleadingjet from the hadronic decay of the \PW boson. Additionally there are 3 colour-free regions formed by 1) the furthest light jet $j^{W}_{f}$ and the hadronic \cPqb jet \hadronicb 2) the hadronic \cPqb jet \hadronicb and the closest light jet $j^{W}_{c}$, 3) the leading \cPqb jet \leadingb and the second leading \cPqb jet \scndleadingb. Whether a jet is close or far is determined with regard to the angle between jets in the Euclidian space. In the regions shown in Fig. \ref{fig:LEP_method_adaptation_qfhb} and Fig. \ref{fig:LEP_method_adaptation_hbqc} we may hope to observe colour reconnection effects.
 
 \begin{figure}[hbtp]
   \centering
-  \includegraphics[width=0.6\textwidth]{fig/L3method_adaptation.pdf}
-  \caption{Adaptation of the LEP method to \ttbar semileptonic decay involving a colour - connected and 2 colour-free regions.}
+  \def\twidth{0.24}
+  \subfloat[Colour-connected region \leadingjet - \scndleadingjet.]{%
+    \includegraphics[width=\twidth\textwidth]{fig/LEP_adaptation/qlq2l.pdf}%
+    \label{fig:LEP_method_adaptation_qlq2l}
+  }\hfil
+ \subfloat[Colour-free region $j^{W}_{f}$ - \hadronicb.]{%
+    \includegraphics[width=\twidth\textwidth]{fig/LEP_adaptation/qfhb.pdf}%
+    \label{fig:LEP_method_adaptation_qfhb}
+ }\hfil
+  \subfloat[Colour-free region \hadronicb - $j^{W}_{c}$.]{%
+    \includegraphics[width=\twidth\textwidth]{fig/LEP_adaptation/hbqc.pdf}%
+    \label{fig:LEP_method_adaptation_hbqc}
+  }\hfil
+  \subfloat[Colour-free region \leadingb - \scndleadingb.]{%
+    \includegraphics[width=\twidth\textwidth]{fig/LEP_adaptation/blb2l.pdf}%
+    \label{fig:LEP_method_adaptation_blb2l}
+  }
+  \caption{Adaptation of the LEP method to \ttbar semileptonic decay involving a colour - connected region and 3 colour-free regions.}
   \label{fig:LEP_method_adaptation}
 \end{figure}
 
-The method calls for a separation of hadronic and leptonic \cPqb quarks. Each \cPqb quark is paired to each \PW boson and the invariant mass is compared to the mass of the \cPqt quark - 173.34\GeV. The \cPqb quark is assigned to the branch where the difference of the masses is the smallest. 
+The method calls for a separation of hadronic and leptonic \cPqb quarks. Each \cPqb quark is paired to each \PW boson and the invariant mass is compared to the mass of the \cPqt quark - 173.34 \GeV. The \cPqb quark is assigned to the branch where the difference of the masses is the smallest. 

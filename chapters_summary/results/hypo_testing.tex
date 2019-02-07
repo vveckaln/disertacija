@@ -14,13 +14,13 @@ where $n$ is the expected number of events, $\mu$ - the signal strength, $x$ a p
 As the test statistic we chose the Tevatron test statistic. It is also known as the Neyman-Pearson test statistic. The Tevatron test statistic is defined as:
 
 \begin{equation}
-  q^{TEV}=-2\ln{\frac{L(\Hnull)}{L(\Halt)}}=-2\ln{\frac{L\left(\text{data}|p=0,\hat{\theta}_{0}\right)}{L\left(\text{data}|p=P,\hat{\theta}_{P}\right)}}
-\end{equation},
+  q^{TEV}=-2\ln{\frac{L(\Hnull)}{L(\Halt)}}=-2\ln{\frac{L\left(\text{data}|p=0,\hat{\theta}_{0}\right)}{L\left(\text{data}|p=P,\hat{\theta}_{P}\right)}},
+\end{equation}
 
 where $p$ is the parameter of interest. $\theta$ is the nuisance factor and $\hat{\theta}$ is the nuisance factor that maximises the profile likelihood. The likelihood $L$ is defined the probility of the hypothesis given the data. Assuming a hypothesis with signal strength $\mu$ the likelihood is evaluated as:
 
 \begin{equation}
-  L(\mu, \theta_{s}, \theta_{b}) = \prod_{i=1}^{N}\frac{(\mu s_{i}(\theta_{s}) + b_{i}(\theta_{b}))^{n_{i}}}{n_{i}!}e^{\mu s_{i}(\theta_{s}) + b_{i}(\theta_{b})},
+  L(\mu, \theta_{s}, \theta_{b}) = \prod_{i=1}^{N}\frac{(\mu s_{i}(\theta_{s}) + b_{i}(\theta_{b}))^{n_{i}}}{n_{i}!}e^{-\mu s_{i}(\theta_{s}) + b_{i}(\theta_{b})},
 \end{equation}
 
 where $i$ is the phase-space parameter (bin index), $n_{i}$ is the observation (data) in the relevant phase (bin).
@@ -62,7 +62,7 @@ The p-values of \Halt and \Hnull are infinitessimal. Thus we cannot make a concl
 The \lstinline[language=sh]|combine| tool has a method \lstinline[language=sh]|MultiDimFit| to determine the curve of the profile likelihood ratio PLR
 
 \begin{equation}
-  \text{PLR}(x, \theta)=-2ln\frac{L(x=0, \theta)}{\hat{x}, \hat{\theta}}
+  \text{PLR}(x, \theta)=-2\ln\frac{L(x=0, \theta)}{\hat{x}, \hat{\theta}}
 \end{equation}
 
 At $\hat{x}$ and $\hat{\theta}$ the PLR has minimum. At this point the MC best fits the data. The PLR curve can be obtained by invoking

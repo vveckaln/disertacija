@@ -1,0 +1,16 @@
+\begin{table}[htp]
+	\begin{center}
+	\caption{Observed masses of objects for the $\mu$ channel at generation level for MC for the SM model.}
+	\label{tab:mass_M_gen_MC_nominal}
+		\begin{tabular}{l|rr}
+		\hline
+		\makecell[c]{Object}&\makecell[c]{Mass$\pm$(stat)$\pm$(syst) [GeV]}&\makecell[c]{FWHM$\pm$(stat)$\pm$(syst) [GeV]}\\
+		\hline
+		hadronic $W$ 	& 7.862e+01 	$\pm$ 6.516e-07 	& 1.586e+01 	$\pm$ 2.483e-04 \\
+		hadronic $t$ 	& 1.693e+02 	$\pm$ 4.019e-07 	$\pm$ 1.867e-01 	& 2.068e+01 	$\pm$ 1.167e-04 	$\pm$ 3.726e-01 \\
+		leptonic $W$ 	& 8.085e+01 	$\pm$ 4.532e-05 	$\pm$ 3.293e-02 	& 5.000e-01 	$\pm$ 0.000e+00 	$\pm$ 0.000e+00 \\
+		leptonic $t$ 	& 1.713e+02 	$\pm$ 1.766e-06 	$\pm$ 9.651e-02 	& 2.623e+01 	$\pm$ 2.644e-04 	$\pm$ 2.715e-01 \\
+		\hline
+		\end{tabular}
+	\end{center}
+\end{table}

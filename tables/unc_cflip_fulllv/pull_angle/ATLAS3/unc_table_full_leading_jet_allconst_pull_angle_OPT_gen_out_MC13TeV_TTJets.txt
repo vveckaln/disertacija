@@ -1,0 +1,11 @@
+		\begin{longtable}{p{0.6\linewidth}|ccc}
+	\caption{Vilkmes leņķa no vadošās vieglās strūklas uz otro vadošo vieglo strūklu papildus nenoteiktības (veidola) $t\overline{t}$ cflip svars \POWHEG+\PYTHIA 8 * paraugam. Rezultāti sniegti ģeneratora līmenī, iekļaujot visas strūklu sastāvdaļas. Tiek izmantoti 3 vienāda izmēra vērtību intervāli.}
+	\label{tab:unc_table_fullpull_angle_OPT_allconst_gen_out_MC13TeV_TTJets_cflip_ATLAS3}\\
+			\hline
+			\makecell[c]{\multirow{3}{*}{Traucējums}} &\multicolumn{3}{c}{Nenoteiktība vērtību intervālā [\%]}\\
+			 & 1. intervāls  & 2. intervāls  & 3. intervāls  \\
+			 & 0,00 - 1,04 & 1,04 - 2,07 & 2,07 - 3,14 \\
+			\hline
+			$t\overline{t}$ cflip	&	20,924	&	11,031	&	13,870\\
+		\hline
+		\end{longtable}

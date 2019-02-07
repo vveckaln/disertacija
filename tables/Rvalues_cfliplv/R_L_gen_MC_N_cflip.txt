@@ -1,0 +1,31 @@
+\begin{table}[htp]
+	\begin{center}
+	\caption{Value of $R^{-1}$ for the common lepton channel at generation level for MC, particle flow for the  colour octet $W$ model.}
+	\label{tab:R_L_gen_N_MC_cflip}
+		\begin{tabular}{|l|cc|}
+		\hline
+		\makecell[c]{Jet constituents} & $I$$\pm$(stat)$\pm$(syst) [rad] & $R^{-1}$$\pm$(stat)$\pm$(syst) \\
+		\hline
+		\multicolumn{3}{|c|}{$j_{1}^{b}$,$j_{2}^{b}$}\\
+		\hline
+		 all 	& 0.008 	$\pm$ 0.000 	$\pm$ 0.000 	& 0.193 	$\pm$ 0.000 	$\pm$ 0.001 \\
+		 charged 	& 0.008 	$\pm$ 0.000 	$\pm$ 0.000 	& 0.194 	$\pm$ 0.000 	$\pm$ 0.001 \\
+		\hline
+		\multicolumn{3}{|c|}{$j_{f}^{W}$,$j_{h}^{b}$}\\
+		\hline
+		 all 	& 0.010 	$\pm$ 0.000 	$\pm$ 0.000 	& 0.245 	$\pm$ 0.000 	$\pm$ 0.001 \\
+		 charged 	& 0.011 	$\pm$ 0.000 	$\pm$ 0.000 	& 0.246 	$\pm$ 0.000 	$\pm$ 0.001 \\
+		\hline
+		\multicolumn{3}{|c|}{$j_{h}^{b}$,$j_{c}^{W}$}\\
+		\hline
+		 all 	& 0.052 	$\pm$ 0.000 	$\pm$ 0.000 	& 1.295 	$\pm$ 0.000 	$\pm$ 0.001 \\
+		 charged 	& 0.056 	$\pm$ 0.000 	$\pm$ 0.000 	& 1.295 	$\pm$ 0.000 	$\pm$ 0.001 \\
+		\hline
+		\multicolumn{3}{|c|}{$j_{1}^{W}$,$j_{2}^{W}$}\\
+		\hline
+		 all 	& 0.040 	$\pm$ 0.000 	$\pm$ 0.000 	& 1.000 	$\pm$ 0.000 	$\pm$ 0.001 \\
+		 charged 	& 0.043 	$\pm$ 0.000 	$\pm$ 0.000 	& 1.000 	$\pm$ 0.000 	$\pm$ 0.002 \\
+		\hline
+		\end{tabular}
+	\end{center}
+\end{table}

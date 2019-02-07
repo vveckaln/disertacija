@@ -1,4 +1,3 @@
-
 The data analysed for present study consists of the 2016{B-H} data taking periods for a total certified luminosity of 35.9\fbinv for all the channels analysed. The luminosity has been computed with the \textsc{brilcalc} tool \cite{site:brilcalc} using the following command:
 
 \begin{lstlisting}[language=sh, breaklines=true]
@@ -86,7 +85,7 @@ Process                      & Dataset                                          
 \end{longtable}
 \end{table}
 
-The background samples contain events of processes that are different from the hard process and the underlying event but whose reconstructed final state passes the same selection criteria as that of the signal. For example, consider the Drell-Yan (DY)process shown in Fig. \ref{fig:Drell_Yan}. The DY process occurs in $pp$ collisions when quark from one proton annihilates with an antiquark from another proton and creates a virtual photon or a $Z$ boson which subsequently decays into a pair of oppositely charged leptons ($e$ or $\mu$). The cross section for the DY process is much larger than the cross section of the \ttbar process. The DY would form a a significant background if we select only one lepton as the other lepton could be misreconstructed as a jet. However, the importance of DY drops significantly when we impose the additional requirement of having at least 4 jets. A comprehensive account of the background processes is given in \cite{Eichten:1984eu}.
+The background samples contain events of processes that are different from the hard process and the underlying event but whose reconstructed final state passes the same selection criteria as applied to the signal. For example, consider the Drell-Yan (DY) process shown in Fig. \ref{fig:Drell_Yan}. The DY process occurs in $pp$ collisions when a pair of oppositely charged leptons ($e$ or $\mu$) is created from the decay of a scalar boson. The scalar boson in turn is created from quark fusion. The cross section for the DY process is much larger than the cross section of the \ttbar process. The DY would form a a significant background if we select only one lepton as the other lepton could be misreconstructed as a jet. However, the importance of DY drops significantly when we impose the additional requirement of having at least 4 jets. A comprehensive account of the background processes is given in \cite{Eichten:1984eu}.
 
 \begin{figure}[htp]
 \centering
@@ -127,7 +126,7 @@ Based on differences between data and simulated events different sets of correct
 
 \item[Pileup re-weighting]
 
-During each bunch crossing there is more than 1 \Pp\Pp collision collision. The reconstructed tracks are combined into vertices, each vertex marking the spot of a \Pp\Pp collision. Pile-up refers to the number of \Pp\Pp colisions in each bunch crossing. An illustration of pile-up is shown in Fig. \ref{fig:pu}.
+During each bunch crossing there are multiple \Pp\Pp collisions. The reconstructed tracks are combined into vertices, each vertex marking the spot of a \Pp\Pp collision. Pile-up refers to the number of \Pp\Pp colisions in each bunch crossing. A pile-up recorded in a real event is shown in Fig. \ref{fig:pu}.
 
 \begin{figure}[htp]
 \centering
@@ -136,16 +135,20 @@ During each bunch crossing there is more than 1 \Pp\Pp collision collision. The 
 \label{fig:pu}
 \end{figure}
 
-However, the example in Fig. \ref{fig:pu} is extreme. Pile-up depends on the number of protons in the bunch and the beam emittance and has been different at different times of the operation of the LHC - see Fig. \ref{fig:pileup_allYears}. The CMS detector has been designed with an average pile-up of 25 collisions in mind but the HL-CMS will have to be prepared for a pile-up of 140 - 200 collisions \cite{Apollinari:2015bam}.
+However, the example in Fig. \ref{fig:pu} is extreme. Pile-up depends on the number of protons in the bunch and the beam emittance and has been varying at different times of the operation of the LHC - see Fig. \ref{fig:pileup_allYears}. The CMS detector has been designed with an average pile-up of 25 collisions in mind but the HL-CMS will have to be prepared for a pile-up of 140 - 200 collisions \cite{Apollinari:2015bam}.
 
 \begin{figure}[htp]
 \centering
 \includegraphics[width=0.5\textwidth]{fig/pileup_allYears.png}
-\caption{Pile-up during different times of the operation of the LHC \cite{twiki:pu_public}.}
+\caption{Pile-up during different periods of the operation of the LHC \cite{twiki:pu_public}.}
 \label{fig:pileup_allYears}
 \end{figure}
 
-When preparing the MC samples also the pile-up value is determined. Additional minimum bias interactions superimposed in order to include the effect of in-time and out-of-time pileup in the events. The generated pileup distribution is based on the configuration {\raggedright{\small SimGeneral.MixingModule.mix\_2016\_25ns\_Moriond17MC\_PoissonOOTPU\_cfi }}. A minimum bias cross section of 69 mb is used to estimate the pileup distribution following the recommendations from \cite{twiki:pileup}. A 5\% uncertainty assigned to the minimum bias cross section assumed.
+When preparing the MC samples also the pile-up value is determined. Additional minimum bias interactions are superimposed in order to include the effect of in-time (originating from the same bunch crossing) and out-of-time (originating from the previous bunch crossing) pileup in the events. Minimum bias refers to events that are selected with a “loose” trigger that accepts a large fraction of the overall inelastic cross section \cite{Field:2011iq}. The generated pileup distribution is based on the configuration
+
+SimGeneral.MixingModule.mix\_2016\_25ns\_Moriond17MC\_PoissonOOTPU\_cfi.
+
+A minimum bias cross section of 69 mb is used to estimate the pileup distribution following the recommendations from \cite{twiki:pileup}. A 5\% uncertainty assigned to the minimum bias cross section assumed.
 
 Fig. \ref{fig:L4_1l4j2b2w_nvtx} shows the distribution of data compared to expectation in the number of primary vertices reconstructed. The agreement between data and Monte Carlo is not perfect, and is poorer in runs BCDEF than in GH. In order to equalise the pile-up distributions between data and MC each MC event is assigned a pile-up weight:
 
@@ -157,12 +160,12 @@ w_{\text{pu}}=\frac{N^{\text{data}}_{\text{pu}}}{N^{\text{MC}}_{\text{pu}}}
 \centering
   \def\twidth{0.45}
   \centering
-  \subfloat[Pile-up distribution for runs BCDEF.]{
-    \includegraphics[width=\twidth\textwidth]{fig/L4_1l4j2b2w_nvtx_BCDEF}
+  \subfloat[Pile-up distribution for runs BCDEF.]{%
+    \includegraphics[width=\twidth\textwidth]{fig/L4_1l4j2b2w_nvtx_BCDEF}%
     \label{fig:L4_1l4j2b2w_nvtx_BCDEF}
-  }%
-  \subfloat[Pile-up distribution for runs GH.]{
-    \includegraphics[width=\twidth\textwidth]{fig/L4_1l4j2b2w_nvtx_GH}
+  }\hfil
+  \subfloat[Pile-up distribution for runs GH.]{%
+    \includegraphics[width=\twidth\textwidth]{fig/L4_1l4j2b2w_nvtx_GH}%
     \label{fig:L4_1l4j2b2w_nvtx_GH}
   }
 \caption{Pile-up distributions in Monte Carlo and data after the last step of event selection. }
@@ -182,7 +185,7 @@ w_{\text{pu}}=\frac{N^{\text{data}}_{\text{pu}}}{N^{\text{MC}}_{\text{pu}}}
 An efficiency of an algorithm to select a physics object according to a criterion is defined as 
 
 \begin{equation}
-\epsilon\equiv\frac{\text{N of objects that pass the criterion actually passed by the algorithm}}{\text{N of objects that pass the criterion}}
+\epsilon\equiv\frac{\text{N of objects that pass the criterion actually passed by the algorithm}}{\text{N of objects that pass the criterion}}.
 \end{equation}
 
 The efficiency is a measure of the ability of our real-world selection algorithm to select a physics object compared to an idealised selection algorithm that will select interesting physics objects flawlessly.
@@ -201,12 +204,12 @@ The identification efficiency refers to the ability to identify a physics object
 \centering
   \def\twidth{0.45}
   \centering
-  \subfloat[$\eta<0.8$.]{
-    \includegraphics[width=\twidth\textwidth]{fig/CMS-MUO-16-001_Figure_008-a.pdf}
+  \subfloat[$\eta<0.8$.]{%
+    \includegraphics[width=\twidth\textwidth]{fig/CMS-MUO-16-001_Figure_008-a.pdf}%
     \label{fig:CMS-EGM-13-001_Figure_024-a.pdf}
-  }%
-  \subfloat[$<1.57\eta2$.]{
-    \includegraphics[width=\twidth\textwidth]{fig/CMS-MUO-16-001_Figure_008-b.pdf}
+  }\hfil
+  \subfloat[$<1.57\eta2$.]{%
+    \includegraphics[width=\twidth\textwidth]{fig/CMS-MUO-16-001_Figure_008-b.pdf}%
     \label{fig:CMS-EGM-13-001_Figure_024-d.pdf}
   }
 \caption{Efficiency as a function of electron \pt for dielectron events in data (dots) and DY simulation (triangles), for the medium working point of the sequential selection \cite{Khachatryan:2015hwa}.}
@@ -219,12 +222,12 @@ Muon isolation is used to distinguish prompt muons from weakly decaying jets. It
 \centering
   \def\twidth{0.45}
   \centering
-  \subfloat[Tag-and-probe efficiency for the tight PF isolation working point on top of the tight ID versus \pt for muons in the acceptance of the muon spectrometer.]{
-    \includegraphics[width=\twidth\textwidth]{fig/CMS-MUO-16-001_Figure_008-a.pdf}
+  \subfloat[Tag-and-probe efficiency for the tight PF isolation working point on top of the tight ID versus \pt for muons in the acceptance of the muon spectrometer.]{%
+    \includegraphics[width=\twidth\textwidth]{fig/CMS-MUO-16-001_Figure_008-a.pdf}%
     \label{fig:CMS-MUO-16-001_Figure_008-a}
-  }%
-  \subfloat[Tag-and-probe efficiency for the tight PF isolation working point on top of the tight ID versus $\eta$ for muons with $\pt> 20$ GeV.]{
-    \includegraphics[width=\twidth\textwidth]{fig/CMS-MUO-16-001_Figure_008-b.pdf}
+  }\hfil
+  \subfloat[Tag-and-probe efficiency for the tight PF isolation working point on top of the tight ID versus $\eta$ for muons with $\pt> 20$ GeV.]{%
+    \includegraphics[width=\twidth\textwidth]{fig/CMS-MUO-16-001_Figure_008-b.pdf}%
     \label{fig:CMS-MUO-16-001_Figure_008-b}
   }
 \caption{Tag-and-probe efficiency for the tight PF isolation working point on top of the tight ID versus \pt for muons in the acceptance of the muon spectrometer, and versus $\eta$ for muons with $\pt> 20$ GeV, for 2015 data (circles), simulation (squares), and the ratio (bottom inset). The statistical uncertainties are smaller than the symbols used to display the measurements.  \cite{Sirunyan:2018fpa}}
@@ -238,7 +241,7 @@ We correct for the difference in performance for the lepton identification in el
 
 Trigger efficiency is measured on leptons that have already passed the ID (electrons) or ID+isolation selection (muons). We correct for the difference in performance of the High Level Trigger (HLT) \cite{Adam:2005zf}, \cite{Sphicas:2002gg} used in data and simulation. The HLT trigger receives events from the L1 trigger at a maximum design rate 100 kHz, in practice less than a third of this value kHz. It then further selects interesting events according to various physics programmes. It is completely implemented in software and is continuously updated. The HLT is run on a farm of about 1000 commodity PCs. For different physics programmes separate trigger paths are used. The HLT further reduces the event rate by a factor of about 1000. Its output rate is $\mathcal{O}(1)-\mathcal{O}(100)$ Hz - a rate that is acceptable by recording devices.
 
-The HLT selection is a multistage process\footnote{It corresponds to a combination of Level 2 and Level 3 triggers used in other detector systems}. The first step uses the calorimeter information. In the second step energy deposits in the calorimeter are combined with hits in the pixel detector. In the third step full track reconstruction is used. Each step of the trigger contributes to a loss of trigger efficiency.
+The HLT selection is a multistage process\footnote{It corresponds to a combination of Level 2 and Level 3 triggers used in other detector systems.}. The first step uses the calorimeter information. In the second step energy deposits in the calorimeter are combined with hits in the pixel detector. In the third step full track reconstruction is used. Each step of the trigger contributes to a loss of trigger efficiency.
 
 Trigger efficiency is a function of the \pt and $\eta$ of the physics object. Particularly the efficiency drops at low \pt. Let us consider the isolated single-muon trigger as an example. Fig. \ref{fig:CMS-MUO-16-001_Figure_008} shows the dependence of the efficiency of this trigger as a function of \pt and $\eta$.
 
@@ -246,12 +249,12 @@ Trigger efficiency is a function of the \pt and $\eta$ of the physics object. Pa
 \centering
   \def\twidth{0.45}
   \centering
-  \subfloat[Isolated single-muon trigger efficiency as a function of \pt.]{
-    \includegraphics[width=\twidth\textwidth]{fig/CMS-MUO-16-001_Figure_008-a.pdf}
+  \subfloat[Isolated single-muon trigger efficiency as a function of \pt.]{%
+    \includegraphics[width=\twidth\textwidth]{fig/CMS-MUO-16-001_Figure_008-a.pdf}%
     \label{fig:CMS-MUO-16-001_Figure_008-a}
-  }%
-  \subfloat[Isolated single-muon trigger efficiency as a function of $\eta$.]{
-    \includegraphics[width=\twidth\textwidth]{fig/CMS-MUO-16-001_Figure_008-b.pdf}
+  }\hfil
+  \subfloat[Isolated single-muon trigger efficiency as a function of $\eta$.]{%
+    \includegraphics[width=\twidth\textwidth]{fig/CMS-MUO-16-001_Figure_008-b.pdf}%
     \label{fig:CMS-MUO-16-001_Figure_008-b}
   }
 \caption{Isolated single-muon trigger efficiencies measured with 2015 data (squares), simulation (circles), and the ratio (bottom inset). Results are plotted as a function of offline reconstructed muon \pt and $\eta$ \cite{Sirunyan:2018fpa}.}
@@ -264,12 +267,12 @@ Based on these differences \pt and $\eta$ scale factors are used. They are diffe
 \centering
   \def\twidth{0.45}
   \centering
-  \subfloat[Isolated single-muon trigger efficiency scale factors for data taking periods BCDEF.]{
-    \includegraphics[width=\twidth\textwidth]{fig/muontriggersBCDEF.pdf}
+  \subfloat[Isolated single-muon trigger efficiency scale factors for data taking periods BCDEF.]{%
+    \includegraphics[width=\twidth\textwidth]{fig/muontriggersBCDEF.pdf}%
     \label{fig:muontriggersBCDEF}
-  }%
-  \subfloat[Isolated single-muon trigger efficiency scale factors for data taking periods GH.]{
-    \includegraphics[width=\twidth\textwidth]{fig/muontriggersGH.pdf}
+  }\hfil
+  \subfloat[Isolated single-muon trigger efficiency scale factors for data taking periods GH.]{%
+    \includegraphics[width=\twidth\textwidth]{fig/muontriggersGH.pdf}%
     \label{fig:muontriggersGH}
   }
 \caption{Isolated single-muon trigger efficiency scale factors for data taking periods BCDEFGH of 2016.}
@@ -305,7 +308,7 @@ In addition to assigning event weights each distribution of an observable of sam
   The jet energy scale correction (JEC) is applied to bring jet response to unity. Jet response \JetResponse is defined as the ratio of the arithmetic mean of reconstructed jets \pt and the \pt calculated from the generated constituens of jets (particle level): 
   
 \begin{equation}
-\JetResponse\equiv\frac{<\pt>_{\text{reco}}}{<\pt>_{\text{ptcl}}}    
+\JetResponse\equiv\frac{<\pt>_{\text{reco}}}{<\pt>_{\text{ptcl}}}.    
 \end{equation}
 
 A reconstructed jet is matched to the generated (particle level) jet if the jet separation is within half of the jet distance parameter $R$, where $R\equiv\sqrt{\left(\eta_{\text{jet\ 1}} - \eta_{\text{jet\ 2}} \right)^{2}+\left(\phi_{\text{jet\ 1}} - \phi_{\text{jet\ 2}}\right)^{2}}$. If $R=0.5$ is used jet distance should be no more than 0.25.
@@ -316,12 +319,12 @@ The jet response is dependent on \pt, $\eta$ and jet size. Particularly it degra
 \centering
   \def\twidth{0.45}
   \centering
-  \subfloat[Simulated jet response $R$ versus $\left|\eta\right|$ for the jet distance parameter $R0.5$.]{
-    \includegraphics[width=\twidth\textwidth]{fig/CMS-JME-13-004_Figure_010-a.pdf}
+  \subfloat[Simulated jet response $R$ versus $\left|\eta\right|$ for the jet distance parameter $R0.5$.]{%
+    \includegraphics[width=\twidth\textwidth]{fig/CMS-JME-13-004_Figure_010-a.pdf}%
     \label{fig:CMS-JME-13-004_Figure_010-a}
-  }%
-  \subfloat[Simulated jet response $R$, after JEC have been applied, versus $p_{T\text{,ptcl}}$ for jet distance parameter $R=0.5$ in various $\left|\eta\right|$ regions.]{
-    \includegraphics[width=\twidth\textwidth]{fig/CMS-JME-13-004_Figure_010-b.pdf}
+  }\hfil
+  \subfloat[Simulated jet response $R$, after JEC have been applied, versus $p_{T\text{,ptcl}}$ for jet distance parameter $R=0.5$ in various $\left|\eta\right|$ regions.]{%
+    \includegraphics[width=\twidth\textwidth]{fig/CMS-JME-13-004_Figure_010-b.pdf}%
     \label{fig:CMS-JME-13-004_Figure_010-b}
   }
 \caption{Jet energy response before (a) and after (b) applying JEC. The illustration is from 2012 TeV data with $\sqrt{s}=8$ due to unavailability of public results with Run II data \cite{Khachatryan:2016kdb}. For a discussion of PF+CHS jets see text.}
@@ -353,7 +356,7 @@ where $s$ is the scaling factor.
 If the generated particle level jet is not found the stochastis scaling method is used - Eq. \ref{eq:stochastic}.
 
 \begin{equation}
-c_{\text{JER}}=1+\mathcal{N}(0,\sigma_{JER})\sqrt{\max(s_{\text{JER}-1,0})}
+c_{\text{JER}}=1+\mathcal{N}(0,\sigma_{JER})\sqrt{\max(s_{\text{JER}-1,0})}.
 \label{eq:stochastic}
 \end{equation}
 

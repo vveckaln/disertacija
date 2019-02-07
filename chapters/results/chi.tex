@@ -1,23 +1,23 @@
 \label{sec:LEP_methodology}
-In order to correctly apply the LEP methodology one needs to separate the \cPqb\ quarks on the hadronic and the leptonic branch. The methodology to achieve this goal was described in \ref{chap:methodology}. As a test of the validity of the methodology, one can use the invariant mass of the \cPqt quark, formed by the sum of the \cPqb quark and the \PW boson. Fig. \ref{fig:L_jet_mass_reco} shows the resonance of the \cPqt quark. Tables \ref{tab:mass_L_reco_MC} - \ref{tab:mass_L_reco_data} provide measurements of the masses of the \cPqt quark and the \PW boson on the hadronic and leptonic branches using a polynomial fit.
+In order to correctly apply the LEP methodology one needs to separate the \cPqb\ quarks on the hadronic and the leptonic branch. The methodology to achieve this goal was described in \ref{chap:methodology}. As a test of the validity of the methodology, one can use the invariant mass of the \cPqt quark, formed by the sum of the \cPqb quark and the \PW boson. Fig. \ref{fig:L_jet_mass_reco} shows the resonance of the \cPqt quark. Tables \ref{tab:mass_L_reco_MC_nominal} - \ref{tab:mass_L_reco_MC_cflip} provide measurements of the masses of the \cPqt quark and the \PW boson on the hadronic and leptonic branches using a polynomial fit.
 
   \begin{figure}[hbtp]
-    \def\twidth{0.5}
-    \subfloat[Observed mass of \PW\ on the hadronic branch.]{
-    \includegraphics[width=\twidth\textwidth]{fig/histos/L/reco/L_jet_mass_reco_had_w.png}
+    \def\twidth{0.45}
+    \subfloat[Observed mass of \PW on the hadronic branch.]{%
+    \includegraphics[width=\twidth\textwidth]{fig/histos/L/reco/L_jet_mass_reco_had_w.png}%
     \label{fig:L_jet_mass_reco_had_w}
-}
-  \subfloat[Observed mass of \cPqt\ on the hadronic branch.]{
-    \includegraphics[width=\twidth\textwidth]{fig/histos/L/reco/L_jet_mass_reco_had_t.png}
+}\hfil
+  \subfloat[Observed mass of \cPqt on the hadronic branch.]{%
+    \includegraphics[width=\twidth\textwidth]{fig/histos/L/reco/L_jet_mass_reco_had_t.png}%
     \label{fig:L_jet_mass_reco_had_t}
-}
+}\\
 
- \subfloat[Observed mass of \PW\ on the leptonic branch.]{
-    \includegraphics[width=\twidth\textwidth]{fig/histos/L/reco/L_jet_mass_reco_lept_w.png}
+ \subfloat[Observed mass of \PW on the leptonic branch.]{%
+    \includegraphics[width=\twidth\textwidth]{fig/histos/L/reco/L_jet_mass_reco_lept_w.png}%
     \label{fig:L_jet_mass_reco_lept_w}
-  }
- \subfloat[Observed mass of \cPqt\ on the leptonic branch.]{
-    \includegraphics[width=\twidth\textwidth]{fig/histos/L/reco/L_jet_mass_reco_lept_t.png}
+  }\hfil
+ \subfloat[Observed mass of \cPqt on the leptonic branch.]{%
+    \includegraphics[width=\twidth\textwidth]{fig/histos/L/reco/L_jet_mass_reco_lept_t.png}%
     \label{fig:L_jet_mass_reco_lept_t}
 }
  \caption{Observed masses of objects.}
@@ -25,11 +25,11 @@ In order to correctly apply the LEP methodology one needs to separate the \cPqb\
 \end{figure}
 
 
-\input{chapters/results/masses_tables/mass_L_reco_MC.txt}
+\input{tables/masses/mass_L_reco_MC_nominal.txt}
 
-\input{chapters/results/masses_tables/mass_L_reco_data.txt}
+\input{tables/masses/mass_L_reco_data_nominal.txt}
 
-\input{chapters/results/masses_tables/mass_L_reco_MC_flip.txt}
+\input{tables/masses/mass_L_reco_MC_cflip.txt}
 
 
 Three types of flows are analysed:
@@ -59,9 +59,11 @@ R=\frac{\int_{0.2}^{0.8}f^{\text{inter \PW region}}d\chi}{\int_{0.2}^{0.8}f^{\te
 
 where $f(\chi)$ is the density of the flow distribution.
 
-This parameter was used at LEP to quantify colour connection effects and their values from different experiment corresponding to 625\pbinv of data in the range \sqrts=189-209\GeV are given in Table \ref{tab:LEP_R}. We note inconsistency in the $R$ values reported by different experiments. Furthermore,  $R$ should exceed 1 on theoretical basis. The range 0.2 - 0.8 is identified as sensitive to colour-connection effects. 
+This parameter was used at LEP to quantify colour connection effects and their values from different experiment corresponding to 625\pbinv of data in the range \sqrts=189-209\GeV are given in Table \ref{tab:LEP_R}. We note inconsistency in the $R$ values reported by different experiments. Furthermore, $R$ should exceed 1 on theoretical basis. The range 0.2 - 0.8 is identified as sensitive to colour-connection effects. 
 \begin{table}
 \centering
+\caption{$R$ values observed at LEP.}
+\label{tab:LEP_R}
 \begin{tabular}{lll}
 LEP experiment & $R$ value - data                                        & reference\\
 \hline
@@ -69,8 +71,6 @@ LEP experiment & $R$ value - data                                        & refer
     Delphi     & 0.889 ($\sqrt{s}=183$ GeV) - 1.039 ($\sqrt{s}=207$ GeV) & \cite{Abdallah:2006uq}\\
     L3         & 0.911                                                   & \cite{Achard:2003pe}\\
   \end{tabular}
-\caption{R values observed at LEP}
-\label{tab:LEP_R}
 \end{table} 
 
 In our case we use 3 $R$ values for any of the regions not connected in colour with normalisation to the colour connected region (\leadingjet, \scndleadingjet).
@@ -101,35 +101,35 @@ The integral of \pt flow from 0.2 to 0.8 in different regions and the inverse of
 \begin{figure}[htpb]
 \def\twidth{0.45}
 \centering
-\subfloat[Result using all jet constituents.]{
-\includegraphics[width=\twidth\textwidth]{fig/ratiographs_merged_SM/L_qlq2l_N_allconst_reco.png}
+\subfloat[Result using all jet constituents.]{%
+\includegraphics[width=\twidth\textwidth]{fig/ratiographs_merged_SM/L_qlq2l_N_allconst_reco.png}%
 \label{fig:L_qlq2l_N_allconst_reco}
-}%
-\subfloat[Result using only charged jet constituents.]{
-\includegraphics[width=\twidth\textwidth]{fig/ratiographs_merged_SM/L_qlq2l_N_chconst_reco.png}
+}\hfil
+\subfloat[Result using only charged jet constituents.]{%
+\includegraphics[width=\twidth\textwidth]{fig/ratiographs_merged_SM/L_qlq2l_N_chconst_reco.png}%
 \label{fig:L_qlq2l_N_chconst_reco}
 }
-\caption{Bin-per-bin ratio of particle flow in region (\leadingjet, \scndleadingjet) in the SM model to particle flow in region (\leadingjet, \scndleadingjet) in the \PW colour octet model.}
+\caption{Bin-per-bin ratio of particle flow in region (\leadingjet, \scndleadingjet) in the \PW colour octet model to particle flow in region (\leadingjet, \scndleadingjet) in the SM model.}
 \label{fig:ratio_qlq2l}
 \end{figure}
 
 \clearpage
 
-\input{chapters/results/Rvalues_SM/R_L_reco_MC_N_SM.txt}
+\input{tables/Rvalues_SM/R_L_reco_MC_N_SM.txt}
 
-\input{chapters/results/Rvalues_SM/R_L_reco_data_N_SM.txt}
+\input{tables/Rvalues_SM/R_L_reco_data_N_SM.txt}
 
-\input{chapters/results/Rvalues_cflip/R_L_reco_MC_N_cflip.txt}
+\input{tables/Rvalues_cflip/R_L_reco_MC_N_cflip.txt}
 
-\input{chapters/results/Rvalues_SM/R_L_reco_MC_E_SM.txt}
+\input{tables/Rvalues_SM/R_L_reco_MC_E_SM.txt}
 
-\input{chapters/results/Rvalues_SM/R_L_reco_data_E_SM.txt}
+\input{tables/Rvalues_SM/R_L_reco_data_E_SM.txt}
 
-\input{chapters/results/Rvalues_cflip/R_L_reco_MC_E_cflip.txt}
+\input{tables/Rvalues_cflip/R_L_reco_MC_E_cflip.txt}
 
-\input{chapters/results/Rvalues_SM/R_L_reco_MC_Pt_SM.txt}
+\input{tables/Rvalues_SM/R_L_reco_MC_Pt_SM.txt}
 
-\input{chapters/results/Rvalues_SM/R_L_reco_data_Pt_SM.txt}
+\input{tables/Rvalues_SM/R_L_reco_data_Pt_SM.txt}
 
-\input{chapters/results/Rvalues_cflip/R_L_reco_MC_Pt_cflip.txt}
+\input{tables/Rvalues_cflip/R_L_reco_MC_Pt_cflip.txt}
 

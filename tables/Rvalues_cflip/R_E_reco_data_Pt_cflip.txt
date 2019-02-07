@@ -1,10 +1,10 @@
 \begin{table}[htp]
 	\begin{center}
-	\caption{Value of $R^{-1}$ for the $e$ channel at reconstruction level for data, $P_{T}$ flow for the  colour octet $W$ model.}
+	\caption{Integral from 0.2 to 0.8 and the value of $R^{-1}$ for the $e$ channel at reconstruction level for $P_{T}$ flow in data for the colour octet \PW model.}
 	\label{tab:R_E_reco_Pt_data_cflip}
 		\begin{tabular}{|l|cc|}
 		\hline
-		\makecell[c]{Jet constituents} & $I$ & $R^{-1}$ \\
+		\makecell[c]{Jet constituents} & $I$$\pm$(stat) [rad] & $R^{-1}$$\pm$(stat) \\
 		\hline
 		\end{tabular}
 	\end{center}

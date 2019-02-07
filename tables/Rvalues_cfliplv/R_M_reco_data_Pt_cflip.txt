@@ -1,0 +1,11 @@
+\begin{table}[htp]
+	\begin{center}
+	\caption{Value of $R^{-1}$ for the $\mu$ channel at reconstruction level for data, $P_{T}$ flow for the  colour octet $W$ model.}
+	\label{tab:R_M_reco_Pt_data_cflip}
+		\begin{tabular}{|l|cc|}
+		\hline
+		\makecell[c]{Jet constituents} & $I$$\pm$(stat) [rad] & $R^{-1}$$\pm$(stat) \\
+		\hline
+		\end{tabular}
+	\end{center}
+\end{table}
