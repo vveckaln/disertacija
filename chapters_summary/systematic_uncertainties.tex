@@ -1,51 +1,53 @@
 Uncertainties are divided into experimental and theoretical uncertainties. When including an uncertainty from the first group we vary some parameter in the event selection, such as a data-to-MC scale factor. Theoretical uncertainties reflect our lack of knowledge about the real world, e.g. the true top quark mass or details of the hadronisation process.
 
+The discussion of this section is adapted from~\cite{CMS-AN-2017-175} and \cite{CMS-AN-2017-159} as these studies use a similar set of systematics.
+
 \section{Experimental uncertainties}
 \begin{description}
-\item[Jet energy resolution] 
+\item[Pileup] Although pileup is included in the simulation, there is an intrinsic uncertainty in modelling it appropriately. To estimate the effect of mismodelling the pileup we vary the average pileup scenario, through the choice of the minimum bias cross section parameter, by 5~\% with respect to its initial estimate. 
 
-\item[Jet energy corrections] The following simulations are used:
-\begin{description}
-        \item[CorrelationGroup]  These are uncertainties matching the common ATLAS/CMS correlation categories grouped together \cite{twiki:JESUS}. 
-        \begin{description}                     
-              \item[CorrelationGroupMPFInSitu] Groups partially correlated systematic uncertainties from \cPZ+jet/\cPgg+jet absolute scale determination (e.g. radiation suppression and out-of-cone effects).
-              \item[CorrelationGroupUncorrelated] Remaining sources which are estimated as being uncorrelated between ATLAS and CMS.
-        \end{description}
-        \item[RelativeFSR] $\eta$-dependent uncertainty due to correction for initial and final state radiation, estimated from difference between MPF log-linear L2Res from \PYTHIA8 and \HERWIGpp, after each has been corrected for their own ISR+FSR correction \cite{Khachatryan:2016kdb}.
-        \item[Flavour]  The flavour uncertainties are based on \PYTHIA6 Z2/\HERWIGpp2.3 differences in \cPqu\cPqd\cPqs/\cPqc/\cPqb-quark and gluon responses \cite{Khachatryan:2016kdb}. Uncertainties for the following jet flavours are used:
-        \begin{enumerate}
-                \item FlavorPureGluon
-                \item FlavorPureQuark
-                \item FlavorPureCharm
-                \item FlavorPureBottom
-        \end{enumerate}
-\end{description}
+\item[Trigger and selection efficiency] The uncertainty on the trigger efficiency and on the lepton identification and isolation efficiency scale factors are propagated by re-weighting the simulation after shifting the nominal values up or down. The uncertainty on the muon tracker efficiency is included in this category and added in quadrature, although its effect is expected to be negligible.  The impact on the rate is fully absorbed by normalising the distributions in the end, and only the impact on the shape (by weighting more/less some events) is relevant in this analysis.
 
-\item[\cPqb-tagging] The nominal efficiency expected in the simulation is corrected by \pt-dependent scale factors provided by the BTV Physics Object Group \cite{twiki:BTV}. Depending on the flavour of each jet, the \cPqb-tagging decision is updated according to the scale factor measured. The scale factor is also varied according to its uncertainty. The main effect of this systematic is the demotion/promotion of candidate \cPqb-jets and thus a migration of events used for analysis.
+\item[Jet energy resolution] We use the recommended jet energy resolution measurements~\cite{twiki:JER}. Each jet is further smeared up or down depending on its \pt and $\eta$ with respect to the central value measured in data. The main effect of this systematic is related to the exclusion/inclusion of events with jets near the offline thresholds.
+  
+\item[Jet energy corrections] A \pt, $\eta$-dependent parameterisation of the jet energy scale is used to vary the calibration of the jets in the simulation. The parameteriSation is provided by the JetMET Physics Objet Group~\cite{twiki:JES} for the Spring16 V3 corrections. The main effect of this systematic is related to the exclusion/inclusion of events with jets near the offline thresholds.
+
+\item[\cPqb-tagging] The nominal efficiency expected in the simulation is corrected by \pt-dependent scale factors provided by the BTV Physics Object Group~\cite{twiki:BTV}. Depending on the flavour of each jet, the \cPqb-tagging decision is updated according to the scale factor measured. The scale factor is also varied according to its uncertainty. The main effect of this systematic is the demotion/promotion of candidate \cPqb-jets and thus a migration of events used for analysis.
 
 \item[Tracking efficiency]
-The TRK and MUO Physics Object Groups have derived tracking efficiency scale factors as function of the track $\eta$ or the reconstructed vertex multiplicity. The later is solely available for muons and shown in Fig. \ref{fig:mutksf}, while Table \ref{tab:dstartsf} summarises the scaling factors obtained from $D^*$ decays. All these scale factors are run-dependent (BCDEF and GH data-taking periods are separated).
+The TRK and MUO Physics Object Groups have derived tracking efficiency scale factors as function of the track $\eta$ or the reconstructed vertex multiplicity. All these scale factors are run-dependent (BCDEF and GH data-taking periods are separated).
 \end{description}
 
 \section{Theoretical uncertainties}
 \begin{description}
-\item[using \EVTGEN in simulation of the decay of heavy flavour particles]
-\item[Hadroniser choice] 
-\item[Top quark mass] 
+\item[QCD scale choices]:
+We consider anti-correlated variations of the factorisation and renormalisation scales ($\mu_R/\mu_F$) in the \ttbar sample, by factors of 0.5 and 2. These variations are saved in the simulated events as alternative sets of weights which are used in the evaluation of this systematic. The envelope of 6 variations (excluding opposite variations of $\mu_R/\mu_F$) is considered as a systematic.
+
+\item[\EVTGEN] The systematic comes about by using \EVTGEN Monte Carlo to simulate the decays of heavy flavour particles, primarily $B$ and $D$ mesons. 
+
+\item[Hadroniser choice] The systematic comes about by using \HERWIGpp~\cite{Bahr:2008pv} instead of \PYTHIA 8.
+
+\item[Top quark mass] The most precise measurement of the top quark mass by CMS yields a total uncertainty of $\pm0.49~\text{GeV}$~\cite{Khachatryan:2015hba}. We consider however a conservative $\pm1~\text{GeV}$. In the possibility that some of these results are used in the future we would like to avoid that they bias too much to a specific top mass.
+
+
 \item[\PYTHIA tunes] The following \PYTHIA tunes are used:
-  \begin{description}
-  \item[Matrix Element + Parton Shower matching scheme] 
-  \item[Parton shower scale] 
-  \item[Colour reconnection model] 
-  \item[Unerlying Event (UE) variations] 
-  \end{description}
+  \begin{enumerate}
+  \item Matrix Element + Parton Shower matching scheme, 
+  \item Parton shower scale, 
+  \item Colour reconnection model, 
+  \item Unerlying Event (UE) variations. 
+  \end{enumerate}
 \end{description}
 
-Table \ref{tab:mcsystdatasets} summarises the simulation samples used for the theoretical systematics.
+Table~\ref{tab:mcsystdatasets} summarises the simulation samples from the
+
+RunIISummer16MiniAODv2-PUMoriond17\_80X\_mcRun2\_asymptotic\_2016\_TrancheIV\_v6
+
+production used for the theoretical systematics.
 
 \begin{table}[!htp]
 \begin{center}
-\caption{Simulation samples used for systematics, from RunIISummer16MiniAODv2-PUMoriond17\_80X\_mcRun2\_asymptotic\_2016\_TrancheIV\_v6.}
+\caption{Simulation samples used for systematics. We also quote the cross section.}
 \label{tab:mcsystdatasets}
 \hspace*{-1cm}
 \begin{tabular}{ llr }

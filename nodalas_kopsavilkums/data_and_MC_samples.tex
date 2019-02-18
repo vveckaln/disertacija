@@ -1,14 +1,16 @@
-Dati, kas izmantoti šajā pētījumā, tika iegūti 2016{B-H} datu iegūšanas periodos ar kopīgo apstiprināto integrēto spīdumu 35,9 \fbinv visos analizētajos kanālos. Spīdums ir aprēķināts ar \textsc{brilcalc} rīku \cite{site:brilcalc}, izmantojot sekojošu komandu:
+Šīs nodaļas izklāsts ir pielāgots pēc ~\cite{CMS-AN-2017-175} un \cite{CMS-AN-2017-159} parauga, jo šajos pētījumos tiek izmantoti līdzīgi datu un Monte Karlo paraugi.
+
+Dati, kas izmantoti šajā pētījumā, tika iegūti 2016{B-H} datu iegūšanas periodos ar kopīgo apstiprināto integrēto spīdumu 35,9~\fbinv visos analizētajos kanālos. Spīdums ir aprēķināts ar \textsc{brilcalc} rīku~\cite{site:brilcalc}, izmantojot sekojošu komandu:
 
 \begin{lstlisting}[language=sh, breaklines=true]
 brilcalc lumi  -b "STABLE BEAMS" --normtag /afs/cern.ch/user/l/lumipro/public/Normtags/normtag_DATACERT.json -i lumiSummary.json
 \end{lstlisting}
 
-Visi dati, kas izmantoti šajā pētījumā, ir uzskaitīti \ref{tab:datasets} tabulā.  
+Visi dati, kas izmantoti šajā pētījumā, ir uzskaitīti \ref{tab:datasets}~tab.  
 
 \begin{table}[htb]
 \begin{center}
-\caption{Primārie datu kopumi, kas izmantoti šajā analīzē. PD ir saīsinājums vienam mionam vai vienam elektronam.}
+\caption{Primārie datu kopumi, kas izmantoti šajā analīzē. PD ir saīsinājums vienam mionam vai vienam elektronam~\cite{CMS-AN-2017-159}.}
 \label{tab:datasets}
 \begin{tabular}{lc}
 \hline
@@ -27,17 +29,16 @@ Primārais datu kopums              & Integrētais spīdums\\
 \end{center}
 \end{table}
 
-Simulēto paraugu saraksts sniegts \ref{tab:mcdatasets} tabulā. Tie ir iegūti no
+Simulēto paraugu saraksts sniegts \ref{tab:mcdatasets}~tab. Tie ir iegūti no
 
 RunIISummer16MiniAODv2-PUMoriond17\_80X\_mcRun2\_asymptotic\_2016\_TrancheIV\_v6
 
-izstrādes. Šķērsgriezumi ir teorētisks paredzējums. Tie tiek iegūti no \cite{twiki:SingleTopRefXsec} un \cite{twiki:SM13}, izņemot \ttbar, kuram ģeneratora līmeņa šķērsgriezums ir iegūts no \cite{site:MCM}. Sagaidāmais \ttbar šķērsgriezums otrajā vadošajā pakāpē ir $832^{ +20}_{-29}~(\text{scale})~\pm 35~(\text{PDF}+\alpha_S)$~\cite{twiki:TTbarNLO}. Šo rezultātu izmantojam, lai normalizētu visus \ttbar paraugus.
+izstrādes. Šķērsgriezumi ir teorētisks paredzējums. Tie tiek iegūti no~\cite{twiki:SingleTopRefXsec} un \cite{twiki:SM13}, izņemot \ttbar, kuram ģeneratora līmeņa šķērsgriezums ir iegūts no~\cite{site:MCM}. Sagaidāmais \ttbar šķērsgriezums otrajā vadošajā pakāpē ir $832^{+20}_{-29}~(\text{mērogs})~\pm35~(\text{PDF}+\alpha_S)$~\cite{twiki:TTbarNLO}. Šo rezultātu izmantojam, lai normalizētu visus \ttbar paraugus.
 
-\begin{table}
-\caption{Analīzē izmantotie simulāciju paraugi. Sniedzam arī šķērsgriezumu, kas izmantots, lai normalizētu paraugu.}
-\label{tab:mcdatasets}
-\begin{longtable}{ p{0.16\textwidth}ll }
+\begin{longtable}{p{0.16\textwidth}ll}
+\caption{Analīzē izmantotie simulāciju paraugi. Sniedzam arī šķērsgriezumu, kas izmantots, lai normalizētu paraugu~\cite{CMS-AN-2017-159}.}\\
 \hline
+\label{tab:mcdatasets}
 Process                      & Datu kopums                                                                 & $\sigma[pb]$\\
 \hline
 \multicolumn{3}{l}{\bf Signāls} \\
@@ -81,16 +82,15 @@ Process                      & Datu kopums                                      
 
 \hline
 \end{longtable}
-\end{table}
 
-Krāsu okteta paraugs ir uzskaitīts \ref{tab:mcdatasets_flip} tab. 
+Krāsu okteta paraugs ir uzskaitīts \ref{tab:mcdatasets_flip}~tab. 
 
 \begin{table}[htb]
 \begin{center}
 \caption{Simulācijas paraugi krāsu okteta \PW bozonam. Sniedzam šķērsgriezumu, kas izmantots, lai normalizētu paraugus šajā analīzē.}
 \label{tab:mcdatasets_flip}
 \hspace*{-0.5cm}
-\begin{tabular}{ llc }
+\begin{tabular}{llc}
 \hline
 Process & Datu kopums & $\sigma[pb]$\\
 \multicolumn{3}{l}{\bf Signāls} \\
@@ -101,14 +101,14 @@ Krāsu okteta \PW bozons &  {\small TT\_TuneCUETP8M2T4\_13TeV-powheg-colourFlip-
 \end{center}
 \end{table}
 
-Balstoties uz atšķirībām starp datiem un simulētajiem notikumiem, tiek veiktas šādas korekcijas simulācijai.
+Balstoties uz atšķirībām starp datiem un simulētajiem notikumiem, tiek veiktas šādas korekcijas simulācijai:
 
 \begin{enumerate}
-\item Sagrūduma pārsvēršana
-\item Leptona identifikācijas un izolācijas efektivitātes korekcija
-\item Trigeru efektivitātes korekcija
-\item Ģeneratora līmeņa svara piešķiršana
-\item Strūklu enerģijas mēroga un izšķirtspējas korekcijas
-\item \cPqb-atzīmēšanas efektivitātes korekcija
+\item Sagrūduma pārsvēršana,
+\item Leptona identifikācijas un izolācijas efektivitātes korekcija,
+\item Trigeru efektivitātes korekcija,
+\item Ģeneratora līmeņa svara piešķiršana,
+\item Strūklu enerģijas mēroga un izšķirtspējas korekcijas,
+\item \cPqb-atzīmēšanas efektivitātes korekcija.
 \end{enumerate}
 

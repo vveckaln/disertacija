@@ -1,6 +1,6 @@
-\documentclass[titlepage, a4paper, LV]{mythesis}
+\documentclass[titlepage, a4paper, LV, SHORT]{mythesis}
 \usepackage[bindingoffset=0cm, left=2.5cm, right=2.5cm, top=2.5cm, bottom=2.5cm]{geometry}
-\usepackage[utf8]{inputenc}
+%\usepackage[utf8]{inputenc}
 \usepackage[backend=bibtex, style=numeric, sorting=none]{biblatex}
 \usepackage{amsmath}
 \usepackage{graphicx}
@@ -15,11 +15,12 @@
 \usepackage{enumerate}
 \usepackage[T1]{fontenc}
 \renewcommand{\baselinestretch}{1.5}
-\linespread{1.2}
 \setlength{\skip\footins}{1.25 cm}
+\linespread{1.2}
 \usepackage{fontspec}
 \setmainfont{TeX Gyre Termes}
-\title{Virsotnes kvarka sabrukšanas ceļā radušos krāsu plūsmu pētījumi ar 13 TeV CERN LHP KMS eksperimentā} 
+\renewcommand{\normalsize}{\fontsize{12pt}{13.4pt}\selectfont}
+\title{Virsotnes kvarku pāra sabrukšanas ceļā radušos krāsu plūsmu pētījumi ar 13 TeV CERN LHP KMS eksperimentā} 
 \author{Viesturs Veckalns}
 \institution{Rīgas Tehniskā universitāte}
 \supervisor{Leonīds Ribickis}
@@ -46,7 +47,7 @@
 \addbibresource{disertacija.bib}
 \renewcommand{\contentsname}{Satura rādītājs}
 \usepackage[toc]{glossaries}
-\renewcommand{\glossarypreamble}{Nepieciešams ieviest augstas enerģijas fizikā lietoto terminu tulkojumus latviešu valodā. Zemāk sniegti šajā darbā lietotie nozares termini latviešu valodā, norādot atbilstošo terminu angļu valodā. Saīsinājumiem papildus ir sniegts to atšifrējums latviešu valodā.}
+\renewcommand{\glossarypreamble}{Nepieciešams ieviest augstas enerģijas fizikā lietoto terminu tulkojumus latviešu valodā. Zemāk sniegti šajā darbā lietotie nozares termini latviešu valodā, norādot atbilstošo terminu angļu valodā. Saīsinājumiem papildus ir sniegts to atšifrējums latviešu valodā. Tiek norādīta lapaspuse, kurā termins sastopams.}
 \input{glossarylv.tex}
 \makeglossaries
 

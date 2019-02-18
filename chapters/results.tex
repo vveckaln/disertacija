@@ -1,16 +1,16 @@
 \section{Event display}
-A selected event observed in the CMS detector is displayed in Fig. \ref{fig:event_display}, showing the light jets, the \cPqb-tagged jets, the charged lepton and the pull vector in the $\eta - \phi$ plane in a manner analogous to Fig. \ref{fig:pull_angle}.
+A selected event observed in the CMS detector is displayed in Fig.~\ref{fig:event_display}, showing the light jets, the \cPqb-tagged jets, the charged lepton and the pull vector in the $\eta-\phi$ plane in a manner analogous to Fig.~\ref{fig:pull_angle}.
 
 \begin{figure}[hbtp]
   \centering
   \includegraphics[width=1.0\textwidth]{fig/individual_plots/reco_allconst_total_1111_DeltaR_2p846131_pull_angle_1p964620.png}
-  \caption{An event observed with the CMS detector. Pull vector (dash-dotted) of the leading light jet forming a pull angle of 1.96 rad with the difference between the second leading light jet and the leading light jet (dashed). Constituents of the leading light jet are marked in blue while the constituents of the second leading light jet ar marked in red. The leading light jet is marked with a solid line while the second leading light jet is marked with a dotted line. The pull vector is enhanced 200 times, while the radius of the circles representing jets is equal to $\frac{p_{T}}{75.0}$ and the radius of the circles representing constituents is equal to $\frac{p^{\text{constituent}}_{T}}{p^{\text{jet}}_{T}}$. The hadronic \cPqb jet and its constituents are marked in green, while the leptonic \cPqb jet and its constituents are marked in magenta. Also shown with X is the charged lepton.}
+  \caption{An event observed with the CMS detector. Pull vector (dash-dotted) of the leading light jet forming a pull angle of 1.96~rad with the difference between the second leading light jet and the leading light jet (dashed). Constituents of the leading light jet are marked in blue while the constituents of the second leading light jet ar marked in red. The leading light jet is marked with a solid line while the second leading light jet is marked with a dotted line. The pull vector is enhanced 200 times, while the radius of the circles representing jets is equal to $\frac{p_{T}~[\GeV]}{75.0}$ and the radius of the circles representing constituents is equal to $\frac{p^{\text{constituent}}_{T}}{p^{\text{jet}}_{T}}$. The hadronic \cPqb jet and its constituents are marked in green, while the leptonic \cPqb jet and its constituents are marked in magenta. Also shown with X is the charged lepton.}
   \label{fig:event_display}
 \end{figure}
 
 \section{Pull vector}
 
-A set of base tools \textsc{CFAT} \cite{url:cfat} was developed having in mind that the analysis can be implemented both in \RIVET and \CMSSW. Initial tests were done with \RIVET because before the colour octet \PW samples were developed this procedure provided the only means to generate colour-flipped events. Results with \RIVET are shown in Fig. \ref{fig:resultsRivet}. Fig. \ref{fig:pull_angle_allconst_Rivet_leading_jet_2nd_leading_jet_DeltaRTotal_4j2t} shows the distribution of \pullangle between \leadingjet and \scndleadingjet. The central peak which is the experimental signature of colour connect jets is present in the SM results but disappears in the \PW colour octet results. On the other hand the distribution of \pullangle suffers no alterations between \leadingjet and lepton as shown in Fig. \ref{fig:pull_angle_allconst_Rivet_leading_jet_lepton_DeltaRTotal_4j2t}.
+A set of base tools \textsc{CFAT}~\cite{url:cfat} was developed having in mind that the analysis can be implemented both in \RIVET and \CMSSW. Initial tests were done with \RIVET because before the colour octet \PW samples were developed this procedure provided the only means to generate colour-flipped events. Results with \RIVET are shown in Fig.~\ref{fig:resultsRivet}. Fig.~\ref{fig:pull_angle_allconst_Rivet_leading_jet_2nd_leading_jet_DeltaRTotal_4j2t} shows the distribution of \pullangle from \leadingjet to \scndleadingjet. The central peak which is the experimental signature of colour connect jets is present in the SM results but disappears in the \PW colour octet results. On the other hand the distribution of \pullangle suffers no alterations from \leadingjet to lepton as shown in Fig.~\ref{fig:pull_angle_allconst_Rivet_leading_jet_lepton_DeltaRTotal_4j2t}.
 
 \begin{figure}[htp]
 \centering
@@ -28,17 +28,17 @@ A set of base tools \textsc{CFAT} \cite{url:cfat} was developed having in mind t
 \label{fig:resultsRivet}
 \end{figure}
 
-A more comprehensive analysis with data and simulated events at generator and reconstruction level was implemented in \CMSSW version \lstinline[language=sh]|CMSSW_8_0_26_patch1|. The plots are rendered with \ROOT \cite{Brun}. The pull vectors were obtained for all observable jets - the leading light jet \leadingjet (highest \pt), the second leading light jet \scndleadingjet, the leading hadronic $b$ jet \leadingb and the second leading hadronic $b$ jet \scndleadingb. In each case it was diffentiated whether all jet particles or only charged ones should be included in determining the pull jet. The results are separated into $e$ + jets, $\mu$ + jets and combined lepton + jets channels.
+A more comprehensive analysis with data and simulated events at generator and reconstruction level was implemented in \CMSSW version \lstinline[language=sh]|CMSSW_8_0_26_patch1|. The plots are rendered with \ROOT \cite{Brun}. The pull vectors were obtained for all observable jets - the leading light jet \leadingjet (highest \pt), the second leading light jet \scndleadingjet, the leading hadronic $b$ jet \leadingb and the second leading hadronic $b$ jet \scndleadingb. In each case it was differentiated whether all jet particles or only charged ones should be included in determining the pull vector. The results are separated into $e$ + jets, $\mu$ + jets and combined $\ell$ + jets channels.
 
-The $\eta$ dimension of the pull vector with all jet components is given in Fig. \ref{fig:_eta_PV_allconst_reco_leading_jet} - \ref{fig:_eta_PV_allconst_reco_leading_jet}.
+The $\eta$ dimension of the pull vector with all jet components is given in Fig.~\ref{fig:_eta_PV_allconst_reco_leading_jet}-\ref{fig:_eta_PV_allconst_reco_scnd_leading_b}.
 
-An explanation of how CMS plots are represented is in order. The top plot in Fig. \ref{fig:_eta_PV_allconst_reco_leading_jet} shows data and Monte Carlo simulations. Unless otherwise specified the Monte Carlo is in reconstruction level. The blue band shows systematics. Given a systematic with index $k$ we identify it as an upside systematic $U^{k}_{i}$ if in bin $i$ the systematic $S^{k}_i$ exceeds the nominal value $N_{i}$. In the opposide case we classify the systematic as a downside systematic $D^{k}_{i}$. The total upside and downside systematic is given as a sum of squares:
+An explanation of how CMS plots are represented is in order. The top plot in Fig.~\ref{fig:_eta_PV_allconst_reco_leading_jet} shows data and Monte Carlo simulations. Unless otherwise specified the Monte Carlo is in reconstruction level. The blue band shows systematics. Given a systematic with index $k$ we identify it as an upside systematic $U^{k}_{i}$ if in bin $i$ the systematic $S^{k}_i$ exceeds the nominal value $N_{i}$. In the opposide case we classify the systematic as a downside systematic $D^{k}_{i}$. The total upside and downside systematic is given as a sum of squares:
 
 \begin{align}
 U_{i}=\sqrt{\sum_{k}\left(U^{k}_{i}-N_{i}\right)^{2}} && D_{i}=\sqrt{\sum_{k}\left(D^{k}_{i}-N_{i}\right)^{2}}.
 \end{align}
 
-The width of the blue band corresponds to the systematical error calculated as $\frac{U_{i}+D_{i}}{2}$. It is centred on $N_{i} + \frac{U_{i}-D_{i}}{2}$. The same applies to the pink band except that the systematics are normalised to the integral of the signal (such normalised histograms are referred to as shapes). The bottom inset shows the ratio of data to Monte Carlo, as well as systematics and systematics fom shapes normalised to Monte Carlo.
+The width of the blue band corresponds to the systematical error calculated as $\frac{U_{i}+D_{i}}{2}$. It is centred on $N_{i}+\frac{U_{i}-D_{i}}{2}$. The same applies to the pink band except that the systematics are normalised to the integral of the signal (such normalised histograms are referred to as shapes). The bottom inset shows the ratio of data to Monte Carlo, as well as systematics and systematics fom shapes normalised to Monte Carlo.
 
 \figureEML{/reco/PV/charge/allconst/}
           {_eta_PV_allconst_reco_leading_jet}
@@ -53,7 +53,7 @@ The width of the blue band corresponds to the systematical error calculated as $
           {_eta_PV_allconst_reco_scnd_leading_b}
           {$\eta$ dimension of the pull vector of \scndleadingb with all jet components.}
 
-The $\phi$ dimension of the pull vector with all jet components is given in Fig. \ref{fig:_phi_PV_allconst_reco_leading_jet} - \ref{fig:_phi_PV_allconst_reco_leading_jet}. 
+The $\phi$ dimension of the pull vector with all jet components is given in Fig.~\ref{fig:_phi_PV_allconst_reco_leading_jet}-\ref{fig:_phi_PV_allconst_reco_scnd_leading_b}. 
 
 \figureEML{/reco/PV/charge/allconst/}
           {_phi_PV_allconst_reco_leading_jet}
@@ -68,7 +68,7 @@ The $\phi$ dimension of the pull vector with all jet components is given in Fig.
           {_phi_PV_allconst_reco_scnd_leading_b}
           {$\phi$ dimension of the pull vector of \scndleadingb with all jet components.}
 
-The magnitude of the pull vector with all jet components is given in Fig. \ref{fig:_mag_PV_allconst_reco_leading_jet} - \ref{fig:_mag_PV_allconst_reco_leading_jet}. The magnitude of the pull vector is usually contained below 0.02 [a.u.].
+The magnitude of the pull vector with all jet components is given in Fig.~\ref{fig:_mag_PV_allconst_reco_leading_jet}-\ref{fig:_mag_PV_allconst_reco_scnd_leading_b}. The magnitude of the pull vector is usually contained below 0.02~[a.u.].
 
 \figureEML{/reco/PV/charge/allconst/}
           {_mag_PV_allconst_reco_leading_jet}
@@ -85,7 +85,7 @@ The magnitude of the pull vector with all jet components is given in Fig. \ref{f
 
 \section{Pull angle}
 
-The plots of the pull angle between colour connected jets - \leadingjet to \scndleadingjet and \scndleadingjet to \leadingjet with all jet constituents and including all values of $\Delta R$ are shown in Fig. \ref{fig:_pull_angle_allconst_reco_leading_jet_scnd_leading_jet_DeltaRTotal} and Fig. \ref{fig:_pull_angle_allconst_reco_scnd_leading_jet_leading_jet_DeltaRTotal}.
+The plots of the pull angle between colour connected jets - \leadingjet to \scndleadingjet and \scndleadingjet to \leadingjet with all jet constituents and including all values of $\Delta R$ are shown in Fig.~\ref{fig:_pull_angle_allconst_reco_leading_jet_scnd_leading_jet_DeltaRTotal} and Fig.~\ref{fig:_pull_angle_allconst_reco_scnd_leading_jet_leading_jet_DeltaRTotal}.
 
 \figureEML{/reco/pull_angle/DeltaRTotal/charge/allconst/}
           {_pull_angle_allconst_reco_leading_jet_scnd_leading_jet_DeltaRTotal}
@@ -95,7 +95,7 @@ The plots of the pull angle between colour connected jets - \leadingjet to \scnd
           {_pull_angle_allconst_reco_scnd_leading_jet_leading_jet_DeltaRTotal}
           {Distribution of the pull angle from \scndleadingjet to \leadingjet for all \DeltaR and including all particles.}
 
-Additionally, the plots of the pull angle between jets where we expect no colour connection - \leadingb to \scndleadingb and \scndleadingb to \leadingb with all jet constituents and including all values of $\DeltaR $ are shown in Fig. \ref{fig:_pull_angle_allconst_reco_leading_b_scnd_leading_b_DeltaRTotal} and Fig. \ref{fig:_pull_angle_allconst_reco_scnd_leading_b_leading_b_DeltaRTotal}.
+Additionally, the plots of the pull angle between jets where we expect no colour connection - \leadingb to \scndleadingb and \scndleadingb to \leadingb with all jet constituents and including all values of $\DeltaR $ are shown in Fig.~\ref{fig:_pull_angle_allconst_reco_leading_b_scnd_leading_b_DeltaRTotal} and Fig.~\ref{fig:_pull_angle_allconst_reco_scnd_leading_b_leading_b_DeltaRTotal}.
 
 \figureEML{/reco/pull_angle/DeltaRTotal/charge/allconst/}
           {_pull_angle_allconst_reco_leading_b_scnd_leading_b_DeltaRTotal}
@@ -105,8 +105,7 @@ Additionally, the plots of the pull angle between jets where we expect no colour
           {_pull_angle_allconst_reco_scnd_leading_b_leading_b_DeltaRTotal}
           {Distribution of the pull angle from \scndleadingb to \leadingb for all \DeltaR and including all particles.}
 
-
-Another chance to look at the distribution of a pull angle between objects that are not colour connected is to choose a jet and a lepton. Fig. \ref{fig:_pull_angle_allconst_reco_leading_jet_lepton_DeltaRTotal} shows the distribution between \leadingjet and the charged lepton. 
+Another chance to look at the distribution of a pull angle between objects that are not colour connected is to choose a jet and a lepton. Fig.~\ref{fig:_pull_angle_allconst_reco_leading_jet_lepton_DeltaRTotal} shows the distribution of pull angle from \leadingjet to the charged lepton. 
 
 \figureEML{/reco/pull_angle/DeltaRTotal/charge/allconst/}
           {_pull_angle_allconst_reco_leading_jet_lepton_DeltaRTotal}
@@ -114,14 +113,14 @@ Another chance to look at the distribution of a pull angle between objects that 
 
 As can be readily observed, the central peak in the distribution of the pull angle is prominent in case of colour connected jets and flattens out in the case of objets that are not colour connected.
 
-The central peak can reappear in the case of collinearities of the vectors of physics objects even though they are not colour connected. Such a case is seen in the distribution of the pull angle from \leadingjet to hadronic $W$ - Fig. \ref{fig:_pull_angle_allconst_reco_leading_jet_had_w_DeltaRTotal}
+The central peak can reappear in the case of collinearities of the vectors of physics objects even though they are not colour connected. Such a case is seen in the distribution of the pull angle from \leadingjet to the hadronic \PW - Fig.~\ref{fig:_pull_angle_allconst_reco_leading_jet_had_w_DeltaRTotal}
 . 
 
 \figureEML{/reco/pull_angle/DeltaRTotal/charge/allconst/}
           {_pull_angle_allconst_reco_leading_jet_had_w_DeltaRTotal}
-          {Distribution of the pull angle from \leadingjet to the hadronic $W$ for all \DeltaR and including all particles.}
+          {Distribution of the pull angle from \leadingjet to the hadronic \PW for all \DeltaR and including all particles.}
 
-Another interesting case is choosing the beam. In Fig. \ref{fig:_pull_angle_allconst_reco_leading_jet_beam_DeltaRTotal} we show the distribution of \pullangle from \leadingjet to the positive direction of the beam. We see a peak at a right angle.
+Another interesting case is choosing the beam. In Fig.~\ref{fig:_pull_angle_allconst_reco_leading_jet_beam_DeltaRTotal} we show the distribution of \pullangle from \leadingjet to the positive direction of the beam. We see a peak at a right angle.
 
 \figureEML{/reco/pull_angle/DeltaRTotal/charge/allconst/}
           {_pull_angle_allconst_reco_leading_jet_beam_DeltaRTotal}
@@ -130,14 +129,14 @@ Another interesting case is choosing the beam. In Fig. \ref{fig:_pull_angle_allc
 The QCD samples contribute peaks to the plots because only a few QCD events pass the selection criteria, but they are assigned a large weight. Each event gets effectively assigned a weight
 
 \begin{equation}
-w=\mathcal{L}\cdot\sigma\frac{1}{N_{gen}}.
+w=\mathcal{L}\cdot\sigma\frac{1}{N_{\text{gen}}}.
 \end{equation}
 
-The cross section $\sigma$ for QCD events is very large but the number of generated MC events $N_{gen}$ is very low. Therefore a few QCD events represent an entire distribution.
+The cross section $\sigma$ for QCD events is very large but the number of generated MC events $N_{\text{gen}}$ is very low. Therefore a few QCD events represent an entire distribution.
 
 \section{\DeltaR bias}
 
-When two jets are close to each other in $\eta-\phi$ space, the jet clustering algorithm is inclined to associate particles of one jet (lowest \pt jet) to another (highest \pt jet). This effect creates a bias in the pull angle analysis as the pull vector is more likely to point to the jet from which the particles were weaned. Figs. \ref{fig:_pull_angle_allconst_reco_leading_jet_scnd_leading_jet_DeltaRle1p0} - \ref{fig:_pull_angle_chconst_reco_leading_jet_scnd_leading_jet_DeltaRgt1p0} illustrates the distribution of pull angle for two cases - closely spaced jets with $\DeltaR\leq1.0$ and well separated jets with $\DeltaR>1.0$.
+When two jets are close to each other in $\eta-\phi$ space, the jet clustering algorithm is inclined to associate particles of one jet (lowest \pt jet) to another (highest \pt jet). This effect creates a bias in the pull angle analysis as the pull vector is more likely to point to the jet from which the particles were weaned. Fig.~\ref{fig:_pull_angle_allconst_reco_leading_jet_scnd_leading_jet_DeltaRle1p0}-\ref{fig:_pull_angle_chconst_reco_leading_jet_scnd_leading_jet_DeltaRgt1p0} illustrate the distribution of pull angle for two cases - closely spaced jets with $\DeltaR\leq1.0$ and well separated jets with $\DeltaR>1.0$.
 
 \figureEML{/reco/pull_angle/DeltaRle1p0/charge/allconst/}
           {_pull_angle_allconst_reco_leading_jet_scnd_leading_jet_DeltaRle1p0}
@@ -160,13 +159,13 @@ When two jets are close to each other in $\eta-\phi$ space, the jet clustering a
 
 Sensitivity of the pull angle methodology was studied by applying cuts to the following parameters:
 
-1. The transverse momentum \pt of the hadronic \PW boson. A cut was chosen at 50\GeV and the distribution of the pull angle was obtained at a \pt of the hadronic \PW\ boson greater than and less than or equal to this value. This cut is near the median in the lower half of the distribution of the \pt of the hadronic \PW boson - see Fig. \ref{fig:L_jet_pt_reco_had_w}. The results are shown in Fig. \ref{fig:_pull_angle_hadWPtgt50p0GeV_reco_leading_jet_scnd_leading_jet_DeltaRTotal} - \ref{fig:_pull_angle_hadWPtle50p0GeV_reco_leading_jet_scnd_leading_jet_DeltaRTotal}.
+1. The transverse momentum \pt of the hadronic \PW boson. A cut was chosen at 50~\GeV and the distribution of the pull angle was obtained at a \pt of the hadronic \PW boson greater than and less than or equal to this value. This cut is near the median in the lower half of the distribution of the \pt of the hadronic \PW boson - see Fig.~\ref{fig:L_jet_pt_reco_had_w}. The results are shown in Fig.~\ref{fig:_pull_angle_hadWPtgt50p0GeV_reco_leading_jet_scnd_leading_jet_DeltaRTotal}-\ref{fig:_pull_angle_hadWPtle50p0GeV_reco_leading_jet_scnd_leading_jet_DeltaRTotal}.
 
-2. Number of jet constituents. A cut was chosen at the number of jet constitutents $N$ being 20 and the distribution of the pull angle was obtained at $N$ greater than and less than or equal to this value. The distribution of the number of jet constituens is given in Fig. \ref{fig:number}. The results are shown in Fig. \ref{fig:_pull_angle_PFNgt20_reco_leading_jet_scnd_leading_jet_DeltaRTotal} - \ref{fig:_pull_angle_PFNle20_reco_leading_jet_scnd_leading_jet_DeltaRTotal}.
+2. Number of jet constituents. A cut was chosen at the number of jet constitutents $N$ being 20 and the distribution of the pull angle was obtained at $N$ greater than and less than or equal to this value. The distribution of the number of jet constituens is given in Fig.~\ref{fig:number}. The results are shown in Fig.~\ref{fig:_pull_angle_PFNgt20_reco_leading_jet_scnd_leading_jet_DeltaRTotal}-\ref{fig:_pull_angle_PFNle20_reco_leading_jet_scnd_leading_jet_DeltaRTotal}.
                                         
-3. The transverse momentum \pt of jet constituents. A cut was chosen at \pt of the jet constituents being 0.5\GeV and the distribution of the pull angle was at obtained at \pt of the jet constituents being greater than and less than or equal to this value. The distribution of the transverse momentum of particles constituting the leading light jet and the leading \cPqb jet are shown in Fig. \ref{fig:L_JetConstPT_allconst_reco}. The results are shown in Fig. \ref{fig:_pull_angle_PFPtgt0p5GeV_reco_leading_jet_scnd_leading_jet_DeltaRTotal} - \ref{fig:_pull_angle_PFPtle0p5GeV_reco_leading_jet_scnd_leading_jet_DeltaRTotal}.
+3. The transverse momentum \pt of jet constituents. A cut was chosen at \pt of the jet constituents being 0.5~\GeV and the distribution of the pull angle was at obtained at \pt of the jet constituents being greater than and less than or equal to this value. The distribution of the transverse momentum of particles constituting the leading light jet and the leading \cPqb jet are shown in Fig.~\ref{fig:L_JetConstPT_allconst_reco}. The results are shown in Fig.~\ref{fig:_pull_angle_PFPtgt0p5GeV_reco_leading_jet_scnd_leading_jet_DeltaRTotal}-\ref{fig:_pull_angle_PFPtle0p5GeV_reco_leading_jet_scnd_leading_jet_DeltaRTotal}.
 
-4. Magnitude of the pull vector.  A cut was chosen at magnitude of the pull vector being 0.005[a.u.] and the distribution of the pull angle was obtained at the magnitude the pull vector being greater than and less than or equal tothis value. The distribution of the magnitute of the pull vector is shown in Figs. \ref{fig:_mag_PV_allconst_reco_leading_jet} - \ref{fig:_mag_PV_allconst_reco_leading_jet}. The results are shown in Fig. \ref{fig:_pull_angle_PVMaggt0p005_reco_leading_jet_scnd_leading_jet_DeltaRTotal} - \ref{fig:_pull_angle_PVMagle0p005_reco_leading_jet_scnd_leading_jet_DeltaRTotal}.
+4. Magnitude of the pull vector. A cut was chosen at magnitude of the pull vector being 0.005~[a.u.] and the distribution of the pull angle was obtained at the magnitude the pull vector being greater than and less than or equal to this value. The distribution of the magnitute of the pull vector is shown in Fig.~\ref{fig:_mag_PV_allconst_reco_leading_jet}-\ref{fig:_mag_PV_allconst_reco_leading_jet}. The results are shown in Fig.~\ref{fig:_pull_angle_PVMaggt0p005_reco_leading_jet_scnd_leading_jet_DeltaRTotal}-\ref{fig:_pull_angle_PVMagle0p005_reco_leading_jet_scnd_leading_jet_DeltaRTotal}.
 
 \begin{figure}
 \centering
@@ -184,18 +183,18 @@ Sensitivity of the pull angle methodology was studied by applying cuts to the fo
         \subfloat[leading \cPqb jet.]{%
     \includegraphics[width=\twidth\textwidth]{fig/histos/L/reco/charge/allconst/L_JetConst_Pt_allconst_reco_leading_b.png}%
 }
-\caption{The transverse momentum \pt of particles constituting the leading light jet, and the leading \cPqb jet. In both cases all jet constituents are included.}
+\caption{The transverse momentum \pt of particles constituting the leading light jet and the leading \cPqb jet. In both cases all jet constituents are included.}
 \label{fig:L_JetConstPT_allconst_reco}
 
 \end{figure}
 
 \figureEML{/reco/pull_angle/DeltaRTotal/hadronic_W_Pt/hadWPtgt50p0GeV/}
      {_pull_angle_hadWPtgt50p0GeV_reco_leading_jet_scnd_leading_jet_DeltaRTotal}
-     {Distribution of the pull angle for all \DeltaR and all particles from \leadingjet to \scndleadingjet with \pt of \PW\ $>$ 50\GeV.}
+     {Distribution of the pull angle for all \DeltaR and all particles from \leadingjet to \scndleadingjet with \pt of \PW $>$50~\GeV.}
 
 \figureEML{/reco/pull_angle/DeltaRTotal/hadronic_W_Pt/hadWPtle50p0GeV/}
      {_pull_angle_hadWPtle50p0GeV_reco_leading_jet_scnd_leading_jet_DeltaRTotal}
-     {Distribution of the pull angle for all \DeltaR and all particles from \leadingjet to \scndleadingjet with \pt of \PW $\leq$ 50\GeV.}
+     {Distribution of the pull angle for all \DeltaR and all particles from \leadingjet to \scndleadingjet with \pt of \PW $\leq$50~\GeV.}
 
 \figureEML{/reco/pull_angle/DeltaRTotal/PF_number/PFNgt20/}
      {_pull_angle_PFNgt20_reco_leading_jet_scnd_leading_jet_DeltaRTotal}
@@ -207,19 +206,19 @@ Sensitivity of the pull angle methodology was studied by applying cuts to the fo
 
 \figureEML{/reco/pull_angle/DeltaRTotal/PF_Pt/PFPtgt0p5GeV/}
      {_pull_angle_PFPtgt0p5GeV_reco_leading_jet_scnd_leading_jet_DeltaRTotal}
-     {Distribution of the pull angle for all \DeltaR and all particles from \leadingjet to \scndleadingjet with the \pt of jet constituents $>$ 0.5\GeV.}
+     {Distribution of the pull angle for all \DeltaR and all particles from \leadingjet to \scndleadingjet with the \pt of jet constituents $>$0.5~\GeV.}
 
 \figureEML{/reco/pull_angle/DeltaRTotal/PF_Pt/PFPtle0p5GeV/}
      {_pull_angle_PFPtle0p5GeV_reco_leading_jet_scnd_leading_jet_DeltaRTotal}
-     {Distribution of the pull angle for all \DeltaR and all particles from \leadingjet to \scndleadingjet with the \pt of jet constituents $\leq$ 0.5\GeV.}
+     {Distribution of the pull angle for all \DeltaR and all particles from \leadingjet to \scndleadingjet with the \pt of jet constituents $\leq$0.5~\GeV.}
 
 \figureEML{/reco/pull_angle/DeltaRTotal/PV_magnitude/PVMaggt0p005}
      {_pull_angle_PVMaggt0p005_reco_leading_jet_scnd_leading_jet_DeltaRTotal}
-     {Distribution of the pull angle for all \DeltaR and all particles from \leadingjet to \scndleadingjet with the magnitude of the pull vector $> $0.005[a.u.].}
+     {Distribution of the pull angle for all \DeltaR and all particles from \leadingjet to \scndleadingjet with the magnitude of the pull vector $>$0.005~[a.u.].}
 
 \figureEML{/reco/pull_angle/DeltaRTotal/PV_magnitude/PVMagle0p005}
     {_pull_angle_PVMagle0p005_reco_leading_jet_scnd_leading_jet_DeltaRTotal}
-    {Distribution of the pull angle for all \DeltaR and all particles from \leadingjet to \scndleadingjet with the magnitude of the pull vector $\leq $0.005[a.u.].}
+    {Distribution of the pull angle for all \DeltaR and all particles from \leadingjet to \scndleadingjet with the magnitude of the pull vector $\leq $0.005~[a.u.].}
 
 From a simple qualitative observation we conclude that the pull angle methodology is sensitive to \pt of the hadronic \PW boson, number of jet constituents, \pt of jet constituents but not particularly sensitive to the magnitude of the pull vector.
 
@@ -231,7 +230,7 @@ From a simple qualitative observation we conclude that the pull angle methodolog
 
 %% \subsection{Colour octet \PW\ boson}
 
-%% Fig. \ref{fig:_pull_angle_allconst_reco_leading_jet_scnd_leading_jet_DeltaRTotal} - \ref{fig:_pull_angle_chconst_reco_leading_jet_lepton_DeltaRTotal} shows the results of the colour octet \PW\ boson (in blue) compared to the standard model (in red). The pull angle distribution between the light jets has become flat in the colour octet \PW\ boson model.
+%% Fig.~\ref{fig:_pull_angle_allconst_reco_leading_jet_scnd_leading_jet_DeltaRTotal} - \ref{fig:_pull_angle_chconst_reco_leading_jet_lepton_DeltaRTotal} shows the results of the colour octet \PW\ boson (in blue) compared to the standard model (in red). The pull angle distribution between the light jets has become flat in the colour octet \PW\ boson model.
 
 %% \figureEML[_merged]{/reco/pull_angle/DeltaRTotal/charge/allconst/}
 %%           {_pull_angle_allconst_reco_leading_jet_scnd_leading_jet_DeltaRTotal}

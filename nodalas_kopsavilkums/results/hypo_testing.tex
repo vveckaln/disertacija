@@ -1,6 +1,6 @@
 \label{subsec:hypo_testing}
 
-Mūsu rīcībā esošie krāsu maiņas MK paraugi sniedz iespēju gūt priekšstatu par to, vai krāsu okteta \PW signāls ir redzams datos. Šādi rezultāti jāapskata ar piesardzību, jo sakritība starp datiem un MK paraugiem nav īpaši laba. Izmantosim metodi, kuru daļiņu fiziķi lieto atklājumu veikšanai: tikai fona hipotēzes pārbaude pret signāla + fona hipotēzi ar zīmīgumu $Z$ vismas 5 \cite{Cowan:2010js}. Pirmā hipotēze tiek dēvēta par nulles hipotēzi \Hnull, bet otrā hipotēze tiek dēvēta par alternatīvo hipotēzi \Halt.
+Mūsu rīcībā esošie krāsu maiņas MK paraugi sniedz iespēju gūt priekšstatu par to, vai krāsu okteta \PW signāls ir redzams datos. Šādi rezultāti jāapskata ar piesardzību, jo sakritība starp datiem un MK paraugiem nav īpaši laba. Izmantosim metodi, kuru daļiņu fiziķi lieto atklājumu veikšanai: tikai fona hipotēzes pārbaude pret signāla + fona hipotēzi ar zīmīgumu $Z$ vismaz 5~\cite{Cowan:2010js}. Pirmā hipotēze tiek dēvēta par nulles hipotēzi \Hnull, bet otrā hipotēze tiek dēvēta par alternatīvo hipotēzi \Halt.
 
 Mēs konstruējam divu hipotēžu modeli, lai kombinētu fona, \ttbar un krāsu maiņas \ttbar signālus:
 
@@ -9,9 +9,9 @@ Mēs konstruējam divu hipotēžu modeli, lai kombinētu fona, \ttbar un krāsu 
   \label{eq:two_hypo_model}
 \end{equation}
 
-kur $n$ ir sagaidāmais notikumu skaits, $\mu$ - signāla stiprums, $x$  - parametrs, kas tiek lietots, lai piešķirtu svaru \ttbar un krāsu maiņas \ttbar signālam tā, lai to kopējais svars būtu vienāds ar 1, $b$ - MK fons. Turpmākajā datoranalīzē $\mu$ ir iestatīts kā 1 un $x$ iestatīts kā interesējošais parametrs.
+kur $n$ ir sagaidāmais notikumu skaits, $\mu$ - signāla stiprums, $x$  - parametrs, kas tiek lietots, lai piešķirtu svaru \ttbar un krāsu maiņas \ttbar signālam tā, lai to kopējais svars būtu vienāds ar 1, $b$ - MK fons. Turpmākajā datoranalīzē $\mu$ ir iestatīts kā 1, un $x$ iestatīts kā interesējošais parametrs.
 
-Kā testa statistisko parametru izmantojoam Tevatrona testa statistisko parametru. Tās pazīstams arī kā Neimana-Pīrsona (oriģ. \textit{Neyman}-\textit{Pearson}) testa statistiskais parametrs. Tevatrona testa statiskais parametrs tiek definēts kā:
+Kā testa statistisko parametru izmantojoam Tevatrona testa statistisko parametru. Tas pazīstams arī kā Neimana-Pīrsona (oriģ. \textit{Neyman-Pearson}) testa statistiskais parametrs. Tevatrona testa statiskais parametrs tiek definēts kā:
 
 \begin{equation}
   q^{\text{TEV}}=-2\ln{\frac{L(\Hnull)}{L(\Halt)}}=-2\ln{\frac{L\left(\text{data}|p=0,\hat{\theta}_{0}\right)}{L\left(\text{data}|p=P,\hat{\theta}_{P}\right)}},
@@ -20,12 +20,12 @@ Kā testa statistisko parametru izmantojoam Tevatrona testa statistisko parametr
 kur $p$ ir interesējošais parametrs, $\theta$ ir traucējumu faktors un $\hat{\theta}$ ir traucējumu faktors, kas maksimizē profila iespējamību. Profila iespējamība $L$ tiek definēta kā hipotēzes varbūtība pie dotajiem datiem. Pieņemot hipotēzi ar signāla stiprumu $\mu$, iespējamība tiek aprēķināta kā:
 
 \begin{equation}
-  L(\mu, \theta_{s}, \theta_{b}) = \prod_{i=1}^{N}\frac{(\mu s_{i}(\theta_{s}) + b_{i}(\theta_{b}))^{n_{i}}}{n_{i}!}e^{-\mu s_{i}(\theta_{s}) + b_{i}(\theta_{b})},
+  L\left(\mu, \theta_{s}, \theta_{b}\right) = \prod_{i=1}^{N}\frac{\left(\mu s_{i}\left(\theta_{s}\right) + b_{i}\left(\theta_{b}\right)\right)^{n_{i}}}{n_{i}!}e^{-\left(\mu s_{i}\left(\theta_{s}\right) + b_{i}\left(\theta_{b}\right)\right)},
 \end{equation}
 
 kur $i$ ir fāžu telpas parametrs (vērtību intervāla indekss), $n_{i}$ ir novērojumi (dati) attiecīgajā fāzē (vērtību intervālā).
 
-Tevatrona testa statistiskais parametrs mūs interesē tādēļ, ka $x$ ir iestatīts kā interesējošais parametrs divu hipotēžu modelī \ref{eq:two_hypo_model} vien. un $P$ ir iestatīts kā 1. Līdz ar to, izmantojot $q^{TEV}$ statistisko parametru, \Hnull (ar $x=0$) tiek definēta kā $t\overline{t} + b$ sadalījums, kamēr \Halt ir definēta kā $t\overline{t}_{\text{cflip}} + b$ sadalījums.
+Tevatrona testa statistiskais parametrs mūs interesē tādēļ, ka $x$ ir iestatīts kā interesējošais parametrs divu hipotēžu modelī \ref{eq:two_hypo_model}~vien. un $P$ ir iestatīts kā 1. Līdz ar to, izmantojot $q^{TEV}$ statistisko parametru, \Hnull (ar $x=0$) tiek definēta kā $t\overline{t}+b$ sadalījums, kamēr \Halt ir definēta kā $t\overline{t}_{\text{cflip}}+b$ sadalījums.
 
 Lai testētu \Hnull un \Halt hipotēzes, nepieciešams aprēķināt to p-vērtības. Labās puses p-vērtība tiek aprēķināta kā
 
@@ -33,7 +33,7 @@ Lai testētu \Hnull un \Halt hipotēzes, nepieciešams aprēķināt to p-vērtī
 p\equiv\int_{q_{obs}}^{\infty}f(q)dq,
 \end{equation}
     
-kur $q_{obs}$ ir testa statistiskā parametra vērtība, kas novērota datos, un $f$ varbūtības sadalījuma funkcija atbilstoši pieņemtajai hipotēzei. Zema p-vērtība liecina pret pieņemto hipotēzi. Nozīmīgums $Z=5$ atbilst p-vērtībai $2,87\times10^{-7}$. Neimana-Pīrsona testa statistiskais parametrs atbilstoši \Hnull ir rēķināms no labās puses, bet \Halt ir rēķināms no kreisās puses. Šī sakarība attēlota \ref{fig:npstatistic} att.
+kur $q_{obs}$ ir testa statistiskā parametra vērtība, kas novērota datos, un $f$ varbūtības sadalījuma funkcija atbilstoši pieņemtajai hipotēzei. Zema p-vērtība liecina pret pieņemto hipotēzi. Nozīmīgums $Z=5$ atbilst p-vērtībai $2,87\times10^{-7}$. Neimana-Pīrsona testa statistiskais parametrs atbilstoši \Hnull ir rēķināms no labās puses, bet \Halt ir rēķināms no kreisās puses. Šī sakarība attēlota \ref{fig:npstatistic}~att.
 
 \begin{figure}
   \centering
@@ -42,7 +42,7 @@ kur $q_{obs}$ ir testa statistiskā parametra vērtība, kas novērota datos, un
   \label{fig:npstatistic}
 \end{figure}
 
-Hipotēžu pārbaudei un visu sagatavošanas darbu veikšanai mēs lietojam CMS \lstinline[language=sh]|combine| rīku \cite{url:combine}.
+Hipotēžu pārbaudei un visu sagatavošanas darbu veikšanai mēs lietojam CMS \lstinline[language=sh]|combine| rīku~\cite{url:combine}.
 %Datu karte, kas izmantota, lai radītu RooFit \cite{url:roofit} darba telpu ir sniegta \ref{a:datacard} pielikumā.
 Testa statistiskā parametra sadalījuma ģenerēšanai izmantojam  \lstinline[language=sh]|combine| \lstinline[language=sh]|HybridNew| metodi. Lai aprēķinu teorētiskos testa statistiskā parametra sadalījumus, dati tiek novērtēti no MK paraugiem atbilstoši \textit{frequentist} pieejai. \lstinline[language=sh]|HybridNew| metodes pielietojums sniegts sekojošā komandu sarakstā:
 
@@ -50,7 +50,7 @@ Testa statistiskā parametra sadalījuma ģenerēšanai izmantojam  \lstinline[l
   combine -M HybridNew -T 500 -i 2 --fork 6 --clsAcc 0 --fullBToys -m 125.7 TwoHypo.root --seed 8192 --testStat=TEV  --saveHybridResult --singlePoint 1
 \end{lstlisting}
 
-kur  \lstinline[language=sh]|TwoHypo.root| ir ROOT datne, kas satur darba telpu, \lstinline[language=sh]|--singlePoint 1| nozīmē, ka pieprasām, lai $x$ - interesējošais parametrs \ref{eq:two_hypo_model} vien. būtu vienāds ar 1 \Halt gadījumā. Šajā stadijā izmantojam tikai 500 izmēģinājumus. $\frac{q}{2}$ sadalījums, kur $q$ ir testa statistiskais parametrs, pieņemot \Hnull un \Halt kā arī $\frac{q_{\text{obs}}}{2}$ vērtība ir sniegta \ref{fig:hypo1p0} att.
+kur  \lstinline[language=sh]|TwoHypo.root| ir \ROOT datne, kas satur darba telpu, \lstinline[language=sh]|--singlePoint 1| nozīmē, ka pieprasām, lai $x$ - interesējošais parametrs \ref{eq:two_hypo_model}~vien. būtu vienāds ar 1 \Halt gadījumā. Šajā stadijā izmantojam tikai 500 izmēģinājumus. $\frac{q}{2}$ sadalījums, kur $q$ ir testa statistiskais parametrs, pieņemot \Hnull un \Halt, kā arī $\frac{q_{\text{obs}}}{2}$ vērtība ir sniegta \ref{fig:hypo1p0}~att.
 
 \begin{figure}
   \centering
@@ -73,7 +73,7 @@ Pie $\hat{x}$ un $\hat{\theta}$ PLR sasniedz minimumu. Šajā punktā MK vislab�
 combine -M MultiDimFit --algo grid --points 50 TwoHypo.root
 \end{lstlisting}
 
-PLR līkne ir attēlota \ref{fig:likelihood} att. un tās minimums ir pie $x=0,335$.
+PLR līkne ir attēlota \ref{fig:likelihood}~att. un tās minimums ir pie $x=0,335$.
 
 \begin{figure}
   \centering
@@ -88,7 +88,7 @@ Aprēķinot iespējamību, \lstinline[language=sh]|combine| rīks kombinē nomin
   \Delta x = x\bigg\rvert_{\theta \text{at} \pm\sigma}-x_{0}.
 \end{equation} 
 
-Lai iegūtu maksimālo profila iespējamību, dažādi traucējumi jāpiemēro dažāos apjomos. Traucējuma parametra $\theta$ vilkme, kas kvantificē šo apjomu, tiek definēta kā:
+Lai iegūtu maksimālo profila iespējamību, dažādi traucējumi jāpiemēro dažādos apjomos. Traucējuma parametra $\theta$ vilkme, kas kvantificē šo apjomu, tiek definēta kā:
 
 \begin{equation}
   P = \frac{\hat{\theta}-\theta_{0}}{\delta\theta},
@@ -98,14 +98,14 @@ kur $\hat{\theta}$ ir $\theta$, kas maksimizē profila iespējamību, $\theta_{0
 
 Lai noteiktu traucējumu parametru ietekmi un vilkmi, izmantojam \lstinline[language=sh]|combine| rīka \lstinline[language=sh]|Impact| metodi. Lietotās komandas ir sekojošas:
 
-\begin{lstlisting}[language=sh]
+\begin{lstlisting}[language=sh, breaklines=true]
   combineTool.py -M Impacts -d TwoHypo.root -m 125.7 --doInitialFit --robustFit 1
   combineTool.py -M Impacts -d TwoHypo.root -m 125.7 --robustFit 1 --doFits
   combineTool.py -M Impacts -d TwoHypo.root -m 125.7 -o impacts.json
   plotImpacts.py -i impacts.json -o impacts
 \end{lstlisting}
 
-Dažādo traucējuma parametru ietekme un vilkme ir attēlota \ref{fig:impacts} att.
+Dažādo traucējuma parametru ietekme un vilkme ir attēlota \ref{fig:impacts}~att.
 
 \begin{figure}
   \centering
@@ -114,12 +114,12 @@ Dažādo traucējuma parametru ietekme un vilkme ir attēlota \ref{fig:impacts} 
   \label{fig:impacts}
 \end{figure}
 
-Pēc tam, kad esam ieguvuši, ka $\hat{x}=0,335$ (\ref{fig:likelihood} att.), varam atgriezties pie hipotēžu pārbaudes, šoreiz nosakot, ka $x=\hat{x}$. Šajā gadījumā mēs pārbaudīsim hipotēzi, saskaņā ar kuru signāls sastāv tikai no \ttbar (\Hnull) pret hipotēzi saskaņā ar kuru signāls ir kombinēts no 66,5 \% \ttbar procesa un 33,5 \% krāsu apmainītā \ttbar procesa (\Halt). Testa statiskā parametra sadalījums pie $x=\hat{x}$ ir attēlots \ref{fig:hypo0p335} att.
+Pēc tam, kad esam ieguvuši, ka $\hat{x}=0,335$ (\ref{fig:likelihood}~att.), varam atgriezties pie hipotēžu pārbaudes, šoreiz nosakot, ka $x=\hat{x}$. Šajā gadījumā mēs pārbaudīsim hipotēzi, saskaņā ar kuru signāls sastāv tikai no \ttbar (\Hnull) pret hipotēzi, saskaņā ar kuru signāls ir kombinēts no 66,5~\% \ttbar procesa un 33,5~\% krāsu apmainītā \ttbar procesa (\Halt). Testa statistiskā parametra sadalījums pie $x=\hat{x}$ ir attēlots \ref{fig:hypo0p335}~att.
 
 \begin{figure}
   \centering
   \includegraphics[width = 0.6\textwidth]{fig/hypo0p335.png}
-  \caption{$\frac{q}{2}$ sadalījums, pieņemot vienīgi \ttbar hipotēzi (sarkanā), hipotēzi saskaņā ar kuru signāls sastāv no 66,5 \% \ttbar un 33,5 \% krāsu apmainītā \ttbar procesa (zilā) un $\frac{q_{\text{obs}}}{2}$.}
+  \caption{$\frac{q}{2}$ sadalījums, pieņemot vienīgi \ttbar hipotēzi (sarkanā), hipotēzi saskaņā ar kuru signāls sastāv no 66,5~\% \ttbar un 33,5~\% krāsu apmainītā \ttbar procesa (zilā) un $\frac{q_{\text{obs}}}{2}$.}
   \label{fig:hypo0p335}
 \end{figure}
 

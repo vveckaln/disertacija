@@ -1,20 +1,22 @@
-The data analysed for the present study consists of the 2016{B-H} data taking periods for a total certified luminosity of 35.9 \fbinv for all the channels analysed. The luminosity has been computed with the \textsc{brilcalc} tool \cite{site:brilcalc} using the following command:
+The discussion of this section is adapted from~\cite{CMS-AN-2017-175} and \cite{CMS-AN-2017-159} as these studies use a similar set of data and MC samples.
+
+The data analysed for the present study consists of the 2016{B-H} data taking periods for a total certified luminosity of 35.9~\fbinv for all the channels analysed. The luminosity has been computed with the \textsc{brilcalc} tool~\cite{site:brilcalc} using the following command:
 
 \begin{lstlisting}[language=sh, breaklines=true]
 brilcalc lumi  -b "STABLE BEAMS" --normtag /afs/cern.ch/user/l/lumipro/public/Normtags/normtag_DATACERT.json -i lumiSummary.json
 \end{lstlisting}
 
-All data used for this study are listed in Table \ref{tab:datasets}.  
+All data used for this study are listed in Table~\ref{tab:datasets}.  
 
 \begin{table}[htb]
 \begin{center}
-\caption{Primary datasets used in this analysis. PD is an abbreviation for SingleMuon or SingleElectron.}
+\caption{Primary datasets used in this analysis. PD is an abbreviation for SingleMuon or SingleElectron~\cite{CMS-AN-2017-159}.}
 \label{tab:datasets}
 \begin{tabular}{ lc }
 \hline
 Primary dataset                    & Integrated luminosity\\
 \hline
-/PD/Run2016B-23Sep2016-v3/MINIAOD  & \multirow{8}{*}{35.9 \fbinv}\\
+/PD/Run2016B-23Sep2016-v3/MINIAOD  & \multirow{8}{*}{35.9~\fbinv}\\
 /PD/Run2016C-23Sep2016-v1/MINIAOD  & \\
 /PD/Run2016D-23Sep2016-v1/MINIAOD  & \\
 /PD/Run2016E-23Sep2016-v1/MINIAOD  & \\
@@ -27,13 +29,16 @@ Primary dataset                    & Integrated luminosity\\
 \end{center}
 \end{table}
 
-The list of simulated samples can be found in Table \ref{tab:mcdatasets}. The cross sections are theoretical predictions. Practically, they are obtained from \cite{twiki:SingleTopRefXsec} and \cite{twiki:SM13} except for \ttbar for which the generator cross section is quoted according to \cite{site:MCM}. At NNLO the expected \ttbar cross section is $832^{+20}_{-29}~(\text{scale})\pm 35(\text{PDF}+\alpha_S)$ \cite{twiki:TTbarNLO}. We use the NNLO reference to normalise all \ttbar samples.
+The list of simulated samples from the
 
-\begin{table}
-\caption{Simulation samples are from RunIISummer16MiniAODv2-PUMoriond17\_80X\_mcRun2\_asymptotic\_2016\_TrancheIV\_v6 production. We quote the cross section used to normalise the sample in the analysis.}
-\label{tab:mcdatasets}
-\begin{longtable}{ p{0.16\textwidth}ll }
+RunIISummer16MiniAODv2-PUMoriond17\_80X\_mcRun2\_asymptotic\_2016\_TrancheIV\_v6 production
+
+can be found in Table~\ref{tab:mcdatasets}. The cross sections are theoretical predictions. Practically, they are obtained from \cite{twiki:SingleTopRefXsec} and \cite{twiki:SM13} except for \ttbar for which the generator cross section is quoted according to \cite{site:MCM}. At NNLO the expected \ttbar cross section is $832^{+20}_{-29}~(\text{scale})\pm 35(\text{PDF}+\alpha_S)$~\cite{twiki:TTbarNLO}. We use the NNLO reference to normalise all \ttbar samples.
+
+\begin{longtable}{p{0.16\textwidth}ll}
+\caption{List of simulation samples. We quote the cross section used to normalise the sample in the analysis. Adapted after~\cite{CMS-AN-2017-159}.}\\
 \hline
+\label{tab:mcdatasets}
 Process                      & Dataset                                                                     & $\sigma[pb]$\\
 \hline
 \multicolumn{3}{l}{\bf Signal} \\
@@ -77,16 +82,15 @@ Process                      & Dataset                                          
 
 \hline
 \end{longtable}
-\end{table}
 
-The colour octet sample is listed in \ref{tab:mcdatasets_flip}. 
+The colour octet sample is listed in Table~\ref{tab:mcdatasets_flip}. We will occasionally refer to the colour octet \PW sample as the \ttbar cflip sample.
 
 \begin{table}[htb]
 \begin{center}
 \caption{Simulation samples for the colour octet \PW boson. We quote the cross section used to normalise the sample in the analysis.}
 \label{tab:mcdatasets_flip}
 \hspace*{-0.5cm}
-\begin{tabular}{ llc }
+\begin{tabular}{llc}
 \hline
 Process & Dataset & $\sigma[pb]$\\
 \multicolumn{3}{l}{\bf Background} \\
@@ -97,17 +101,14 @@ Colour octet \PW boson &  {\small TT\_TuneCUETP8M2T4\_13TeV-powheg-colourFlip-py
 \end{center}
 \end{table}
 
-\section{Corrections applied to the simulation}
-\label{sec:mccorrections}
+Based on differences between data and simulated events different sets of corrections are applied to the latter:
 
-Based on differences between data and simulated events different sets of corrections are applied to the latter.
-
-\begin{description}
-\item[Pileup re-weighting]
-\item[Lepton identification and isolation efficiency]
-\item[Trigger efficiency]
-\item[Generator level weights]
-\item[Jet energy scale and resolution]
-\item[\cPqb tagging efficiency]
-\end{description}
+\begin{enumerate}
+\item Pileup re-weighting,
+\item Lepton identification and isolation efficiency,
+\item Trigger efficiency,
+\item Generator level weights,
+\item Jet energy scale and resolution,
+\item \cPqb tagging efficiency.
+\end{enumerate}
 

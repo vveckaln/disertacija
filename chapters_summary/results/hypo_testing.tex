@@ -1,11 +1,11 @@
 \label{subsec:hypo_testing}
 
-Our present work with the colour-flipped MC samples provides some means to resolve if we can see the colour-octet \PW signal in the data. Such results are to be treated cautiously because the agreement between data and SM MC samples is not particularly good. Here we will revert to the tool used by the particle physicist to announce a discovery: testing the background only hypothesis against a signal + background hypothesis with a significance $Z$ of at least 5 \cite{Cowan:2010js}. The first hypothesis is called the null hypothesis \Hnull while the latter one is called the alternate hypothesis \Halt.
+Our present work with the colour-flipped MC samples provides some means to resolve if we can see the colour-octet \PW signal in the data. Such results are to be treated cautiously because the agreement between data and SM MC samples is not particularly good. Here we will revert to the tool used by the particle physicist to announce a discovery: testing the background only hypothesis against a signal + background hypothesis with a significance $Z$ of at least 5~\cite{Cowan:2010js}. The first hypothesis is called the null hypothesis \Hnull while the latter one is called the alternative hypothesis \Halt.
 
 We construct a two-hypothesis model to combine background, \ttbar and colour-flipped \ttbar signals:
 
 \begin{equation}
-  n=\mu\left(\left(1-x\right)f_{t\overline{t}} + xf_{t\overline{t}_{\text{cflip}}}\right) + b,
+  n=\mu\left(\left(1-x\right)f_{t\overline{t}}+xf_{t\overline{t}_{\text{cflip}}}\right)+b,
   \label{eq:two_hypo_model}
 \end{equation}
 
@@ -20,20 +20,20 @@ As the test statistic we chose the Tevatron test statistic. It is also known as 
 where $p$ is the parameter of interest. $\theta$ is the nuisance factor and $\hat{\theta}$ is the nuisance factor that maximises the profile likelihood. The likelihood $L$ is defined the probility of the hypothesis given the data. Assuming a hypothesis with signal strength $\mu$ the likelihood is evaluated as:
 
 \begin{equation}
-  L(\mu, \theta_{s}, \theta_{b}) = \prod_{i=1}^{N}\frac{(\mu s_{i}(\theta_{s}) + b_{i}(\theta_{b}))^{n_{i}}}{n_{i}!}e^{-\mu s_{i}(\theta_{s}) + b_{i}(\theta_{b})},
+  L(\mu, \theta_{s}, \theta_{b})=\prod_{i=1}^{N}\frac{(\mu s_{i}(\theta_{s})+b_{i}(\theta_{b}))^{n_{i}}}{n_{i}!}e^{-\left(\mu s_{i}(\theta_{s})+b_{i}(\theta_{b})\right)},
 \end{equation}
 
 where $i$ is the phase-space parameter (bin index), $n_{i}$ is the observation (data) in the relevant phase (bin).
 
-The Tevatron test statistic is of interest to us because if $x$ is defined as the parameter of interest in the two hypothesis model Eq. \ref{eq:two_hypo_model} and $P$ is set to 1, it happens  that when applying the $q^{TEV}$ statistic \Hnull (with $x=0$) is defined as the $t\overline{t} + b$ distribution while \Halt is defined as the $t\overline{t}_{\text{cflip}} + b$ distributions.
+The Tevatron test statistic is of interest to us because if $x$ is defined as the parameter of interest in the two hypothesis model Eq.~\ref{eq:two_hypo_model} and $P$ is set to 1, it happens  that when applying the $q^{TEV}$ statistic \Hnull (with $x=0$) is defined as the $t\overline{t}+b$ distribution while \Halt is defined as the $t\overline{t}_{\text{cflip}}+b$ distributions.
 
-In order to test the \Hnull and \Halt hypotheses one needs to calculate their p-values. A right - handed p-value is defined as
+In order to test the \Hnull and \Halt hypotheses one needs to calculate their p-values. A right-handed p-value is defined as
 
 \begin{equation}
-p\equiv\int_{q_{obs}}^{\infty}f(q)dq,
+p\equiv\int_{q_{\text{obs}}}^{\infty}f(q)dq,
 \end{equation}
     
-where $q_{obs}$ is the value of the test statistic observed from the data, and $f$ is the probability distribution function (pdf) under the assumption of the hypothesis. A low p-value is an indicator against the assumed hypothesis. A significance of $Z=5$ corresponds to a p-value of $2.87\times10^{-7}$. For the Neyman-Person test statistic the p-value for \Hnull is right-handed while the p-value for \Halt is left-handed. This is illustrated in Fig. \ref{fig:npstatistic}.
+where $q_{obs}$ is the value of the test statistic observed from the data, and $f$ is the probability distribution function (pdf) under the assumption of the hypothesis. A low p-value is an indicator against the assumed hypothesis. A significance of $Z=5$ corresponds to a p-value of $2.87\times10^{-7}$. For the Neyman-Person test statistic the p-value for \Hnull is right-handed while the p-value for \Halt is left-handed. This is illustrated in Fig.~\ref{fig:npstatistic}.
 
 \begin{figure}
   \centering
@@ -42,13 +42,13 @@ where $q_{obs}$ is the value of the test statistic observed from the data, and $
   \label{fig:npstatistic}
 \end{figure}
 
-For testing the hypothesis and doing all background work we use the CMS \lstinline[language=sh]|combine| tool \cite{url:combine}. The datacard for creating the RooFit \cite{url:roofit} workspace is given in Appendix \ref{a:datacard}. For the generation of the test statistic the \lstinline[language=sh]|HybridNew| method of the \lstinline[language=sh]|combine| tool is used. To calculate the theoretical test statistic distributions data is estimated from the MC samples in the frequentist approach. Invocation of the \lstinline[language=sh]|HybridNew| method is given in the following listing:
+For testing the hypothesis and doing all background work we use the CMS \lstinline[language=sh]|combine| tool~\cite{url:combine}. For the generation of the test statistic the \lstinline[language=sh]|HybridNew| method of the \lstinline[language=sh]|combine| tool is used. To calculate the theoretical test statistic distributions data is estimated from the MC samples in the frequentist approach. Invocation of the \lstinline[language=sh]|HybridNew| method is given in the following listing:
 
 \begin{lstlisting}[language=sh, breaklines=true]
   combine -M HybridNew -T 500 -i 2 --fork 6 --clsAcc 0 --fullBToys -m 125.7 TwoHypo.root --seed 8192 --testStat=TEV  --saveHybridResult --singlePoint 1
 \end{lstlisting}
 
-where  \lstinline[language=sh]|TwoHypo.root| is the ROOT file containing the workspace. \lstinline[language=sh]|--singlePoint 1| means that we require $x$ - the parameter of interest in Eq. \ref{eq:two_hypo_model} to be equal to 1 in \Halt. We at the present stage use only 500 toys. The distribution of $\frac{q}{2}$ where $q$ is the test statistic under the assumption of \Hnull, \Halt and $\frac{q_{\text{obs}}}{2}$ is given in Fig. \ref{fig:hypo1p0}.
+where  \lstinline[language=sh]|TwoHypo.root| is the ROOT file containing the workspace. \lstinline[language=sh]|--singlePoint 1| means that we require $x$ - the parameter of interest in Eq. \ref{eq:two_hypo_model} to be equal to 1 in \Halt. We at the present stage use only 500 toys. The distribution of $\frac{q}{2}$ where $q$ is the test statistic under the assumption of \Hnull, \Halt and $\frac{q_{\text{obs}}}{2}$ is given in Fig.~\ref{fig:hypo1p0}.
 
 \begin{figure}
   \centering
@@ -71,7 +71,7 @@ At $\hat{x}$ and $\hat{\theta}$ the PLR has minimum. At this point the MC best f
 combine -M MultiDimFit --algo grid --points 50 TwoHypo.root
 \end{lstlisting}
 
-The PLR curve is plotted in Fig. \ref{fig:likelihood} and has a minimum at $x=0.335$.
+The PLR curve is plotted in Fig.~\ref{fig:likelihood} and has a minimum at $x=0.335$.
 
 \begin{figure}
   \centering
@@ -83,27 +83,27 @@ The PLR curve is plotted in Fig. \ref{fig:likelihood} and has a minimum at $x=0.
 When calculating the likelihood the \lstinline[language=sh]|combine| tool combines the nominal signal with the nuisances and looks for the combination that maximises the profile likelihood. Different nuisances have a different impact. The impact of a nuisance parameter $\theta$ is defined as the shift $\Delta x$ in the parameter of interest when the nuisance is included at its $\pm\sigma$ values
 
 \begin{equation}
-  \Delta x = x\bigg\rvert_{\theta \text{at} \pm\sigma}-x_{0}
+  \Delta x=x\bigg\rvert_{\theta\text{at}\pm\sigma}-x_{0}
 \end{equation} 
 
 In order to achieve the maximum profile likelihood different nuisances have to be stretched to a different amount. The pull of a nuisance parameter $\theta$ that quantifies this stretch is defined as:
 
 \begin{equation}
-  P = \frac{\hat{\theta}-\theta_{0}}{\delta\theta},
+  P=\frac{\hat{\theta}-\theta_{0}}{\delta\theta},
 \end{equation} 
 
 where $\hat{\theta}$ is the $\theta$ that maximises the profile likelihood, $\theta_{0}$ is the pre-fit value, $\delta\theta$ - the pre-fit uncertainty.
 
 In order the measure the impact and pull of the nuisance parameters we use the \lstinline[language=sh]|Impact| method of the \lstinline[language=sh]|combine| tool with the following recipe:
 
-\begin{lstlisting}[language=sh]
+\begin{lstlisting}[language=sh, breaklines=true]
   combineTool.py -M Impacts -d TwoHypo.root -m 125.7 --doInitialFit --robustFit 1
   combineTool.py -M Impacts -d TwoHypo.root -m 125.7 --robustFit 1 --doFits
   combineTool.py -M Impacts -d TwoHypo.root -m 125.7 -o impacts.json
   plotImpacts.py -i impacts.json -o impacts
 \end{lstlisting}
 
-The impacts and pulls of the different nuisance parameters are plotted in Fig. \ref{fig:impacts}.
+The impacts and pulls of the different nuisance parameters are plotted in Fig.~\ref{fig:impacts}.
 
 \begin{figure}
   \centering
@@ -112,12 +112,12 @@ The impacts and pulls of the different nuisance parameters are plotted in Fig. \
   \label{fig:impacts}
 \end{figure}
 
-Having obtained the value $\hat{x}=0.335$ (Fig. \ref{fig:likelihood}) we can return to the hypothesis testing this time setting $x=\hat{x}$. In this case we will test the \ttbar only hypothesis (\Hnull) against the hypothesis where the signal is composed of 66.5 \% \ttbar process and 33.5\% colour flipped \ttbar process (\Halt). The distribution of the test statistic for $x=\hat{x}$ is plotted in Fig. \ref{fig:hypo0p335}.
+Having obtained the value $\hat{x}=0.335$ (Fig.~\ref{fig:likelihood}) we can return to the hypothesis testing this time setting $x=\hat{x}$. In this case we will test the \ttbar only hypothesis (\Hnull) against the hypothesis where the signal is composed of 66.5~\% \ttbar process and 33.5~\% colour flipped \ttbar process (\Halt). The distribution of the test statistic for $x=\hat{x}$ is plotted in Fig.~\ref{fig:hypo0p335}.
 
 \begin{figure}
   \centering
   \includegraphics[width = 0.6\textwidth]{fig/hypo0p335.png}
-  \caption{Distribution of the $\frac{q}{2}$ under the assumption of \ttbar only hypothesis (red), a hypothesis of the signal being mixed of 66.5 \% \ttbar and 33.5 \% colour flipped \ttbar process (blue) and $\frac{q_{\text{obs}}}{2}$.}
+  \caption{Distribution of the $\frac{q}{2}$ under the assumption of \ttbar only hypothesis (red), a hypothesis of the signal being mixed of 66.5~\% \ttbar and 33.5~\% colour flipped \ttbar process (blue) and $\frac{q_{\text{obs}}}{2}$.}
   \label{fig:hypo0p335}
 \end{figure}
 

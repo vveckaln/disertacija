@@ -1,4 +1,4 @@
-\documentclass[titlepage, a4paper, EN]{mythesis}
+\documentclass[titlepage, a4paper, EN, FULL]{mythesis}
 \usepackage[bindingoffset=0cm, left=2.5cm, right=2.5cm, top=2.5cm, bottom=2.5cm]{geometry}
 \usepackage[utf8]{inputenc}
 \usepackage[backend=bibtex, style=numeric, sorting=none]{biblatex}
@@ -54,6 +54,11 @@
 \maketitle
 \begin{abstract}
         \input{chapters/abstract}
+\end{abstract}
+\renewcommand{\abstractname}{Anotācija}
+
+\begin{abstract}
+        \input{nodalas_kopsavilkums/abstract}
 \end{abstract}
 
 \chapter*{Acknowledgements}
