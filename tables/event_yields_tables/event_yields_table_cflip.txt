@@ -1,8 +1,8 @@
-\begin{table}[htp]
-\centering
-\caption{Event yields for the colour octet \PW sample.}
-\label{tab:yields}
+%\begin{table}[htp]
+%\centering
 \begin{longtable}{lrrrr}
+\caption{Event yields for the colour octet \PW sample.}\\
+\label{tab:yields_cflip}
 Process & $1 \ell$ & $1 \ell + \geq 4 j$ & $1 \ell + \geq 4 j (2 b)$ & $1 \ell + 4 j (2 b, 2 lj)$ \\
 \hline
 $e$ + jets channel\\
@@ -21,4 +21,4 @@ Combined $\ell$ + jets channel\\
 (\ttbar cflip uncertainty)	& $\pm$         669284.6	& $\pm$         117188.9	& $\pm$         123525.4	& $\pm$          46115.0	\\
 \hline
 \end{longtable}
-\end{table}
+%\end{table}

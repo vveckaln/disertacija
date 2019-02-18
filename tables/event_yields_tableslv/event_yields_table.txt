@@ -1,8 +1,8 @@
-\begin{table}[htp]
-\centering
-\caption{Notikumu raža.}
-\label{tab:yields}
+%\begin{table}[htp]
+%\centering
 \begin{longtable}{lrrrr}
+\caption{Notikumu raža.}\\
+\label{tab:yields}
 Process & $1 \ell$ & $1 \ell + \geq 4 j$ & $1 \ell + \geq 4 j (2 b)$ & $1 \ell + 4 j (2 b, 2 lj)$ \\
 \hline
 $e$ + strūklas kanāls\\
@@ -48,4 +48,4 @@ Kopīgais $\ell$ + strūklas kanāls\\
                     Dati	&          848834496,0		&            6140060,0		&            1151514,0		&             447738,0		\\
 \hline
 \end{longtable}
-\end{table}
+%\end{table}
