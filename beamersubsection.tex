@@ -1,0 +1,47 @@
+\documentclass{beamer}
+\AtBeginSection[]{
+  \begin{frame}[t]
+    \vspace{3cm}
+    \centering
+    \begin{beamercolorbox}[sep=8pt,center,shadow=true,rounded=true]{title}
+      \Large\insertsectionhead\par%
+    \end{beamercolorbox}
+    \vfill
+  \end{frame}
+  }
+
+\AtBeginSubsection[]{
+  \begin{frame}[t]
+    \vspace{3cm}
+    \centering
+    \begin{beamercolorbox}[sep=8pt,center,shadow=true,rounded=true]{title}
+      \Large\insertsectionhead\par%
+      \vspace{0.5cm}
+      \large\insertsubsectionhead\par%
+    \end{beamercolorbox}
+    \vfill
+  \end{frame}
+  }
+\begin{document}
+\section{Section 1}
+\subsection{Subsection 1 A}
+%% \begin{frame}{Slide 1}
+%%   slide contents
+%% \end{frame}
+%% \section{Section 2}
+
+%% \subsection{Subsection 2 A}
+
+%% \begin{frame}{Slide 2}
+%%   slide contents
+%% \end{frame}
+
+%% \begin{frame}
+%%   line1
+%% \end{frame}
+
+%% \begin{frame}
+%%   line1
+%%   \\line2
+%%   \end{frame}
+\end{document}

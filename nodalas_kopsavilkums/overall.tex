@@ -1,0 +1,57 @@
+\vskip 1.5cm
+\medskip
+\textbf{Fizikālie pamati}
+\nopagebreak\medskip
+
+Lielais hadronu paātrinātājs (LHP) ir 27~km apkārtmēra sinhrotrons. Tas atrodas Ženēvas apkārtnē uz Francijas-Šveices robežas. LHP eksperimentālajos punktos tiek veiktas protonu-protonu (\Pp\Pp) sadursmes. Lielākā daļa šo sadursmju ir neelastīga, un ar detektoriem kā KMS tiek analizēti sadursmju gruveši. Sadursmju gruvešos ceram atrast atbildes uz daudziem fizikas jautājumiem, kā, piemēram, Higsa bozona eksistence un īpašības, Tumšās matērijas eksistence un virsotnes kvarka īpašības.
+
+\Pp\Pp sadursmju masas centra enerģija ir 13~\TeV. Šāda enerģija ir pietiekama, lai radītu miljoniem \ttbar pāru - šī procesa šķērsgriezums pie $\sqrt{s}=13~\TeV$ ir 803~pb~\cite{Sirunyan:2018goh}. LHP ir uzskatāms par \gls{virsotnes kvarku} fabriku. Virsotnes kvarks sabrūk vājajā ceļā, izstarojot \PW bozonu. \PW bozons pieder pie krāsu singleta, tāpat arī tā sabrukuma produkti. Ja \PW bozons sabrūk par krāsainiem produktiem (kvarkiem), tad šie produkti savā starpā mijiedarbojas hromodinamiskajā laukā - tie būs saistīti ar krāsām. Darba uzdevums ir pētīt ar krāsām saistīto strūklu eksperimentālos nospiedumus.
+
+Vieglie kvarki, kas rodas, sabrūkot \PW bozonam, hadronizējas un detektorā novērojami kā \gls{strūklas}. KMS silīcija trekeris, elektromagnētiskais un hadronu kalorimetrs ļauj izšķirt strūklu sastāvdaļas jeb hadronizācijas produktus (barionus un mezonus). Papildus, KMS 4~T supravadošā solenoīda magnētiskais lauks ļauj mērīt lādēto strūklu sastāvdaļu momentu ar augstu izšķirtspēju. Daļiņas tiek identificētas un to parametri tiek mērīti, apkopojot novērojumus dažādos apakšdektoros~\cite{Sirunyan:2017ulk}. Gadījumā, ja strūklas ir saistītas ar krāsām, to sastāvdaļām ir tieksme aizpildīt telpu starp strūklām eksperimenta inerciālajā sistēmā. Šī īpašība ir par pamatu darbā izmantotajām metodēm.
+
+Tāpat pētām arī hipotētiska krāsu okteta \PW bozona sabrukšanu. Šajā gadījumā vieglās strūklas nav saistītas ar krāsām, un šos rezultātus varam izmantot, lai tos salīdzinātu ar ar krāsām saistīto gadījumu.
+
+Atlasām notikumus atbilstoši $tt-\cPqb\PW(q_1q_2)\cPqb\PW(\ell\nu)$ topoloģijai - tādus, kuros ir 2 vieglās strūklas, 2 \cPqb-atzīmētās strūklas, kā arī viens lādēts leptons.
+
+Darbā tiek izmantoti 2016. gada LHP KMS dati ar integrēto spīdumu 35,9~\fbinv. Eksperimenta novērojumi tiek salīdzināti ar Monte Karlo (MK) simulācijām. MK simulācijas ļauj novērtēt fona klātbūtni, notikumu atlases efektivitāti un mūsu gadījumā arī pārliecināties, cik precīzi ir mūsu hadronizācijas modeļi. Centrālais process tiek simulēts ar \POWHEG, bet hadronizācija ar \PYTHIA. \PYTHIA simulētā hadronizācija tiek salīdzināta ar \HERWIGpp simulēto hadronizāciju. KMS detektors tiek modelēts ar \GEANTfour. Ievērojot atšķirības starp MK simulācijām un detektora novērojumiem, MK paraugiem tiek pielietoti attiecīgi koeficienti. Tiek novērtēta arī dažādu sistemātisko nenoteiktību radītā kļūda.
+
+Ievērojot slikto treku rekonstrukcijas efektivitāti daļiņām, kuru šķērsmoments ir mazāks par 1~\GeV, pētījumā iekļaujam tikai daļiņas, kuru šķērsmoments ir liekāks nekā 1~\GeV.
+ 
+\medskip
+\textbf{Metodes}
+\nopagebreak\medskip
+
+Izmantojam vilkmes leņķa metodi~\cite{Gallicchio:2010sw}. Atbilstoši šai metodei tiek konstruēts vilkmes vektors, zinot strūklas centru un strūklas sastāvdaļu attālumu no tā, kas svērts ar strūklas sastāvdaļu šķērsmomentu \pt. Sagaidāms, ka strūklas vilkmes vektors rādīs uz citu strūklu, kas ar šo strūklu saistīta krāsu laukā. Tātad sagaidāms, ka vilkmes leņķa sadalījumā būs novērojams paugurs ar centru 0~rad.
+
+Pētām vilkmes leņķa sadalījumu starp ar krāsām saistītām strūklām (abas vieglās strūklas), kā arī salīdzinām rezutātus ar vilkmes leņķa sadalījumu starp ar krāsām nesaistītiem fizikāliem objektiem - \cPqb-atzīmētām strūklām, vieglo strūklu un leptonu. Interesants gadījums ir vilkmes leņķis starp strūklu un kūli.
+
+Šķirojam gadījumus kad, \DeltaR starp strūklām ir lielāks vai mazāks par 1. Pēdējā gadījumā anti-$k_{T}$ strūklu sakopošanas algoritms inducē vilkmi no vadošās strūklas uz mīkstāko strūklu, radot būtisku ietekmi uz novērojumiem saskaņā ar vilkmes metodi.
+
+Novērtējam vilkmes leņķa metodes jutīgumu pret dažādiem parametriem - tikai lādēto daļiņu izmantošanu (tikai lādēto daļiņu trajektorijas tiek noliektas magnētiskajā laukā), \PW bozona šķērsmomentu, strūklas sastāvdaļu skaitu, strūklas sastāvdaļu šķērsmomenta slieksni, vilkmes vektora lielumu.
+
+Lai novērstu detektora radīto ietekmi uz novērojumiem, lietojam atlocīšanas metodi. Šī metode ļauj iegūt patiesā novērojamā lieluma sagaidāmā sadalījuma novērtējumu, taču tās trūkums ir augstā novērojamā lieluma fāžu telpas granularitāte. Novērtējam atbilstību starp atlocītajiem novērojumiem un ģenerētajiem Monte Karlo novērojumiem, kā arī dažādo sistemātisko nenoteiktību ietekmi.  
+
+Tāpat tiek izmantota arī adaptācija metodei, kas tikusi izmantota Lielajā elektronu-pozitronu kolaiderī LEP (turpmāk to dēvēsim par ``LEP metodi''), kur strūklu sastāvdaļas tiek projicētas uz starpstrūklu plaknēm~\cite{Abbiendi:2005es}, \cite{Abdallah:2006uq}, \cite{Achard:2003pe}. Sagaidāms, ka plakne starp ar krāsām saistītām strūklām būs blīvāk aizpildīta ar strūklu sastāvdaļu projekcijām nekā plakne starp ar krāsām nesaistītām strūklām.  
+
+Rezultāti tiek iegūti, izmantojot \CMSSW versiju \lstinline[language=sh]|CMSSW_8_0_26_patch1|, sākotnēji arī \RIVET~\cite{Buckley:2010ar}.
+
+Visbeidzot, veicam hipotēžu pārbaudi. Šī uzdevuma ietvaros kombinējam \ttbar signālu ar krāsu okteta \PW signālu un novērtējam šīs kombinācijas atbilstību datiem.
+
+\medskip
+\textbf{Novitāte}
+\nopagebreak\medskip
+
+Vilkmes leņķa metode ir tikusi pielietota Fermilab Tevatrona \DZERO eksperimentā~\cite{Abazov:2011vh}, ATLAS eksperimentā I darba periodā~\cite{Aad:2015lxa}, kā arī ATLAS eksperimentā II darba periodā \cite{Aaboud:2018ibj}. Šo metodi CMS pirmoreiz pielietoja Zeidels, M. un citi~\cite{indico:Markus_cf}, taču šie rezultāti nekad nav tikuši publicēti. Salīdzinājumā ar ATLAS KMS detektora iespējama aptuveni divreiz labāka centrālā reģiona treku momenta izšķirtspēja, pateicoties tā 4~T solenoīdam (ATLAS aprīkots ar daudz mazāku 2~T solenoīdu ar lieliem toroīda magnētiem ārpusē~\cite{Aad:2008zzm}).
+
+``LEP metode'' vēl nav tikusi pielietota LHP.
+
+Jāatzīmē, ka šis darbs ir pirmais Latvijas pienesums LHP eksperimentālajai programmai. Darbam, kas aprakstīts šajā disertācijā, noritot pilnā sparā, mēs 2018. g. maijā svinīgi atzīmējām uzņemšanu par pilntiesīgiem KMS eksperimenta biedriem.
+
+\medskip
+\textbf{Aprobācija}
+\nopagebreak\medskip
+
+
+Šajā disertācijā ir izklāstīti KMS eksperimenta virsotnes kvarka grupas pētījuma ietvaros gūtie rezultāti. Rezultāti dažādās stadijās ir tikuši prezentēti Virsotnes modelēšanas un ģeneratoru fizikas sanāksmēs - 2016. g. 19. janvārī, 2016. g. 29. martā, 2016. g. 7. jūnijā, 2016. g. 30. augustā, 2018. g. 13. februārī un 2018. g. 17. oktobrī. Tie ir tikuši arī prezentēti CERN Zinātnes nedēļā Rīgā no 2017.g 22.-26. maijam, kā arī Augstas enerģijas fizikas Eiropas Skolā Evurā, Portugālē no 2017. g. 6. - 19. septembrim.
+
+Šajā pētījumā iegūtie rezultāti vēl nav apstiprināti saskaņā ar KMS eksperimenta Sadarbības padomes pieņemtajiem noteikumiem par rezultātu apstiprināšanu un publicēšanu. Saskaņā ar šiem noteikumiem pētījuma rezutāti vēl nevar tikt publicēti recenzētos zinātniskos izdevumos un oficiālās konferencēs.

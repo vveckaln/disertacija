@@ -1,0 +1,384 @@
+\documentclass{beamer}
+\usepackage[pangram]{blindtext}
+%\usetheme{Pittsburgh}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usetikzlibrary{positioning, fit}
+\usetikzlibrary{calc, angles, intersections, quotes, through}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{siunitx}
+\usepackage{multirow}
+\usepackage{makecell}
+\usepackage{longtable}
+\setbeamertemplate{caption}[numbered]
+%\usepackage{subcaption}
+\usepackage{tikz}
+\usepackage{listings}
+\usetikzlibrary{calc}
+\usepackage{listings}
+\usepackage{subfig}
+\usepackage{ifthen}
+\tikzset{point/.style={circle, inner sep=0pt, minimum size=3pt, fill=red}}
+\usetikzlibrary{shapes}
+\newlength{\pvlength}
+\def\RTUpresdef{\string~/RTUpresdef}
+
+\title{Studies of colour flow in top quark pair decays at 13 TeV}
+\subtitle{Results at the CMS experiment of the CERN LHC\\\vspace{0.5cm}CMS AN-17-309}
+\author{Viesturs Veckalns}
+\institute{Rīgas Tehniskā universitāte}
+\date{Top Event Modelling and Generators - Physics Meeting, ****, 2019}
+
+
+\usepackage{xparse,calc}
+%\logo{\raisebox{-6cm}{\includegraphics[width=1cm]{CMS_logo_May2014-eps-converted-to.pdf}}}
+
+%\makeatletter
+\input{\RTUpresdef/presdefinitions.tex}
+\input{generalcommands.tex}
+\usepackage{xspace}
+\usepackage{ptdr-definitions}
+
+\begin{document}
+{
+  \usebackgroundtemplate{\includegraphics[width=\paperwidth]{\RTUpresdef/pamats1.jpg}}%
+  \setbeamertemplate{footline}{}
+  \logo{}
+  \begin{frame}
+    \fitimage{%
+      \titlepage
+      %\blindenumerate[2]
+    }{example-image-a}
+  \end{frame}
+}
+
+\begin{frame}{Collaborators}
+  \begin{itemize}
+    \item Martijn Mulders (CERN)
+    \item Pedro Silva (CERN)
+    \item Markus Seidel (CERN)
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Colour flow in \ttbar decays}
+  \centering
+    \includegraphics[width = 0.9\paperwidth]{presfig/ttbar_cf_labels_en.pdf}
+\end{frame}
+
+\section{Methodology}
+\input{presxxx/methodology.tex}
+
+\begin{frame}{Colour octet \PW boson}
+  \centering
+  \includegraphics[width=0.7\textwidth]{fig/ttbar_cf_flip_cropped.pdf}
+\end{frame}
+
+\section{Event Selection}
+\input{presxxx/event_selection.tex}
+
+\section{Corrections and systematics}
+\input{presxxx/systematics.tex}
+
+\section{Results}
+\input{presxxx/results.tex}
+
+\subsection{Unfolding}
+\input{presxxx/unfolding.tex}
+
+\subsection{LEP method}
+\input{presxxx/chi.tex}
+
+\subsection{Hypothesis testing}
+\input{presxxx/hypo.tex}
+
+\begin{frame}{Outlook}
+  \begin{itemize}
+  \item Approval of AN
+  \item Write article
+  \item Defend thesis (submitted)
+  \end{itemize}
+\end{frame}
+%% \begin{frame}[fragile]{Code adjustment}
+%%   remove:
+%%   \lstset{language=c++}
+%%   \begin{lstlisting}
+%%     if (chTag != ``M'' and chTag != ``E'')
+%%     continue;
+%%   \end{lstlisting}
+%%   number of gen evens doubled:
+%%   \begin{figure}
+%%     \begin{subfigure}[t]{.4\paperwidth}
+%%       \includegraphics[width = 0.4\paperwidth]{\figrepository/L_pull_angle_allconst_gen_leading_jet_scnd_leading_jet_DeltaRTotal_old.png}%
+%%       \caption{Before}
+%%     \end{subfigure}
+%%     \begin{subfigure}[t]{.4\paperwidth}
+%%       \includegraphics[width = 0.4\paperwidth]{\figrepository/05_09_2018_fix/L/gen/pull_angle/DeltaRTotal/charge/allconst/L_pull_angle_allconst_gen_leading_jet_scnd_leading_jet_DeltaRTotal.png}
+%%       \caption{After}
+%%     \end{subfigure}
+%%     \caption{}
+%%   \end{figure}
+%% \end{frame}
+
+%% \begin{frame}{Main plot}
+%%   \begin{figure}
+%%     \includegraphics[width=0.6\paperwidth]{\figrepository/05_09_2018_fix/L/reco/pull_angle/DeltaRTotal/charge/allconst/L_pull_angle_allconst_reco_leading_jet_scnd_leading_jet_DeltaRTotal.png}
+%%     \caption{pull angle leading jet $\rightarrow$ 2nd leading jet $\Delta R$ total} 
+%%   \end{figure}
+%% \end{frame}
+
+%% \begin{frame}{New jets}
+%%   \begin{figure}
+%%     \begin{subfigure}[t]{.4\paperwidth}
+%%       \includegraphics[width = 0.4\paperwidth]{\figrepository/05_09_2018_fix/L/reco/pull_angle/DeltaRTotal/charge/allconst/L_pull_angle_allconst_reco_leading_b_scnd_leading_b_DeltaRTotal.png}%
+%%       \caption{leading b $\rightarrow$ 2nd leading b}
+%%     \end{subfigure}
+%%     \begin{subfigure}[t]{.4\paperwidth}
+%%       \includegraphics[width = 0.4\paperwidth]{\figrepository/05_09_2018_fix/L/reco/pull_angle/DeltaRTotal/charge/allconst/L_pull_angle_allconst_reco_scnd_leading_b_leading_b_DeltaRTotal.png}
+%%       \caption{2nd leading b $\rightarrow$ leading b}
+%%     \end{subfigure}
+%%     \caption{}
+%%   \end{figure}
+%% \end{frame}
+
+%% \begin{frame}{comparison of Powheg + Pythia 8 and Powheg + Pythia8 cflip}
+%%   \begin{figure}
+%%     \begin{subfigure}[t]{.4\paperwidth}
+%%       \includegraphics[width = 0.4\paperwidth]{\figrepository/05_09_2018_fix/L/control/L4_1l4j2b2w_j0eta.png}%
+%%       \caption{$j_{0}\ \eta$}
+%%     \end{subfigure}
+%%     \begin{subfigure}[t]{.4\paperwidth}
+%%       \includegraphics[width = 0.4\paperwidth]{\figrepository/05_09_2018_fix/L/control/L4_1l4j2b2w_j5eta.png}
+%%       \caption{$j_{5}\ \eta$}
+%%     \end{subfigure}
+%%     \caption{}
+%%   \end{figure}
+%% \end{frame}
+
+
+%% \begin{frame}{Unfolding $\theta_{p}$ leading light jet $\rightarrow$ 2nd leading light jet \\\textbf{reco input}}
+%%   a new class \texttt{CompoundHistoUnfolding} added to ROOT.
+%%   \begin{figure}
+%%       \includegraphics[width=0.4\paperwidth]{\figrepository/common_plots_nominal/pull_angle/ATLAS3/leading_jet_allconst_pull_angle_OPT_reco_in.png}
+%%   \end{figure}
+%%   \texttt{MC13TeV\_TTJets\_cflip} added to systematics to \texttt{Powheg + Pythia8*}
+%% \end{frame}
+
+%% \begin{frame}{Unfolding $\theta_{p}$ leading light jet $\rightarrow$ 2nd leading light jet\\\textbf{output}}
+%%   \begin{figure}
+%%     \begin{subfigure}[t]{.4\paperwidth}
+%%       \includegraphics[width=0.4\paperwidth]{\figrepository/common_plots_nominal/pull_angle/ATLAS3/leading_jet_allconst_pull_angle_OPT_gen_out.png}
+%%       \caption{gen unfolded}
+%%     \end{subfigure}
+%%     \begin{subfigure}[t]{.4\paperwidth}
+%%       \includegraphics[width=0.4\paperwidth]{\figrepository/common_plots_nominal/pull_angle/ATLAS3/leading_jet_allconst_pull_angle_OPT_reco_out.png}
+%%       \caption{reco folded back}
+%%     \end{subfigure}
+%%   \end{figure}
+%% \end{frame}
+
+
+%% \begin{frame}{Choosing 3 regular bins - ATLAS style}
+%%   Should aim for at least 3 bins
+%%   \begin{figure}
+%%     \begin{subfigure}[t]{.4\paperwidth}
+%%       \includegraphics[width = 0.4\paperwidth]{\figrepository/unfolding_nominal/pull_angle/ATLAS3/leading_jet_allconst_MC13TeV_TTJets_pull_angle_OPT_nominal_ATLAS3/stabpur.png}
+%%       \caption{3 regular bins}
+%%     \end{subfigure}
+%%     \begin{subfigure}[t]{.4\paperwidth}
+%%       \includegraphics[width = 0.4\paperwidth]{\figrepository/unfolding_nominal/pull_angle/SIGMA_0p1/leading_jet_allconst_MC13TeV_TTJets_pull_angle_OPT_nominal_SIGMA_0p1/stabpur.png}%
+%%       \caption{factor 0.1 to $\sigma$ in optimisation for minimum $\sigma$ }
+%%     \end{subfigure}
+%%     \caption{stability and purity} 
+%%   \end{figure}
+%%   \begin{center}
+%%   \begin{align*}
+%%     \text{stability}\equiv\frac{\theta^{\text{diag}}_{\text{input}}}{\Sigma_{x=1}^{x=-1}\theta^{x}_{\text{input}}}\quad
+%%   &
+%%     \quad\text{purity}\equiv\frac{\theta^{\text{diag}}_{\text{input}}}{\Sigma_{y=1}^{y=-1}\theta^{y}_{\text{input}}}
+%%   \end{align*}
+%%   \end{center}
+%% \end{frame}
+
+%% \begin{frame}{Pull}
+%%   \begin{figure}
+%%     \includegraphics[width=0.6\paperwidth]{\figrepository/unfolding_nominal/pull_angle/ATLAS3/leading_jet_allconst_MC13TeV_TTJets_pull_angle_OPT_nominal_ATLAS3/pull.png}
+%%   \end{figure}
+%%   \begin{equation}
+%%     \text{pull}\equiv\frac{\theta^{\text{gen}}_{\text{unf}}-\theta^{\text{gen}}_{\text{in}}}{\sigma^{\text{gen}}_{\text{unf}}}
+%%   \end{equation}
+%% \end{frame}
+
+
+
+%% \begin{frame}{Unfolding $\theta_{p}$ leading $b$ jet $\rightarrow$ 2nd leading $b$ jet}
+%%    \begin{figure}
+%%     \begin{subfigure}[t]{.4\paperwidth}
+%%       \includegraphics[width = 0.4\paperwidth]{\figrepository/common_plots_nominal/pull_angle/ATLAS3/leading_b_allconst_pull_angle_OPT_gen_out.png}
+%%       \caption{gen - unfolded}
+%%     \end{subfigure}
+%%     \begin{subfigure}[t]{.4\paperwidth}
+%%       \includegraphics[width = 0.4\paperwidth]{\figrepository/common_plots_nominal/pull_angle/ATLAS3/leading_b_allconst_pull_angle_OPT_reco_out.png}%
+%%       \caption{reco - folded back}
+%%     \end{subfigure}
+%%     \caption{}
+%%   \end{figure}
+%% \end{frame}
+
+%% \begin{frame}{Unfolding $\left|\vec{P}\right|$ leading light jet $\rightarrow$ 2nd leading light jet}
+%%   Output:
+%%   \begin{figure}
+%%     \begin{subfigure}[t]{.4\paperwidth}
+%%       \includegraphics[width = 0.4\paperwidth]{\figrepository/common_plots_nominal/pvmag/ATLAS3/leading_b_allconst_pvmag_OPT_gen_out.png}
+%%       \caption{gen - unfolded}
+%%     \end{subfigure}
+%%     \begin{subfigure}[t]{.4\paperwidth}
+%%       \includegraphics[width = 0.4\paperwidth]{\figrepository/common_plots_nominal/pvmag/ATLAS3/leading_b_allconst_pvmag_OPT_reco_out.png}%
+%%       \caption{reco - folded back}
+%%     \end{subfigure}
+%%     \caption{}
+%%   \end{figure}
+%% \end{frame}
+
+%% \begin{frame}{}
+%%   %\tiny
+%%   \input{tables/chi_nominal/chi_table_pull_angle_OPT_allconst.txt}
+%%   \input{tables/chi_cflip/chi_table_pull_angle_OPT_allconst.txt}
+
+%% \end{frame}
+
+%% \begin{frame}{}
+%%   %\tiny
+%%   \input{tables/chi_nominal/chi_table_pvmag_OPT_allconst.txt}
+%%   \input{tables/chi_cflip/chi_table_pvmag_OPT_allconst.txt}
+
+%% \end{frame}
+
+%% \begin{frame}{}
+%%   %\tiny
+%%   \input{tables/unc_nominal/unc_table_leading_jet_allconst_pull_angle_OPT_gen_out.txt}
+%% \end{frame}
+
+%% \begin{frame}{LEP method}
+  
+%%   \begin{figure}
+%%     \begin{subfigure}[t]{0.45\paperwidth}
+%%       \includegraphics[width = 0.45\paperwidth]{\figrepository/05_09_2018_fix/L/reco/chi/charge/allconst/L_chihbqc_N_allconst_reco_jetprt.png}%
+%%       \caption{$j_{1}^{W},j_{2}^{W}$}
+%%     \end{subfigure}%
+%%     \begin{subfigure}[t]{0.45\paperwidth}
+%%       \includegraphics[width = 0.45\paperwidth]{\figrepository/05_09_2018_fix/L/reco/chi/charge/allconst/L_chiqcqf_N_allconst_reco_jetprt.png}
+%%       \caption{$j_{h}^{b},j_{f}^{W}$}
+%%     \end{subfigure}
+%%     \caption{}
+%%   \end{figure}
+%% \end{frame}
+
+%% \begin{frame}{LEP method}
+%%   \begin{figure}
+%%     \ContinuedFloat
+%%     \begin{subfigure}[t]{0.45\paperwidth}
+%%       \includegraphics[width = 0.45\paperwidth]{\figrepository/05_09_2018_fix/L/reco/chi/charge/allconst/L_chihbqf_N_allconst_reco_jetprt.png}%
+%%       \caption{$j_{c}^{W},j_{h}^{b}$}
+%%     \end{subfigure}%
+%%     \begin{subfigure}[t]{0.45\paperwidth}
+%%       \includegraphics[width = 0.45\paperwidth]{\figrepository/05_09_2018_fix/L/reco/chi/charge/allconst/L_chiblb2l_N_allconst_reco_jetprt.png}%
+%%       \caption{$j_{1}^{b},j_{2}^{b}$}
+%%     \end{subfigure}
+%%     \caption{}
+%%   \end{figure}
+%% \end{frame}
+
+%% \begin{frame}{}
+  
+%%   \begin{figure}
+%%     \begin{subfigure}[t]{0.3\paperwidth}
+%%       \includegraphics[width = 0.3\paperwidth]{\figrepository/ratiographs_merged_self/L_qcqf_N_allconst_reco.png}%
+%%       \caption{$j_{c}^{W},j_{h}^{b}$}
+%%     \end{subfigure}
+%%     \begin{subfigure}[t]{0.3\paperwidth}
+%%       \includegraphics[width = 0.3\paperwidth]{\figrepository/ratiographs_merged_self/L_hbqf_N_allconst_reco.png}%
+%%       \caption{$j_{h}^{b},j_{f}^{W}$}
+%%     \end{subfigure}
+%%     \begin{subfigure}[t]{0.3\paperwidth}
+%%       \includegraphics[width = 0.3\paperwidth]{\figrepository/ratiographs_merged_self/L_blb2l_N_allconst_reco.png}
+%%       \caption{$j_{1}^{b},j_{2}^{b}$}
+%%     \end{subfigure}
+%%     \caption{}
+%%   \end{figure}
+%% \end{frame}
+
+%% \begin{frame}{}
+  
+%%   \begin{figure}
+%%       \includegraphics[width = 0.8\paperwidth]{\figrepository/ratiographs_merged_SM/L_hbqc_N_allconst_reco.png}%
+%%   \end{figure}
+%% \end{frame}
+
+%% \begin{frame}{}
+%%   %\tiny
+%%   \input{tables/Rvalues_SM/R_L_reco_MC_N_SM.txt}
+%% \end{frame}
+
+%% \begin{frame}{}
+%%   %\tiny
+%%   \input{tables/Rvalues_SM/R_L_reco_data_N_SM.txt}
+%% \end{frame}
+
+%% \begin{frame}{}
+%%   \input{tables/Rvalues_cflip/R_L_reco_MC_N_cflip.txt}
+%% \end{frame}
+
+
+
+%% \begin{frame}{The two hypothesis model}
+%%   \begin{equation}
+%%     q^{TEV}=-2\ln{\frac{L(H_{0})}{L(H_{alt})}}=-2\ln{\frac{L\left(\text{data}|p=0,\hat{\theta}_{0}\right)}{L\left(\text{data}|p=P,\hat{\theta}_{P}\right)}}
+%%   \end{equation}
+
+%%   \begin{equation}
+%%     n=r\left(\left(1-x\right)f_{t\overline{t}} + xf_{t\overline{t}_{\text{cflip}}}\right) + b
+%%     \label{eq:n}
+%%   \end{equation}
+%%   \begin{figure}[htp]
+%%     \includegraphics[width=\textwidth]{\figrepository/npstatistic.pdf}
+%%     \caption{}
+%%     \label{fig:npstatistic}
+%%   \end{figure}
+  
+%% \end{frame}
+
+%% \begin{frame}
+%%   \begin{figure}[htp]
+%%     \includegraphics[width=0.8\textwidth]{\figrepository/hypox1.png}
+%%     \caption{}
+%%     \label{fig:TEVx1}
+%%   \end{figure}
+%%   $p_{0}=0.000$\\
+%%   $p_{\text{alt}}=0.000$ 
+
+%% \end{frame}
+
+%% \begin{frame}
+%%   \begin{figure}[htp]
+%%     \includegraphics[width=0.8\textwidth]{\figrepository/likelihood.png}
+%%     \caption{}
+%%     \label{fig:TEVx1}
+%%   \end{figure}
+
+%% \end{frame}
+
+%% \begin{frame}
+%%   \begin{figure}[htp]
+%%     \includegraphics[width=0.8\textwidth]{\figrepository/hypox0335.png}
+%%     \caption{}
+%%     \label{fig:TEVx0335}
+%%   \end{figure}
+%%   $p_{0}=0.000$\\
+%%   $p_{\text{alt}}=0.249$ 
+%%   \end{frame}
+
+
+\end{document}
