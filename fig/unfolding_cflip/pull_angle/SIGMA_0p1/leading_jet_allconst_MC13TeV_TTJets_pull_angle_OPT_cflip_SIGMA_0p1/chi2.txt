@@ -1,0 +1,60 @@
+(null), 8.494288 0.036828
+t#bar{t} pileup up, 8.501184 0.036713
+t#bar{t} pileup down, 8.493650 0.036839
+t#bar{t} trig efficiency correction up, 8.474112 0.037165
+t#bar{t} trig efficiency correction down, 8.496818 0.036786
+t#bar{t} sel efficiency correction up, 8.451430 0.037548
+t#bar{t} sel efficiency correction down, 8.519811 0.036406
+t#bar{t} b fragmentation up, 8.215654 0.041759
+t#bar{t} b fragmentation down, 8.614818 0.034876
+t#bar{t} Peterson Frag, 8.287818 0.040423
+t#bar{t} semilep BR up, 8.462437 0.037362
+t#bar{t} semilep BR down, 8.499258 0.036745
+t#bar{t} QCD scale 1, 8.483705 0.037004
+t#bar{t} QCD scale 2, 8.556128 0.035813
+t#bar{t} QCD scale 3, 8.455735 0.037475
+t#bar{t} QCD scale 4, 8.591103 0.035252
+t#bar{t} QCD scale 5, 8.394521 0.038524
+t#bar{t} QCD scale 6, 8.768735 0.032529
+t#bar{t} jec_CorrelationGroupMPFInSitu up, 8.492446 0.036859
+t#bar{t} jec_RelativeFSR up, 8.519303 0.036414
+t#bar{t} jec_CorrelationGroupUncorrelated up, 8.564805 0.035673
+t#bar{t} jec_FlavorPureGluon up, 8.557475 0.035792
+t#bar{t} jec_FlavorPureQuark up, 8.531656 0.036212
+t#bar{t} jec_FlavorPureCharm up, 8.523639 0.036343
+t#bar{t} jec_FlavorPureBottom up, 8.563136 0.035700
+t#bar{t} jer up, 8.536543 0.036132
+t#bar{t} btag_heavy up, 8.553494 0.035856
+t#bar{t} btag_light up, 8.539064 0.036091
+t#bar{t} csv_heavy up, 8.576895 0.035479
+t#bar{t} csv_light up, 8.548824 0.035932
+t#bar{t} tracking up, 8.550331 0.035907
+t#bar{t} jec_CorrelationGroupMPFInSitu down, 8.569539 0.035597
+t#bar{t} jec_RelativeFSR down, 8.545765 0.035981
+t#bar{t} jec_CorrelationGroupUncorrelated down, 8.514302 0.036497
+t#bar{t} jec_FlavorPureGluon down, 8.513673 0.036507
+t#bar{t} jec_FlavorPureQuark down, 8.558834 0.035770
+t#bar{t} jec_FlavorPureCharm down, 8.557848 0.035786
+t#bar{t} jec_FlavorPureBottom down, 8.551900 0.035882
+t#bar{t} jer down, 8.528944 0.036256
+t#bar{t} btag_heavy down, 8.523414 0.036347
+t#bar{t} btag_light down, 8.517070 0.036451
+t#bar{t} csv_heavy down, 8.538725 0.036096
+t#bar{t} csv_light down, 8.543110 0.036025
+t#bar{t} tracking down, 8.515837 0.036471
+t#bar{t} evtgen, 8.848828 0.031370
+t#bar{t} m=171.5, 8.416008 0.038153
+t#bar{t} m=173.5, 8.406319 0.038320
+t#bar{t} Herwig++, 1.884388 0.596746
+t#bar{t} isr up, 7.974147 0.046549
+t#bar{t} isr dn, 8.831298 0.031620
+t#bar{t} fsr up, 8.001618 0.045978
+t#bar{t} fsr dn, 8.825376 0.031705
+t#bar{t} hdamp up, 8.025842 0.045481
+t#bar{t} hdamp dn, 8.637173 0.034525
+t#bar{t} UEup, 8.381238 0.038756
+t#bar{t} UEdn, 8.194210 0.042164
+t#bar{t} cflip, 4.492624 0.212949
+t#bar{t} ERDon, 5.808881 0.121288
+t#bar{t} QCDbased, 3.403827 0.333451
+t#bar{t} gluon move, 8.871137 0.031054

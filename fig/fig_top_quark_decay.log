@@ -1,0 +1,105 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.7.3)  31 OCT 2018 13:32
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**fig_top_quark_decay.tex
+(./fig_top_quark_decay.tex
+LaTeX2e <2018-04-01> patch level 5
+(/usr/local/texlive/2018/texmf-dist/tex/latex/standalone/standalone.cls
+Document Class: standalone 2018/03/26 v1.3a Class to compile TeX sub-files stan
+dalone
+(/usr/local/texlive/2018/texmf-dist/tex/latex/tools/shellesc.sty
+Package: shellesc 2016/06/07 v0.02a unified shell escape interface for LaTeX
+Package shellesc Info: Restricted shell escape enabled on input line 69.
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/local/texlive/2018/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks14
+\XKV@tempa@toks=\toks15
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/xkeyval/keyval.tex))
+\XKV@depth=\count80
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+\sa@internal=\count81
+\c@sapage=\count82
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/standalone/standalone.cfg
+File: standalone.cfg 2018/03/26 v1.3a Default configuration file for 'standalon
+e' class
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/base/minimal.cls
+Document Class: minimal 2001/05/25 Standard LaTeX minimal class
+)
+\sa@box=\box26
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/feynmf/feynmf.sty
+Package: feynmf 1996/12/02 v1.08 LaTeX/Metafont Feynman Diagram Package (ohl)
+\@outfmf=\write3
+\fmfbuf@=\toks16
+\c@fmfgraph=\count83
+\grep@infile=\read1
+\grep@outfile=\write4
+)
+(./fig_top_quark_decay.aux)
+\openout1 = `fig_top_quark_decay.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+
+
+feynmf: File diagram.tfm found.
+feynmf: Nevertheless, if the picture has changed, reprocess diagram.mf.
+feynmf: If dimension have changed, reprocess diagram.mf and fig_top_quark_decay
+.tex.
+\openout3 = `diagram.mf'.
+
+\openout4 = `diagram.t1'.
+
+(./diagram.t1
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 3.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 3.
+) [1{/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./
+fig_top_quark_decay.aux) ) 
+Here is how much of TeX's memory you used:
+ 683 strings out of 492646
+ 11132 string characters out of 6129549
+ 70564 words of memory out of 5000000
+ 4617 multiletter control sequences out of 15000+600000
+ 3654 words of font info for 15 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 34i,7n,56p,198b,154s stack positions out of 5000i,500n,10000p,200000b,80000s
+ </home/v/disertacija/fig/diagram.600pk></usr/local/t
+exlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
+xlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+Output written on fig_top_quark_decay.pdf (1 page, 20498 bytes).
+PDF statistics:
+ 21 PDF objects out of 1000 (max. 8388607)
+ 14 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

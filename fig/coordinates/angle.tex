@@ -1,0 +1,13 @@
+\documentclass{standalone}
+\usepackage{tikz}
+\usetikzlibrary{calc, angles, quotes}
+\begin{document}
+\begin{tikzpicture}[rotate around y =-90]
+  \coordinate(O) at (0, 0);
+  \coordinate(p) at (3, 3);
+  \coordinate(x) at (5, 0);
+  \draw[->] (O) -- node[pos=1.1]{p}(p);
+  \draw[->] (O) -- node[pos=1.1]{x}(x);
+  \draw pic [->, draw, angle radius=2mm, angle eccentricity=1.7, "$\phi$" font=\scriptsize] {angle=p--O--x};
+  \end{tikzpicture}
+\end{document}

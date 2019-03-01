@@ -1,0 +1,21 @@
+<html>
+ <head>
+  <title>PLOT</title>
+ </head>
+ <body>
+
+
+<?php
+$folder=getcwd();
+$folder=str_replace("/afs/cern.ch/user/v/vveckaln/www", "http://vveckaln.web.cern.ch/vveckaln", $folder);
+$coef=1.3;
+$pic = $_GET["pic"];
+$size = getimagesize($pic);
+$width = $size[0] * $coef;
+$height = $size[1] * $coef;
+echo "<h3><a href=\"$folder\">BACK</a></h3>";
+echo "<h3 align=\"center\">$pic</h3>";
+echo "<center><img src=\"$pic\" style=\"border: none; width: $width; height: $height \" align =\"middle\"></center>";
+?>
+</body>
+</html>

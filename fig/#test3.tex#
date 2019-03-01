@@ -1,0 +1,22 @@
+\documentclass{article}
+\thispagestyle{empty}
+\usepackage{graphicx}
+
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\begin{document}
+\begin{tikzpicture}
+        \coordinate (pointer);
+        \node(inset) at (0, 0){
+        \begin{tikzpicture}
+               ...
+               \coordinate(v) at (3, 4);
+               make  coordinate (pointer) point to (v)
+               ...
+               \end{tikzpicture}
+        };
+        \draw[->] (0, 0) -- (pointer);
+\end{tikzpicture}
+
+\end{document}
+

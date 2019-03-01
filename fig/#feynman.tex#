@@ -1,0 +1,16 @@
+\documentclass{standalone}
+\usepackage{tikz}
+\usepackage[compat=1.1.0]{tikz-feynman}
+\begin{document}
+\begin{tikzpicture}
+  \begin{feynman}
+    \vertex (a);
+    \vertex [right=1cm of a](b);
+    \diagram*
+        {
+          a -- [photon] b,
+        };
+        \draw[->]($(a) + (0.0, 0.5)$)-- ($(b) + (0.0, 0.5)$);
+  \end{feynman}
+\end{tikzpicture}
+\end{document}

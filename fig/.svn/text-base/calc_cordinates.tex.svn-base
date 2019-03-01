@@ -1,0 +1,12 @@
+\documentclass[border=20mm]{standalone}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\begin{document}
+\begin{tikzpicture}
+  \coordinate(O) at (0.0, 0.0);
+  \coordinate(a) at (-2.0, 0.0);
+  \coordinate(b) at ($({2*cos(30)}, {sin(30)})$);
+  \draw[->] (O) -- (a);
+  \draw[->] (O) -- (b);
+\end{tikzpicture}
+\end{document}

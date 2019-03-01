@@ -1,0 +1,27 @@
+\documentclass[class=minimal,border=20pt]{standalone}
+
+%\usepackage[utf8]{inputenc}
+\usepackage{feynmf}
+
+\begin{document}
+\begin{fmffile}{diagram}
+
+    
+\begin{fmfgraph*}(150, 150)
+  % bottom and top verticies
+    \fmfbottom{b1}
+    \fmfleft{i1}
+    \fmfright{o1,o2}
+    
+    % incoming proton to gluon vertices
+    \fmf{fermion,label=$t$}{i1,v1}
+    \fmf{fermion,label=$p'$}{v1,b1}
+    \fmf{dashes,label=$W$}{v1,v2}
+    \fmf{fermion,label=$k$}{v2,o1}
+    \fmf{fermion,label=$k'$}{o2,v2}
+\end{fmfgraph*}
+
+
+\end{fmffile}
+\end{document}
+

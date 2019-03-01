@@ -1,0 +1,27 @@
+\documentclass{standalone}
+\usepackage{tikz}
+\usetikzlibrary{calc, angles, quotes}
+\begin{document}
+\begin{tikzpicture}[rotate around y =-90]
+  \coordinate(O) at (0, 0, 0);
+  \node (Olabel) at ($(O) + (0, 0, 0.2)$)[anchor = west, align = center]{Nominālais\\sadursmes punkts};
+  \coordinate(pxy) at (2, 3, 0);
+  \coordinate(p) at (2, 3, 3);
+  \coordinate(x) at (5, 0, 0);
+  \coordinate(z) at (0, 0, 5);
+  \draw[->] (O) -- node [above, midway, sloped]{$\rho$} node[pos=1.1]{p}(p);
+  \draw[dashed] (O) -- (pxy);
+  \draw[dashed] (p) -- (pxy);
+  \draw[dashed] (2, 0, 0) -- (pxy);
+  \draw[dashed] (0, 3, 0) -- (pxy);
+  \draw[->] (O) -- node [pos=1.0, above]{x}(5, 0, 0);
+  \draw[->] (O) -- node [above, midway]{kūlis} node [pos=1.0, above]{z}(0, 0, 5);
+  \draw[->] (O) -- node [pos=1.0, above]{y}(0, 5, 0);
+
+  \node(ztext) at (0, 0, 5.5)[anchor=east, align=center]{Žirā (Jura)\\kalni};
+  \node(xtext) at (5.5, 0, 0)[anchor=north]{LHP centrs};
+  \node(ytext) at (0, 5.5, 0)[anchor=south]{augšup};
+  \draw pic [<-, draw, angle radius=3mm, angle eccentricity=1.7, "$\phi$" font=\scriptsize] {angle=pxy--O--x};
+  \draw pic [<-, draw, angle radius=9mm, angle eccentricity=1.7, "$\theta$" font=\scriptsize] {angle=p--O--z};
+  \end{tikzpicture}
+\end{document}

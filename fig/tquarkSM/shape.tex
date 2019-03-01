@@ -1,0 +1,17 @@
+\documentclass[tikz,border=5pt]{standalone}
+\usepackage{tikz}
+\usetikzlibrary{shapes.misc, calc}
+\begin{document}
+
+\begin{tikzpicture}
+    \node[draw, align = center,
+    minimum height = 1.5cm,
+    text width = 1.5cm]
+    (a) at (0, 0)[rounded rectangle]{a};
+    \coordinate(e) at ($(a.east)+(a.east) - (a.west)$);
+    \coordinate(c) at ($(a.east)!0.5!((a.east)+(a.east) - (a.west))$);
+       \node[draw, align = center,
+    minimum height = 1.cm,
+    text width = 1.cm] at (c)[anchor= north west, rounded rectangle]{b};
+\end{tikzpicture}
+\end{document}

@@ -1,0 +1,10 @@
+\documentclass[border=0mm]{standalone}
+\usepackage{tikz}
+\usetikzlibrary{backgrounds}
+\begin{document}
+\begin{tikzpicture}[background rectangle/.style={fill=yellow!65}, show background rectangle]
+  \coordinate(a) at (0.0, 0.0);
+  \coordinate(b) at (0.0, 1.5);
+  \draw[->] (a) -- (b) node[pos=-0.1, opacity=0] {A};
+\end{tikzpicture}
+\end{document}

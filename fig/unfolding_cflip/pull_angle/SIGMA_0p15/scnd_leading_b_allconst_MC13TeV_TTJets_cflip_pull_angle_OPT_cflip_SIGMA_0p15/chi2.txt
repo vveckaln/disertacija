@@ -1,0 +1,54 @@
+(null), 1.238768 0.538276
+t#bar{t}, 1.154069 0.561561
+t#bar{t} jec_CorrelationGroupMPFInSitu up, 1.280213 0.527236
+t#bar{t} jec_RelativeFSR up, 1.242774 0.537199
+t#bar{t} jec_CorrelationGroupUncorrelated up, 1.236704 0.538832
+t#bar{t} jec_FlavorPureGluon up, 1.246936 0.536082
+t#bar{t} jec_FlavorPureQuark up, 1.241749 0.537474
+t#bar{t} jec_FlavorPureCharm up, 1.224653 0.542088
+t#bar{t} jec_FlavorPureBottom up, 1.274570 0.528726
+t#bar{t} jer up, 1.223563 0.542384
+t#bar{t} btag_heavy up, 1.254686 0.534009
+t#bar{t} btag_light up, 1.251235 0.534931
+t#bar{t} csv_heavy up, 1.254634 0.534023
+t#bar{t} csv_light up, 1.258993 0.532860
+t#bar{t} tracking up, 1.257646 0.533219
+t#bar{t} jec_CorrelationGroupMPFInSitu down, 1.236963 0.538762
+t#bar{t} jec_RelativeFSR down, 1.280292 0.527215
+t#bar{t} jec_CorrelationGroupUncorrelated down, 1.252771 0.534520
+t#bar{t} jec_FlavorPureGluon down, 1.253396 0.534353
+t#bar{t} jec_FlavorPureQuark down, 1.236567 0.538868
+t#bar{t} jec_FlavorPureCharm down, 1.283776 0.526298
+t#bar{t} jec_FlavorPureBottom down, 1.281491 0.526899
+t#bar{t} jer down, 1.252293 0.534648
+t#bar{t} btag_heavy down, 1.245626 0.536433
+t#bar{t} btag_light down, 1.255218 0.533867
+t#bar{t} csv_heavy down, 1.229154 0.540870
+t#bar{t} csv_light down, 1.248712 0.535606
+t#bar{t} tracking down, 1.221951 0.542821
+t#bar{t} evtgen, 1.211617 0.545633
+t#bar{t} m=171.5, 1.162411 0.559224
+t#bar{t} m=173.5, 1.187140 0.552352
+t#bar{t} Herwig++, 1.367713 0.504667
+t#bar{t} isr up, 1.234022 0.539555
+t#bar{t} isr dn, 1.249258 0.535460
+t#bar{t} fsr up, 1.195624 0.550014
+t#bar{t} fsr dn, 1.259651 0.532685
+t#bar{t} hdamp up, 1.217791 0.543951
+t#bar{t} hdamp dn, 1.147382 0.563442
+t#bar{t} UEup, 1.214401 0.544874
+t#bar{t} UEdn, 1.118890 0.571526
+t#bar{t} pileup up, 1.264508 0.531393
+t#bar{t} pileup down, 1.217834 0.543940
+t#bar{t} trig efficiency correction up, 1.245145 0.536562
+t#bar{t} trig efficiency correction down, 1.241246 0.537609
+t#bar{t} sel efficiency correction up, 1.246124 0.536300
+t#bar{t} sel efficiency correction down, 1.240280 0.537869
+t#bar{t} b fragmentation up, 1.227790 0.541239
+t#bar{t} b fragmentation down, 1.253461 0.534336
+t#bar{t} Peterson Frag, 1.246329 0.536245
+t#bar{t} semilep BR up, 1.236585 0.538864
+t#bar{t} semilep BR down, 1.258716 0.532934
+t#bar{t} ERDon, 1.258565 0.532974
+t#bar{t} QCDbased, 1.448765 0.484624
+t#bar{t} gluon move, 1.307872 0.519995

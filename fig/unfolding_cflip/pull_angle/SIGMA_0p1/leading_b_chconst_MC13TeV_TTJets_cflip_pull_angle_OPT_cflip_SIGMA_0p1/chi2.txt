@@ -1,0 +1,43 @@
+(null), 5.415879 0.367258
+t#bar{t}, 4.251283 0.513833
+t#bar{t} jec_CorrelationGroupMPFInSitu up, 5.531895 0.354461
+t#bar{t} jec_RelativeFSR up, 5.346654 0.375054
+t#bar{t} jec_CorrelationGroupUncorrelated up, 4.963373 0.420367
+t#bar{t} jec_FlavorPureGluon up, 5.369365 0.372483
+t#bar{t} jec_FlavorPureQuark up, 5.239216 0.387389
+t#bar{t} jec_FlavorPureCharm up, 5.441351 0.364420
+t#bar{t} jec_FlavorPureBottom up, 5.503956 0.357512
+t#bar{t} jer up, 5.315585 0.378591
+t#bar{t} btag_heavy up, 5.343013 0.375467
+t#bar{t} btag_light up, 5.359573 0.373590
+t#bar{t} csv_heavy up, 5.307158 0.379555
+t#bar{t} csv_light up, 5.353491 0.374279
+t#bar{t} tracking up, 5.265412 0.384355
+t#bar{t} jec_CorrelationGroupMPFInSitu down, 5.241683 0.387102
+t#bar{t} jec_RelativeFSR down, 5.218470 0.389804
+t#bar{t} jec_CorrelationGroupUncorrelated down, 5.272769 0.383506
+t#bar{t} jec_FlavorPureGluon down, 5.313543 0.378825
+t#bar{t} jec_FlavorPureQuark down, 5.213396 0.390396
+t#bar{t} jec_FlavorPureCharm down, 5.384160 0.370815
+t#bar{t} jec_FlavorPureBottom down, 5.337547 0.376088
+t#bar{t} jer down, 5.337115 0.376137
+t#bar{t} btag_heavy down, 5.188766 0.393280
+t#bar{t} btag_light down, 5.332576 0.376654
+t#bar{t} csv_heavy down, 5.432934 0.365356
+t#bar{t} csv_light down, 5.488480 0.359211
+t#bar{t} tracking down, 5.478788 0.360277
+t#bar{t} evtgen, 3.927159 0.559950
+t#bar{t} m=171.5, 4.857139 0.433563
+t#bar{t} m=173.5, 5.237752 0.387559
+t#bar{t} Herwig++, 6.236036 0.283924
+t#bar{t} isr up, 5.154799 0.397282
+t#bar{t} isr dn, 5.062426 0.408309
+t#bar{t} fsr up, 4.765448 0.445171
+t#bar{t} fsr dn, 4.746353 0.447613
+t#bar{t} hdamp up, 5.002990 0.415515
+t#bar{t} hdamp dn, 4.954541 0.421453
+t#bar{t} UEup, 5.206761 0.391172
+t#bar{t} UEdn, 5.286271 0.381951
+t#bar{t} ERDon, 5.811527 0.324992
+t#bar{t} QCDbased, 5.220555 0.389561
+t#bar{t} gluon move, 5.150894 0.397744

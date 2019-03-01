@@ -1,0 +1,158 @@
+\RequirePackage{luatex85}
+\documentclass{standalone}
+\thispagestyle{empty}
+\usepackage{tikz}
+\usepackage[compat=1.1.0]{tikz-feynman}
+\usetikzlibrary{calc}
+\begin{document}
+\begin{tikzpicture}
+  \begin{scope}[local bounding box=a]
+
+    %  \node(a) at (0, 0){
+%    \begin{tikzpicture}
+      \begin{feynman}
+        
+        \vertex (v0){\(W\)};
+        \vertex [right=2cm of v0] (v1);
+
+        \vertex [above right =1cm and 1cm of v1](v2u0);
+        \vertex [below right =1cm and 1cm of v1](v2d0);
+
+        \vertex [above right =1cm and 1cm of v2u0](v3u0);
+        \vertex [right =1cm of v2u0](v3u1);
+        \vertex [below right =1cm and 1cm of v2d0](v3d0);
+        \vertex [right =1cm of v2d0](v3d1);
+
+        \vertex [above right =1cm and 1cm of v3u0](v4u0);
+        \vertex [right =1cm of v3u0](v4u1);
+        \vertex [right =1cm of v3u1](v4u2);
+
+        \vertex [below right =1cm and 1cm of v3d0](v4d0);
+        \vertex [right =1cm of v3d0](v4d1);
+        \vertex [right =1cm of v3d1](v4d2);
+
+        \vertex [above right =1cm and 1cm of v4u0](v5u0);
+        \vertex [right =1cm of v4u0](v5u1);
+        \vertex [right =1cm of v4u1](v5u2);
+        \vertex [right =1cm of v4u2](v5u3);
+
+        \vertex [below right =1cm and 1cm of v4d0](v5d0);
+        \vertex [right =1cm of v4d0](v5d1);
+        \vertex [right =1cm of v4d1](v5d2);
+        \vertex [right =1cm of v4d2](v5d3);
+
+
+        \vertex [above right =1cm and 1cm of v5u0](v6u0);
+        \vertex [right =1cm of v5u0](v6u1);
+        \vertex [right =1cm of v5u1](v6u2);
+        \vertex [right =1cm of v5u2](v6u3);
+        \vertex [right =1cm of v5u3](v6u4);
+
+        \vertex [below right =1cm and 1cm of v5d0](v6d0);
+        \vertex [right =1cm of v5d0](v6d1);
+        \vertex [right =1cm of v5d1](v6d2);
+        \vertex [right =1cm of v5d2](v6d3);
+        \vertex [right =1cm of v5d3](v6d4);
+
+        \vertex [above right =1cm and 1cm of v6u0](v7u0);
+        \vertex [right =1cm of v6u0](v7u1);
+        \vertex [right =1cm of v6u1](v7u2);
+        \vertex [right =1cm of v6u2](v7u3);
+        \vertex [right =1cm of v6u3](v7u4);
+        \vertex [right =1cm of v6u4](v7u5);
+
+        \vertex [below right =1cm and 1cm of v6d0](v7d0);
+        \vertex [right =1cm of v6d0](v7d1);
+        \vertex [right =1cm of v6d1](v7d2);
+        \vertex [right =1cm of v6d2](v7d3);
+        \vertex [right =1cm of v6d3](v7d4);
+        \vertex [right =1cm of v6d4](v7d5);
+
+        \vertex [above right =1cm and 1cm of v7u0](v8u0) {\(q_{1}\)};
+        \vertex [right =1cm of v7u0](v8u1);
+        \vertex [right =1cm of v7u1](v8u2);
+        \vertex [right =1cm of v7u2](v8u3);
+        \vertex [right =1cm of v7u3](v8u4);
+        \vertex [right =1cm of v7u4](v8u5);
+        \vertex [right =1cm of v7u5](v8u6);
+
+
+        \vertex [below right =1cm and 1cm of v7d0](v8d0) {\(q_{2}\)};
+        \vertex [right =1cm of v7d0](v8d1){};
+        \vertex [right =1cm of v7d1](v8d2);
+        \vertex [right =1cm of v7d2](v8d3);
+        \vertex [right =1cm of v7d3](v8d4);
+        \vertex [right =1cm of v7d4](v8d5);
+        \vertex [right =1cm of v7d5](v8d6);        
+        \diagram*
+            {
+              (v0) -- [boson] (v1),
+
+              (v2u0) -- [fermion] (v1),
+              (v3u0) -- [fermion] (v2u0),
+
+              (v2u0) -- [gluon] (v2d0),
+              
+              (v1) -- [fermion] (v2d0),
+              (v2d0) -- [fermion] (v3d0),
+
+              (v3u0) -- [gluon] (v3u1),
+              (v3u1) -- [fermion] (v3d1),
+              (v3d0) -- [gluon] (v3d1),
+
+              %(v4u0) -- [fermion] (v3u0),
+              (v3d0) -- [fermion] (v5d0),
+
+              %(v5u0) -- [fermion] (v4u0),
+              %(v4d0) -- [fermion] (v5d0),
+              (v5d0) -- [gluon]  (v5d1),
+              (v5d2) -- [fermion] (v5d1),
+              (v5d2) -- [gluon] (v5d3),
+
+              (v3d1) -- [fermion] (v5d3),
+              %(v5u3) -- [fermion] (v3u1),
+              
+              %(v6u0) -- [fermion] (v5u0),
+              %(v5d0) -- [fermion] (v6d0),
+
+              %(v7u0) -- [fermion] (v6u0),
+              (v5d0) -- [fermion] (v7d0),
+              (v7d0) -- [gluon]  (v7d1),
+              (v7d2) -- [fermion] (v7d1),
+              (v7d2) -- [gluon] (v7d3),
+
+              %(v7u5) -- [fermion] (v5u3),
+              
+              (v5d1) -- [fermion] (v7d3),
+              %(v7d4) -- [fermion] (v5d2),
+             % (v5d3) -- [fermion] (v7d5),
+
+
+              (v8u0) -- [fermion] (v3u0),
+              (v7d0) -- [fermion] (v8d0),
+             % (v7d2) -- [fermion] (v8d3),
+              (v8u6) -- [fermion] (v3u1),
+              
+              (v8d3) -- [fermion] (v7d2),
+              (v8d5) -- [fermion] (v5d2),
+              (v7d1) -- [fermion] (v8d2),
+              (v5d3) -- [fermion] (v8d6),
+              (v7d3) -- [fermion] (v8d4),
+              
+            };
+      \end{feynman}
+  \end{scope}
+  \coordinate(label) at ($(a.east)!.5!(a.south east) + (1,0)$);
+  
+  \node(text) at (label)[anchor=west]{meson};
+  \draw[dashed]($(label) + (0,  -0.1)$) to (v8d3);
+  \draw[dashed]($(label) + (0,  + 0.1)$) to (v8d4);
+
+  \coordinate(label2) at ($(a.east) + (3,-3)$);
+  
+  \node(text) at (label2)[anchor=west]{hadron};
+  \draw[dashed, bend angle =30, bend left]($(label2) + (0, -0.1)$) to (v8d2);
+  \draw[dashed, bend angle =15, bend right]($(label2) + (0, 0.0)$) to (v8d5);
+  \draw[dashed, bend angle =15, bend right]($(label2) + (0, 0.1)$) to (v8d6);
+\end{tikzpicture}
+\end{document}

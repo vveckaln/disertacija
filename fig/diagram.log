@@ -1,0 +1,20 @@
+This is METAFONT, Version 2.7182818 (TeX Live 2018) (preloaded base=mf 2018.7.3)  31 OCT 2018 13:32
+**\mode=localfont; input diagram
+(diagram.mf (/usr/local/texlive/2018/texmf-dist/metafont/feynmf/feynmf.mf)
+:1:\fmfL(28.40895,55.37686,rt){$t$}%
+:1:\fmfL(116.92801,109.47418,r){$k'$}%
+:1:\fmfL(62.55441,21.78908,r){$p'$}%
+:1:\fmfL(84.04024,61.91942,b){$W$}%
+:1:\fmfL(128.48827,34.92433,l){$k$}% [1] ) 
+Here is how much of METAFONT's memory you used:
+ 628 strings out of 5274
+ 7330 string characters out of 69946
+ 35601 words of memory out of 5000000
+ 1379 symbolic tokens out of 9500
+ 14i,67n,4r,28p,124b stack positions out of 300i,300n,1000r,150p,200000b
+ 
+(You used 2w,2h,1d,1i,0l,0k,0e,0p metric file positions
+  out of 256w,16h,16d,64i,15000l,2500k,256e,60p)
+
+Font metrics written on diagram.tfm.
+Output written on diagram.600gf (1 character, 9064 bytes).

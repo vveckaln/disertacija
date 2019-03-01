@@ -1,0 +1,12 @@
+\documentclass[tikz,border=5pt]{standalone}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\begin{document}
+\begin{tikzpicture}
+  \coordinate (a) at (0, 0);
+  \coordinate (b) at (1, 1);
+  \coordinate (c) at ($(a) + (b)$);
+%  \coordinate (d) at ($(a)!0.5!(c)$);
+  \coordinate (d) at ($(a)!0.5!($(a) + (b)$)$);
+  \end{tikzpicture}
+\end{document}

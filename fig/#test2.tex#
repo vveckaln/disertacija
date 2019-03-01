@@ -1,0 +1,44 @@
+\documentclass[a4paper]{report}
+\date{}
+\usepackage[margin=0.5in]{geometry}
+
+\usepackage{graphicx}
+\begin{document}
+\title{Studies of colour flow at top quark pair decays in the CMS experiment}
+\maketitle
+\section{Introduction}
+
+\section{Physical Background}
+
+%\begin{center}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.4\textwidth]{fig/ttbar_cf_cropped.pdf}
+  \caption{Colour flow in the decay of a top quark pair}
+  \label{fig:ttbar_cf}
+\end{figure}
+%\end{center}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=1.0\textwidth]{fig/colour_field_full.pdf}
+  \caption{Creation of hadrons in the colour field of two quarks}
+  \label{fig:colour_field}
+\end{figure}
+
+
+\section{Methodology}
+\subsection{Pull angle}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=1.0\textwidth]{fig/pull_angle.pdf}
+  \caption{Pull angle $\theta_{p}$, pull vector $\vec{v}_{p}$ in a $y$-$\phi$ plane}
+  \label{fig:pull_angle}
+\end{figure}
+\section{Data and Event Selection}
+
+
+\section{Colour octet W boson}
+
+\end{document}

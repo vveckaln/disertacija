@@ -1,6 +1,6 @@
 The goal of event selection is to separate signal from background. Separate selection is applied to detector level MC events and generator level MC events. Simulated events are tagged as passing only the reconstruction-based, only the particle-based or both selections. The selection for data is that of the detector level MC events.
 
-The discussion of this section is adapted from~\cite{CMS-AN-2017-159}, which uses a similar event selection.
+The discussion of this section is elaborated upon~\cite{CMS-AN-2017-159}, which uses a similar event selection.
 
 \section{Detector level}
 \label{sec:detector_level}
@@ -28,7 +28,7 @@ e+jets                      & \small HLT\_Ele32\_eta2p1\_WPTight\_Gsf\_v & all  
 \end{tabularx}
 \footnotesize
 \begin{tablenotes}
-\item[a] The bremsstrahlung energy loss distribution of electrons propagating in matter is highly non Gaussian. In such conditions the Kalman Filter which relies solely on Gaussian distributions fails. Therefore the Gaussian Sum Filter (GSF) \cite{Adam:2003kg} has been developed. In GSF the bremsstrahlun energy less is modelled as a Gaussian mixture rather than single Gaussian.
+\item[a] The bremsstrahlung energy loss distribution of electrons propagating in matter is highly non Gaussian. In such conditions the Kalman Filter which relies solely on Gaussian distributions fails. Therefore the Gaussian Sum Filter (GSF) \cite{Adam:2003kg} has been developed. In GSF the bremsstrahlung energy less is modelled as a Gaussian mixture rather than single Gaussian.
 \item[b] Combines muons reconstructed in HLT (Level 2) with information from the inner tracker.
 \item[c] Employs an algorithm similar to the tracker muon algorithm but optimised for processing speed.
 \end{tablenotes}

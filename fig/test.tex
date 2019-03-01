@@ -1,0 +1,23 @@
+\RequirePackage{luatex85}
+\documentclass{article}
+\thispagestyle{empty}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage[compat=1.1.0]{tikz-feynman}
+
+\begin{document}
+
+\begin{figure}
+  \begin{tikzpicture}
+    \node(a) {
+      \includegraphics[width=0.8\textwidth]{example-image-a}
+    };
+    
+    \node(b) at (a.mid east){mid east};
+%    \node(d) at (a.base east){base east};
+    \node(c) at (a.south east){south east};
+    \node(d) at (a.south!1.25!a.north){label};
+  \end{tikzpicture}
+\end{figure}
+
+\end{document}

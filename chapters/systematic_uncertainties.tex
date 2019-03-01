@@ -1,17 +1,23 @@
 Uncertainties are divided into experimental and theoretical uncertainties. When including an uncertainty from the first group we vary some parameter in the event selection, such as a data-to-MC scale factor. Theoretical uncertainties reflect our lack of knowledge about the real world, e.g. the true top quark mass or details of the hadronisation process.
 
-The discussion of this section is adapted from~\cite{CMS-AN-2017-175} and \cite{CMS-AN-2017-159} as these studies use a similar set of systematics.
+The discussion of this section is elaborated upon~\cite{CMS-AN-2017-175} and \cite{CMS-AN-2017-159} as these studies use a similar set of systematics.
 
 \section{Experimental uncertainties}
 \begin{description}
 
 \item[Pileup] Although pileup is included in the simulation, there is an intrinsic uncertainty in modelling it appropriately. To estimate the effect of mismodelling the pileup we vary the average pileup scenario, through the choice of the minimum bias cross section parameter, by 5~\% with respect to its initial estimate. 
 
+The distributions of \pullangle from the leading jet \leadingjet to the 2nd leading jet \scndleadingjet under upside and downside pileup systematic together with the nominal distribution are plotted in Fig.~\ref{fig:pileup}.
+
 \item[Trigger and selection efficiency] The uncertainty on the trigger efficiency and on the lepton identification and isolation efficiency scale factors are propagated by re-weighting the simulation after shifting the nominal values up or down. The uncertainty on the muon tracker efficiency is included in this category and added in quadrature, although its effect is expected to be negligible.  The determination of the scale factors has been made elsewhere, as described previously (see Chap.~\ref{chap:data_and_mc_samples}). The impact on the rate is fully absorbed by normalising the distributions in the end, and only the impact on the shape (by weighting more/less some events) is relevant in this analysis.
+
+The distributions of \pullangle from the leading jet \leadingjet to the 2nd leading jet \scndleadingjet under upside and downside trigger and selection efficiency systematics together with the nominal distribution are plotted in Fig.~\ref{fig:trigselcorrection}.
 
 %% \item[Lepton energy scale]: Given the muon scale has been corrected using the Kalman fit method we have used the corresponding uncertainties. For electrons we have used the uncertainty as provided by the EGM POG after applying the electron energy corrections and smearing. The main effect of this systematic is related to the migration of events and to the uncertainty in some of the "slicing" variables, most notably $\pt(\ell,ell)$.
 
 \item[Jet energy resolution] We use the recommended jet energy resolution measurements~\cite{twiki:JER}. Each jet is further smeared up or down depending on its \pt and $\eta$ with respect to the central value measured in data. The main effect of this systematic is related to the exclusion/inclusion of events with jets near the offline thresholds. The distribution of the pull angle incorporating the jet energy resolution uncertaintes are plotted in Fig.~\ref{fig:MC13TeV_TTJets_jer} together with the nominal distribution.
+
+The distributions of \pullangle from the leading jet \leadingjet to the 2nd leading jet \scndleadingjet under upside and downside jet energy resolution $\ttbar jer\ up$ and $\ttbar jer\ down$ systematic together with the nominal distribution are plotted in Fig.~\ref{fig:MC13TeV_TTJets_jer}.
 
 \item[Jet energy corrections] A \pt, $\eta$-dependent parametrisation of the jet energy scale is used to vary the calibration of the jets in the simulation. The parametrisation is provided by the JetMET Physics Objet Group~\cite{twiki:JES} for the Spring16 V3 corrections. The main effect of this systematic is related to the exclusion/inclusion of events with jets near the offline thresholds.
 
@@ -32,7 +38,11 @@ The following simulations are used:
         \end{enumerate}
 \end{description}
 
+The distributions of \pullangle from the leading jet \leadingjet to the 2nd leading jet \scndleadingjet under the set of upside and downside jet energy correction systematics together with the nominal distribution are plotted in Fig.~\ref{fig:MC13TeV_TTJets_jec}.
+
 \item[\cPqb-tagging] The nominal efficiency expected in the simulation is corrected by \pt-dependent scale factors provided by the BTV Physics Object Group~\cite{twiki:BTV}. Depending on the flavour of each jet, the \cPqb-tagging decision is updated according to the scale factor measured. The scale factor is also varied according to its uncertainty. The main effect of this systematic is the demotion/promotion of candidate \cPqb-jets and thus a migration of events used for analysis.
+
+The distributions of \pullangle from the leading jet \leadingjet to the 2nd leading jet \scndleadingjet under the set of upside and downside \cPqb-tagging systematics $\ttbar\ btag\_heavy\ down$, $\ttbar\ btag\_heavy\ up$, $\ttbar\ btag\_light\ down$, $\ttbar\ btag\_light\ up$, $\ttbar\ csv\_heavy\ down$, $\ttbar\ csv\_heavy\ up$, $\ttbar\ csv\_light\ down$ and $\ttbar\ csv\_light\ up$ together with the nominal distribution are plotted in Fig.~\ref{fig:MC13TeV_TTJets_jec}.
 
 \item[Tracking efficiency]
 As discussed in~\cite{CMS-AN-2017-175}, the TRK and MUO Physics Object Groups have derived tracking efficiency scale factors as function of the track $\eta$ or the reconstructed vertex multiplicity. The later is solely available for muons and shown in Fig.~\ref{fig:mutksf}, while Table~\ref{tab:dstartsf} summarises the scaling factors obtained from $D^*$ decays. All these scale factors are run-dependent (BCDEF and GH data-taking periods are separated).
@@ -85,7 +95,9 @@ Figure~\ref{fig:tkeffsysts} shows the expected effect on the charged multiplicit
 \label{fig:tkeffsysts}
 \end{figure}
 
-The distributions of \pullangle from the leading jet \leadingjet to the 2nd leading jet \scndleadingjet under each upside and downside experimental systematic together with the nominal distribution are plotted in Fig.~\ref{fig:MC13TeV_TTJets_jec}-\ref{fig:MC13TeV_TTJets_tracking}.
+The distributions of \pullangle from the leading jet \leadingjet to the 2nd leading jet \scndleadingjet under the set of upside and downside tracking efficiency systematics $\ttbar\ tracking\ down$, and $\ttbar\ tracking\ up$ together with the nominal distribution are plotted in Fig.~\ref{fig:MC13TeV_TTJets_tracking}.
+
+%% The distributions of \pullangle from the leading jet \leadingjet to the 2nd leading jet \scndleadingjet under each upside and downside experimental systematic together with the nominal distribution are plotted in Fig.~\ref{fig:MC13TeV_TTJets_jec}-\ref{fig:MC13TeV_TTJets_tracking}.
 
 \begin{figure}[hbtp]
 \centering
@@ -116,16 +128,7 @@ The distributions of \pullangle from the leading jet \leadingjet to the 2nd lead
 \label{fig:MC13TeV_TTJets_jer}
 \end{figure}
 
-
 \begin{figure}[hbtp]
-\centering
-\def\twidth{0.45}
-\includegraphics[width=\twidth\textwidth]{fig/nuisanceplots_SM/MC13TeV_TTJets_jer}
-\caption{The nominal distribution of the pull angle from \leadingjet to \scndleadingjet with all jet constituents and at all \DeltaR and the distributions with jet energy resolution uncertainties $\ttbar\ jer\ down$ and $\ttbar\ jer\ up$.}
-\label{fig:MC13TeV_TTJets_jer}
-\end{figure}
-
-  \begin{figure}[hbtp]
   \centering
   \def\twidth{0.45}
   \subfloat[$\ttbar\ jec\_CorrelationGroupUncorrelated\ down$ and $\ttbar\ jec\_CorrelationGroupUncorrelated\ up$.]{%
@@ -152,20 +155,20 @@ The distributions of \pullangle from the leading jet \leadingjet to the 2nd lead
     \includegraphics[width=\twidth\textwidth]{fig/nuisanceplots_SM/MC13TeV_TTJets_jec_FlavorPureCharm}%
     \label{fig:MC13TeV_TTJets_jec_FlavorPureCharm}
   }
-  \caption{The nominal distribution of the pull angle from \leadingjet to \scndleadingjet with all jet constituents and at all \DeltaR and the distributions with jet energy correction uncertainties.}
-  \label{fig:MC13TeV_TTJets_jec}
+%%   \caption{The nominal distribution of the pull angle from \leadingjet to \scndleadingjet with all jet constituents and at all \DeltaR and the distributions with jet energy correction uncertainties.}
+%%   \label{fig:MC13TeV_TTJets_jec}
+%% \end{figure}
 
-\end{figure}
-
-  \begin{figure}[hbtp]
-  \centering
-  \def\twidth{0.45}
-  \ContinuedFloat
+  %% \begin{figure}[hbtp]
+  %% \centering
+  %% \def\twidth{0.45}
+  %% \ContinuedFloat
   \subfloat[$\ttbar\ jec\_FlavorPureBottom\ down$ and $\ttbar\ jec\_FlavorPureBottom\ up$.]{%
     \includegraphics[width=\twidth\textwidth]{fig/nuisanceplots_SM/MC13TeV_TTJets_jec_FlavorPureBottom}%
     \label{fig:MC13TeV_TTJets_jec_FlavorPureBottom}
   }
   \caption{The nominal distribution of the pull angle from \leadingjet to \scndleadingjet with all jet constituents and at all \DeltaR and the distribution with jet energy correction uncertainties.}
+    \label{fig:MC13TeV_TTJets_jec}
 \end{figure}
 
   \begin{figure}[hbtp]
@@ -208,13 +211,21 @@ The distributions of \pullangle from the leading jet \leadingjet to the 2nd lead
 \item[QCD scale choices]
   We consider anti-correlated variations of the factorisation and renormalisation scales ($\mu_R/\mu_F$) in the \ttbar and \PW+jets, by factors of 0.5 and 2. These variations are saved in the simulated events as alternative sets of weights which are used in the evaluation of this systematic. The envelope of 7 variations (excluding op. variations of $\mu_R/\mu_F$) is considered as a systematic.
 
+The distributions of \pullangle from the leading jet \leadingjet to the 2nd leading jet \scndleadingjet under the set of QCD scale systematics together with the nominal distribution are plotted in Fig.~\ref{fig:QCDscale}.
+
 \item[\EVTGEN] \EVTGEN is a Monte Carlo event generator that simulates the decays of heavy flavour particles, primarily $B$ and $D$ mesons. It uses amplitudes instead of probabilities. References are available in~\cite{evtgen}, \cite{Lange:2001uf}.
+
+The distributions of \pullangle from the leading jet \leadingjet to the 2nd leading jet \scndleadingjet under the \EVTGEN systematic $\ttbar\ evtgen$ together with the nominal distribution are plotted in Fig.~\ref{fig:MC13TeV_TTJets_evtgen}.
 
 \item[Hadroniser choice] We check the effect of using \HERWIGpp \cite{Bahr:2008pv}, tune EE5C\cite{Seymour:2013qka}, instead of \PYTHIA 8 CUET2P8M4. The key difference arises from the hadronisation model - \PYTHIA uses the string model, while \HERWIGpp uses the cluster model~\cite{Sjostrand:hadronisation}. 
 
-  Privately produced samples based on \SHERPA~\cite{Gleisberg:2008ta}, \DIRE~\cite{Hoche:2015sya}, \HERWIG 7~\cite{Bellm:2015jjp} could be added in a later stage.
+The distributions of \pullangle from the leading jet \leadingjet to the 2nd leading jet \scndleadingjet under the systematic of choosing \HERWIGpp as the hadroniser $\ttbar\ Herwig++$ together with the nominal distribution are plotted in Fig.~\ref{fig:MC13TeV_TTJets_herwig}.
+
+Privately produced samples based on \SHERPA~\cite{Gleisberg:2008ta}, \DIRE~\cite{Hoche:2015sya}, \HERWIG 7~\cite{Bellm:2015jjp} could be added in a later stage.
 
 \item[Top quark mass] The most precise measurement of the top quark mass by CMS yields a total uncertainty of $\pm0.49~\text{GeV}$~\cite{Khachatryan:2015hba}. We consider however a conservative $\pm1~\text{GeV}$. In the possibility that some of these results are used in the future we would like to avoid that they bias too much to a specific top mass.
+
+The distributions of \pullangle from the leading jet \leadingjet to the 2nd leading jet \scndleadingjet under the systematic of uncertaint of the top quark mass $\ttbar\ m=171.5$ and $\ttbar\ m=173.5$together with the nominal distribution are plotted in Fig.~\ref{fig:MC13TeV_TTJets_topmass}.
 
 \item[\PYTHIA tunes] The following \PYTHIA tunes are used:
   
@@ -237,7 +248,7 @@ RunIISummer16MiniAODv2-PUMoriond17\_80X\_mcRun2\_asymptotic\_2016\_TrancheIV\_v6
 
 production used for the theoretical systematics.
 
-The distributions of \pullangle from the leading jet \leadingjet to the 2nd leading jet \scndleadingjet under each theoretical uncertainty or upside or downside \PYTHIA tune together with the nominal distribution are plotted in Fig.~\ref{fig:MC13TeV_TTJets_evtgen}-\ref{fig:MC13TeV_TTJets_CR}.
+The distributions of \pullangle from the leading jet \leadingjet to the 2nd leading jet \scndleadingjet under each upside or downside \PYTHIA tune together with the nominal distribution are plotted in Fig.~\ref{fig:MC13TeV_TTJets_hdamp}-\ref{fig:MC13TeV_TTJets_CR}.
 
 \input{tables/mc_variations.tex}
 

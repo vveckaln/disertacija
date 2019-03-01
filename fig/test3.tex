@@ -1,0 +1,15 @@
+\documentclass{article}
+\thispagestyle{empty}
+\usepackage{graphicx}
+
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\begin{document}
+\begin{tikzpicture}
+\coordinate (label) at (2, 0);
+\node(text)[anchor=east] at (label){item};
+\draw [->](label) to ($(label) + (2,0)$);
+\end{tikzpicture}
+
+\end{document}
+

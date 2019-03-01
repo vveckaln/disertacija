@@ -1,0 +1,53 @@
+(null), 3.108064 0.211394
+t#bar{t}, 2.369923 0.305758
+t#bar{t} jec_CorrelationGroupMPFInSitu up, 3.088246 0.213499
+t#bar{t} jec_RelativeFSR up, 3.040543 0.218652
+t#bar{t} jec_CorrelationGroupUncorrelated up, 3.077833 0.214613
+t#bar{t} jec_FlavorPureGluon up, 3.047444 0.217899
+t#bar{t} jec_FlavorPureQuark up, 3.049718 0.217652
+t#bar{t} jec_FlavorPureCharm up, 3.026076 0.220240
+t#bar{t} jec_FlavorPureBottom up, 3.065318 0.215961
+t#bar{t} jer up, 3.090065 0.213305
+t#bar{t} btag_heavy up, 3.096580 0.212611
+t#bar{t} btag_light up, 3.030580 0.219744
+t#bar{t} csv_heavy up, 3.070576 0.215394
+t#bar{t} csv_light up, 3.051480 0.217460
+t#bar{t} tracking up, 3.064858 0.216010
+t#bar{t} jec_CorrelationGroupMPFInSitu down, 3.012910 0.221695
+t#bar{t} jec_RelativeFSR down, 3.032477 0.219536
+t#bar{t} jec_CorrelationGroupUncorrelated down, 3.055021 0.217075
+t#bar{t} jec_FlavorPureGluon down, 3.059599 0.216579
+t#bar{t} jec_FlavorPureQuark down, 3.054774 0.217102
+t#bar{t} jec_FlavorPureCharm down, 3.032873 0.219493
+t#bar{t} jec_FlavorPureBottom down, 3.027890 0.220040
+t#bar{t} jer down, 3.063921 0.216112
+t#bar{t} btag_heavy down, 3.065027 0.215992
+t#bar{t} btag_light down, 3.049665 0.217658
+t#bar{t} csv_heavy down, 3.104296 0.211793
+t#bar{t} csv_light down, 3.027065 0.220131
+t#bar{t} tracking down, 3.064491 0.216050
+t#bar{t} evtgen, 2.907378 0.233707
+t#bar{t} m=171.5, 3.161498 0.205821
+t#bar{t} m=173.5, 3.489566 0.174683
+t#bar{t} pileup up, 3.105033 0.211715
+t#bar{t} pileup down, 3.105462 0.211669
+t#bar{t} trig efficiency correction up, 3.087742 0.213553
+t#bar{t} trig efficiency correction down, 3.087349 0.213595
+t#bar{t} sel efficiency correction up, 3.087052 0.213626
+t#bar{t} sel efficiency correction down, 3.088031 0.213522
+t#bar{t} b fragmentation up, 3.165872 0.205371
+t#bar{t} b fragmentation down, 3.067592 0.215715
+t#bar{t} Peterson Frag, 3.177212 0.204210
+t#bar{t} semilep BR up, 3.084519 0.213897
+t#bar{t} semilep BR down, 3.090332 0.213276
+t#bar{t} isr up, 3.243927 0.197510
+t#bar{t} isr dn, 3.283872 0.193605
+t#bar{t} fsr up, 3.147468 0.207270
+t#bar{t} fsr dn, 3.241306 0.197769
+t#bar{t} hdamp up, 3.160371 0.205937
+t#bar{t} hdamp dn, 3.255556 0.196365
+t#bar{t} UEup, 3.132033 0.208876
+t#bar{t} UEdn, 2.695504 0.259824
+t#bar{t} ERDon, 3.194130 0.202490
+t#bar{t} QCDbased, 3.569600 0.167831
+t#bar{t} gluon move, 3.260735 0.195858

@@ -1,0 +1,184 @@
+10
+
+dir
+442164
+svn+ssh://svn.cern.ch/reps/tdr2/notes/AN-17-309/trunk/fig/plots
+svn+ssh://svn.cern.ch/reps/tdr2
+
+
+
+2018-01-22T00:41:51.184145Z
+442164
+vveckaln
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4525493e-7705-40b1-a816-d608a930855b
+
+control
+dir
+
+jet_pt_norm
+dir
+
+jet_phi
+dir
+
+pull_angle
+dir
+
+jet_px_norm
+dir
+
+jet_pt
+dir
+
+angle
+dir
+
+jet_pz_norm
+dir
+
+cos_pull_angle
+dir
+
+jet_rapidity
+dir
+
+jet_px
+dir
+
+jet_pz
+dir
+
+index.php
+file
+
+
+
+
+2018-01-20T19:53:04.000000Z
+1b129c17423741eefa274763b974e309
+2018-01-22T00:41:51.184145Z
+442164
+vveckaln
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4617
+
+jet_dif_eta
+dir
+
+jet_mass_norm
+dir
+
+jet_dif_phi
+dir
+
+jet_mass
+dir
+
+JetConstituents
+dir
+
+ShowPlot.php
+file
+
+
+
+
+2018-01-20T19:52:40.000000Z
+9dc447263834a115d89a12046e012d1f
+2018-01-22T00:41:51.184145Z
+442164
+vveckaln
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+522
+
+L4_1l4j2b2w_nvtx.png
+file
+
+
+
+
+2018-01-20T19:53:36.000000Z
+b01c0da3e22e9e2baf0c3c2a0e121efe
+2018-01-22T00:41:51.184145Z
+442164
+vveckaln
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+25055
+
+jet_eta
+dir
+

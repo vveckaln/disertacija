@@ -1,0 +1,56 @@
+\vskip 1.5cm
+\medskip
+\textbf{Physical background}
+\nopagebreak\medskip
+
+The Large Hadron Collider (LHC) is a synchrotron of 27~km in circumference. It is located in Geneva area on the Franco-Swiss border. In the experimental insertions of the LHC proton-proton (\Pp\Pp) collisions take place. The majority of theses collisions are inelastic and we analyse the debris with the help of detectors such as the CMS. In the debris we hope to find answers to great questions in physics such as the existence and properties of the Higgs boson, Dark Matter and the properties of the top quark.
+
+The centre of mass energy of \Pp\Pp collisions is 13~\TeV. Such an energy is sufficient to create millions of \ttbar pairs - the cross section of this process at $\sqrt{s}=13~\TeV$ is 803~pb~\cite{Sirunyan:2018goh}. The LHC can be called a factory of the top quark. The top quark decays in the weak process emitting a \PW boson. The \PW boson as well as the ensemble of its decay products belong to the colour singlet. If the \PW boson decays into colourful products (quarks) then these products interact in the chromodynamic field - they are colour connected. The task is to research the experimental signatures of jets connected in colour.
+
+The light quarks that are created in the decay of the \PW boson hadronise and can be observed in the detector as jets. The silicon tracker of CMS, the electromagnetic and hadronic calorimeter provide means to resolve jet constituents - the products of hadronisation (baryons and mesons). Additionally, the 4~T superconducting solenoid of CMS allows us to measure the transverse momentum of jet constituents with a high resolution. The particles are identified and their parameters measured by correlating measurements in various subdetectors~\cite{Sirunyan:2017ulk}. In the case of colour connected jets their constituents tend to fill the space between jets in the laboratory frame. This property underlies the methods used in this work. 
+
+We also investigate the decay of a hypothetical colour octet \PW boson. In this case the light jets are not colour connected. We can use these results to benchmark the colour connected case.
+
+We select events according to the $tt-\cPqb\PW(q_1q_2)\cPqb\PW(\ell\nu)$ topology. The events must have 2 light jets, 2 \cPqb-tagged jets as well as a charged lepton.
+
+In this work we use 2016 data of the LHC CMS with the total integrated luminosity of 35.9~\fbinv. The experimental observations are compared to Monte Carlo (MC) simulations. The MC simulations provide means to assess background, determine the efficiency of the event selection and in our case also to assess the accuracy of hadronisation models. The hard process is simulated with \POWHEG whilst the showering is simulated with \PYTHIA. The showering simulated by \PYTHIA is compared to showering simulated by \HERWIGpp. The detector is being modelled by \GEANTfour. To correct for differencs in MC and experimental observations scale factors are applied to the former. The error due to various systematics is also evaluated. 
+
+Having regard to the poor track reconstruction efficiency of particles the transverse momentum of which is less than 1~\GeV we include only particles the transverse momentum of which is greater than 1~\GeV.
+ 
+\medskip
+\textbf{Methods}
+\nopagebreak\medskip
+
+We use the method of the pull angle~\cite{Gallicchio:2010sw}. According to this method a pull vector is constructed given the centre of the jet, and distance of jet constituents from it weighted by the transverse momentum \pt of the jet constituents. It is expected that the pull vector of a jet will point to another jet to which it is colour connected. Hence it is expected that the distribution of the pull angle will have a peak centred at 0~rad.
+
+We investigate the distribution of the pull angle between colour connect jets (both light jets) and compare these results to the distribution of pull angle between physical objects not connected in colour - \cPqb-tagged jets, light jet and the lepton. An interesting case is the pull angle between the jet and the beam.
+
+We separate cases when \DeltaR between jets is greater than or less than 1. In the latter case the anti-$k_{T}$ jet clustering algorithm induces a pull from the hard jet to the soft jet creating a significant bias on observations according to the pull angle method.
+
+We assess the sensitivity of the pull angle method to various parameters - including only charged particles (only the charged particles are deflected in magnetic field), the transverse momentu of the \PW boson, the number of jet constituents, a threshold on the transverse momentum of jet constituents, the magnitude of the pull vector.
+
+In order to revert the effects of the detector on the observation we carry out unfolding. This method provides means to estimate the expected true distribution of the observable albeit at a cost of a course granularity of the phase space. We evaluate the goodness of fit between the unfolded observations and the generated Monte Carlo observations. We also assess the effect of various systematics.  
+
+We also use an adaptation of a method used in the Large Electron Positron collider (LEP) (hereinafter referred to as the ``LEP method'') where the jet constituents are projected on inter-jet planes~\cite{Abbiendi:2005es}, \cite{Abdallah:2006uq}, \cite{Achard:2003pe}. It is expected that a plane between jets connected in colour will be filled more densely with particles than a plane between jets not connected in colour.   
+
+The results are obtained using a \CMSSW release \lstinline[language=sh]|CMSSW_8_0_26_patch1|, initially also with \RIVET~\cite{Buckley:2010ar}.
+
+Finally we carry out hypothesis testing. In this task we combine the \ttbar signal with the colour octet \PW signal and assess the goodness of fit of this combination to data. 
+
+\medskip
+\textbf{Novelty}
+\nopagebreak\medskip
+
+The method of the pull angle has been applied at the \DZERO experiment of the Fermilab Tevatron~\cite{Abazov:2011vh}, in Run I at the ATLAS experiment~\cite{Aad:2015lxa}, as well as in Run II at the ATLAS experiment~\cite{Aaboud:2018ibj}. At CMS this method has first been applied by Seidel, M. et al~\cite{indico:Markus_cf} however these results have never been published. Compared to ATLAS the CMS detector has a better momentum resolution for tracks in the central region by roughly a factor 2 (ATLAS has a much smaller 2~T solenoid with big toroid magnets on the outside~\cite{Aad:2008zzm}).
+
+``LEP method'' has not yet been applied at the LHC.
+
+This work is the first contribution of Latvia to the experimental programme of the CERN LHC. When work referenced in this thesis was in full progress we in May, 2018 celebrated the adhesion of Rīgas Tehniskā universitāte to a full membership of the CMS experiment. 
+
+\medskip
+\textbf{Outreach}
+\nopagebreak\medskip
+
+This thesis shows results from a research activity undertaken by the Top Quark group of the CMS experiment. The results at various stages have been presented in the Top Modelling and Generator physics meetings - on 19 January 2016, 29 March 2016, 7 June 2016, 30 August 2016, 13 February 2018 and 17 October 2018. They have also been presented at the CERN Science Week in Riga from May 22-26 of 2017 and the European School of High Energy Physics in Evora, Portugal from September 6-19 of 2017.
+
+These results have not been approved yet according to the CMS procedures for approval and publication accepted by the CMS Collaboration Board hence they cannot be published in refereed journals or presented in official conferences.

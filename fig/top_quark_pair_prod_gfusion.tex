@@ -1,0 +1,42 @@
+\documentclass[class=minimal,border=20pt]{standalone}
+
+\usepackage[utf8]{inputenc}
+\usepackage{feynmf}
+
+\begin{document}
+
+\begin{fmffile}{diagram}
+
+    
+\begin{fmfgraph*}(150,150)
+  % bottom and top verticies
+    
+    \fmfleft{i1,i2}
+    \fmfright{o1,ot1,ot2,o2}
+    
+    % incoming proton to gluon vertices
+    \fmf{phantom}{i1,vp1,o1}
+    \fmf{dbl_plain_arrow,label=$p_{1}$}{i1,vp1}
+    \fmf{fermion,label=$X_{1}$}{vp1,o1}
+    \fmfblob{0.15w}{vp1}
+    \fmf{phantom}{i2,vp2,o2}
+    \fmf{dbl_plain_arrow,label=$p_{2}2$}{i2,vp2}
+    \fmf{fermion,label=$X_{2}$}{vp2,o2}
+    \fmfblob{0.15w}{vp2}
+    \fmf{phantom}{vp1,vt1,vt2,vp2}
+    %\fmffreeze
+    \fmf{gluon}{vp1,vt1}
+    \fmf{gluon}{vt2,vp2}
+    \fmf{fermion,label=$t$}{ot2,vt2,vt1,ot1}
+    \fmffreeze
+    \fmfi{plain}{vpath (__vp1,__o1) shifted (thick*(0,2))}
+    \fmfi{plain}{vpath (__vp1,__o1) shifted (thick*(1,-2))}
+    \fmfi{plain}{vpath (__vp2,__o2) shifted (thick*(0,2))}
+    \fmfi{plain}{vpath (__vp2,__o2) shifted (thick*(1,-2))}
+
+\end{fmfgraph*}
+
+
+\end{fmffile}
+
+\end{document}
