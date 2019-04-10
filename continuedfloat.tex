@@ -1,0 +1,21 @@
+\documentclass{report}
+\usepackage{graphicx}
+\usepackage{lipsum}
+\usepackage{caption}
+%\usepackage{float}
+%% \clubpenalty=10000
+%% \widowpenalty=10000
+\begin{document}
+\lipsum[1-6]
+\lipsum[4][1-2]
+\begin{figure}[p]
+  \includegraphics[height=0.6\textheight, width =0.5\textwidth]{example-image-a}
+  \caption{Examples}
+\end{figure}
+\begin{figure}[p]
+  \ContinuedFloat
+  \includegraphics[width=0.8\textheight]{example-image-b}
+\end{figure}
+\lipsum[1][1-2]
+\lipsum[1]
+\end{document}

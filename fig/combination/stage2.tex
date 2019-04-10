@@ -1,0 +1,19 @@
+
+\input{commands.tex}
+
+\begin{tikzpicture}
+  \coordinate(O) at (0, 0);
+  \shade[inner color=black, outer color=white] circle(0.5cm);
+
+  \coordinate(A) at (-4, 0);
+  \coordinate(B) at (4, 0);
+  \Quark{A};
+  \Quark{B};
+  \newcommand{\momentumlength}{3};
+  \momentum{A}{\momentumlength}{left};
+  \momentum{B}{\momentumlength}{right}
+  \ColourFlow{A}{B}{up};
+  \ColourFlow{A}{B}{down};
+\end{tikzpicture}
+
+\end{document}

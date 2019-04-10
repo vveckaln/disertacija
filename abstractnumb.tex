@@ -1,0 +1,22 @@
+\documentclass{report}
+\usepackage{etoolbox}
+\title{some title}
+\newcounter{mypage}
+\usepackage{lipsum}
+\patchcmd{\abstract}{\titlepage}{\cleardoublepage}{}{}
+\patchcmd{\endabstract}{\endtitlepage}{\clearpage}{}{}
+\begin{document}
+%\setcounter{page}{2}
+\lipsum{1-20}some introduction
+%\addtocounter{mypage}{\value{page}}
+\begin{abstract}
+%  page \value{page}
+%  \setcounter{page}{\value{mypage}}
+  %\addtocounter{page}{2}
+  \thispagestyle{plain}
+  \lipsum[1]
+%\setcounter{mypage}{\value{page}}
+\end{abstract}
+%\setcounter{page}{\value{mypage}}
+\lipsum[2]
+\end{document}

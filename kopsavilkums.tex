@@ -36,6 +36,7 @@
 \usepackage[latvian]{babel}
 \usepackage{caption}
 \usepackage{subfig}
+%\usepackage{needspace}
 \captionsetup[figure]{labelsep=space}
 \DeclareCaptionFormat{hfillstart}{\hfill#1#2#3\par}
 \captionsetup[table]{
@@ -45,84 +46,63 @@
 }
 \addto\captionslatvian{\renewcommand{\figurename}{att.}}
 %\renewcommand\part{\secdef\@part\@spart}
-\def\startnewpart{FALSE}
-\def\partname{}
-\makeatletter
-\def\@part[#1]#2{%
-    %% \ifnum \c@secnumdepth >-2\relax
-    %%   \refstepcounter{part}%
-    %%   \addcontentsline{toc}{part}{\thepart\hspace{1em}#1}%
-    %% \else
-      \addcontentsline{toc}{part}{#1}%
-%    \fi
-    \markboth{}{}%
-    {\centering
-     \interlinepenalty \@M
-     \normalfont
-     %% \ifnum \c@secnumdepth >-2\relax
-     %%   \huge\bfseries \partname\nobreakspace\thepart
-     %%   \par
-     %%   \vskip 20\p@
-     %% \fi
-     \Huge \bfseries #2\par}%
-    \@endpart}
-
-\renewcommand\chapter{%\if@openright\cleardoublepage\else\clearpage\fi
-  \setcounter{figure}{0}
-  \addtocounter{totfigures}{\value{figure}}%
-  \ifthenelse{\equal{\startnewpart}{FALSE}}{
-    \clearpage
-  }{
-  }
-                    \def\startnewpart{FALSE}
-                    \thispagestyle{plain}%
-                    \global\@topnum\z@
-                    \@afterindentfalse
-                    \secdef\@chapter\@schapter
-%                    \def\startnewpart{FALSE}
-}
-
-  \renewcommand\part{%
-  \def\startnewpart{TRUE}
-\if@openright
-    \cleardoublepage
-  \else
-    \clearpage
-  \fi
-  %% \thispagestyle{plain}%
-  \if@twocolumn
-    \onecolumn
-    \@tempswatrue
-  \else
-    \@tempswafalse
-  \fi
-  \null\vfil
-  \secdef\@part\@spart}
-  %%   \renewcommand\part{%
-  %% \def\startnewpart{TRUE}
-  %% \clearpage
-  %% \secdef\@part\@spart}
-\def\@endpart{%% \vfil\newpage
-              %% \if@twoside
-              %%  \if@openright
-              %%   \null
-              %%   \thispagestyle{empty}%
-              %%   \newpage
-              %%  \fi
-              %% \fi
-              \if@tempswa
-                \twocolumn
-              \fi}
-\makeatother
 
 
 \addbibresource{disertacija.bib}
 \renewcommand{\contentsname}{Satura rādītājs}
-\usepackage[toc]{glossaries}
+\usepackage[toc, nopostdot]{glossaries}
 \renewcommand{\glossarypreamble}{Nepieciešams ieviest augstas enerģijas fizikā lietoto terminu tulkojumus latviešu valodā. Zemāk sniegti šajā darbā lietotie nozares termini latviešu valodā, norādot atbilstošo terminu angļu valodā. Saīsinājumiem papildus ir sniegts to atšifrējums latviešu valodā. Tiek norādīta lapaspuse, kurā termins sastopams.}
 \input{glossarylv.tex}
 \makeglossaries
+\makeatletter
+%\renewcommand\theequation{\arabic{equation}.}
+\makeatother
+\usepackage{etoolbox}
+\patchcmd{\abstract}{\titlepage}{\cleardoublepage}{}{}
+\patchcmd{\endabstract}{\endtitlepage}{\clearpage}{}{}
+\usepackage{nicefrac}
+\usepackage{cellspace}
+\captionsetup[figure]{justification=centering,
+labelsep=period}
+\urlstyle{same}
+\makeatletter
+\DeclareFieldFormat{eprint:arxiv}{%
+  arXiv\addcolon\space
+  \ifhyperref
+    {\href{https://arxiv.org/\abx@arxivpath/#1}{%
+       \nolinkurl{#1}%
+       \iffieldundef{eprintclass}
+         {}
+         {\addspace\mkbibbrackets{\thefield{eprintclass}}}}}
+    {\nolinkurl{#1}%
+     \iffieldundef{eprintclass}
+       {}
+       {\addspace\mkbibbrackets{\thefield{eprintclass}}}}}
 
+\def\@makechapterhead#1{%
+  \vspace*{50\p@}%
+  {\parindent \z@ \raggedright \normalfont
+    \ifnum \c@secnumdepth >\m@ne
+%        \huge\bfseries \@chapapp\space \thechapter
+        \huge\bfseries \thechapter\space #1
+        \par\nobreak
+        \vskip 40\p@
+    \fi
+    %% \interlinepenalty\@M
+    %% \Huge \bfseries #1\par\nobreak
+    %% \vskip 40\p@
+  }}
+\def\theequation{  \ifnum \c@chapter>\z@ \thechapter.\fi \@arabic\c@equation.}
+
+\makeatother
+\clubpenalty=10000
+\widowpenalty=10000
+\righthyphenmin=62
+\lefthyphenmin=62
+%% \hyphenpenalty=10000
+%% \exhyphenpenalty=10000
+\input{hypheninfo.tex}
+\sisetup{output-decimal-marker={,}}
 \begin{document}
 \maketitle
 \begin{abstract}
@@ -134,15 +114,15 @@
 \input{nodalas_kopsavilkums/acknowledgements}
 
 \tableofcontents
-\printglossary[toctitle=Terminu tulkojumi, title=Latviešu-angļu terminu tulkojumi]
+\printglossary[toctitle=Latviešu\textendash angļu terminu rādītājs, title=Latviešu\textendash angļu terminu rādītājs]
 %% \listoffigures
 %% \listoftables
-\part{VISPĀRĒJS DARBA RAKSTUROJUMS}
+\tpart{VISPĀRĒJS DARBA RAKSTUROJUMS}
 %\chapter{Ievads}
 \label{chap:introduction}
 \input{nodalas_kopsavilkums/overall}
 
-\part{ATSEVIŠĶO NODAĻU IZKLĀSTS}
+\tpart{ATSEVIŠĶO NODAĻU IZKLĀSTS}
 \chapter{Fizikālie pamati}
 \input{nodalas_kopsavilkums/physical_background}
 
@@ -173,11 +153,11 @@
 \section{Atlocīšana}
 \input{nodalas_kopsavilkums/results/unfolding.tex}
 
-\clearpage
+%\clearpage
 \section{LEP metode}
 \input{nodalas_kopsavilkums/results/chi.tex}
 
-\clearpage
+%\clearpage
 \section{Hipotēžu pārbaude}
 \input{nodalas_kopsavilkums/results/hypo_testing.tex}
 

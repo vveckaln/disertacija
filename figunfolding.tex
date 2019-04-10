@@ -1,5 +1,6 @@
 
 \newcommand{\figunfolding}[6]{%
+  \def\twidth{0.65}
   \def\method{#1}%
   \def\jet{#2}%
   \def\chargetag{#3}%
@@ -14,35 +15,52 @@
   \def\directory{\jet_\chargetag_\sampletag_\observable_\optlevel_\method\bintag}%
   \def\subdir{\observable/\binningscheme}
   \def\taglabel{unfolding_\method_\jet_\chargetag_\observable_\optlevel_\sampletag_\binningscheme}%
-  \begin{figure}
+  \begin{figure}[p]
   \centering
     \subfloat[Migration matrix with the reconstruction level as the $x$ axis and the generation level as the $y$ axis.]{%
-      \includegraphics[width=0.45\textwidth]{fig/unfolding_\method/\subdir/\directory/migrationmatrix.png}%
+      \includegraphics[width=\twidth\textwidth]{fig/unfolding_\method/\subdir/\directory/migrationmatrix.png}%
       \label{fig:\taglabel_a}
-    }\hfil
-    \subfloat[The data and Monte Carlo used as input.]{%
-      \includegraphics[width=0.45\textwidth]{fig/common_plots_\method/\subdir/\commonplottag_reco_in.png}%
-      \label{fig:\taglabel_b}
     }\\
-    \subfloat[The unfolded result.]{%
-      \includegraphics[width=0.45\textwidth]{fig/common_plots_\method/\subdir/\commonplottag_gen_out.png}%
-      \label{fig:\taglabel_c}
-    }\hfil
-    \subfloat[The folded back result.]{%
-      \includegraphics[width=0.45\textwidth]{fig/common_plots_\method/\subdir/\commonplottag_reco_out.png}%
-      \label{fig:\taglabel_d}
-    }\\  
-    \subfloat[Stability and purity in each bin.]{%
-      \includegraphics[width=0.45\textwidth]{fig/unfolding_\method/\subdir/\directory/stabpur.png}%
-      \label{fig:\taglabel_e}
-    }\hfil
-    \subfloat[The pull.]{%
-      \includegraphics[width=0.45\textwidth]{fig/unfolding_\method/\subdir/\directory/pull.png}%
-      \label{fig:\taglabel_f}
+    \subfloat[The data and Monte Carlo used as input.]{%
+      \includegraphics[width=\twidth\textwidth]{fig/common_plots_\method/\subdir/\commonplottag_reco_in.png}%
+      \label{fig:\taglabel_b}
     }
     \caption{
       Unfolding plots for the \protect\methodtitle{\method} method of the \protect\observabletitle{\observable} of \protect\jettitle{\jet} to 
       \protect\countertitle{\jet} including \protect\chargetitle{\chargetag} using \protect\binningtitle{\binningscheme}.}
     \label{fig:\taglabel}
   \end{figure}
+  \clearpage
+  \begin{figure}[p]
+    \centering
+    \ContinuedFloat
+    \subfloat[The unfolded result.]{%
+      \includegraphics[width=\twidth\textwidth]{fig/common_plots_\method/\subdir/\commonplottag_gen_out.png}%
+      \label{fig:\taglabel_c}
+    }\\
+    \subfloat[The folded back result.]{%
+      \includegraphics[width=\twidth\textwidth]{fig/common_plots_\method/\subdir/\commonplottag_reco_out.png}%
+      \label{fig:\taglabel_d}
+    }\\  
+    \caption[]{
+      Unfolding plots for the \protect\methodtitle{\method} method of the \protect\observabletitle{\observable} of \protect\jettitle{\jet} to 
+      \protect\countertitle{\jet} including \protect\chargetitle{\chargetag} using \protect\binningtitle{\binningscheme} (continued).}
+  \end{figure}
+  \clearpage
+  \begin{figure}[p]
+    \centering
+    \ContinuedFloat
+    \subfloat[Stability and purity in each bin.]{%
+      \includegraphics[width=\twidth\textwidth]{fig/unfolding_\method/\subdir/\directory/stabpur.png}%
+      \label{fig:\taglabel_e}
+    }\\
+    \subfloat[The pull.]{%
+      \includegraphics[width=\twidth\textwidth]{fig/unfolding_\method/\subdir/\directory/pull.png}%
+      \label{fig:\taglabel_f}
+    }\\
+    \caption[]{
+      Unfolding plots for the \protect\methodtitle{\method} method of the \protect\observabletitle{\observable} of \protect\jettitle{\jet} to 
+      \protect\countertitle{\jet} including \protect\chargetitle{\chargetag} using \protect\binningtitle{\binningscheme} (continued).}
+  \end{figure}
+  \clearpage
 }

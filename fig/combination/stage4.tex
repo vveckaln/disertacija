@@ -1,0 +1,26 @@
+
+\input{commands.tex}
+
+\begin{tikzpicture}
+  \coordinate(O) at (0, 0);
+  \coordinate(A2) at (-9, 0);
+  \coordinate(B2) at (-3, 0);
+  \coordinate(A1) at (9, 0);
+  \coordinate(B1) at (3, 0);
+  \Quark{A2};\Quark{B2}; \Quark{A1}; \Quark{B1};
+  
+  \momentum{A2}{0.6}{left};
+  \momentum{B2}{0.6}{right}
+
+  \momentum{A1}{0.6}{right};
+  \momentum{B1}{0.6}{left}
+
+
+  \ColourFlow{A2}{B2}{up};
+  \ColourFlow{A2}{B2}{down};
+  \ColourFlow{B1}{A1}{up};
+  \ColourFlow{B1}{A1}{down};
+
+\end{tikzpicture}
+
+\end{document}

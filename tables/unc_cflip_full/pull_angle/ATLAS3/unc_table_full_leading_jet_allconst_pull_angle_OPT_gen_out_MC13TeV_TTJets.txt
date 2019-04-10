@@ -8,4 +8,5 @@
 			\hline
 			$t\overline{t}$ cflip	&	20.924	&	11.031	&	13.870\\
 		\hline
-		\end{longtable}
+\endfirsthead
+\end{longtable}

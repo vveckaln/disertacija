@@ -1,14 +1,14 @@
 \begin{table}[htp]
 	\begin{center}
-	\caption{$\chi^{2}$ and p-values of the \protect\observabletitle{pull_angle} including \protect\chargetitle{chconst}. The results are for the \protect\modeltitle{cflip} model.}
+	\caption{$\chi^{2}$ and \pval s of \protect\observabletitle{pull_angle} including \protect\chargetitle{chconst}. The results are for the \protect\modeltitle{cflip} model.}
 	\label{tab:chi_table_pull_angle_OPT_chconst_cflip_ATLAS3}
 	\resizebox{\customwidth}{!}{		\begin{tabular}{|l|rrr|rrr|rrr|rrr|}
 		\hline
-\multirow{2}{*}{Sample}&\multicolumn{3}{|c|}{$\theta_{p}(j_{1}^{W}, j_{2}^{W})$}&\multicolumn{3}{|c|}{$\theta_{p}(j_{2}^{W}, j_{1}^{W})$}&\multicolumn{3}{|c|}{$\theta_{p}(j_{1}^{b}, j_{2}^{b})$}&\multicolumn{3}{|c|}{$\theta_{p}(j_{2}^{b}, j_{2}^{b})$}\\
-		\cline{2-13}		&$\chi^{2}$&\textbackslash Ndf&p-value&$\chi^{2}$&\textbackslash Ndf&p-value&$\chi^{2}$&\textbackslash Ndf&p-value&$\chi^{2}$&\textbackslash Ndf&p-value\\
+\multirow{2}{*}{Sample}&\multicolumn{3}{|c|}{$\pullangle(j_{1}^{W}, j_{2}^{W})$}&\multicolumn{3}{|c|}{$\pullangle(j_{2}^{W}, j_{1}^{W})$}&\multicolumn{3}{|c|}{$\pullangle(j_{1}^{b}, j_{2}^{b})$}&\multicolumn{3}{|c|}{$\pullangle(j_{2}^{b}, j_{2}^{b})$}\\
+		\cline{2-13}		&$\chi^{2}$&/Ndf&\pval&$\chi^{2}$&/Ndf&\pval&$\chi^{2}$&/Ndf&\pval&$\chi^{2}$&/Ndf&\pval\\
 		\hline
-		Powheg+Pythia8 * & 2.04 & 2 & 0.360 & 0.25 & 2 & 0.881 & 2.56 & 2 & 0.278 & 1.65 & 2 & 0.439\\
-		Powheg+Pythia8 cf & 4.19 & 2 & 0.123 & 0.12 & 2 & 0.944 & 1.83 & 2 & 0.401 & 0.14 & 2 & 0.932\\
+		Powheg + Pythia8 * & \num{2.04} & 2 & \num{0.360} & \num{0.25} & 2 & \num{0.881} & \num{2.56} & 2 & \num{0.278} & \num{1.65} & 2 & \num{0.439}\\
+		Powheg + Pythia8 cf & \num{4.19} & 2 & \num{0.123} & \num{0.12} & 2 & \num{0.944} & \num{1.83} & 2 & \num{0.401} & \num{0.14} & 2 & \num{0.932}\\
 		\hline
 		\end{tabular}
 	}

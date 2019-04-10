@@ -10,7 +10,7 @@ The discussion of this section is adapted from~\cite{CMS-AN-2017-175} and \cite{
 
 \item[Jet energy resolution] We use the recommended jet energy resolution measurements~\cite{twiki:JER}. Each jet is further smeared up or down depending on its \pt and $\eta$ with respect to the central value measured in data. The main effect of this systematic is related to the exclusion/inclusion of events with jets near the offline thresholds.
   
-\item[Jet energy corrections] A \pt, $\eta$-dependent parameterisation of the jet energy scale is used to vary the calibration of the jets in the simulation. The parameteriSation is provided by the JetMET Physics Objet Group~\cite{twiki:JES} for the Spring16 V3 corrections. The main effect of this systematic is related to the exclusion/inclusion of events with jets near the offline thresholds.
+\item[Jet energy corrections] A \pt, $\eta$-dependent parametrisation of the jet energy scale is used to vary the calibration of the jets in the simulation. The parametrisation is provided by the JetMET Physics Objet Group~\cite{twiki:JES} for the Spring16 V3 corrections. The main effect of this systematic is related to the exclusion/inclusion of events with jets near the offline thresholds.
 
 \item[\cPqb-tagging] The nominal efficiency expected in the simulation is corrected by \pt-dependent scale factors provided by the BTV Physics Object Group~\cite{twiki:BTV}. Depending on the flavour of each jet, the \cPqb-tagging decision is updated according to the scale factor measured. The scale factor is also varied according to its uncertainty. The main effect of this systematic is the demotion/promotion of candidate \cPqb-jets and thus a migration of events used for analysis.
 
@@ -21,7 +21,7 @@ The TRK and MUO Physics Object Groups have derived tracking efficiency scale fac
 \section{Theoretical uncertainties}
 \begin{description}
 \item[QCD scale choices]:
-We consider anti-correlated variations of the factorisation and renormalisation scales ($\mu_R/\mu_F$) in the \ttbar sample, by factors of 0.5 and 2. These variations are saved in the simulated events as alternative sets of weights which are used in the evaluation of this systematic. The envelope of 6 variations (excluding opposite variations of $\mu_R/\mu_F$) is considered as a systematic.
+We consider anti-correlated variations of the factorisation and renormalisation scales ($\mu_R/\mu_F$) in the \ttbar sample, by factors of 0.5 and 2. These variations are saved in the simulated events as alternative sets of weights which are used in the evaluation of this systematic. The envelope of 7 variations (excluding opposite variations of $\mu_R/\mu_F$) is considered as a systematic.
 
 \item[\EVTGEN] The systematic comes about by using \EVTGEN Monte Carlo to simulate the decays of heavy flavour particles, primarily $B$ and $D$ mesons. 
 
@@ -32,10 +32,10 @@ We consider anti-correlated variations of the factorisation and renormalisation 
 
 \item[\PYTHIA tunes] The following \PYTHIA tunes are used:
   \begin{enumerate}
-  \item Matrix Element + Parton Shower matching scheme, 
-  \item Parton shower scale, 
-  \item Colour reconnection model, 
-  \item Unerlying Event (UE) variations. 
+  \item matrix Element + Parton Shower matching scheme, 
+  \item parton shower scale, 
+  \item colour reconnection model, 
+  \item Underlying Event (UE) variations. 
   \end{enumerate}
 \end{description}
 
@@ -52,7 +52,7 @@ production used for the theoretical systematics.
 \hspace*{-1cm}
 \begin{tabular}{ llr }
 \hline
-Signal variation & Dataset & $\sigma[pb]$\\
+Signal variation & Dataset & $\sigma~\text{[pb]}$\\
 \hline
 \multirow{4}{*}{Parton shower scale}
 & {\small TT\_TuneCUETP8M2T4\_13TeV-powheg-isrup-pythia8}     & 832\\
@@ -65,7 +65,7 @@ Signal variation & Dataset & $\sigma[pb]$\\
 \multirow{2}{*}{ME-PS matching scale (hdamp)}
 & {\small TT\_hdampUP\_TuneCUETP8M2T4\_13TeV-powheg-pythia8}  & 832\\
 & {\small TT\_hdampDOWN\_TuneCUETP8M2T4\_13TeV-powheg-pythia8}& 832 \\\hline
-\multirow{3}{*}{Color reconnection}
+\multirow{3}{*}{Colour reconnection}
 & {\small TT\_TuneCUETP8M2T4\_erdON\_13TeV-powheg-pythia8 }   & 832\\
 & {\small TT\_TuneCUETP8M2T4\_QCDbasedCRTune\_erdON\_13TeV-powheg-pythia8} & 832\\
 & {\small TT\_TuneCUETP8M2T4\_GluonMoveCRTune\_13TeV-powheg-pythia8} & 832\\\hline

@@ -1,16 +1,16 @@
-The class \lstinline[language=sh]|TUnfoldDensity|\cite{Schmitt:2012kp} of \ROOT is used to do the unfolding procedure. The binning scheme is managed with class \lstinline[language=sh]|TUnfoldBinning|. No regularisation is applied. We are interested to have the migration matrix as diagonal as possible to reduce statistical uncertainties on the unfolding result. Two measures are used to characterise the share of statistics on the diagonal of the migration matrix - stability and purity. Stability is the ratio of the contents of the diagonal element to the total number of events at reconstruction level in the bin:
+The class \lstinline[language=sh]|TUnfoldDensity|\cite{Schmitt:2012kp} of \ROOT is used to do the unfolding procedure. The binning scheme is managed with class \lstinline[language=sh]|TUnfoldBinning|. No regularisation is applied. We are interested to have the migration matrix as diagonal as possible to reduce statistical uncertainties on the unfolding result. Two measures are used to characterise the share of statistics on the diagonal of the migration matrix \textendash stability and purity. Stability is the ratio of the contents of the diagonal element to the total number of events at reconstruction level in the bin:
 
 \begin{equation}
   \text{stability}\equiv\frac{\theta^{\text{diag}}_{\text{input}}}{\Sigma_{x=1}^{x=N_{x}}\theta^{x}_{\text{input}}},
 \end{equation}
 
-where $x$ is the bin index at reconstruction level, starting the numbering from 1 and $N_{x}$ is the number of bins at reconstruction level. Purity is the ratio of the contents of the diagonal element to the total number of events at generation level in the bin:
+\noindent where $x$ is the bin index at reconstruction level, starting the numbering from 1 and $N_{x}$ is the number of bins at reconstruction level. Purity is the ratio of the contents of the diagonal element to the total number of events at generation level in the bin:
 
 \begin{equation}
   \text{purity}\equiv\frac{\theta^{\text{diag}}_{\text{input}}}{\Sigma_{y=1}^{y=N_{y}}\theta^{y}_{\text{input}}},
 \end{equation}
 
-where we have used $y$ as the bin index at generation level. The values of purity and stability are recommended to exceed 50~\% at each bin.
+\noindent where we have used $y$ as the bin index at generation level. The values of purity and stability are recommended to exceed 50~\% at each bin.
 
 An interesting measure is the amount by which the unfolded result is different from the generated result at MC (an ideal result would be 0), normalised to statistical uncertainty of the unfolded result. This measure is called the pull:
 
@@ -20,9 +20,9 @@ An interesting measure is the amount by which the unfolded result is different f
 
 We generate random toy distributions of the observable at generation level, thus obtaining a distribution of the pull.
 
-The unfolding results with 3 regular sized bins are shown in Fig.~\ref{fig:unfolding_nominal_leading_jet_allconst_pull_angle_OPT_MC13TeV_TTJets_ATLAS3}. Distributions corresponding to unfolding results with migration matrices from \ttbar \HERWIGpp and \ttbar cflip as well as systematics \ttbar fsr dn and \ttbar fsr up (see Chap.~\ref{chap:systematic_uncertainties}) are laid over the unfolding plots. The stability and purity levels with this binning scheme reach acceptable levels at each bin and it was adopted for further analysis. In order to create the plots shown herein a new class \lstinline[language=sh]|CompoundHistoUnfolding|~\cite{url:compoundhistounfolding} which was added to \ROOT complete with input and output streamers.
+The unfolding results with 3 regular sized bins are shown in Fig.~\ref{fig:unfolding_nominal_leading_jet_allconst_pull_angle_OPT_MC13TeV_TTJets_ATLAS3}. Distributions corresponding to unfolding results with migration matrices from $\ttbar\ Herwig++$ and $\ttbar\ cflip$ as well as systematics $\ttbar\ fsr\ dn$ and $\ttbar\ fsr\ up$ (see Chap.~\ref{chap:systematic_uncertainties}) are laid over the unfolding plots. The stability and purity levels with this binning scheme reach acceptable levels at each bin and it was adopted for further analysis. In order to create the plots shown herein a new class \lstinline[language=sh]|CompoundHistoUnfolding|~\cite{url:compoundhistounfolding} which was added to \ROOT complete with input and output streamers.
 
-The bin-per-bin significance (\%) of nuisances in the total systematical error in the unfolded result are given in Table~\ref{tab:unc_table_fullpull_angle_OPT_allconst_gen_out_MC13TeV_TTJets_nominal_ATLAS3}. Nuisances that directly affect the hadronisation \ttbar Herwig++, \ttbar QCDbased and \ttbar ERDon are the most significant. Table~\ref{tab:unc_table_fullpull_angle_OPT_allconst_gen_out_MC13TeV_TTJets_cflip_ATLAS3} shows the bin-per-bin uncertainties including the \ttbar cflip sample as a systematic to \ttbar.
+The bin-per-bin significance (\%) of nuisances in the total systematical error in the unfolded result are given in Table~\ref{tab:unc_table_fullpull_angle_OPT_allconst_gen_out_MC13TeV_TTJets_nominal_ATLAS3}. Nuisances that directly affect the hadronisation $\ttbar\ Herwig++$, $\ttbar\ QCDbased$ and $\ttbar\ ERDon$ are the most significant. Table~\ref{tab:unc_table_fullpull_angle_OPT_allconst_gen_out_MC13TeV_TTJets_cflip_ATLAS3} shows the bin-per-bin uncertainties including the $\ttbar\ cflip$ sample as a systematic to \ttbar.
 
 The agreement between the unfolded result and MC prediction at generation level is quantified using a goodness-of-fit method. Given the normalised unfolded detector observation $D$, the normalised MC prediction $M$, the full covariance matrix $\Sigma$ of normalised experimental uncertainties, the $\chi^{2}$ is calculated as follows:
 
@@ -31,16 +31,16 @@ The agreement between the unfolded result and MC prediction at generation level 
   \label{eq:chi2}
 \end{equation}
 
-From the $\chi^{2}$ value the p-value can be computed using the number of degrees of freedom equal to the number of bins in the unfolded distribution subtracted by 1 to account for a loss of freedom when normalising the distributions. One row and one column is discarded from the covariance matrix $\Sigma$. $\chi^{2}$ value does not depend on the choice of the discarded elements.
+From the $\chi^{2}$ value the \pval can be computed using the number of degrees of freedom equal to the number of bins in the unfolded distribution subtracted by 1 to account for a loss of freedom when normalising the distributions. One row and one column is discarded from the covariance matrix $\Sigma$. $\chi^{2}$ value does not depend on the choice of the discarded elements.
 
-Table~\ref{tab:chi_table_pull_angle_OPT_allconst_nominal_ATLAS3} shows the $\chi^{2}$ values and p-values for \pullangle using all jet constituents. The results show that the pull angle distribution is poorly modelled by the MC genertors. In general, the simulation predicts a more sloped distribution, i.e. a stronger colour flow effect. \HERWIGpp models better the pull angle distribution than \PYTHIA 8.2. Accuracy of \PYTHIA 8.2 is particularly poor when predicting the distribution of \pullangle from \scndleadingjet to \leadingjet.
+Table~\ref{tab:chi_table_pull_angle_OPT_allconst_nominal_ATLAS3} shows the $\chi^{2}$ values and \pval s for \pullangle using all jet constituents. The results show that the pull angle distribution is poorly modelled by the MC genertors. In general, the simulation predicts a more sloped distribution, i.e. a stronger colour flow effect. \HERWIGpp models better the pull angle distribution than \PYTHIA 8.2. Accuracy of \PYTHIA 8.2 is particularly poor when predicting the distribution of \pullangle from \scndleadingjet to \leadingjet.
 
-The $\chi^{2}$ values and p-values for the \PW colour octet model are given in Table~\ref{tab:chi_table_pull_angle_OPT_allconst_cflip_ATLAS3}. In the \POWHEG+\PYTHIA 8 * entry \ttbar cflip has been added as a systematic to \ttbar. In the colour flip model the distribution of \pullangle from \leadingjet to \scndleadingjet is modelled less acurately than the SM prediction.
+The $\chi^{2}$ values and \pval s for the \PW colour octet model are given in Table~\ref{tab:chi_table_pull_angle_OPT_allconst_cflip_ATLAS3}. In the \POWHEG+\PYTHIA 8 * entry \ttbar cflip has been added as a systematic to \ttbar. In the colour flip model the distribution of \pullangle from \leadingjet to \scndleadingjet is modelled less acurately than the SM prediction.
   
 %% Table \ref{tab:chi_table_pull_angle_OPT_allconst_MC13TeV_TTJets_nominal_ATLAS3_full} shows the values of $\chi^{2}$ and if signal $M$ in Eq. \ref{eq:chi2} is replaced by the respective systematic, but leaving the covariance matrix $\Sigma$ unchanged. The agreement is better than \ttbar when the colour flow is modelled by \ttbar ERDOn, \ttbar Herwig ++ and \ttbar QCD based.
 
 \figunfolding{nominal}{leading_jet}{allconst}{pull_angle}{ATLAS3}{MC13TeV_TTJets}
-
+%\newpage
 \input{tables/unc_nominal_full/pull_angle/ATLAS3/unc_table_full_leading_jet_allconst_pull_angle_OPT_gen_out_MC13TeV_TTJets.txt}
 
 \input{tables/unc_cflip_full/pull_angle/ATLAS3/unc_table_full_leading_jet_allconst_pull_angle_OPT_gen_out_MC13TeV_TTJets.txt}

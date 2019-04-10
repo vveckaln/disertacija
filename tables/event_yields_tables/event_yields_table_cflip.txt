@@ -1,24 +1,24 @@
-%\begin{table}[htp]
-%\centering
-\begin{longtable}{lrrrr}
-\caption{Event yields for the colour octet \PW sample.}\\
+\begin{table}[htp]
+\centering
+\caption{Event yields for the colour octet \PW sample.}
 \label{tab:yields_cflip}
+\begin{longtable}{lrrrr}
 Process & $1 \ell$ & $1 \ell + \geq 4 j$ & $1 \ell + \geq 4 j (2 b)$ & $1 \ell + 4 j (2 b, 2 lj)$ \\
 \hline
 $e$ + jets channel\\
 \hline
-             \ttbar cflip	&            3286355.8		&            1402535.2		&             435571.4		&             171860.5		\\
-(\ttbar cflip uncertainty)	& $\pm$         457826.7	& $\pm$          45171.2	& $\pm$          47044.9	& $\pm$          17862.5	\\
+             \ttbar cflip	& \num{           3286355.8}		& \num{           1402535.2}		& \num{            435571.4}		& \num{            171860.5}		\\
+(\ttbar cflip uncertainty)	& $\pm$\num{        457826.7}	& $\pm$\num{         45171.2}	& $\pm$\num{         47044.9}	& $\pm$\num{         17862.5}	\\
 \hline
 $\mu$ + jets channel\\
 \hline
-             \ttbar cflip	&            5498127.0		&            2291341.8		&             715210.2		&             279979.4		\\
-(\ttbar cflip uncertainty)	& $\pm$         488185.1	& $\pm$          73663.0	& $\pm$          76578.6	& $\pm$          28351.2	\\
+             \ttbar cflip	& \num{           5498127.0}		& \num{           2291341.8}		& \num{            715210.2}		& \num{            279979.4}		\\
+(\ttbar cflip uncertainty)	& $\pm$\num{        488185.1}	& $\pm$\num{         73663.0}	& $\pm$\num{         76578.6}	& $\pm$\num{         28351.2}	\\
 \hline
 Combined $\ell$ + jets channel\\
 \hline
-             \ttbar cflip	&            8784295.0		&            3693872.2		&            1150780.1		&             451839.8		\\
-(\ttbar cflip uncertainty)	& $\pm$         669284.6	& $\pm$         117188.9	& $\pm$         123525.4	& $\pm$          46115.0	\\
+             \ttbar cflip	& \num{           8784295.0}		& \num{           3693872.2}		& \num{           1150780.1}		& \num{            451839.8}		\\
+(\ttbar cflip uncertainty)	& $\pm$\num{        669284.6}	& $\pm$\num{        117188.9}	& $\pm$\num{        123525.4}	& $\pm$\num{         46115.0}	\\
 \hline
 \end{longtable}
-%\end{table}
+\end{table}

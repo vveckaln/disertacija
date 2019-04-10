@@ -1,0 +1,34 @@
+\documentclass{article}
+\usepackage{lipsum}
+\usepackage{graphicx}
+\usepackage{subfig}
+\usepackage{float}
+\begin{document}
+\lipsum[1-5]
+here
+\begin{figure}[H]
+  \centering
+  \subfloat[]{
+    \includegraphics[width=0.5\textwidth]{example-image-a}
+  }\\                                                                                                                                                                                           
+  \subfloat[]{
+    \includegraphics[width=0.5\textwidth]{example-image-b}
+  }
+\end{figure}
+\lipsum[6-10]
+\end{document}
+
+\documentclass{report}
+\usepackage{subfig}
+\usepackage{graphicx}
+\usepackage{lipsum}
+\begin{document}
+\lipsum[1-6]
+\begin{figure}[htp]
+    \includegraphics{example-image-a}
+\end{figure}
+\begin{figure}[htp]
+    \includegraphics{example-image-b}
+\end{figure}
+\lipsum[6-10]
+\end{document}

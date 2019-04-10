@@ -1,0 +1,15 @@
+\documentclass{report}
+\usepackage{amsmath}
+
+\makeatletter
+\def\theequation{  \ifnum \c@chapter>\z@ \thechapter.\fi \@arabic\c@equation.}
+%\normalfont \normalcolor (\theequation.)}}
+%\def\print@eqnum{\tagform@\theequation.}
+%\def\endequation{\eqno \hbox{\@eqnnum}$$\@ignoretrue}
+\makeatother
+\begin{document}
+\chapter{chap}
+\begin{equation}
+  a=b
+\end{equation}
+\end{document}

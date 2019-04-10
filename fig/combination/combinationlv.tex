@@ -1,0 +1,32 @@
+\documentclass[border=0]{standalone}
+\usepackage{tikz}
+\usepackage[utf8]{inputenc}
+\usetikzlibrary{backgrounds}
+\usetikzlibrary{fit}
+\usepackage{graphicx}
+\begin{document}
+
+\begin{tikzpicture}
+  \begin{scope}[local bounding box = inset]
+    \node(a1){\Large Apskatām divus enerģētiskus, ar krāsām saistītus kvarkus ar pretēji vērstiem momentiem.};
+    
+    \node(a2)[scale=0.8] at (a1.south)[anchor=north]{\includegraphics{stage1.pdf}};
+    \node(b1)[text width=25cm, align=center] at (a2.south)[anchor=north]{\Large Kvarkiem attālinoties vienam no otra, stiprais spēks tos velk atpakaļ kopā. Kvarku kinētiskā enerģija tiek pārnesta uz krāsu lauku un kvarki palēlinās.};
+    
+    \node(b2)[scale=0.8] at (b1.south)[anchor=north]{\includegraphics{stage2.pdf}};
+
+    \node(c1) at (b2.south)[anchor=north]{\Large Tiklīdz krāsu lauks vairs nespēj pretoties šai ``stiepšanai'', krāsu līnijas tiek pārrautas.};
+    
+    \node(c2)[scale=0.8] at (c1.south)[anchor=north]{\includegraphics{stage3.pdf}};
+
+    \node(d1) at (c2.south)[anchor=north]{\Large Ir radušies divi jauni kvarki.};
+    
+    \node(d2)[scale=0.8] at (d1.south)[anchor=north]{\includegraphics{stage4.pdf}};
+
+
+  \end{scope}
+  \begin{scope}[on background layer]
+    \node[fill=yellow!40!white, fit=(inset)] {};
+  \end{scope}
+\end{tikzpicture}
+\end{document}

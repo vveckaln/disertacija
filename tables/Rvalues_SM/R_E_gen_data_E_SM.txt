@@ -6,22 +6,22 @@
 		\hline
 		\makecell[c]{Jet constituents} & $I$$\pm$(stat) [rad] & $R^{-1}$$\pm$(stat) \\
 		\hline
-		\multicolumn{3}{|c|}{$j_{1}^{b}$,$j_{2}^{b}$}\\
+		\multicolumn{3}{|c|}{$j_{1}^{b}$,\ $j_{2}^{b}$}\\
 		\hline
 		 all 	& x 	 & x \\
 		 charged 	& x 	 & x \\
 		\hline
-		\multicolumn{3}{|c|}{$j_{f}^{W}$,$j_{h}^{b}$}\\
+		\multicolumn{3}{|c|}{$j_{\text{f}}^{W}$,\ $j_{\text{h}}^{b}$}\\
 		\hline
 		 all 	& x 	 & x \\
 		 charged 	& x 	 & x \\
 		\hline
-		\multicolumn{3}{|c|}{$j_{h}^{b}$,$j_{c}^{W}$}\\
+		\multicolumn{3}{|c|}{$j_{\text{h}}^{b}$,\ $j_{\text{c}}^{W}$}\\
 		\hline
 		 all 	& x 	 & x \\
 		 charged 	& x 	 & x \\
 		\hline
-		\multicolumn{3}{|c|}{$j_{1}^{W}$,$j_{2}^{W}$}\\
+		\multicolumn{3}{|c|}{$j_{1}^{W}$,\ $j_{2}^{W}$}\\
 		\hline
 		 all 	& x 	 & x \\
 		 charged 	& x 	 & x \\

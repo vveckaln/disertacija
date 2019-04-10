@@ -1,0 +1,17 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage[subrefformat=parens,labelformat=parens]{subfig}
+\begin{document}
+See Fig. \subref{fig:exa}
+\begin{figure}
+  \centering
+  \subfloat[example a]{
+    \label{fig:exa}
+    \includegraphics[width=0.5\textwidth]{example-image-a}
+  }                                                                                                                                                                                           
+  \subfloat[example b]{
+    \label{fig:exb}
+    \includegraphics[width=0.5\textwidth]{example-image-b}
+  }
+\end{figure}
+\end{document}

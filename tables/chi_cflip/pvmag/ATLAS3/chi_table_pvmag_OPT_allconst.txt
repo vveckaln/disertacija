@@ -1,14 +1,14 @@
 \begin{table}[htp]
 	\begin{center}
-	\caption{$\chi^{2}$ and p-values of the \protect\observabletitle{pvmag} including \protect\chargetitle{allconst}. The results are for the \protect\modeltitle{cflip} model.}
+	\caption{$\chi^{2}$ and \pval s of \protect\observabletitle{pvmag} including \protect\chargetitle{allconst}. The results are for the \protect\modeltitle{cflip} model.}
 	\label{tab:chi_table_pvmag_OPT_allconst_cflip_ATLAS3}
 	\resizebox{\customwidth}{!}{		\begin{tabular}{|l|rrr|rrr|rrr|rrr|}
 		\hline
 \multirow{2}{*}{Sample}&\multicolumn{3}{|c|}{$\left|\vec{P}(j_{1}^{W})\right|$}&\multicolumn{3}{|c|}{$\left|\vec{P}(j_{2}^{W})\right|$}&\multicolumn{3}{|c|}{$\left|\vec{P}(j_{1}^{b})\right|$}&\multicolumn{3}{|c|}{$\left|\vec{P}(j_{2}^{b})\right|$}\\
-		\cline{2-13}		&$\chi^{2}$&\textbackslash Ndf&p-value&$\chi^{2}$&\textbackslash Ndf&p-value&$\chi^{2}$&\textbackslash Ndf&p-value&$\chi^{2}$&\textbackslash Ndf&p-value\\
+		\cline{2-13}		&$\chi^{2}$&/Ndf&\pval&$\chi^{2}$&/Ndf&\pval&$\chi^{2}$&/Ndf&\pval&$\chi^{2}$&/Ndf&\pval\\
 		\hline
-		Powheg+Pythia8 * & 1.37 & 2 & 0.503 & 1.19 & 2 & 0.552 & 8.44 & 2 & 0.015 & 2.21 & 2 & 0.331\\
-		Powheg+Pythia8 cf & 1.13 & 2 & 0.567 & 1.80 & 2 & 0.407 & 0.39 & 2 & 0.823 & 0.94 & 2 & 0.624\\
+		Powheg + Pythia8 * & \num{1.37} & 2 & \num{0.503} & \num{1.19} & 2 & \num{0.552} & \num{8.44} & 2 & \num{0.015} & \num{2.21} & 2 & \num{0.331}\\
+		Powheg + Pythia8 cf & \num{1.13} & 2 & \num{0.567} & \num{1.80} & 2 & \num{0.407} & \num{0.39} & 2 & \num{0.823} & \num{0.94} & 2 & \num{0.624}\\
 		\hline
 		\end{tabular}
 	}

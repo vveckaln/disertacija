@@ -6,25 +6,25 @@
 		\hline
 		\makecell[c]{Jet constituents} & $I$$\pm$(stat) [rad] & $R^{-1}$$\pm$(stat) \\
 		\hline
-		\multicolumn{3}{|c|}{$j_{1}^{b}$,$j_{2}^{b}$}\\
+		\multicolumn{3}{|c|}{$j_{1}^{b}$,\ $j_{2}^{b}$}\\
 		\hline
-		 all 	& 0.004 	$\pm$ 0.000 	& 0.191 	$\pm$ 0.003 \\
-		 charged 	& 0.002 	$\pm$ 0.000 	& 0.160 	$\pm$ 0.004 \\
+		 all 	& \num{0.004} 	$\pm$ \num{0.000} 	& \num{0.191} 	$\pm$ \num{0.003} \\
+		 charged 	& \num{0.002} 	$\pm$ \num{0.000} 	& \num{0.160} 	$\pm$ \num{0.004} \\
 		\hline
-		\multicolumn{3}{|c|}{$j_{f}^{W}$,$j_{h}^{b}$}\\
+		\multicolumn{3}{|c|}{$j_{\text{f}}^{W}$,\ $j_{\text{h}}^{b}$}\\
 		\hline
-		 all 	& 0.002 	$\pm$ 0.000 	& 0.124 	$\pm$ 0.002 \\
-		 charged 	& 0.002 	$\pm$ 0.000 	& 0.105 	$\pm$ 0.004 \\
+		 all 	& \num{0.002} 	$\pm$ \num{0.000} 	& \num{0.124} 	$\pm$ \num{0.002} \\
+		 charged 	& \num{0.002} 	$\pm$ \num{0.000} 	& \num{0.105} 	$\pm$ \num{0.004} \\
 		\hline
-		\multicolumn{3}{|c|}{$j_{h}^{b}$,$j_{c}^{W}$}\\
+		\multicolumn{3}{|c|}{$j_{\text{h}}^{b}$,\ $j_{\text{c}}^{W}$}\\
 		\hline
-		 all 	& 0.017 	$\pm$ 0.000 	& 0.847 	$\pm$ 0.007 \\
-		 charged 	& 0.010 	$\pm$ 0.000 	& 0.709 	$\pm$ 0.012 \\
+		 all 	& \num{0.017} 	$\pm$ \num{0.000} 	& \num{0.847} 	$\pm$ \num{0.007} \\
+		 charged 	& \num{0.010} 	$\pm$ \num{0.000} 	& \num{0.709} 	$\pm$ \num{0.012} \\
 		\hline
-		\multicolumn{3}{|c|}{$j_{1}^{W}$,$j_{2}^{W}$}\\
+		\multicolumn{3}{|c|}{$j_{1}^{W}$,\ $j_{2}^{W}$}\\
 		\hline
-		 all 	& 0.020 	$\pm$ 0.000 	& 1.000 	$\pm$ 0.009 \\
-		 charged 	& 0.015 	$\pm$ 0.000 	& 1.000 	$\pm$ 0.017 \\
+		 all 	& \num{0.020} 	$\pm$ \num{0.000} 	& \num{1.000} 	$\pm$ \num{0.009} \\
+		 charged 	& \num{0.015} 	$\pm$ \num{0.000} 	& \num{1.000} 	$\pm$ \num{0.017} \\
 		\hline
 		\end{tabular}
 	\end{center}

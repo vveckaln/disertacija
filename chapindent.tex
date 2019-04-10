@@ -1,0 +1,27 @@
+\documentclass{report}
+\usepackage{indentfirst}
+\makeatletter
+\renewcommand\chapter{\if@openright\cleardoublepage\else\clearpage\fi
+                    \thispagestyle{plain}%
+                    \global\@topnum\z@
+%                    \@afterindentfalse
+                    \secdef\@chapter\@schapter}
+
+
+\makeatother
+
+\begin{document}
+\chapter{firstchapter}
+first paragraph
+
+second paragraph
+\section{Some section}
+first section paragraph
+
+second section paragraph
+
+\chapter{secondchapter}
+first paragraph
+
+second paragraph
+\end{document}

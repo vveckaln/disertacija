@@ -4,65 +4,65 @@
 			\hline
 			\makecell[c]{\multirow{3}{*}{Nuisance}} &\multicolumn{6}{c}{Uncertainty in bins [\%]}\\
 			 & bin 0 & bin 1  & bin 2 & bin 3  & bin 4 & bin 5  \\
-			 & 0.00 - 0.52 & 0.52 - 1.04 & 1.04 - 1.55 & 1.55 - 2.07 & 2.07 - 2.61 & 2.61 - 3.14 \\
+			 & \num{0.00}\textendash\num{0.52} & \num{0.52}\textendash\num{1.04} & \num{1.04}\textendash\num{1.55} & \num{1.55}\textendash\num{2.07} & \num{2.07}\textendash\num{2.61} & \num{2.61}\textendash\num{3.14} \\
 			\hline
-			$t\overline{t}$ ERDon	&	0.373	&	1.181	&	0.745	&	0.901	&	0.181	&	1.148\\
-			$t\overline{t}$ Herwig++	&	0.035	&	0.589	&	1.030	&	1.978	&	0.989	&	0.820\\
-			$t\overline{t}$ Peterson Frag	&	0.004	&	0.006	&	0.062	&	0.126	&	0.011	&	0.045\\
-			$t\overline{t}$ QCD scale 1	&	0.007	&	0.008	&	0.022	&	0.035	&	0.014	&	0.002\\
-			$t\overline{t}$ QCD scale 2	&	0.015	&	0.008	&	0.003	&	0.009	&	0.029	&	0.051\\
-			$t\overline{t}$ QCD scale 3	&	0.021	&	0.021	&	0.024	&	0.024	&	0.034	&	0.037\\
-			$t\overline{t}$ QCD scale 4	&	0.010	&	0.002	&	0.018	&	0.044	&	0.021	&	0.059\\
-			$t\overline{t}$ QCD scale 5	&	0.008	&	0.002	&	0.022	&	0.050	&	0.014	&	0.048\\
-			$t\overline{t}$ QCD scale 6	&	0.001	&	0.002	&	0.001	&	0.001	&	0.003	&	0.005\\
-			$t\overline{t}$ QCDbased	&	0.605	&	1.894	&	0.046	&	0.675	&	0.525	&	1.195\\
-			$t\overline{t}$ UEdn	&	0.416	&	0.711	&	0.164	&	0.855	&	0.220	&	0.584\\
-			$t\overline{t}$ UEup	&	0.117	&	0.574	&	0.642	&	1.409	&	0.482	&	0.271\\
-			$t\overline{t}$ b fragmentation down	&	0.042	&	0.066	&	0.061	&	0.072	&	0.044	&	0.015\\
-			$t\overline{t}$ b fragmentation up	&	0.068	&	0.110	&	0.139	&	0.193	&	0.076	&	0.009\\
-			$t\overline{t}$ btag\_heavy down	&	0.026	&	0.088	&	0.220	&	0.450	&	0.111	&	0.446\\
-			$t\overline{t}$ btag\_heavy up	&	0.018	&	0.073	&	0.032	&	0.029	&	0.027	&	0.082\\
-			$t\overline{t}$ btag\_light down	&	0.071	&	0.157	&	0.010	&	0.113	&	0.001	&	0.010\\
-			$t\overline{t}$ btag\_light up	&	0.137	&	0.292	&	0.199	&	0.222	&	0.060	&	0.110\\
-			$t\overline{t}$ csv\_heavy down	&	0.099	&	0.372	&	0.033	&	0.091	&	0.149	&	0.320\\
-			$t\overline{t}$ csv\_heavy up	&	0.057	&	0.142	&	0.059	&	0.033	&	0.005	&	0.055\\
-			$t\overline{t}$ csv\_light down	&	0.029	&	0.089	&	0.118	&	0.187	&	0.001	&	0.122\\
-			$t\overline{t}$ csv\_light up	&	0.012	&	0.157	&	0.078	&	0.118	&	0.122	&	0.313\\
-			$t\overline{t}$ evtgen	&	0.077	&	0.680	&	0.227	&	0.588	&	0.585	&	0.906\\
-			$t\overline{t}$ fsr dn	&	0.497	&	0.746	&	0.015	&	0.591	&	0.395	&	0.714\\
-			$t\overline{t}$ fsr up	&	0.211	&	0.586	&	0.524	&	0.725	&	0.011	&	0.548\\
-			$t\overline{t}$ gluon move	&	0.262	&	0.217	&	0.687	&	1.081	&	0.520	&	0.250\\
-			$t\overline{t}$ hdamp dn	&	0.148	&	0.050	&	0.316	&	0.477	&	0.341	&	0.321\\
-			$t\overline{t}$ hdamp up	&	0.205	&	0.594	&	0.524	&	1.276	&	0.267	&	0.016\\
-			$t\overline{t}$ isr dn	&	0.204	&	0.863	&	0.196	&	0.046	&	0.343	&	0.894\\
-			$t\overline{t}$ isr up	&	0.072	&	0.140	&	0.042	&	0.046	&	0.334	&	0.570\\
-			$t\overline{t}$ jec\_CorrelationGroupMPFInSitu down	&	0.056	&	0.036	&	0.103	&	0.158	&	0.118	&	0.098\\
-			$t\overline{t}$ jec\_CorrelationGroupMPFInSitu up	&	0.065	&	0.220	&	0.066	&	0.031	&	0.058	&	0.185\\
-			$t\overline{t}$ jec\_CorrelationGroupUncorrelated down	&	0.068	&	0.014	&	0.068	&	0.079	&	0.191	&	0.279\\
-			$t\overline{t}$ jec\_CorrelationGroupUncorrelated up	&	0.013	&	0.042	&	0.126	&	0.229	&	0.013	&	0.110\\
-			$t\overline{t}$ jec\_FlavorPureBottom down	&	0.029	&	0.207	&	0.024	&	0.017	&	0.147	&	0.300\\
-			$t\overline{t}$ jec\_FlavorPureBottom up	&	0.092	&	0.105	&	0.066	&	0.027	&	0.124	&	0.158\\
-			$t\overline{t}$ jec\_FlavorPureCharm down	&	0.075	&	0.218	&	0.021	&	0.072	&	0.045	&	0.106\\
-			$t\overline{t}$ jec\_FlavorPureCharm up	&	0.017	&	0.064	&	0.017	&	0.034	&	0.104	&	0.209\\
-			$t\overline{t}$ jec\_FlavorPureGluon down	&	0.130	&	0.186	&	0.015	&	0.125	&	0.120	&	0.205\\
-			$t\overline{t}$ jec\_FlavorPureGluon up	&	0.085	&	0.271	&	0.177	&	0.229	&	0.048	&	0.285\\
-			$t\overline{t}$ jec\_FlavorPureQuark down	&	0.020	&	0.088	&	0.020	&	0.041	&	0.135	&	0.272\\
-			$t\overline{t}$ jec\_FlavorPureQuark up	&	0.004	&	0.203	&	0.255	&	0.471	&	0.158	&	0.570\\
-			$t\overline{t}$ jec\_RelativeFSR down	&	0.031	&	0.306	&	0.024	&	0.140	&	0.257	&	0.447\\
-			$t\overline{t}$ jec\_RelativeFSR up	&	0.021	&	0.134	&	0.066	&	0.119	&	0.178	&	0.396\\
-			$t\overline{t}$ jer down	&	0.019	&	0.054	&	0.087	&	0.204	&	0.030	&	0.041\\
-			$t\overline{t}$ jer up	&	0.061	&	0.148	&	0.197	&	0.312	&	0.031	&	0.159\\
-			$t\overline{t}$ m=171.5	&	1.131	&	1.607	&	0.885	&	3.009	&	0.734	&	2.293\\
-			$t\overline{t}$ m=173.5	&	0.000	&	0.605	&	1.569	&	2.923	&	0.288	&	2.164\\
-			$t\overline{t}$ pileup down	&	0.001	&	0.056	&	0.018	&	0.045	&	0.064	&	0.101\\
-			$t\overline{t}$ pileup up	&	0.052	&	0.065	&	0.071	&	0.200	&	0.042	&	0.152\\
-			$t\overline{t}$ sel efficiency correction down	&	0.000	&	0.002	&	0.002	&	0.005	&	0.002	&	0.001\\
-			$t\overline{t}$ sel efficiency correction up	&	0.001	&	0.003	&	0.002	&	0.006	&	0.001	&	0.000\\
-			$t\overline{t}$ semilep BR down	&	0.001	&	0.002	&	0.003	&	0.004	&	0.001	&	0.001\\
-			$t\overline{t}$ semilep BR up	&	0.001	&	0.002	&	0.001	&	0.001	&	0.000	&	0.001\\
-			$t\overline{t}$ tracking down	&	0.042	&	0.162	&	0.050	&	0.034	&	0.060	&	0.170\\
-			$t\overline{t}$ tracking up	&	0.018	&	0.105	&	0.068	&	0.101	&	0.051	&	0.172\\
-			$t\overline{t}$ trig efficiency correction down	&	0.001	&	0.003	&	0.001	&	0.001	&	0.000	&	0.001\\
-			$t\overline{t}$ trig efficiency correction up	&	0.002	&	0.003	&	0.001	&	0.000	&	0.001	&	0.000\\
+			$t\overline{t}$ ERDon	&	\num{0.373}	&	\num{1.181}	&	\num{0.745}	&	\num{0.901}	&	\num{0.181}	&	\num{1.148}\\
+			$t\overline{t}$ Herwig++	&	\num{0.035}	&	\num{0.589}	&	\num{1.030}	&	\num{1.978}	&	\num{0.989}	&	\num{0.820}\\
+			$t\overline{t}$ Peterson Frag	&	\num{0.004}	&	\num{0.006}	&	\num{0.062}	&	\num{0.126}	&	\num{0.011}	&	\num{0.045}\\
+			$t\overline{t}$ QCD scale 1	&	\num{0.007}	&	\num{0.008}	&	\num{0.022}	&	\num{0.035}	&	\num{0.014}	&	\num{0.002}\\
+			$t\overline{t}$ QCD scale 2	&	\num{0.015}	&	\num{0.008}	&	\num{0.003}	&	\num{0.009}	&	\num{0.029}	&	\num{0.051}\\
+			$t\overline{t}$ QCD scale 3	&	\num{0.021}	&	\num{0.021}	&	\num{0.024}	&	\num{0.024}	&	\num{0.034}	&	\num{0.037}\\
+			$t\overline{t}$ QCD scale 4	&	\num{0.010}	&	\num{0.002}	&	\num{0.018}	&	\num{0.044}	&	\num{0.021}	&	\num{0.059}\\
+			$t\overline{t}$ QCD scale 5	&	\num{0.008}	&	\num{0.002}	&	\num{0.022}	&	\num{0.050}	&	\num{0.014}	&	\num{0.048}\\
+			$t\overline{t}$ QCD scale 6	&	\num{0.001}	&	\num{0.002}	&	\num{0.001}	&	\num{0.001}	&	\num{0.003}	&	\num{0.005}\\
+			$t\overline{t}$ QCDbased	&	\num{0.605}	&	\num{1.894}	&	\num{0.046}	&	\num{0.675}	&	\num{0.525}	&	\num{1.195}\\
+			$t\overline{t}$ UEdn	&	\num{0.416}	&	\num{0.711}	&	\num{0.164}	&	\num{0.855}	&	\num{0.220}	&	\num{0.584}\\
+			$t\overline{t}$ UEup	&	\num{0.117}	&	\num{0.574}	&	\num{0.642}	&	\num{1.409}	&	\num{0.482}	&	\num{0.271}\\
+			$t\overline{t}$ b fragmentation down	&	\num{0.042}	&	\num{0.066}	&	\num{0.061}	&	\num{0.072}	&	\num{0.044}	&	\num{0.015}\\
+			$t\overline{t}$ b fragmentation up	&	\num{0.068}	&	\num{0.110}	&	\num{0.139}	&	\num{0.193}	&	\num{0.076}	&	\num{0.009}\\
+			$t\overline{t}$ btag\_heavy down	&	\num{0.026}	&	\num{0.088}	&	\num{0.220}	&	\num{0.450}	&	\num{0.111}	&	\num{0.446}\\
+			$t\overline{t}$ btag\_heavy up	&	\num{0.018}	&	\num{0.073}	&	\num{0.032}	&	\num{0.029}	&	\num{0.027}	&	\num{0.082}\\
+			$t\overline{t}$ btag\_light down	&	\num{0.071}	&	\num{0.157}	&	\num{0.010}	&	\num{0.113}	&	\num{0.001}	&	\num{0.010}\\
+			$t\overline{t}$ btag\_light up	&	\num{0.137}	&	\num{0.292}	&	\num{0.199}	&	\num{0.222}	&	\num{0.060}	&	\num{0.110}\\
+			$t\overline{t}$ csv\_heavy down	&	\num{0.099}	&	\num{0.372}	&	\num{0.033}	&	\num{0.091}	&	\num{0.149}	&	\num{0.320}\\
+			$t\overline{t}$ csv\_heavy up	&	\num{0.057}	&	\num{0.142}	&	\num{0.059}	&	\num{0.033}	&	\num{0.005}	&	\num{0.055}\\
+			$t\overline{t}$ csv\_light down	&	\num{0.029}	&	\num{0.089}	&	\num{0.118}	&	\num{0.187}	&	\num{0.001}	&	\num{0.122}\\
+			$t\overline{t}$ csv\_light up	&	\num{0.012}	&	\num{0.157}	&	\num{0.078}	&	\num{0.118}	&	\num{0.122}	&	\num{0.313}\\
+			$t\overline{t}$ evtgen	&	\num{0.077}	&	\num{0.680}	&	\num{0.227}	&	\num{0.588}	&	\num{0.585}	&	\num{0.906}\\
+			$t\overline{t}$ fsr dn	&	\num{0.497}	&	\num{0.746}	&	\num{0.015}	&	\num{0.591}	&	\num{0.395}	&	\num{0.714}\\
+			$t\overline{t}$ fsr up	&	\num{0.211}	&	\num{0.586}	&	\num{0.524}	&	\num{0.725}	&	\num{0.011}	&	\num{0.548}\\
+			$t\overline{t}$ gluon move	&	\num{0.262}	&	\num{0.217}	&	\num{0.687}	&	\num{1.081}	&	\num{0.520}	&	\num{0.250}\\
+			$t\overline{t}$ hdamp dn	&	\num{0.148}	&	\num{0.050}	&	\num{0.316}	&	\num{0.477}	&	\num{0.341}	&	\num{0.321}\\
+			$t\overline{t}$ hdamp up	&	\num{0.205}	&	\num{0.594}	&	\num{0.524}	&	\num{1.276}	&	\num{0.267}	&	\num{0.016}\\
+			$t\overline{t}$ isr dn	&	\num{0.204}	&	\num{0.863}	&	\num{0.196}	&	\num{0.046}	&	\num{0.343}	&	\num{0.894}\\
+			$t\overline{t}$ isr up	&	\num{0.072}	&	\num{0.140}	&	\num{0.042}	&	\num{0.046}	&	\num{0.334}	&	\num{0.570}\\
+			$t\overline{t}$ jec\_CorrelationGroupMPFInSitu down	&	\num{0.056}	&	\num{0.036}	&	\num{0.103}	&	\num{0.158}	&	\num{0.118}	&	\num{0.098}\\
+			$t\overline{t}$ jec\_CorrelationGroupMPFInSitu up	&	\num{0.065}	&	\num{0.220}	&	\num{0.066}	&	\num{0.031}	&	\num{0.058}	&	\num{0.185}\\
+			$t\overline{t}$ jec\_CorrelationGroupUncorrelated down	&	\num{0.068}	&	\num{0.014}	&	\num{0.068}	&	\num{0.079}	&	\num{0.191}	&	\num{0.279}\\
+			$t\overline{t}$ jec\_CorrelationGroupUncorrelated up	&	\num{0.013}	&	\num{0.042}	&	\num{0.126}	&	\num{0.229}	&	\num{0.013}	&	\num{0.110}\\
+			$t\overline{t}$ jec\_FlavorPureBottom down	&	\num{0.029}	&	\num{0.207}	&	\num{0.024}	&	\num{0.017}	&	\num{0.147}	&	\num{0.300}\\
+			$t\overline{t}$ jec\_FlavorPureBottom up	&	\num{0.092}	&	\num{0.105}	&	\num{0.066}	&	\num{0.027}	&	\num{0.124}	&	\num{0.158}\\
+			$t\overline{t}$ jec\_FlavorPureCharm down	&	\num{0.075}	&	\num{0.218}	&	\num{0.021}	&	\num{0.072}	&	\num{0.045}	&	\num{0.106}\\
+			$t\overline{t}$ jec\_FlavorPureCharm up	&	\num{0.017}	&	\num{0.064}	&	\num{0.017}	&	\num{0.034}	&	\num{0.104}	&	\num{0.209}\\
+			$t\overline{t}$ jec\_FlavorPureGluon down	&	\num{0.130}	&	\num{0.186}	&	\num{0.015}	&	\num{0.125}	&	\num{0.120}	&	\num{0.205}\\
+			$t\overline{t}$ jec\_FlavorPureGluon up	&	\num{0.085}	&	\num{0.271}	&	\num{0.177}	&	\num{0.229}	&	\num{0.048}	&	\num{0.285}\\
+			$t\overline{t}$ jec\_FlavorPureQuark down	&	\num{0.020}	&	\num{0.088}	&	\num{0.020}	&	\num{0.041}	&	\num{0.135}	&	\num{0.272}\\
+			$t\overline{t}$ jec\_FlavorPureQuark up	&	\num{0.004}	&	\num{0.203}	&	\num{0.255}	&	\num{0.471}	&	\num{0.158}	&	\num{0.570}\\
+			$t\overline{t}$ jec\_RelativeFSR down	&	\num{0.031}	&	\num{0.306}	&	\num{0.024}	&	\num{0.140}	&	\num{0.257}	&	\num{0.447}\\
+			$t\overline{t}$ jec\_RelativeFSR up	&	\num{0.021}	&	\num{0.134}	&	\num{0.066}	&	\num{0.119}	&	\num{0.178}	&	\num{0.396}\\
+			$t\overline{t}$ jer down	&	\num{0.019}	&	\num{0.054}	&	\num{0.087}	&	\num{0.204}	&	\num{0.030}	&	\num{0.041}\\
+			$t\overline{t}$ jer up	&	\num{0.061}	&	\num{0.148}	&	\num{0.197}	&	\num{0.312}	&	\num{0.031}	&	\num{0.159}\\
+			$t\overline{t}$ m=171.5	&	\num{1.131}	&	\num{1.607}	&	\num{0.885}	&	\num{3.009}	&	\num{0.734}	&	\num{2.293}\\
+			$t\overline{t}$ m=173.5	&	\num{0.000}	&	\num{0.605}	&	\num{1.569}	&	\num{2.923}	&	\num{0.288}	&	\num{2.164}\\
+			$t\overline{t}$ pileup down	&	\num{0.001}	&	\num{0.056}	&	\num{0.018}	&	\num{0.045}	&	\num{0.064}	&	\num{0.101}\\
+			$t\overline{t}$ pileup up	&	\num{0.052}	&	\num{0.065}	&	\num{0.071}	&	\num{0.200}	&	\num{0.042}	&	\num{0.152}\\
+			$t\overline{t}$ sel efficiency correction down	&	\num{0.000}	&	\num{0.002}	&	\num{0.002}	&	\num{0.005}	&	\num{0.002}	&	\num{0.001}\\
+			$t\overline{t}$ sel efficiency correction up	&	\num{0.001}	&	\num{0.003}	&	\num{0.002}	&	\num{0.006}	&	\num{0.001}	&	\num{0.000}\\
+			$t\overline{t}$ semilep BR down	&	\num{0.001}	&	\num{0.002}	&	\num{0.003}	&	\num{0.004}	&	\num{0.001}	&	\num{0.001}\\
+			$t\overline{t}$ semilep BR up	&	\num{0.001}	&	\num{0.002}	&	\num{0.001}	&	\num{0.001}	&	\num{0.000}	&	\num{0.001}\\
+			$t\overline{t}$ tracking down	&	\num{0.042}	&	\num{0.162}	&	\num{0.050}	&	\num{0.034}	&	\num{0.060}	&	\num{0.170}\\
+			$t\overline{t}$ tracking up	&	\num{0.018}	&	\num{0.105}	&	\num{0.068}	&	\num{0.101}	&	\num{0.051}	&	\num{0.172}\\
+			$t\overline{t}$ trig efficiency correction down	&	\num{0.001}	&	\num{0.003}	&	\num{0.001}	&	\num{0.001}	&	\num{0.000}	&	\num{0.001}\\
+			$t\overline{t}$ trig efficiency correction up	&	\num{0.002}	&	\num{0.003}	&	\num{0.001}	&	\num{0.000}	&	\num{0.001}	&	\num{0.000}\\
 		\hline
 		\end{longtable}

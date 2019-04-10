@@ -1,0 +1,20 @@
+\documentclass{report}
+\makeatletter
+\def\@makechapterhead#1{%
+  \vspace*{50\p@}%
+  {\parindent \z@ \raggedright \normalfont
+    \ifnum \c@secnumdepth >\m@ne
+        \huge\bfseries \thechapter.\space #1 
+        \par\nobreak
+        \vskip 40\p@
+    \fi
+    %% \interlinepenalty\@M
+    %% \Huge \bfseries #1\par\nobreak
+    %% \vskip 40\p@
+  }}
+
+\makeatother
+\begin{document}
+\chapter{first}
+hey
+\end{document}

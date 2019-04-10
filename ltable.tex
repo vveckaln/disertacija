@@ -1,0 +1,34 @@
+\documentclass{report}
+\usepackage{lipsum}
+\usepackage{longtable}
+\usepackage{needspace}
+\begin{document}
+\lipsum[1-4]
+
+another paragraph
+
+another paragraph
+
+another paragraph
+
+%another paragraph
+
+%anoteher paragraph
+
+%another paragraph
+
+%another paragraph
+
+%anoteher paragraph
+
+%another paragraph
+\Needspace{7\baselineskip}
+\begin{longtable}{lr}
+  \caption{\lipsum[1][1-3]}\\*
+%  \label{tab:results}\\*
+  \hline
+  A&B\\
+  c&D\\
+  E&F
+  \end{longtable}
+\end{document}

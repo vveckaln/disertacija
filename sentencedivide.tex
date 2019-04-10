@@ -1,0 +1,25 @@
+\documentclass{article}
+\usepackage{lipsum}
+\usepackage{graphicx}
+\usepackage{subfig}
+\widowpenalty10000
+\clubpenalty10000
+\renewcommand{\floatpagefraction}{0.8}
+\begin{document}
+\huge
+\lipsum[1]
+\begin{figure}
+  \centering
+  \subfloat[]{
+    \includegraphics[width=0.7\textwidth]{example-image-a}
+  }\\
+  \subfloat[]{
+    \includegraphics[width=0.7\textwidth]{example-image-b}
+  }\\
+  \subfloat[]{
+    \includegraphics[width=0.7\textwidth]{example-image-c}
+  }
+
+\end{figure}
+\lipsum[3]
+\end{document}

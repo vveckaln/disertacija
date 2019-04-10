@@ -5,7 +5,7 @@ Notikumu atlases mērķis ir nodalīt signālu no fona. Notikumu atlase ir atš�
 \section{Detektora līmenis}
 \label{sec:detector_level}
 
-Notikumu atlase ir balstīta \ttbar$\to$leptons + strūklas topoloģijā, kur viens no \PW bozoniem sabrūk par lādētu leptonu ($\ell=e, \mu$) un atbilstošo neitrino, bet otrs \PW bozons sabrūk par kvarkiem, kas rada strūklas.
+Notikumu atlase ir balstīta \ttbar$\to$ leptons + strūklas topoloģijā, kur viens no \PW bozoniem sabrūk par lādētu leptonu ($\ell=e, \mu$) un atbilstošo neitrino, bet otrs \PW bozons sabrūk par kvarkiem, kas rada strūklas.
 
 Lai rekonstruētu gala stadijas objektus, tiek izmantots daļiņu plūsmas algoritms~\cite{Sirunyan:2017ulk}. Lai celtu rekonstrukcijas kvalitāti, šis algoritms kombinē signālus no visiem apakšdetektoriem, un ar tā palīdzību var identificēt mionus, elektronus, fotonus, lādētos hadronus un neitrālos hadronus pēc \Pp\Pp sadursmes.
 
@@ -17,9 +17,9 @@ Datu paraugi tiek ievākti, izmantojot \gls{Augsta līmeņa trigera} viena lepto
 \label{tab:triggers}
 \begin{tabularx}{\linewidth}{lllXX}\hline
 Gala stadija                & Ceļš                                       & Darbības intervāls & Funkcija & L1 sākums\\\hline
-e+strūklas                      & \small HLT\_Ele32\_eta2p1\_WPTight\_Gsf\_v & visi       & \small Atlasīt $e$ ar $\left|\eta\right|<2,1$ un $\pt>32~\GeV$ ciešajā darbības punktā, izmantojot GSF, lai rekonstruētu trekus
+$e$ + strūklas                      & \small HLT\_Ele32\_eta2p1\_WPTight\_Gsf\_v & visi       & \small Atlasīt $e$ ar $\left|\eta\right|<2,1$ un $\pt>32~\GeV$ ciešajā darbības punktā, izmantojot GSF, lai rekonstruētu trekus
                                                                                          & \small L1\_SingleEG40\newline VAI\newline L1\_SingleIsoEG22er\newline VAI\newline L1\_SingleIsoEG24er\newline VAI\newline L1\_SingleIsoEG24\newline VAI\newline L1\_SingleIsoEG26\\\hline
-\multirow[t]{2}{*}{$\mu$+strūklas}
+\multirow[t]{2}{*}{$\mu$ + strūklas}
                             & \small HLT\_IsoMu24\_v                     & visi       & \small Atlasīt izolētu $\mu$ ar $\pt>20$~\GeV, izmantojot L3 trekera algoritmu
                                                                                          & \multirow[t]{2}{*}{\small L1\_SingleMu18}\\
                             & \small HLT\_IsoTkMu24\_v                   & visi       & \small Atlasīt izolētu $\mu$ ar $\pt>20$~\GeV, izmantojot HLT trekera mionu algoritmu
@@ -29,13 +29,13 @@ e+strūklas                      & \small HLT\_Ele32\_eta2p1\_WPTight\_Gsf\_v & 
 
 Bezsaistē tiek prasīts viens ciešs elektrons/mions ar $\pt>34/26~\GeV$ un $|\eta|<2,1/2,4$. Notikumam, kurā ir otrs vaļīgs leptons ar $\pt>15~\GeV$ un $|\eta|<2,4$, tiek uzlikts veto.
 
-Notikumā jābūt četrām strūklām, kas sakopotas ar anti-$k_{T}$ algoritmu, strūklu atdalījumu ar $R=0,4$ un lādēto hadronu atņemšanu (AK4PFchs) un kurām $\pt>30\GeV$ un $|\eta|<2,4$. 
+Notikumā jābūt četrām strūklām, kas sakopotas ar anti-$k_{\text{T}}$ algoritmu, strūklu atdalījumu ar $R=0,4$ un lādēto hadronu atņemšanu (AK4PFchs) un kurām $\pt>30\GeV$ un $|\eta|<2,4$. 
 
-Vismaz divām strūklām jābūt \cPqb-atzīmētām ar Combined Secondary Vertex algoritma (CSVv2) vidējo darbības punktu. 
+Vismaz divām strūklām jābūt \cPqb atzīmētām ar {\it Combined Secondary Vertex} algoritma (CSVv2) vidējo darbības punktu. 
 
 Notikumā jābūt vismas divām neatzīmētām (vieglajām) strūklām, kurām jārada \PW bozona kandidāts, kura invariantā masa $\left|m_{jj}-80,4\right|<15~\GeV$.
 
-Notikumu raža dažādās atlases stadijās ir attēlota \ref{fig:_reco_selection}~att. un sniegta \ref{tab:yields}~tab. \ref{tab:yields_cflip}~tab. attēlota notikumu raža krāsu okteta \PW paraugam. Signāla īpatsvars palielinās no 0,1~\% sākotnējā stadijā līdz 94,2~\% gala stadijā - tas ir šīs atlases efektivitātes mērs.
+Notikumu raža dažādās atlases stadijās ir redzama \ref{fig:_reco_selection}~att. un sniegta \ref{tab:yields}~tab. \ref{tab:yields_cflip}~tab. attēlota notikumu raža krāsu okteta \PW paraugam. Signāla īpatsvars palielinās no 0,1~\% sākotnējā stadijā līdz 94,2~\% gala stadijā \textendash\ tas ir šīs atlases efektivitātes mērs.
 
 \figureEML{/reco/}{_reco_selection}{Notikumu raža dažādās notikumu atlases stadijās: $1 \ell$, $1 \ell + \geq 4 j$, $1 \ell + \geq 4 j (2 b)$, $1 \ell + \geq 4 j (2 b, 2 lj)$.}
 
@@ -48,4 +48,4 @@ Notikumu raža dažādās atlases stadijās ir attēlota \ref{fig:_reco_selectio
 
 Simulācijā bezsaistes atlase daļiņu līmenī tiek imitēta, izmantojot \PSEUDOTOPPRODUCER rīku~\cite{code:pseudotop}, izmantojot kopīgu leptonu atlasi gan elektroniem, gan mioniem ar $\pt>26\GeV$ un $|\eta|<2,4$, kā arī tādām pašām prasībām strūklām $\pt/\eta$ ($\pt>30~\GeV$, $|\eta|<2,4$) un \PW masai ($\left|m_{jj}-80,4\right|<15~\GeV$) kā bezsaistes atlasei detektora līmenī.
 
-Lādētie leptoni, kas izdalās cietajā procesā, tiek apzaroti ar leptoniem $R=0,1$ konusā. Strūklas tiek sakopotas ar anti-$k_T$ algoritmu ar $R=0,4$ konusu pēc apzaroto leptonu kā arī visu neitrino noņemšanas. Lai noteiktu strūklas smaržu daļiņu līmenī, strūklas sakopojumā tiek iekļauti ``spoku'' B-hadroni, pēc tam kad to moments ir reizināts ar $10^{-20}$ tā, lai tie būtiski nemainītu strūklas enerģijas mērogu daļiņu līmenī.
+Lādētie leptoni, kas izdalās cietajā procesā, tiek apzaroti ar leptoniem $R=0,1$ konusā. Strūklas tiek sakopotas ar anti-$k_\text{T}$ algoritmu ar $R=0,4$ konusu pēc apzaroto leptonu kā arī visu neitrino noņemšanas. Lai noteiktu strūklas smaržu daļiņu līmenī, strūklas sakopojumā tiek iekļauti ``spoku'' $B$ hadroni, kad to moments ir reizināts ar $10^{-20}$ tā, lai tie būtiski nemainītu strūklas enerģijas mērogu daļiņu līmenī.

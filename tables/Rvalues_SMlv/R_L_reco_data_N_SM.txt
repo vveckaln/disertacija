@@ -8,23 +8,23 @@
 		\hline
 		\multicolumn{3}{|c|}{$j_{1}^{b}$,$j_{2}^{b}$}\\
 		\hline
-		 visas 	& 0,011 	$\pm$ 0,000 	& 0,173 	$\pm$ 0,000 \\
-		 lādētas 	& 0,006 	$\pm$ 0,000 	& 0,139 	$\pm$ 0,000 \\
+		 visas 	& \num{0.011} 	$\pm$ \num{0.000} 	& \num{0.173} 	$\pm$ \num{0.000} \\
+		 lādētas 	& \num{0.006} 	$\pm$ \num{0.000} 	& \num{0.139} 	$\pm$ \num{0.000} \\
 		\hline
-		\multicolumn{3}{|c|}{$j_{f}^{W}$,$j_{h}^{b}$}\\
+		\multicolumn{3}{|c|}{$j_{\text{f}}^{W}$,\ $j_{\text{h}}^{b}$}\\
 		\hline
-		 visas 	& 0,011 	$\pm$ 0,000 	& 0,175 	$\pm$ 0,000 \\
-		 lādētas 	& 0,007 	$\pm$ 0,000 	& 0,144 	$\pm$ 0,000 \\
+		 visas 	& \num{0.011} 	$\pm$ \num{0.000} 	& \num{0.175} 	$\pm$ \num{0.000} \\
+		 lādētas 	& \num{0.007} 	$\pm$ \num{0.000} 	& \num{0.144} 	$\pm$ \num{0.000} \\
 		\hline
-		\multicolumn{3}{|c|}{$j_{h}^{b}$,$j_{c}^{W}$}\\
+		\multicolumn{3}{|c|}{$j_{\text{h}}^{b}$,\ $j_{\text{c}}^{W}$}\\
 		\hline
-		 visas 	& 0,062 	$\pm$ 0,000 	& 0,944 	$\pm$ 0,000 \\
-		 lādētas 	& 0,035 	$\pm$ 0,000 	& 0,766 	$\pm$ 0,000 \\
+		 visas 	& \num{0.062} 	$\pm$ \num{0.000} 	& \num{0.944} 	$\pm$ \num{0.000} \\
+		 lādētas 	& \num{0.035} 	$\pm$ \num{0.000} 	& \num{0.766} 	$\pm$ \num{0.000} \\
 		\hline
-		\multicolumn{3}{|c|}{$j_{1}^{W}$,$j_{2}^{W}$}\\
+		\multicolumn{3}{|c|}{$j_{1}^{W}$,\ $j_{2}^{W}$}\\
 		\hline
-		 visas 	& 0,065 	$\pm$ 0,000 	& 1,000 	$\pm$ 0,000 \\
-		 lādētas 	& 0,046 	$\pm$ 0,000 	& 1,000 	$\pm$ 0,000 \\
+		 visas 	& \num{0.065} 	$\pm$ \num{0.000} 	& \num{1.000} 	$\pm$ \num{0.000} \\
+		 lādētas 	& \num{0.046} 	$\pm$ \num{0.000} 	& \num{1.000} 	$\pm$ \num{0.000} \\
 		\hline
 		\end{tabular}
 	\end{center}

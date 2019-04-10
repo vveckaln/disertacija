@@ -1,0 +1,121 @@
+\documentclass{report}
+\usepackage{ifthen}
+\def\startnewpart{FALSE}
+\makeatletter
+\def\startnewtpart{FALSE}
+\def\tpartname{}
+\newcounter{totfigures}
+
+\providecommand\totfig{} 
+
+\def\@tpart[#1]#2{%
+    %% \ifnum \c@secnumdepth >-2\relax
+    %%   \refstepcounter{part}%
+    %%   \addcontentsline{toc}{part}{\thepart\hspace{1em}#1}%
+    %% \else
+      \addcontentsline{toc}{tpart}{#1}%
+%    \fi
+    \markboth{}{}%
+    {\centering
+     \interlinepenalty \@M
+     \normalfont
+     %% \ifnum \c@secnumdepth >-2\relax
+     %%   \huge\bfseries \partname\nobreakspace\thepart
+     %%   \par
+     %%   \vskip 20\p@
+     %% \fi
+     \Huge \bfseries #2\par}%
+    \@endtpart}
+\def\@stpart#1{%
+    {\centering
+     \interlinepenalty \@M
+     \normalfont
+     \Huge \bfseries #1\par}%
+    \@endtpart}
+
+
+\renewcommand\chapter{%\if@openright\cleardoublepage\else\clearpage\fi
+  \setcounter{figure}{0}
+  \addtocounter{totfigures}{\value{figure}}%
+  \ifthenelse{\equal{\startnewtpart}{FALSE}}{
+    \clearpage
+  }{
+  }
+                    \def\startnewtpart{FALSE}
+                    \thispagestyle{plain}%
+                    \global\@topnum\z@
+                    \@afterindentfalse
+                    \secdef\@chapter\@schapter
+%                    \def\startnewpart{FALSE}
+}
+
+  \newcommand\tpart{%
+  \def\startnewtpart{TRUE}
+\if@openright
+    \cleardoublepage
+  \else
+    \clearpage
+  \fi
+  %% \thispagestyle{plain}%
+  \if@twocolumn
+    \onecolumn
+    \@tempswatrue
+  \else
+    \@tempswafalse
+  \fi
+%  \null\vfil
+  \secdef\@tpart\@stpart}
+  %%   \renewcommand\part{%
+  %% \def\startnewpart{TRUE}
+  %% \clearpage
+  %% \secdef\@part\@spart}
+\def\@endtpart{%% \vfil\newpage
+              %% \if@twoside
+              %%  \if@openright
+              %%   \null
+              %%   \thispagestyle{empty}%
+              %%   \newpage
+              %%  \fi
+              %% \fi
+              \if@tempswa
+                \twocolumn
+              \fi}
+
+\newcounter{tsubsection}
+\renewcommand{\thetsubsection}{\@Roman\c@tsubsection}
+\newcommand\tsubsection{\@startsection{tsubsection}{2}{\z@}%
+                                     {-3.25ex\@plus -1ex \@minus -.2ex}%
+                                     {1.5ex \@plus .2ex}%
+                                     {\normalfont\large\bfseries}}
+\newcommand\tsubsectionmark[1]{}
+\newcommand*\l@tsubsection{\@dottedtocline{2}{1.8em}{3.2em}}
+\newcommand*\l@tpart[2]{%
+  \ifnum \c@tocdepth >-2\relax
+    \addpenalty{-\@highpenalty}%
+    \addvspace{2.25em \@plus\p@}%
+    \setlength\@tempdima{3em}%
+    \begingroup
+      \parindent \z@ \rightskip \@pnumwidth
+      \parfillskip -\@pnumwidth
+      {\leavevmode
+       \large \bfseries #1\hfil \hb@xt@\@pnumwidth{\hss #2}}\par
+       \nobreak
+         \global\@nobreaktrue
+         \everypar{\global\@nobreakfalse\everypar{}}%
+    \endgroup
+  \fi}
+
+
+\makeatother
+\begin{document}
+\tableofcontents
+\tpart{Overall Description}
+\tsubsection{Methods}
+Some text
+\tsubsection{Experiment}
+description
+\tpart{Another Part}
+hey\par
+\chapter{Another chap}
+lll
+\end{document}

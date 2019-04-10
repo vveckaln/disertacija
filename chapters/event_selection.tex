@@ -5,22 +5,22 @@ The discussion of this section is elaborated upon~\cite{CMS-AN-2017-159}, which 
 \section{Detector level}
 \label{sec:detector_level}
 
-The event selection is based on the \ttbar$\to$lepton+jets decay topology where one of the \PW bosons decays to a charged lepton ($\ell=e, \mu$) and a corresponding neutrino, while the other \PW boson decays to quarks yielding jets.
+The event selection is based on the \ttbar$\to$lepton~+~jets decay topology where one of the \PW bosons decays to a charged lepton ($\ell=e, \mu$) and a corresponding neutrino, while the other \PW boson decays to quarks yielding jets.
 
 The particle flow PF algorithm is used for reconstruction of final state objects~\cite{Sirunyan:2017ulk}. This algorithm combines signals from all sub-detectors to enhance the reconstruction performance and it allows to identify muons, electrons, photons, charged hadrons and neutral hadrons produced after a \Pp\Pp collision.
 
 Data samples are collected using the single lepton trigger paths of the High Level Trigger summarised in Table~\ref{tab:triggers}.
 
-\begin{table}[htp]
+\begin{table}[H]
 \centering
 \caption{Trigger paths used for online selection in the analysis.}
 \label{tab:triggers}
 \begin{threeparttable}
 \begin{tabularx}{\linewidth}{lllXX}\hline
 Final state                 & Path                                & Run range & Function & L1 seed\\\hline
-e+jets                      & \small HLT\_Ele32\_eta2p1\_WPTight\_Gsf\_v & all       & \small Select $e$ with $\left|\eta\right|<2.1$ and $\pt>32$ with the tight working point and using the GSF\tnote{a} to reconstruct tracks
+$e$ + jets                      & \small HLT\_Ele32\_eta2p1\_WPTight\_Gsf\_v & all       & \small Select $e$ with $\left|\eta\right|<2.1$ and $\pt>32$ with the tight working point and using the GSF\tnote{a} to reconstruct tracks
                                                                                          & \small L1\_SingleEG40\newline OR\newline L1\_SingleIsoEG22er\newline OR\newline L1\_SingleIsoEG24er\newline OR\newline L1\_SingleIsoEG24\newline OR\newline L1\_SingleIsoEG26\\\hline
-\multirow[t]{2}{*}{$\mu$+jets}
+\multirow[t]{2}{*}{$\mu$ + jets}
                             & \small HLT\_IsoMu24\_v                     & all       & \small Select isolated $\mu$ with $\pt>20$ GeV using L3 tracker algorithm\tnote{b}
                                                                                          & \multirow[t]{2}{*}{\small L1\_SingleMu18}\\
                             & \small HLT\_IsoTkMu24\_v                   & all       & \small Select isolated $\mu$ with $\pt>20$ GeV using HLT tracker muon algorithm\tnote{c}
@@ -78,7 +78,7 @@ However an increased efficiency comes at a cost of identifying non-\cPqb objects
 
 At least two untagged (light) jets are required to yield a \PW boson candidate with an invariant mass $\left|m_{jj}-80.4\right|<15~\GeV$.
 
-The event yields at different selection stages are shown in Fig.~\ref{fig:_reco_selection} and Table~\ref{tab:yields}. Table~\ref{tab:yields_cflip} shows the event yields for the colour octet \PW sample. The estimated signal fraction of the signal increases from 0.1~\% in the initial selection stage to 94.2~\% at the final selection stage - this is a measure of efficiency of our selection.
+The event yields at different selection stages are shown in Fig.~\ref{fig:_reco_selection} and Table~\ref{tab:yields}. Table~\ref{tab:yields_cflip} shows the event yields for the colour octet \PW sample. The estimated signal fraction of the signal increases from 0.1~\% in the initial selection stage to 94.2~\% at the final selection stage \textendash this is a measure of efficiency of our selection.
 
 \figureEML{/reco/}{_reco_selection}{Event yields at different stages of selection: $1 \ell$, $1 \ell + \geq 4 j$, $1 \ell + \geq 4 j (2 b)$, $1 \ell + \geq 4 j (2 b, 2 lj)$.}
 
@@ -173,4 +173,4 @@ This section shows selected control plots at various stages of event selection -
 
 In the simulation, the offline selection is mimicked at particle level using the \PSEUDOTOPPRODUCER tool~\cite{code:pseudotop}, using a common lepton selection for both electrons and muons of $\pt>26~\GeV$ and $|\eta| < 2.4$, and otherwise jet $\pt/\eta$ ($\pt>30~\GeV$, $|\eta|<2.4$) and \PW mass requirements ($\left|m_{jj}-80.4\right|<15~\GeV$) identical to the offline selection.
 
-Charged leptons stemming from the hard process are dressed with nearby photons in a $R=0.1$ cone, and jets are clustered with the anti-$k_T$ algorithm with  $R=0.4$ cone after removing the dressed leptons as well as all neutrinos. In order to identify the flavour of the jet at particle level, ``ghost'' B-hadrons are included in the clustering after scaling their momentum by $10^{-20}$ so they don't change significantly the jet energy scale at particle level.
+Charged leptons stemming from the hard process are dressed with nearby photons in a $R=0.1$ cone, and jets are clustered with the anti-$k_\text{T}$ algorithm with  $R=0.4$ cone after removing the dressed leptons as well as all neutrinos. In order to identify the flavour of the jet at particle level, ``ghost'' $B$ hadrons are included in the clustering after scaling their momentum by $10^{-20}$ so they don't change significantly the jet energy scale at particle level.

@@ -6,25 +6,25 @@
 		\hline
 		\makecell[c]{Jet constituents} & $I$$\pm$(stat)$\pm$(syst) [rad] & $R^{-1}$$\pm$(stat)$\pm$(syst) \\
 		\hline
-		\multicolumn{3}{|c|}{$j_{1}^{b}$,$j_{2}^{b}$}\\
+		\multicolumn{3}{|c|}{$j_{1}^{b}$,\ $j_{2}^{b}$}\\
 		\hline
-		 all 	& 0.003 	$\pm$ 0.000 	$\pm$ 0.000 	& 0.233 	$\pm$ 0.002 	$\pm$ 0.003 \\
-		 charged 	& 0.002 	$\pm$ 0.000 	$\pm$ 0.000 	& 0.224 	$\pm$ 0.004 	$\pm$ 0.007 \\
+		 all 	& \num{0.003} 	$\pm$ \num{0.000} 	$\pm$ \num{0.000} 	& \num{0.233} 	$\pm$ \num{0.002} 	$\pm$ \num{0.003} \\
+		 charged 	& \num{0.002} 	$\pm$ \num{0.000} 	$\pm$ \num{0.000} 	& \num{0.224} 	$\pm$ \num{0.004} 	$\pm$ \num{0.007} \\
 		\hline
-		\multicolumn{3}{|c|}{$j_{f}^{W}$,$j_{h}^{b}$}\\
+		\multicolumn{3}{|c|}{$j_{\text{f}}^{W}$,\ $j_{\text{h}}^{b}$}\\
 		\hline
-		 all 	& 0.003 	$\pm$ 0.000 	$\pm$ 0.000 	& 0.218 	$\pm$ 0.002 	$\pm$ 0.002 \\
-		 charged 	& 0.002 	$\pm$ 0.000 	$\pm$ 0.000 	& 0.221 	$\pm$ 0.004 	$\pm$ 0.004 \\
+		 all 	& \num{0.003} 	$\pm$ \num{0.000} 	$\pm$ \num{0.000} 	& \num{0.218} 	$\pm$ \num{0.002} 	$\pm$ \num{0.002} \\
+		 charged 	& \num{0.002} 	$\pm$ \num{0.000} 	$\pm$ \num{0.000} 	& \num{0.221} 	$\pm$ \num{0.004} 	$\pm$ \num{0.004} \\
 		\hline
-		\multicolumn{3}{|c|}{$j_{h}^{b}$,$j_{c}^{W}$}\\
+		\multicolumn{3}{|c|}{$j_{\text{h}}^{b}$,\ $j_{\text{c}}^{W}$}\\
 		\hline
-		 all 	& 0.022 	$\pm$ 0.000 	$\pm$ 0.000 	& 1.575 	$\pm$ 0.007 	$\pm$ 0.009 \\
-		 charged 	& 0.016 	$\pm$ 0.000 	$\pm$ 0.000 	& 1.669 	$\pm$ 0.014 	$\pm$ 0.015 \\
+		 all 	& \num{0.022} 	$\pm$ \num{0.000} 	$\pm$ \num{0.000} 	& \num{1.575} 	$\pm$ \num{0.007} 	$\pm$ \num{0.009} \\
+		 charged 	& \num{0.016} 	$\pm$ \num{0.000} 	$\pm$ \num{0.000} 	& \num{1.669} 	$\pm$ \num{0.014} 	$\pm$ \num{0.015} \\
 		\hline
-		\multicolumn{3}{|c|}{$j_{1}^{W}$,$j_{2}^{W}$}\\
+		\multicolumn{3}{|c|}{$j_{1}^{W}$,\ $j_{2}^{W}$}\\
 		\hline
-		 all 	& 0.014 	$\pm$ 0.000 	$\pm$ 0.000 	& 1.000 	$\pm$ 0.006 	$\pm$ 0.007 \\
-		 charged 	& 0.010 	$\pm$ 0.000 	$\pm$ 0.000 	& 1.000 	$\pm$ 0.012 	$\pm$ 0.011 \\
+		 all 	& \num{0.014} 	$\pm$ \num{0.000} 	$\pm$ \num{0.000} 	& \num{1.000} 	$\pm$ \num{0.006} 	$\pm$ \num{0.007} \\
+		 charged 	& \num{0.010} 	$\pm$ \num{0.000} 	$\pm$ \num{0.000} 	& \num{1.000} 	$\pm$ \num{0.012} 	$\pm$ \num{0.011} \\
 		\hline
 		\end{tabular}
 	\end{center}

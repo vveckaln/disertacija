@@ -1,28 +1,28 @@
 \section{Vilkmes leņķis}
 
-Mēs izmantojam metodoloģiju, ko piedāvā~\cite{Gallicchio:2010sw} un kas balstās uz vilkmes leņķi krāsu saistības noteikšanai starp divām kvarku strūklām. Vilkmes leņķis $\theta_{p}$ starp vilkmes vektoru $\vec{v}_{p}$ un starpību starp divām strūklām $\vec{J}_{2}-\vec{J}_{1}$ ir attēlots \ref{fig:pull_angle}~att. Tiek izmantota $\phi$-$y$ koordinātu sistēma. 
+Mēs izmantojam metodoloģiju, ko piedāvā~\cite{Gallicchio:2010sw} un kas balstās uz vilkmes leņķi krāsu saistības noteikšanai starp divām kvarku strūklām. Vilkmes leņķis \pullangle starp vilkmes vektoru $\vec{v}_{\text{p}}$ un starpību starp divām strūklām $\vec{J}_{2}-\vec{J}_{1}$ ir attēlots \ref{fig:pull_angle}~att. Tiek izmantota $\phi$-$y$ koordinātu sistēma. 
 
 \begin{figure}[hbtp]
   \centering
   \includegraphics[width=1.0\textwidth]{fig/pull_anglelv.pdf}
-  \caption{Vilkmes leņķis $\theta_{p}$, vilkmes vektors $\vec{v}_{p}$ attēlots $y$-$\phi$ plaknē.}
+  \caption{Vilkmes leņķis \pullangle, vilkmes vektors $\vec{v}_{\text{p}}$ attēlots $y$-$\phi$ plaknē.}
   \label{fig:pull_angle}
 \end{figure}
 
 Vilkmes vektoru aprēķina saskaņā ar formulu
 
 \begin{equation}
-  \vec{v}_{p}=\sum_{i\in J}\frac{p^{i}_{T}|\vec{r}_{i}|}{p^{J}_{T}}\vec{r}_{i},
+  \vec{v}_{p}=\sum_{i\in J}\frac{p^{i}_{\text{T}}|\vec{r}_{i}|}{p^{J}_{\text{T}}}\vec{r}_{i},
   \label{Eq:pull_angle}
 \end{equation}
 
-kur $i$ ir strūklas $J$ sastāvdaļas indekss, $p^{i}_{T}$ ir strūklas sastāvdaļas šķērsmoments, $\vec{r}_{i}$ ir vektoriālā starpība starp strūklas sastāvdaļu un strūklu, $p^{J}_{T}$ - strūklas šķērsmoments.
+\noindent kur $i$ ir strūklas $J$ sastāvdaļas indekss, $p^{i}_{\text{T}}$ ir strūklas sastāvdaļas šķērsmoments, $\vec{r}_{i}$ ir vektoriālā starpība starp strūklas sastāvdaļu un strūklu, $p^{J}_{\text{T}}$ ir strūklas šķērsmoments.
 
 Sagaidāms, ka gadījumā, ja strūklas ir saistītas ar krāsām, to sastāvdaļas būs izkliedētas reģionā starp strūklām. Līdz ar to $J_{1}$ vilkmes vektors rādīs uz $J_{2}$, un vilkmes leņķis būs šaurs. Gadījumā, ja strūklas nav saistītas ar krāsām, to sastāvdaļas tiks izkliedētas izotropiski.
 
-Vilkmes leņķa metodoloģija ir tikusi pielietota Tevatrona \DZERO eksperimentā~\cite{Abazov:2011vh} un LHP ATLAS eksperimentā I datu gūšanas periodā~\cite{Aad:2015lxa} un II datu gūšanas periodā~\cite{ATLAS:2017iaz}. Mēs ceram, ka mums izdosies iegūt vēl labākus rezultātus saskaņā ar vilkmes leņķa metodoloģiju, jo mūsu rīcībā ir 4~T KMS solenoīds.
+Vilkmes leņķa metodoloģija ir lietota Tevatrona \DZERO eksperimentā~\cite{Abazov:2011vh} un LHP ATLAS eksperimentā I datu gūšanas periodā~\cite{Aad:2015lxa} un II datu gūšanas periodā~\cite{ATLAS:2017iaz}. Mēs ceram, ka mums izdosies iegūt vēl labākus rezultātus ar vilkmes leņķa metodoloģiju, jo mūsu rīcībā ir 4~T KMS solenoīds.
 
-Anti-$k_{T}$ \gls{sakopošanas} algoritms nodrošina, ka strūklas ieņems konisku formu, ja attālums starp strūklām \DeltaR ir divreiz lielāks nekā parametrs $R$, kurš KMS ir noteikts kā 0,4. Šīs gadījums ir attēlots \ref{fig:anti_kt_a}~att. Gadījumā, ja starpība starp strūklām \DeltaR ir mazāka nekā divkāršs parametrs $R$, \gls{cietā} strūkla pievienos sev mīkstās strūklas sastāvdaļas. Šis gadījums ir attēlots \ref{fig:anti_kt_b}~att. Pēdējais gadījums atstās iespaidu uz krāsu plūsmas analīzi ar vilkmes leņķa metodi, jo šādi tiks ierosināta vienas strūklas vilkme uz otru strūklu. Tādēļ ir pamatota gadījumu $\DeltaR\leq2R$, $\DeltaR>2R$ nošķiršana. 
+Anti-$k_{\text{T}}$ \gls{sakopošanas} algoritms nodrošina, ka strūklas ieņems konisku formu, ja attālums starp strūklām \DeltaR ir divreiz lielāks nekā parametrs $R$, kurš KMS ir noteikts kā 0,4. Šis gadījums ir redzams \ref{fig:anti_kt_a}~att. Gadījumā, ja starpība starp strūklām \DeltaR ir mazāka nekā divkāršs parametrs $R$, \gls{cietā} strūkla pievienos sev mīkstās strūklas sastāvdaļas. Šis gadījums ir redzams \ref{fig:anti_kt_b}~att. Pēdējais gadījums atstās iespaidu uz krāsu plūsmas analīzi ar vilkmes leņķa metodi, jo šādi tiks ierosināta vienas strūklas vilkme uz otru strūklu. Tādēļ ir pamatota gadījumu $\DeltaR\leq2R$, $\DeltaR>2R$ nošķiršana. 
 
 \begin{figure}[hbtp]
   \def\twidth{0.5}
@@ -34,57 +34,58 @@ Anti-$k_{T}$ \gls{sakopošanas} algoritms nodrošina, ka strūklas ieņems konis
     \includegraphics[width=\twidth\textwidth]{fig/dR-1p950-pt2-075.pdf}
     \label{fig:anti_kt_b}
   }
-   \caption{Strūklu formas, kas iegūtas ar anti-$k_{T}$ sakopošanas algoritmu. Šajā piemērā iek izmantots $R=1,5$. Tiek attēloti divi gadījumi - $\Delta_{ij}=3,15$ un  $\Delta_{ij}=1,95$. Cietās strūklas \pt ir 100~\GeV, mīkstās strūklas \pt ir 75~\GeV. Par iespēju izmantot attēlus pateicos Kačiari (oriģ. {\it Cacciari}), Salamam (oriģ. {\it Salam}) un Sojezam (oriģ. {\it Soyez})~\cite{github:antikt}.}
+   \caption{Strūklu formas, kas iegūtas ar anti-$k_{T}$ sakopošanas algoritmu. Šajā piemērā izmanto $R=1,5$. Tiek attēloti divi gadījumi \textendash\ $\Delta_{ij}=3,15$ un  $\Delta_{ij}=1,95$. Cietās strūklas \pt ir 100~\GeV, mīkstās strūklas \pt ir 75~\GeV. Par iespēju izmantot attēlus pateicos Kačiari (oriģ. Cacciari), Salamam (oriģ. Salam) un Sojezam (oriģ. Soyez)~\cite{github:antikt}.}
   \label{fig:anti_kt}
 \end{figure}
 
 Detektora trekēšanas efektivitāte nav ideāla. Tā ir atkarīga no treku meklēšanas algoritma un detektora īpašībām, kā, piemēram, ģeometrisko \gls{uzņēmību} un materiālu saturu. \ref{fig:2011_trackPerformance_MC_SingleParticles_pi_efficiencyVsPt}~att. redzama pionu trekēšanas efektivitāte. Pions lielā daudzumā rodas kvarku hadronizācijas procesā. Trekēšanas efektivitāte ir definēta kā to simulēto lādēto daļiņu skaita, kuras saistītas ar rekonstruētiem trekiem, īpatsvars. Trekēšanās efektivitāte pasliktinās pie zema daļiņas \pt. Mūsu analīzē esam izvēlējušies 1~\GeV kā \pt slieksni, zem kura daļiņas tiek izslēgtas no analīzes.
 
 \begin{figure}[hbtp]
+  \centering
     \includegraphics[width=0.6\textwidth]{fig/figs_2011_trackPerformance_MC_SingleParticles_pi_efficiencyVsPt.png}
-    \caption{Pionu, kuri izturējuši augstas tīrības prasības, treku rekonstruēšanas efektivitāte. Rezultāti ir atainoti kā funkcija no \pt mucas, pārejas un gala segumu reģionos, kas attiecīgi atbilst $\left|\eta\right|$ intervāliem 0 - 0,9, 0,9 - 1,4 un 1,4 - 2,5~\cite{Chatrchyan:2014fea}.}
+    \caption{Pionu, kas izturējuši augstas tīrības prasības, treku rekonstruēšanas efektivitāte. Rezultāti ir atainoti kā funkcija no \pt mucas, pārejas un gala segumu reģionos, kas attiecīgi atbilst $\left|\eta\right|$ intervāliem 0 \textendash\ 0,9, 0,9 \textendash\ 1,4 un 1,4 \textendash\ 2,5~\cite{Chatrchyan:2014fea}.}
     \label{fig:2011_trackPerformance_MC_SingleParticles_pi_efficiencyVsPt}
 \end{figure}
 
 \section{LEP metode}
 
-LEP dažādos eksperimentos tika izmantota arī cita metode ar krāsām saistītu strūklu pētīšanai $e^{+}e^{-}\rightarrow q\overline{q}q\overline{q}$ procesā ar \sqrts=189-207~\GeV~(\cite{Abdallah:2006uq}, \cite{Abbiendi:2005es}, \cite{Achard:2003pe}). Tiek apskatītas divas starp-\PW plaknes, kuras veido ar krāsām saistīti kvarki un divas ārpus-\PW plaknes, kuras veido ar krāsām nesaistīti kvarki, kā attēlots \ref{fig:LEP_method}~att. Daļiņas tiek projicētas uz šīm plaknēm, un tiek noteikts leņķis $\chi_{1}$ ar kvarku, kas atrodas kreisajā pusē. Ja šis leņķis ir mazāks nekā leņķis $\chi_{0}$ starp kvarkiem, kas veido plakni (tas nozīmē, ka daļiņa tiek projicēta starp attiecīgajiem kvarkiem), tad normalizētais leņķis $\chi_{R}=\frac{\chi_{1}}{\chi_{0}}$ tiek iekļauts grafika reģionā, kas atbilst šai plaknei, pēc normalizētā leņķa lineāras transformācijas
+LEP dažādos eksperimentos tika izmantota arī cita metode ar krāsām saistītu strūklu pētīšanai $e^{+}e^{-}\rightarrow q\overline{q}q\overline{q}$ procesā ar \sqrts=189\textendash207~\GeV~\cite{Abdallah:2006uq}, \cite{Abbiendi:2005es}, \cite{Achard:2003pe}. Tiek apskatītas divas starp-\PW plaknes, kuras veido ar krāsām saistīti kvarki un divas ārpus-\PW plaknes, kuras veido ar krāsām nesaistīti kvarki kā \ref{fig:LEP_method}~att. Daļiņas tiek projicētas uz šīm plaknēm, un tiek noteikts leņķis $\chi_{1}$ ar kvarku, kas atrodas kreisajā pusē. Ja šis leņķis ir mazāks nekā leņķis $\chi_{0}$ starp kvarkiem, kas veido plakni (tas nozīmē, ka daļiņa tiek projicēta starp attiecīgajiem kvarkiem), tad normalizētais leņķis $\chi_{\text{R}}=\nicefrac{\chi_{1}}{\chi_{0}}$ tiek iekļauts grafika reģionā, kas atbilst šai plaknei, pēc normalizētā leņķa lineāras transformācijas
 
 \begin{equation}
-  \chi=\chi_{R} + n_{\text{plane}} - 1.
+  \chi=\chi_{\text{R}} + n_{\text{plakne}} - 1.
 \end{equation}
 
 \begin{figure}[hbtp]
   \centering
   \includegraphics[width=0.6\textwidth]{fig/L3methodlv.pdf}
-  \caption{Starp-\PW un ārpus-\PW plaknes $e^{+}e{-}\rightarrow q\overline{q}q\overline{q}$ procesā un relatīvais leņķis $\chi_{R}=\frac{\chi_{1}}{\chi_{0}}$.}
+  \caption{Starp-\PW un ārpus-\PW plaknes $e^{+}e^{-}\rightarrow q\overline{q}q\overline{q}$ procesā un relatīvais leņķis $\chi_{\text{R}}=\nicefrac{\chi_{1}}{\chi_{0}}$.}
   \label{fig:LEP_method}
 \end{figure}
 
- \ttbar semileptoniskajā sabrukumā tāds grupējums, kā attēlots \ref{fig:LEP_method}~att., nav iespējams. Tādēļ tiek izmantota pielāgošana, kas piedāvāta \ref{fig:LEP_method_adaptation}~att. Tiek izmantota viena plakne, kuru veido ar krāsām saistītas strūklas - vadošā vieglā strūkla \leadingjet un otra vadošā vieglā strūkla \scndleadingjet, kas radušās hadroniskajā \PW bozona sabrukuma procesā. Bez tam tiek izmantoti 3 no krāsām brīvi reģioni, kurus veido 1) tālākā vieglā strūkla $j^{\PW}_{f}$ un hadroniskā \cPqb strūkla \hadronicb, 2) hadroniskā \cPqb strūkla \hadronicb un tuvākā vieglā strūkla $j^{\PW}_{c}$, 3) vadošā \cPqb strūkla \leadingb un otra vadošā \cPqb strūkla \scndleadingb. Attālums starp strūklām tiek noteikts, vadoties pēc leņķa starp tām Eiklīda telpā. Reģionos, kas atainoti \ref{fig:LEP_method_adaptation_qfhb}~att. un \ref{fig:LEP_method_adaptation_hbqc}~att., varam cerēt, ka spēsim novērot krāsu atkārtota savienojuma efektus.
+ \ttbar semileptoniskajā sabrukumā tāds grupējums, kā redzams \ref{fig:LEP_method}~att., nav iespējams. Tādēļ tiek izmantota pielāgošana, kas piedāvāta \ref{fig:LEP_method_adaptation}~att. Tiek izmantota viena plakne, kuru veido ar krāsām saistītas strūklas: vadošā vieglā strūkla \leadingjet un otra vadošā vieglā strūkla \scndleadingjet, kas radušās hadroniskajā \PW bozona sabrukuma procesā. Turklāt tiek izmantoti trīs no krāsām brīvi reģioni, kurus veido 1) tālākā vieglā strūkla $j^{\PW}_{\text{f}}$ un hadroniskā \cPqb strūkla \hadronicb, 2) hadroniskā \cPqb strūkla \hadronicb un tuvākā vieglā strūkla $j^{\PW}_{\text{c}}$, 3) vadošā \cPqb strūkla \leadingb un otra vadošā \cPqb strūkla \scndleadingb. Attālums starp strūklām tiek noteikts, vadoties pēc leņķa starp tām Eiklīda telpā. Reģionos, kas atainoti \ref{fig:LEP_method_adaptation_qfhb}~att. un \ref{fig:LEP_method_adaptation_hbqc}~att., varam cerēt, ka spēsim novērot krāsu atkārtota savienojuma efektus.
 
 \begin{figure}[hbtp]
   \centering
   \def\twidth{0.24}
-  \subfloat[Ar krāsām saistītais reģions \leadingjet - \scndleadingjet.]{%
+  \subfloat[Ar krāsām saistītais reģions \leadingjet \textendash\ \scndleadingjet.]{%
     \includegraphics[width=\twidth\textwidth]{fig/LEP_adaptation/qlq2llv.pdf}%
     \label{fig:LEP_method_adaptation_qlq2l}
   }\hfil
- \subfloat[No krāsam brīvais reģions $j^{\PW}_{f}$ - \hadronicb.]{%
+ \subfloat[No krāsam brīvais reģions $j^{\PW}_{\text{f}}$ \textendash\ \hadronicb.]{%
     \includegraphics[width=\twidth\textwidth]{fig/LEP_adaptation/qfhblv.pdf}%
     \label{fig:LEP_method_adaptation_qfhb}
  }\hfil
-  \subfloat[No krāsām brīvais reģions \hadronicb - $j^{\PW}_{c}$.]{%
+  \subfloat[No krāsām brīvais reģions \hadronicb \textendash\ $j^{\PW}_{\text{c}}$.]{%
     \includegraphics[width=\twidth\textwidth]{fig/LEP_adaptation/hbqclv.pdf}%
     \label{fig:LEP_method_adaptation_hbqc}
   }\hfil
-  \subfloat[No krāsam brīvais reģions \leadingb - \scndleadingb.]{%
+  \subfloat[No krāsam brīvais reģions \leadingb \textendash\ \scndleadingb.]{%
     \includegraphics[width=\twidth\textwidth]{fig/LEP_adaptation/blb2llv.pdf}%
     \label{fig:LEP_method_adaptation_blb2l}
   }
-  \caption{LEP metodes adaptācija \ttbar semileptoniskajam sabrukumam ar ar krāsām saistītu reģionu un 3 no krāsām brīviem reģioniem.}
+  \caption{LEP metodes adaptācija \ttbar semileptoniskajam sabrukumam ar ar krāsām saistītu reģionu un trim no krāsām brīviem reģioniem.}
   \label{fig:LEP_method_adaptation}
 \end{figure}
 
-Lai metodi varētu lietot, nepieciešams nošķirt hadronisko un leptonisko \cPqb kvarku. Katrs no \cPqb kvarkiem tiek sapārots ar \PW bozonu, un kopējā invariantā masa tiek salīdzināta ar \cPqt kvarka masu - 173,34~\GeV. \cPqb kvarks tiek piesaistīts tam zaram, kur masu starpība ir vismazākā. 
+Lai metodi varētu lietot, nepieciešams nošķirt hadronisko un leptonisko \cPqb kvarku. Katrs no \cPqb kvarkiem tiek sapārots ar \PW bozonu, un kopējā invariantā masa tiek salīdzināta ar \cPqt kvarka masu \textendash\ 173,34~\GeV. \cPqb kvarks tiek piesaistīts tam zaram, kur masu starpība ir vismazākā. 
 

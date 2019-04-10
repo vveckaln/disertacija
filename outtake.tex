@@ -1,0 +1,69 @@
+\def\startnewpart{FALSE}
+\def\partname{}
+\makeatletter
+\def\@part[#1]#2{%
+    %% \ifnum \c@secnumdepth >-2\relax
+    %%   \refstepcounter{part}%
+    %%   \addcontentsline{toc}{part}{\thepart\hspace{1em}#1}%
+    %% \else
+      \addcontentsline{toc}{part}{#1}%
+%    \fi
+    \markboth{}{}%
+    {\centering
+     \interlinepenalty \@M
+     \normalfont
+     %% \ifnum \c@secnumdepth >-2\relax
+     %%   \huge\bfseries \partname\nobreakspace\thepart
+     %%   \par
+     %%   \vskip 20\p@
+     %% \fi
+     \Huge \bfseries #2\par}%
+    \@endpart}
+
+\renewcommand\chapter{%\if@openright\cleardoublepage\else\clearpage\fi
+  \setcounter{figure}{0}
+  \addtocounter{totfigures}{\value{figure}}%
+  \ifthenelse{\equal{\startnewpart}{FALSE}}{
+    \clearpage
+  }{
+  }
+                    \def\startnewpart{FALSE}
+                    \thispagestyle{plain}%
+                    \global\@topnum\z@
+                    \@afterindentfalse
+                    \secdef\@chapter\@schapter
+%                    \def\startnewpart{FALSE}
+}
+
+  \renewcommand\part{%
+  \def\startnewpart{TRUE}
+\if@openright
+    \cleardoublepage
+  \else
+    \clearpage
+  \fi
+  %% \thispagestyle{plain}%
+  \if@twocolumn
+    \onecolumn
+    \@tempswatrue
+  \else
+    \@tempswafalse
+  \fi
+  \null\vfil
+  \secdef\@part\@spart}
+  %%   \renewcommand\part{%
+  %% \def\startnewpart{TRUE}
+  %% \clearpage
+  %% \secdef\@part\@spart}
+\def\@endpart{%% \vfil\newpage
+              %% \if@twoside
+              %%  \if@openright
+              %%   \null
+              %%   \thispagestyle{empty}%
+              %%   \newpage
+              %%  \fi
+              %% \fi
+              \if@tempswa
+                \twocolumn
+              \fi}
+\makeatother

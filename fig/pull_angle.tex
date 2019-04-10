@@ -43,9 +43,9 @@
   \draw[->](O)--(jet1) node[pos=0.4, above]{$\vec{J}_{1}$}; 
   \draw[->](O)--(jet2) node[midway, above]{$\vec{J}_{2}$}; 
   \draw[->](jet1)--(jet2) node[pos=0.6, above]{$\vec{J}_{2}-\vec{J}_{1}$}; 
-  \draw[->](jet1)--($(jet1) + (0.8, 0.9)$) node[at end, above]{$\vec{v}_{p}$}; 
+  \draw[->](jet1)--($(jet1) + (0.8, 0.9)$) node[at end, above]{$\vec{v}_{\text{p}}$}; 
   \coordinate (vp) at ($(jet1) + (0.8, 0.9)$);
-  \draw   pic [draw, angle radius=2.5mm, angle eccentricity=1.8,"$\theta_{p}$" font=\tiny] {angle=jet2--jet1--vp};
+  \draw   pic [draw, angle radius=2.5mm, angle eccentricity=1.8,"$\theta_{\text{p}}$" font=\tiny] {angle=jet2--jet1--vp};
     \node(text) at ($(jet1) + 0.7*(-1.1, 1.0)$) {\fontsize{5}{5}\selectfont jet 1};
     \node(text) at ($(jet2) + 0.6*(1.1, 1.0)$) {\fontsize{5}{5}\selectfont jet 2};
     \node[align=flush center, text width=1.5cm, font=\tiny](text) at (-2.0, 0.3) { jet \\  constituents};

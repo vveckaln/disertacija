@@ -1,0 +1,16 @@
+
+\input{commands.tex}
+
+\begin{tikzpicture}
+  \coordinate(A) at (-3, 0);
+  \coordinate(B) at (3, 0);
+  \Quark{A};
+  \Quark{B};
+  \newcommand{\momentumlength}{4};
+  \momentum{A}{\momentumlength}{left};
+  \momentum{B}{\momentumlength}{right}
+  \ColourFlow{A}{B}{up};
+  \ColourFlow{A}{B}{down};
+\end{tikzpicture}
+
+\end{document}

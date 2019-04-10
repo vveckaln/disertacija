@@ -2,7 +2,7 @@ When a detector makes an observation the end results suffers from the inefficien
 
 We infer about the detector effects because in Monte Carlo samples each generated event is reconstructed. Therefore an observable in bin $i$ at generation level migrates to bin $k$ at reconstruction level. By accumulating a large number of events we obtain statistics of migration. In unfolding we revert the migration - given an observable at bin $k$ we assign probabilities to the true values of the observable.
 
-Values of \pullangle at generation level that do not have a corresponding value at reconstruction level are put in the underflow bin at reconstruction level. Values of \pullangle at reconstruction level that do not have a corresponding value at generation level are put in the underflow bin at generation level. The underflow bins at generation level are treated as background and are removed. Distributions that are not filled at generation level - data and MC backgrounds are reduced by a corresponding scale factor. The underflow bin at reconstruction level is used to constrain the underflow bin for the unfolded result.
+Values of \pullangle at generation level that do not have a corresponding value at reconstruction level are put in the underflow bin at reconstruction level. Values of \pullangle at reconstruction level that do not have a corresponding value at generation level are put in the underflow bin at generation level. The underflow bins at generation level are treated as background and are removed. Distributions that are not filled at generation level \textendash data and MC backgrounds are reduced by a corresponding scale factor. The underflow bin at reconstruction level is used to constrain the underflow bin for the unfolded result.
 
 Unfolding is performed on data from which the MC backgrounds have been subtracted. We also performed the unfolding procedure in reverse obtaining the folded back output.
 
@@ -36,13 +36,13 @@ The unfolding results are shown in Fig.~\ref{fig:unfolding_nominal_leading_jet_a
 
 \begin{itemize}
 \item In each bin of the reconstructed observable, the particle-level distribution is fitted with a gaussian distribution.
-\item Starting from the low edge of the reconstructed distribution, a bin $i$ is searched that fulfils $\mu_{i}-f\sigma_{i}/2 > 0$, $\mu_{i}$ being the mean and $\sigma_{i}$ the standard distribution from the fit at generation level in each bin $i$ at reconstruction level. The factor $f$ is chosen so that $f\sigma\sim\frac{\theta_{p,\max}-\theta_{p, \min}}{3}$, in order to obtain 4-3 optimised bins. In practice, this factor has to be chosen very small - 0.15 for pull angle and 0.3 for the magnitude of the pull vector, indicating that $\sigma$ is large compared to the range of the phase space of the pull angle.
-\item The new optimised bin is then defined from 0 to $\text{mean}+f\text{sigma}_{i}/2$. 
+\item Starting from the low edge of the reconstructed distribution, a bin $i$ is searched that fulfils $\mu_{i}-f\nicefrac{\sigma_{i}}{2} > 0$, $\mu_{i}$ being the mean and $\sigma_{i}$ the standard distribution from the fit at generation level in each bin $i$ at reconstruction level. The factor $f$ is chosen so that $f\sigma\sim\nicefrac{\theta_{p,\max}-\theta_{p, \min}}{3}$, in order to obtain 4-3 optimised bins. In practice, this factor has to be chosen very small \textendash 0.15 for pull angle and 0.3 for the magnitude of the pull vector, indicating that $\sigma$ is large compared to the range of the phase space of the pull angle.
+\item The new optimised bin is then defined from 0 to $\text{mean}+f\nicefrac{sigma_{i}}{2}$. 
 \item The algorithm is iterated until the edge of the histogram is reached.
 \item The obtained binning is used to present the result on particle (i.e. generation) level. To obtain the final migration matrix used in the unfolding each bin at particle level is split by two to obtain a suitable reconstruction level binning.
 \end{itemize}
 
-This algorithm is depicted in Fig.~\ref{fig:gaussiancurves}. The parameter $b$ is given by $\frac{\sigma_{n}}{\sigma_{n} + \sigma_{n+1}}$.
+This algorithm is depicted in Fig.~\ref{fig:gaussiancurves}. The parameter $b$ is given by $\nicefrac{\sigma_{n}}{\sigma_{n} + \sigma_{n+1}}$.
 
 \begin{figure}
   \centering
@@ -72,11 +72,11 @@ The agreement between the unfolded result and MC prediction at generation level 
   \label{eq:chi2}
 \end{equation}
 
-From the $\chi^{2}$ value the p-value can be computed using the number of degrees of freedom equal to the number of bins in the unfolded distribution subtracted by 1 to account for a loss of freedom when normalising the distributions. One row and one column is discarded from the covariance matrix $\Sigma$. $\chi^{2}$ value does not depend on the choice of the discarded elements.
+From the $\chi^{2}$ value the \pval s can be computed using the number of degrees of freedom equal to the number of bins in the unfolded distribution subtracted by 1 to account for a loss of freedom when normalising the distributions. One row and one column is discarded from the covariance matrix $\Sigma$. $\chi^{2}$ value does not depend on the choice of the discarded elements.
 
-Table~\ref{tab:chi_table_pull_angle_OPT_allconst_nominal_ATLAS3} shows the $\chi^{2}$ values and p-values for \pullangle using all jet constituents. The results show that the pull angle distribution is poorly modelled by the MC generators. In general, the simulation predicts a more sloped distribution, i.e. a stronger colour flow effect. \HERWIGpp models better the pull angle distribution than \PYTHIA 8.2. Accuracy of \PYTHIA 8.2 is particularly poor when predicting the distribution of \pullangle from \scndleadingjet to \leadingjet.
+Table~\ref{tab:chi_table_pull_angle_OPT_allconst_nominal_ATLAS3} shows the $\chi^{2}$ values and \pval s for \pullangle using all jet constituents. The results show that the pull angle distribution is poorly modelled by the MC generators. In general, the simulation predicts a more sloped distribution, i.e. a stronger colour flow effect. \HERWIGpp models better the pull angle distribution than \PYTHIA 8.2. Accuracy of \PYTHIA 8.2 is particularly poor when predicting the distribution of \pullangle from \scndleadingjet to \leadingjet.
 
-The $\chi^{2}$ values and p-values for the \PW colour octet model are given in Table~\ref{tab:chi_table_pull_angle_OPT_allconst_cflip_ATLAS3}. In the colour flip model the distribution of \pullangle from \leadingjet to \scndleadingjet is modelled less acurately than the SM prediction.
+The $\chi^{2}$ values and \pval s for the \PW colour octet model are given in Table~\ref{tab:chi_table_pull_angle_OPT_allconst_cflip_ATLAS3}. In the colour flip model the distribution of \pullangle from \leadingjet to \scndleadingjet is modelled less acurately than the SM prediction.
   
 Table~\ref{tab:chi_table_pull_angle_OPT_allconst_MC13TeV_TTJets_nominal_ATLAS3_full} shows the values of $\chi^{2}$ and if signal $M$ in Eq.~\ref{eq:chi2} is replaced by the respective systematic, but leaving the covariance matrix $\Sigma$ unchanged. The agreement is better than \ttbar when the colour flow is modelled with the $\ttbar\ ERDOn$, $\ttbar\ Herwig++$ and $\ttbar\ QCDbased$ setup.
 

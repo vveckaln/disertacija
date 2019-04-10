@@ -1,0 +1,19 @@
+\documentclass{article}
+\usepackage{lipsum}
+\begin{document}
+\noindent\lipsum[1][1-2]
+
+\noindent
+\begin{tabular}{ll}
+  A & B
+\end{tabular}
+
+{
+\setlength{\tabcolsep}{0pt}
+\noindent
+\begin{tabular}{ll}
+  C & D
+\end{tabular}
+}
+
+\end{document}

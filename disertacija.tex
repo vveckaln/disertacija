@@ -3,7 +3,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage[backend=bibtex, style=numeric, sorting=none]{biblatex}
 \usepackage{amsmath}
-\usepackage{subfig}
+\usepackage[subrefformat=parens,labelformat=parens, font=small]{subfig}
 \usepackage{graphicx}
 \usepackage{makecell}
 \usepackage{multirow}
@@ -15,6 +15,10 @@
 \usepackage{threeparttable}
 \usepackage{tabularx}
 \usepackage{enumerate}
+\usepackage{indentfirst}
+\usepackage{etoolbox}
+\patchcmd{\abstract}{\titlepage}{\cleardoublepage}{}{}
+\patchcmd{\endabstract}{\endtitlepage}{\clearpage}{}{}
 %\usepackage[T1]{fontenc}
 %\renewcommand{\baselinestretch}{1.2}
 \setlength{\skip\footins}{1.25 cm}
@@ -25,13 +29,15 @@
 \setlength\parindent{0.63cm}
 \setlength{\abovecaptionskip}{6pt}
 \setlength{\belowcaptionskip}{12pt}
-\usepackage{caption}
+\usepackage[font=normalsize]{caption}
 \DeclareCaptionFormat{hfillstart}{\hfill#1#2#3\par}
 \captionsetup[table]{
   format=hfillstart,
   labelsep=newline,
   justification=centering
 }
+\captionsetup[figure]{justification=centering,
+labelsep=period}
 \title{Studies of colour flow in top quark pair decays at 13 TeV at the CMS experiment of the CERN LHC} 
 \author{Viesturs Veckalns}
 \institution{Rīgas Tehniskā universitāte}
@@ -50,6 +56,30 @@
 \usepackage{siunitx}
 \usepackage{float}
 \addbibresource{disertacija.bib}
+\clubpenalty=10000
+\widowpenalty=10000
+%% \brokenpenalty=4991
+%% \predisplaypenalty=10000
+%% \postdisplaypenalty=1549
+%% \displaywidowpenalty=1602
+\usepackage{nicefrac}
+\usepackage{cellspace}
+\usepackage{float}
+\urlstyle{same}
+\makeatletter
+\DeclareFieldFormat{eprint:arxiv}{%
+  arXiv\addcolon\space
+  \ifhyperref
+    {\href{https://arxiv.org/\abx@arxivpath/#1}{%
+       \nolinkurl{#1}%
+       \iffieldundef{eprintclass}
+         {}
+         {\addspace\mkbibbrackets{\thefield{eprintclass}}}}}
+    {\nolinkurl{#1}%
+     \iffieldundef{eprintclass}
+       {}
+       {\addspace\mkbibbrackets{\thefield{eprintclass}}}}}
+\makeatother
 \begin{document}
 \maketitle
 \begin{abstract}
@@ -60,7 +90,6 @@
 \begin{abstract}
         \input{nodalas_kopsavilkums/abstract}
 \end{abstract}
-
 \chapter*{Acknowledgements}
 \label{chap:acknowledgements}
 \input{chapters/acknowledgements}

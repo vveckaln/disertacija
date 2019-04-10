@@ -1,14 +1,14 @@
 \begin{table}[htp]
 	\begin{center}
-	\caption{$\chi^{2}$ and p-values of the \protect\observabletitle{pull_angle} including \protect\chargetitle{allconst}. The results are for the \protect\modeltitle{nominal} model.}
+	\caption{$\chi^{2}$ and \pval s of \protect\observabletitle{pull_angle} including \protect\chargetitle{allconst}. The results are for the \protect\modeltitle{nominal} model.}
 	\label{tab:chi_table_pull_angle_OPT_allconst_nominal_ATLAS3}
 	\resizebox{\customwidth}{!}{		\begin{tabular}{|l|rrr|rrr|rrr|rrr|}
 		\hline
-\multirow{2}{*}{Sample}&\multicolumn{3}{|c|}{$\theta_{p}(j_{1}^{W}, j_{2}^{W})$}&\multicolumn{3}{|c|}{$\theta_{p}(j_{2}^{W}, j_{1}^{W})$}&\multicolumn{3}{|c|}{$\theta_{p}(j_{1}^{b}, j_{2}^{b})$}&\multicolumn{3}{|c|}{$\theta_{p}(j_{2}^{b}, j_{2}^{b})$}\\
-		\cline{2-13}		&$\chi^{2}$&\textbackslash Ndf&p-value&$\chi^{2}$&\textbackslash Ndf&p-value&$\chi^{2}$&\textbackslash Ndf&p-value&$\chi^{2}$&\textbackslash Ndf&p-value\\
+\multirow{2}{*}{Sample}&\multicolumn{3}{|c|}{$\pullangle(j_{1}^{W}, j_{2}^{W})$}&\multicolumn{3}{|c|}{$\pullangle(j_{2}^{W}, j_{1}^{W})$}&\multicolumn{3}{|c|}{$\pullangle(j_{1}^{b}, j_{2}^{b})$}&\multicolumn{3}{|c|}{$\pullangle(j_{2}^{b}, j_{2}^{b})$}\\
+		\cline{2-13}		&$\chi^{2}$&/Ndf&\pval&$\chi^{2}$&/Ndf&\pval&$\chi^{2}$&/Ndf&\pval&$\chi^{2}$&/Ndf&\pval\\
 		\hline
-		Powheg+Pythia8 & 86.38 & 2 & 0.000 & 85.33 & 2 & 0.000 & 3.98 & 2 & 0.136 & 20.03 & 2 & 0.000\\
-		Powheg+Herwig & 0.30 & 2 & 0.861 & 1.14 & 2 & 0.565 & 3.11 & 2 & 0.211 & 8.05 & 2 & 0.018\\
+		Powheg + Pythia8 & \num{86.38} & 2 & \num{0.000} & \num{85.33} & 2 & \num{0.000} & \num{3.98} & 2 & \num{0.136} & \num{20.03} & 2 & \num{0.000}\\
+		Powheg + Herwig & \num{0.30} & 2 & \num{0.861} & \num{1.14} & 2 & \num{0.565} & \num{3.11} & 2 & \num{0.211} & \num{8.05} & 2 & \num{0.018}\\
 		\hline
 		\end{tabular}
 	}

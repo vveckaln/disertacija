@@ -1,0 +1,10 @@
+\begin{table}[htp]
+	\begin{center}
+	\caption{$\chi^{2}$ and \pval s of \protect\observabletitle{pullangle} including \protect\chargetitle{allconst}. The results are for the \protect\modeltitle{nominal} model.}
+	\label{tab:chi_table_pull_angle_OPT_allconst_nominal_ATLAS3}
+	\resizebox{\customwidth}{!}{		\begin{tabular}{|l|rrr|rrr|rrr|rrr|}
+		\hline
+\multirow{2}{*}{Sample}&\multicolumn{3}{|c|}{$\pullangle(j_{1}^{W}, j_{2}^{W})$}&\multicolumn{3}{|c|}{$\pullangle(j_{2}^{W}, j_{1}^{W})$}&\multicolumn{3}{|c|}{$\pullangle(j_{1}^{b}, j_{2}^{b})$}&\multicolumn{3}{|c|}{$\pullangle(j_{2}^{b}, j_{2}^{b})$}\\
+		\cline{2-13}		&$\chi^{2}$&/Ndf&\pval&$\chi^{2}$&/Ndf&\pval&$\chi^{2}$&/Ndf&\pval&$\chi^{2}$&/Ndf&\pval\\
+		\hline
+		Powheg + Pythia8

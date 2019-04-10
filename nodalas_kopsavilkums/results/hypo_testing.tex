@@ -9,7 +9,7 @@ Mēs konstruējam divu hipotēžu modeli, lai kombinētu fona, \ttbar un krāsu 
   \label{eq:two_hypo_model}
 \end{equation}
 
-kur $n$ ir sagaidāmais notikumu skaits, $\mu$ - signāla stiprums, $x$  - parametrs, kas tiek lietots, lai piešķirtu svaru \ttbar un krāsu maiņas \ttbar signālam tā, lai to kopējais svars būtu vienāds ar 1, $b$ - MK fons. Turpmākajā datoranalīzē $\mu$ ir iestatīts kā 1, un $x$ iestatīts kā interesējošais parametrs.
+\noindent kur $n$ ir sagaidāmais notikumu skaits, $\mu$ - signāla stiprums, $x$  - parametrs, kas tiek lietots, lai piešķirtu svaru \ttbar un krāsu maiņas \ttbar signālam tā, lai to kopējais svars būtu vienāds ar 1, $b$ - MK fons. Turpmākajā datoranalīzē $\mu$ ir iestatīts kā 1, un $x$ iestatīts kā interesējošais parametrs.
 
 Kā testa statistisko parametru izmantojoam Tevatrona testa statistisko parametru. Tas pazīstams arī kā Neimana-Pīrsona (oriģ. \textit{Neyman-Pearson}) testa statistiskais parametrs. Tevatrona testa statiskais parametrs tiek definēts kā:
 
@@ -17,13 +17,13 @@ Kā testa statistisko parametru izmantojoam Tevatrona testa statistisko parametr
   q^{\text{TEV}}=-2\ln{\frac{L(\Hnull)}{L(\Halt)}}=-2\ln{\frac{L\left(\text{data}|p=0,\hat{\theta}_{0}\right)}{L\left(\text{data}|p=P,\hat{\theta}_{P}\right)}},
 \end{equation}
 
-kur $p$ ir interesējošais parametrs, $\theta$ ir traucējumu faktors un $\hat{\theta}$ ir traucējumu faktors, kas maksimizē profila iespējamību. Profila iespējamība $L$ tiek definēta kā hipotēzes varbūtība pie dotajiem datiem. Pieņemot hipotēzi ar signāla stiprumu $\mu$, iespējamība tiek aprēķināta kā:
+\noindent kur $p$ ir interesējošais parametrs, $\theta$ ir traucējumu faktors un $\hat{\theta}$ ir traucējumu faktors, kas maksimizē profila iespējamību. Profila iespējamība $L$ tiek definēta kā hipotēzes varbūtība pie dotajiem datiem. Pieņemot hipotēzi ar signāla stiprumu $\mu$, iespējamība tiek aprēķināta kā:
 
 \begin{equation}
   L\left(\mu, \theta_{s}, \theta_{b}\right) = \prod_{i=1}^{N}\frac{\left(\mu s_{i}\left(\theta_{s}\right) + b_{i}\left(\theta_{b}\right)\right)^{n_{i}}}{n_{i}!}e^{-\left(\mu s_{i}\left(\theta_{s}\right) + b_{i}\left(\theta_{b}\right)\right)},
 \end{equation}
 
-kur $i$ ir fāžu telpas parametrs (vērtību intervāla indekss), $n_{i}$ ir novērojumi (dati) attiecīgajā fāzē (vērtību intervālā).
+\noindent kur $i$ ir fāžu telpas parametrs (vērtību intervāla indekss), $n_{i}$ ir novērojumi (dati) attiecīgajā fāzē (vērtību intervālā).
 
 Tevatrona testa statistiskais parametrs mūs interesē tādēļ, ka $x$ ir iestatīts kā interesējošais parametrs divu hipotēžu modelī \ref{eq:two_hypo_model}~vien. un $P$ ir iestatīts kā 1. Līdz ar to, izmantojot $q^{TEV}$ statistisko parametru, \Hnull (ar $x=0$) tiek definēta kā $t\overline{t}+b$ sadalījums, kamēr \Halt ir definēta kā $t\overline{t}_{\text{cflip}}+b$ sadalījums.
 
@@ -33,7 +33,7 @@ Lai testētu \Hnull un \Halt hipotēzes, nepieciešams aprēķināt to p-vērtī
 p\equiv\int_{q_{obs}}^{\infty}f(q)dq,
 \end{equation}
     
-kur $q_{obs}$ ir testa statistiskā parametra vērtība, kas novērota datos, un $f$ varbūtības sadalījuma funkcija atbilstoši pieņemtajai hipotēzei. Zema p-vērtība liecina pret pieņemto hipotēzi. Nozīmīgums $Z=5$ atbilst p-vērtībai $2,87\times10^{-7}$. Neimana-Pīrsona testa statistiskais parametrs atbilstoši \Hnull ir rēķināms no labās puses, bet \Halt ir rēķināms no kreisās puses. Šī sakarība attēlota \ref{fig:npstatistic}~att.
+\noindent kur $q_{obs}$ ir testa statistiskā parametra vērtība, kas novērota datos, un $f$ varbūtības sadalījuma funkcija atbilstoši pieņemtajai hipotēzei. Zema p-vērtība liecina pret pieņemto hipotēzi. Nozīmīgums $Z=5$ atbilst p-vērtībai $2,87\times10^{-7}$. Neimana-Pīrsona testa statistiskais parametrs atbilstoši \Hnull ir rēķināms no labās puses, bet \Halt ir rēķināms no kreisās puses. Šī sakarība attēlota \ref{fig:npstatistic}~att.
 
 \begin{figure}
   \centering
@@ -50,7 +50,7 @@ Testa statistiskā parametra sadalījuma ģenerēšanai izmantojam  \lstinline[l
   combine -M HybridNew -T 500 -i 2 --fork 6 --clsAcc 0 --fullBToys -m 125.7 TwoHypo.root --seed 8192 --testStat=TEV  --saveHybridResult --singlePoint 1
 \end{lstlisting}
 
-kur  \lstinline[language=sh]|TwoHypo.root| ir \ROOT datne, kas satur darba telpu, \lstinline[language=sh]|--singlePoint 1| nozīmē, ka pieprasām, lai $x$ - interesējošais parametrs \ref{eq:two_hypo_model}~vien. būtu vienāds ar 1 \Halt gadījumā. Šajā stadijā izmantojam tikai 500 izmēģinājumus. $\frac{q}{2}$ sadalījums, kur $q$ ir testa statistiskais parametrs, pieņemot \Hnull un \Halt, kā arī $\frac{q_{\text{obs}}}{2}$ vērtība ir sniegta \ref{fig:hypo1p0}~att.
+\noindent kur  \lstinline[language=sh]|TwoHypo.root| ir \ROOT datne, kas satur darba telpu, \lstinline[language=sh]|--singlePoint 1| nozīmē, ka pieprasām, lai $x$ - interesējošais parametrs \ref{eq:two_hypo_model}~vien. būtu vienāds ar 1 \Halt gadījumā. Šajā stadijā izmantojam tikai 500 izmēģinājumus. $\frac{q}{2}$ sadalījums, kur $q$ ir testa statistiskais parametrs, pieņemot \Hnull un \Halt, kā arī $\frac{q_{\text{obs}}}{2}$ vērtība ir sniegta \ref{fig:hypo1p0}~att.
 
 \begin{figure}
   \centering
@@ -94,7 +94,7 @@ Lai iegūtu maksimālo profila iespējamību, dažādi traucējumi jāpiemēro d
   P = \frac{\hat{\theta}-\theta_{0}}{\delta\theta},
 \end{equation} 
 
-kur $\hat{\theta}$ ir $\theta$, kas maksimizē profila iespējamību, $\theta_{0}$ ir pirmspiemērošanas vērtība, $\delta\theta$ - pirmspiemērošanas nenoteiktība.
+\noindent kur $\hat{\theta}$ ir $\theta$, kas maksimizē profila iespējamību, $\theta_{0}$ ir pirmspiemērošanas vērtība, $\delta\theta$ - pirmspiemērošanas nenoteiktība.
 
 Lai noteiktu traucējumu parametru ietekmi un vilkmi, izmantojam \lstinline[language=sh]|combine| rīka \lstinline[language=sh]|Impact| metodi. Lietotās komandas ir sekojošas:
 

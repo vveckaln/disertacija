@@ -1,0 +1,15 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[toc, nopostdot]{glossaries}
+\newglossaryentry{tēju} % how the word is found in text
+{
+  name=tēja, %nominative for the glossary entry
+  description={a drink},
+  text=tēju
+}
+\makeglossaries
+\begin{document}
+%\printglossary
+Dzert \gls{tēju}.
+\printglossaries
+\end{document}

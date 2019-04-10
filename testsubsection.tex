@@ -1,0 +1,14 @@
+\documentclass{report}
+\makeatletter
+\newcounter{tsubsection}
+%\renewcommand{\thetsubsection}{\@Roman\c@tsubsection}
+\newcommand\tsubsection{\@startsection{tsubsection}{2}{\z@}%
+                                     {-3.25ex\@plus -1ex \@minus -.2ex}%
+                                     {1.5ex \@plus .2ex}%
+                                     {\normalfont\large\bfseries}}
+%\newcommand*\l@tsubsection{\@dottedtocline{2}{3.8em}{3.2em}}
+\makeatother
+\begin{document}
+\tsubsection{Methods}
+Some text
+\end{document}

@@ -9,7 +9,7 @@ We construct a two-hypothesis model to combine background, \ttbar and colour-fli
   \label{eq:two_hypo_model}
 \end{equation}
 
-where $n$ is the expected number of events, $\mu$ - the signal strength, $x$ a parameter to assign weight to the \ttbar and colour-flipped \ttbar signal so that their total weight sums up to 1, $b$ - the MC backgrounds. In the subsequent computer analysis $\mu$ is set to 1 and $x$ is defined as the parameter of interest.
+\noindent where $n$ is the expected number of events, $\mu$ is the signal strength, $x$ a parameter to assign weight to the \ttbar and colour-flipped \ttbar signal so that their total weight sums up to 1, $b$ \textendash the MC backgrounds. In the subsequent computer analysis $\mu$ is set to 1 and $x$ is defined as the parameter of interest.
 
 As the test statistic we chose the Tevatron test statistic. It is also known as the Neyman-Pearson test statistic. The Tevatron test statistic is defined as:
 
@@ -17,23 +17,23 @@ As the test statistic we chose the Tevatron test statistic. It is also known as 
   q^{TEV}=-2\ln{\frac{L(\Hnull)}{L(\Halt)}}=-2\ln{\frac{L\left(\text{data}|p=0,\hat{\theta}_{0}\right)}{L\left(\text{data}|p=P,\hat{\theta}_{P}\right)}},
 \end{equation}
 
-where $p$ is the parameter of interest. $\theta$ is the nuisance factor and $\hat{\theta}$ is the nuisance factor that maximises the profile likelihood. The likelihood $L$ is defined the probility of the hypothesis given the data. Assuming a hypothesis with signal strength $\mu$ the likelihood is evaluated as:
+\noindent where $p$ is the parameter of interest. $\theta$ is the nuisance factor and $\hat{\theta}$ is the nuisance factor that maximises the profile likelihood. The likelihood $L$ is defined the probility of the hypothesis given the data. Assuming a hypothesis with signal strength $\mu$ the likelihood is evaluated as:
 
 \begin{equation}
   L(\mu, \theta_{s}, \theta_{b})=\prod_{i=1}^{N}\frac{(\mu s_{i}(\theta_{s})+b_{i}(\theta_{b}))^{n_{i}}}{n_{i}!}e^{-\left(\mu s_{i}(\theta_{s})+b_{i}(\theta_{b})\right)},
 \end{equation}
 
-where $i$ is the phase-space parameter (bin index), $n_{i}$ is the observation (data) in the relevant phase (bin).
+\noindent where $i$ is the phase-space parameter (bin index), $n_{i}$ is the observation (data) in the relevant phase (bin).
 
-The Tevatron test statistic is of interest to us because if $x$ is defined as the parameter of interest in the two hypothesis model Eq.~\ref{eq:two_hypo_model} and $P$ is set to 1, it happens  that when applying the $q^{TEV}$ statistic \Hnull (with $x=0$) is defined as the $t\overline{t}+b$ distribution while \Halt is defined as the $t\overline{t}_{\text{cflip}}+b$ distributions.
+The Tevatron test statistic is of interest to us because if $x$ is defined as the parameter of interest in the two hypothesis model Eq.~\ref{eq:two_hypo_model} and $P$ is set to 1, it happens  that when applying the $q^{\text{TEV}}$ statistic \Hnull (with $x=0$) is defined as the $t\overline{t}+b$ distribution while \Halt is defined as the $t\overline{t}_{\text{cflip}}+b$ distributions.
 
-In order to test the \Hnull and \Halt hypotheses one needs to calculate their p-values. A right-handed p-value is defined as
+In order to test the \Hnull and \Halt hypotheses one needs to calculate their \pval s . A right-handed \pval is defined as
 
 \begin{equation}
 p\equiv\int_{q_{\text{obs}}}^{\infty}f(q)dq,
 \end{equation}
     
-where $q_{obs}$ is the value of the test statistic observed from the data, and $f$ is the probability distribution function (pdf) under the assumption of the hypothesis. A low p-value is an indicator against the assumed hypothesis. A significance of $Z=5$ corresponds to a p-value of $2.87\times10^{-7}$. For the Neyman-Person test statistic the p-value for \Hnull is right-handed while the p-value for \Halt is left-handed. This is illustrated in Fig.~\ref{fig:npstatistic}.
+\noindent where $q_{\text{obs}}$ is the value of the test statistic observed from the data, and $f$ is the probability distribution function (pdf) under the assumption of the hypothesis. A low \pval is an indicator against the assumed hypothesis. A significance of $Z=5$ corresponds to a p-value of $2.87\times10^{-7}$. For the Neyman-Person test statistic the \pval for \Hnull is right-handed while the p-value for \Halt is left-handed. This is illustrated in Fig.~\ref{fig:npstatistic}.
 
 \begin{figure}
   \centering
@@ -48,16 +48,16 @@ For testing the hypothesis and doing all background work we use the CMS \lstinli
   combine -M HybridNew -T 500 -i 2 --fork 6 --clsAcc 0 --fullBToys -m 125.7 TwoHypo.root --seed 8192 --testStat=TEV  --saveHybridResult --singlePoint 1
 \end{lstlisting}
 
-where  \lstinline[language=sh]|TwoHypo.root| is the ROOT file containing the workspace. \lstinline[language=sh]|--singlePoint 1| means that we require $x$ - the parameter of interest in Eq. \ref{eq:two_hypo_model} to be equal to 1 in \Halt. We at the present stage use only 500 toys. The distribution of $\frac{q}{2}$ where $q$ is the test statistic under the assumption of \Hnull, \Halt and $\frac{q_{\text{obs}}}{2}$ is given in Fig.~\ref{fig:hypo1p0}.
+\noindent where  \lstinline[language=sh]|TwoHypo.root| is the ROOT file containing the workspace. \lstinline[language=sh]|--singlePoint 1| means that we require $x$ \textendash the parameter of interest in Eq. \ref{eq:two_hypo_model} to be equal to 1 in \Halt. We at the present stage use only 500 toys. The distribution of $\nicefrac{q}{2}$ where $q$ is the test statistic under the assumption of \Hnull, \Halt and $\nicefrac{q_{\text{obs}}}{2}$ is given in Fig.~\ref{fig:hypo1p0}.
 
 \begin{figure}
   \centering
   \includegraphics[width = 0.6\textwidth]{fig/hypo1p0.png}
-  \caption{Distribution of the $\frac{q}{2}$ under the assumption of \ttbar hypothesis (red), colour flipped \ttbar hypothesis (blue) and $\frac{q_{\text{obs}}}{2}$.}
+  \caption{Distribution of the $\nicefrac{q}{2}$ under the assumption of \ttbar hypothesis (red), colour flipped \ttbar hypothesis (blue) and $\nicefrac{q_{\text{obs}}}{2}$.}
   \label{fig:hypo1p0}
 \end{figure}
 
-The p-values of \Halt and \Hnull are infinitessimal. Thus we cannot make a conclusion - we fail to reject \Hnull in favour of \Halt and fail to rejet \Halt in favour of \Hnull.
+The p-values of \Halt and \Hnull are infinitessimal. Thus we cannot make a conclusion \textendash we fail to reject \Hnull in favour of \Halt and fail to rejet \Halt in favour of \Hnull.
 
 The \lstinline[language=sh]|combine| tool has a method \lstinline[language=sh]|MultiDimFit| to determine the curve of the profile likelihood ratio PLR
 
@@ -92,7 +92,7 @@ In order to achieve the maximum profile likelihood different nuisances have to b
   P=\frac{\hat{\theta}-\theta_{0}}{\delta\theta},
 \end{equation} 
 
-where $\hat{\theta}$ is the $\theta$ that maximises the profile likelihood, $\theta_{0}$ is the pre-fit value, $\delta\theta$ - the pre-fit uncertainty.
+\noindent where $\hat{\theta}$ is the $\theta$ that maximises the profile likelihood, $\theta_{0}$ is the pre-fit value, $\delta\theta$ \textendash the pre-fit uncertainty.
 
 In order the measure the impact and pull of the nuisance parameters we use the \lstinline[language=sh]|Impact| method of the \lstinline[language=sh]|combine| tool with the following recipe:
 
@@ -117,8 +117,8 @@ Having obtained the value $\hat{x}=0.335$ (Fig.~\ref{fig:likelihood}) we can ret
 \begin{figure}
   \centering
   \includegraphics[width = 0.6\textwidth]{fig/hypo0p335.png}
-  \caption{Distribution of the $\frac{q}{2}$ under the assumption of \ttbar only hypothesis (red), a hypothesis of the signal being mixed of 66.5~\% \ttbar and 33.5~\% colour flipped \ttbar process (blue) and $\frac{q_{\text{obs}}}{2}$.}
+  \caption{Distribution of the $\nicefrac{q}{2}$ under the assumption of \ttbar only hypothesis (red), a hypothesis of the signal being mixed of 66.5~\% \ttbar and 33.5~\% colour flipped \ttbar process (blue) and $\nicefrac{q_{\text{obs}}}{2}$.}
   \label{fig:hypo0p335}
 \end{figure}
 
-Under $x=\hat{x}$ the p-value for \Hnull is 0 while the p-value for \Halt is 0.25. Thus we are able to reject \Hnull in favour of \Halt.
+Under $x=\hat{x}$ the \pval for \Hnull is 0 while the \pval for \Halt is 0.25. Thus we are able to reject \Hnull in favour of \Halt.

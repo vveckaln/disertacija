@@ -1,0 +1,29 @@
+%% \documentclass{report}
+%% \usepackage{ifthen}
+%% \newcommand{\thesissize}{SHORT}
+%% \begin{document}
+%%    \ifthenelse{\equal{\thesissize}{SHORT}}
+%%     {\setcounter{page}{3}}{\setcounter{page}{2}}
+
+
+%%   hey
+%% \end{document}
+
+\documentclass{report}
+\usepackage{lipsum}
+\usepackage{ifthen}
+\newcommand{\thesissize}{SHORT}
+\title{title}
+
+%3
+\begin{document}
+\pagenumbering{gobble}
+title
+\newpage
+\pagenumbering{arabic}
+   \ifthenelse{\equal{\thesissize}{SHORT}}
+%% \ifthenelse{\equal{\thesissize}{SHORT}}
+    {\setcounter{page}{3}}{\setcounter{page}{2}}
+%   {\setcounter{page}{3}}{\setcounter{page}{2}}
+\lipsum[1-30]
+\end{document}
